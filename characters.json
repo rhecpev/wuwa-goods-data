@@ -1,0 +1,22 @@
+[
+  {
+    "charaNm": "카를로타",
+    "charaUrl": "https://img1.daumcdn.net/thumb/R658x0.q70/?fname=https://t1.daumcdn.net/news/202511/21/HankyungGametoc/20251121012548962hylk.png",
+    "charaIsFavorite": false
+  },
+  {
+    "charaNm": "앙코",
+    "charaUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/thumb/0/0f/Character_Encore_Portrait.png/300px-Character_Encore_Portrait.png",
+    "charaIsFavorite": false
+  },
+  {
+    "charaNm": "치사",
+    "charaUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/thumb/5/5e/Character_Chixia_Portrait.png/300px-Character_Chixia_Portrait.png",
+    "charaIsFavorite": false
+  },
+  {
+    "charaNm": "입스타",
+    "charaUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/thumb/1/1e/Character_Youhu_Portrait.png/300px-Character_Youhu_Portrait.png",
+    "charaIsFavorite": false
+  }
+]
