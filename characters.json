@@ -18,5 +18,10 @@
     "charaNm": "입스타",
     "charaUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/thumb/1/1e/Character_Youhu_Portrait.png/300px-Character_Youhu_Portrait.png",
     "charaIsFavorite": false
+  },
+  {
+    "charaNm": "테스트해야지",
+    "charaUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/thumb/1/1e/Character_Youhu_Portrait.png/300px-Character_Youhu_Portrait.png",
+    "charaIsFavorite": false
   }
 ]
