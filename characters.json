@@ -1,33 +1,3 @@
 [
-  {
-    "charaNm": "카를로타",
-    "charaUrl": "https://i.ytimg.com/vi/DylyvoDrq6c/maxresdefault.jpg",
-    "charaIsFavorite": false
-  },
-  {
-    "charaNm": "앙코",
-    "charaUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/thumb/0/0f/Character_Encore_Portrait.png/300px-Character_Encore_Portrait.png",
-    "charaIsFavorite": false
-  },
-  {
-    "charaNm": "치사",
-    "charaUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzDR8AI9j5Q4tTQhSsGtDV8gfPYmFvyK4Yug&s",
-    "charaIsFavorite": false
-  },
-  {
-    "charaNm": "입스타",
-    "charaUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/thumb/1/1e/Character_Youhu_Portrait.png/300px-Character_Youhu_Portrait.png",
-    "charaIsFavorite": false
-  },
-  {
-    "charaNm": "테스트해야지",
-    "charaUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/thumb/1/1e/Character_Youhu_Portrait.png/300px-Character_Youhu_Portrait.png",
-    "charaIsFavorite": false
-  }
-  ,
-  {
-    "charaNm": "테스트해야지2",
-    "charaUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzDR8AI9j5Q4tTQhSsGtDV8gfPYmFvyK4Yug&s",
-    "charaIsFavorite": false
-  }
+ 
 ]
