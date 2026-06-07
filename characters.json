@@ -11,7 +11,7 @@
   },
   {
     "charaNm": "치사",
-    "charaUrl": "https://m.dokidokigoods.co.kr/web/product/big/202512/ea0c47b9550a280def5c39654b0df006.png",
+    "charaUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzDR8AI9j5Q4tTQhSsGtDV8gfPYmFvyK4Yug&s",
     "charaIsFavorite": false
   },
   {
@@ -22,6 +22,12 @@
   {
     "charaNm": "테스트해야지",
     "charaUrl": "https://static.wikia.nocookie.net/wutheringwaves/images/thumb/1/1e/Character_Youhu_Portrait.png/300px-Character_Youhu_Portrait.png",
+    "charaIsFavorite": false
+  }
+  ,
+  {
+    "charaNm": "테스트해야지2",
+    "charaUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzDR8AI9j5Q4tTQhSsGtDV8gfPYmFvyK4Yug&s",
     "charaIsFavorite": false
   }
 ]
