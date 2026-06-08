@@ -1,16 +1,10 @@
 [
   {
-    "seriesNm": "띵페",
-    "seriesUrl": "https://image.toast.com/aaaaab/ticketlink/TKL_2/main_260430.jpg",
-    "seriesCountry": "한국",
-    "seriesCharas": "앙코,치사",
-    "seriesDate": "2023-05-15"
-  },
-  {
-    "seriesNm": "아키하바라 공연",
-    "seriesUrl": "https://upload3.inven.co.kr/upload/2025/11/17/bbs/i1999875404.png",
+    "seriesId": 0,
+    "seriesNm": "zozotown",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/zozotown_일본_2026-05-29/mainTheme.jpg",
     "seriesCountry": "일본",
-    "seriesCharas": "치사,앙코",
-    "seriesDate": "2022-03-20"
+    "seriesCharas": "장리,페비,카멜리아",
+    "seriesDate": "2026-05-29"
   }
 ]
