@@ -6,5 +6,13 @@
     "seriesCountry": "일본",
     "seriesCharas": "장리,페비,카멜리아",
     "seriesDate": "2026-05-29"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "3.3버전",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/mainTheme.jpg",
+    "seriesCountry": "버전",
+    "seriesCharas": "절지,기염,음림,플로로,상리요,카멜리아,시그리카,루크,장리,파수인,금희,치사,린네,모니에,히유키,에이메스,루실라,젠니,구원,로코코,카르티시아,카를로타,데니아,유노,아우구스타,루파,갈브레나,칸타렐라,브랜트,샤콘,페비,남랑자,여랑자",
+    "seriesDate": "2026-06-03"
   }
 ]
