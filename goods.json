@@ -1119,17 +1119,6 @@
     "goodsChara": "데니아",
     "goodsCategory": "아크릴블록",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/데니아_아크릴블록_45위안_단품.jpg",
-    "goodsMemo": "단품"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2026-06-03",
-    "goodsSeries": "3.3버전",
-    "goodsPrice": "45위안",
-    "goodsChara": "데니아",
-    "goodsCategory": "아크릴블록",
-    "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/데니아_아크릴블록_45위안_단품.png",
     "goodsMemo": "단품"
   },
