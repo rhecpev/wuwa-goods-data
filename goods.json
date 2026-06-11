@@ -1,6 +1,765 @@
 [
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "59위안",
+    "goodsChara": "갈브레나",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/갈브레나_키링_59위안_인형키링.png",
+    "goodsMemo": "인형키링"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "59위안",
+    "goodsChara": "구원",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/구원_키링_59위안_인형키링.png",
+    "goodsMemo": "인형키링"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "52위안",
+    "goodsChara": "남랑자,모니에,린네",
+    "goodsCategory": "그림액자",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/남랑자,모니에,린네_그림액자_52위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "20위안",
+    "goodsChara": "남랑자,여랑자,아우구스타,유노",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/남랑자,여랑자,아우구스타,유노_엽서_20위안_A세트.jpg",
+    "goodsMemo": "A세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "20위안",
+    "goodsChara": "남랑자,여랑자,치사",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/남랑자,여랑자,치사_엽서_20위안_C세트.png",
+    "goodsMemo": "C세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "사은품",
+    "goodsChara": "남랑자,여랑자",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/남랑자,여랑자_엽서_사은품_엽서세트구입시증정.png",
+    "goodsMemo": "엽서세트구입시증정"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "18위안",
+    "goodsChara": "남랑자",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/남랑자_캔뱃지_18위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "20위안",
+    "goodsChara": "남랑자",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/남랑자_포토카드_20위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "59위안",
+    "goodsChara": "로코코",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/로코코_키링_59위안_인형키링.png",
+    "goodsMemo": "인형키링"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "18위안",
+    "goodsChara": "루크",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/루크_캔뱃지_18위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "20위안",
+    "goodsChara": "루크",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/루크_포토카드_20위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "59위안",
+    "goodsChara": "루파",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/루파_키링_59위안_인형키링.png",
+    "goodsMemo": "인형키링"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "사은품",
+    "goodsChara": "린네",
+    "goodsCategory": "레이저티켓",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/린네_레이저티켓_사은품_사은품.png",
+    "goodsMemo": "사은품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "169위안",
+    "goodsChara": "린네",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/린네_세트_169위안_캔뱃지,아크릴스탠드,핑거보드키홀더,키홀더,색지.jpg",
+    "goodsMemo": "캔뱃지,아크릴스탠드,핑거보드키홀더,키홀더,색지"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "79위안",
+    "goodsChara": "린네",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/린네_세트_79위안_스트랩홀더,폰케이스,포토카드.jpg",
+    "goodsMemo": "스트랩홀더,폰케이스,포토카드"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "45위안",
+    "goodsChara": "린네",
+    "goodsCategory": "아크릴블록",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/린네_아크릴블록_45위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "49위안",
+    "goodsChara": "린네",
+    "goodsCategory": "아크릴스탠드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/린네_아크릴스탠드_49위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "69위안",
+    "goodsChara": "린네",
+    "goodsCategory": "아크릴스탠드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/린네_아크릴스탠드_69위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "사은품",
+    "goodsChara": "린네",
+    "goodsCategory": "아크릴스탠드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/린네_아크릴스탠드_사은품_사은품.png",
+    "goodsMemo": "사은품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "16위안",
+    "goodsChara": "린네",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/린네_캔뱃지_16위안_타입1.png",
+    "goodsMemo": "타입1"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "16위안",
+    "goodsChara": "린네",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/린네_캔뱃지_16위안_타입2.png",
+    "goodsMemo": "타입2"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "18위안",
+    "goodsChara": "린네",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/린네_캔뱃지_18위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "42위안",
+    "goodsChara": "린네",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/린네_키링_42위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "20위안",
+    "goodsChara": "린네",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/린네_포토카드_20위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "사은품",
+    "goodsChara": "린네",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/린네_포토카드_사은품_사은품.png",
+    "goodsMemo": "사은품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "사은품",
+    "goodsChara": "모니에",
+    "goodsCategory": "레이저티켓",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/모니에_레이저티켓_사은품_사은품.png",
+    "goodsMemo": "사은품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "149위안",
+    "goodsChara": "모니에",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/모니에_세트_149위안_팔찌,메세지카드.jpg",
+    "goodsMemo": "팔찌,메세지카드"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "169위안",
+    "goodsChara": "모니에",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/모니에_세트_169위안_캔뱃지,아크릴스탠드,금속뱃지,학생증,아크릴색지.png",
+    "goodsMemo": "캔뱃지,아크릴스탠드,금속뱃지,학생증,아크릴색지"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "45위안",
+    "goodsChara": "모니에",
+    "goodsCategory": "아크릴블록",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/모니에_아크릴블록_45위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "49위안",
+    "goodsChara": "모니에",
+    "goodsCategory": "아크릴스탠드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/모니에_아크릴스탠드_49위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "69위안",
+    "goodsChara": "모니에",
+    "goodsCategory": "아크릴스탠드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/모니에_아크릴스탠드_69위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "사은품",
+    "goodsChara": "모니에",
+    "goodsCategory": "아크릴스탠드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/모니에_아크릴스탠드_사은품_사은품.png",
+    "goodsMemo": "사은품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "16위안",
+    "goodsChara": "모니에",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/모니에_캔뱃지_16위안_타입1.png",
+    "goodsMemo": "타입1"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "16위안",
+    "goodsChara": "모니에",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/모니에_캔뱃지_16위안_타입2.png",
+    "goodsMemo": "타입2"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "18위안",
+    "goodsChara": "모니에",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/모니에_캔뱃지_18위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "42위안",
+    "goodsChara": "모니에",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/모니에_키링_42위안_단품.jpg",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "20위안",
+    "goodsChara": "모니에",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/모니에_포토카드_20위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "사은품",
+    "goodsChara": "모니에",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/모니에_포토카드_사은품_사은품.png",
+    "goodsMemo": "사은품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "59위안",
+    "goodsChara": "브렌트",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/브렌트_키링_59위안_인형키링.png",
+    "goodsMemo": "인형키링"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "59위안",
+    "goodsChara": "샤콘",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/샤콘_키링_59위안_인형키링.png",
+    "goodsMemo": "인형키링"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "18위안",
+    "goodsChara": "시그리카",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/시그리카_캔뱃지_18위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "20위안",
+    "goodsChara": "시그리카",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/시그리카_포토카드_20위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "59위안",
+    "goodsChara": "아우구스타",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/아우구스타_키링_59위안_인형키링.png",
+    "goodsMemo": "인형키링"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "52위안",
+    "goodsChara": "여랑자,모니에,린네",
+    "goodsCategory": "그림액자",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/여랑자,모니에,린네_그림액자_52위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "18위안",
+    "goodsChara": "여랑자",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/여랑자_캔뱃지_18위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "20위안",
+    "goodsChara": "여랑자",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/여랑자_포토카드_20위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "59위안",
+    "goodsChara": "유노",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/유노_키링_59위안_인형키링.png",
+    "goodsMemo": "인형키링"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "59위안",
+    "goodsChara": "젠니",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/젠니_키링_59위안_인형키링.png",
+    "goodsMemo": "인형키링"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "229위안",
+    "goodsChara": "치사",
+    "goodsCategory": "가방",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/치사_가방_229위안_치사학생증증정.jpg",
+    "goodsMemo": "치사학생증증정"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "35위안",
+    "goodsChara": "치사",
+    "goodsCategory": "냉장고자석",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/치사_냉장고자석_35위안_타입1.png",
+    "goodsMemo": "타입1"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "35위안",
+    "goodsChara": "치사",
+    "goodsCategory": "냉장고자석",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/치사_냉장고자석_35위안_타입2.png",
+    "goodsMemo": "타입2"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "35위안",
+    "goodsChara": "치사",
+    "goodsCategory": "냉장고자석",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/치사_냉장고자석_35위안_타입3.png",
+    "goodsMemo": "타입3"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "사은품",
+    "goodsChara": "치사",
+    "goodsCategory": "레이저티켓",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/치사_레이저티켓_사은품_사은품.png",
+    "goodsMemo": "사은품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "239위안",
+    "goodsChara": "치사",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/치사_세트_239위안_스노우볼,캔뱃지,아크릴스탠드,아크릴보드,팝업카드.jpg",
+    "goodsMemo": "스노우볼,캔뱃지,아크릴스탠드,아크릴보드,팝업카드"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "45위안",
+    "goodsChara": "치사",
+    "goodsCategory": "아크릴블록",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/치사_아크릴블록_45위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "49위안",
+    "goodsChara": "치사",
+    "goodsCategory": "아크릴스탠드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/치사_아크릴스탠드_49위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "69위안",
+    "goodsChara": "치사",
+    "goodsCategory": "아크릴스탠드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/치사_아크릴스탠드_69위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "사은품",
+    "goodsChara": "치사",
+    "goodsCategory": "아크릴스탠드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/치사_아크릴스탠드_사은품_사은품.png",
+    "goodsMemo": "사은품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "79위안",
+    "goodsChara": "치사",
+    "goodsCategory": "인형",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/치사_인형_79위안_단품.jpg",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "16위안",
+    "goodsChara": "치사",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/치사_캔뱃지_16위안_타입1.png",
+    "goodsMemo": "타입1"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "16위안",
+    "goodsChara": "치사",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/치사_캔뱃지_16위안_타입2.png",
+    "goodsMemo": "타입2"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "42위안",
+    "goodsChara": "치사",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/치사_키링_42위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "사은품",
+    "goodsChara": "치사",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/치사_포토카드_사은품_사은품.png",
+    "goodsMemo": "사은품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "59위안",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/카르티시아_키링_59위안_인형키링.png",
+    "goodsMemo": "인형키링"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "59위안",
+    "goodsChara": "카를로타",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/카를로타_키링_59위안_인형키링.png",
+    "goodsMemo": "인형키링"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "59위안",
+    "goodsChara": "칸타렐라",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/칸타렐라_키링_59위안_인형키링.png",
+    "goodsMemo": "인형키링"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "엽서",
+    "goodsChara": "페비,샤콘,젠니,카를로타,유노,아우구스타,카르티시아,여랑자,남랑자,칸타렐라,루파,브렌트,로코코,갈브레나,구원",
+    "goodsCategory": "",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/페비,샤콘,젠니,카를로타,유노,아우구스타,카르티시아,여랑자,남랑자,칸타렐라,루파,브렌트,로코코,갈브레나,구원__엽서_20위안_B세트.png",
+    "goodsMemo": "20위안_B세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "59위안",
+    "goodsChara": "페비",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/페비_키링_59위안_인형키링.png",
+    "goodsMemo": "인형키링"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2.8&3.0버전",
+    "goodsPrice": "59위안",
+    "goodsChara": "플로로",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/goods/플로로_키링_59위안_인형키링.png",
+    "goodsMemo": "인형키링"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2026-03-17",
     "goodsSeries": "3.1버전",
     "goodsPrice": "28위안",
@@ -117,8 +876,8 @@
     "goodsChara": "남랑자",
     "goodsCategory": "캔뱃지",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/goods/남랑자_캔뱃지_16위안_캔뱃지1.png",
-    "goodsMemo": "캔뱃지1"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/goods/남랑자_캔뱃지_16위안_타입1.png",
+    "goodsMemo": "타입1"
   },
   {
     "goodsId": 0,
@@ -128,8 +887,8 @@
     "goodsChara": "남랑자",
     "goodsCategory": "캔뱃지",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/goods/남랑자_캔뱃지_16위안_캔뱃지2.png",
-    "goodsMemo": "캔뱃지2"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/goods/남랑자_캔뱃지_16위안_타입2.png",
+    "goodsMemo": "타입2"
   },
   {
     "goodsId": 0,
@@ -337,8 +1096,8 @@
     "goodsChara": "루크",
     "goodsCategory": "캔뱃지",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/goods/루크_캔뱃지_16위안_캔뱃지1.png",
-    "goodsMemo": "캔뱃지1"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/goods/루크_캔뱃지_16위안_타입1.png",
+    "goodsMemo": "타입1"
   },
   {
     "goodsId": 0,
@@ -348,8 +1107,8 @@
     "goodsChara": "루크",
     "goodsCategory": "캔뱃지",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/goods/루크_캔뱃지_16위안_캔뱃지2.png",
-    "goodsMemo": "캔뱃지2"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/goods/루크_캔뱃지_16위안_타입2.png",
+    "goodsMemo": "타입2"
   },
   {
     "goodsId": 0,
@@ -722,8 +1481,8 @@
     "goodsChara": "에이메스",
     "goodsCategory": "캔뱃지",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/goods/에이메스_캔뱃지_16위안_캔뱃지1.png",
-    "goodsMemo": "캔뱃지1"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/goods/에이메스_캔뱃지_16위안_타입1.png",
+    "goodsMemo": "타입1"
   },
   {
     "goodsId": 0,
@@ -733,8 +1492,8 @@
     "goodsChara": "에이메스",
     "goodsCategory": "캔뱃지",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/goods/에이메스_캔뱃지_16위안_캔뱃지2.png",
-    "goodsMemo": "캔뱃지2"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/goods/에이메스_캔뱃지_16위안_타입2.png",
+    "goodsMemo": "타입2"
   },
   {
     "goodsId": 0,
@@ -832,8 +1591,8 @@
     "goodsChara": "여랑자",
     "goodsCategory": "캔뱃지",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/goods/여랑자_캔뱃지_16위안_캔뱃지1.png",
-    "goodsMemo": "캔뱃지1"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/goods/여랑자_캔뱃지_16위안_타입1.png",
+    "goodsMemo": "타입1"
   },
   {
     "goodsId": 0,
@@ -843,8 +1602,8 @@
     "goodsChara": "여랑자",
     "goodsCategory": "캔뱃지",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/goods/여랑자_캔뱃지_16위안_캔뱃지2.png",
-    "goodsMemo": "캔뱃지2"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/goods/여랑자_캔뱃지_16위안_타입2.png",
+    "goodsMemo": "타입2"
   },
   {
     "goodsId": 0,
@@ -1635,8 +2394,8 @@
     "goodsChara": "데니아",
     "goodsCategory": "캔뱃지",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/데니아_캔뱃지_16위안_단품.png",
-    "goodsMemo": "단품"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/데니아_캔뱃지_16위안_타입1.png",
+    "goodsMemo": "타입1"
   },
   {
     "goodsId": 0,
@@ -1646,8 +2405,8 @@
     "goodsChara": "데니아",
     "goodsCategory": "캔뱃지",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/데니아_캔뱃지_16위안_단품2.png",
-    "goodsMemo": "단품2"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/데니아_캔뱃지_16위안_타입2.png",
+    "goodsMemo": "타입2"
   },
   {
     "goodsId": 0,
@@ -2218,8 +2977,8 @@
     "goodsChara": "히유키",
     "goodsCategory": "캔뱃지",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/히유키_캔뱃지_16위안_단품.png",
-    "goodsMemo": "단품"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/히유키_캔뱃지_16위안_타입1.png",
+    "goodsMemo": "타입1"
   },
   {
     "goodsId": 0,
@@ -2229,8 +2988,8 @@
     "goodsChara": "히유키",
     "goodsCategory": "캔뱃지",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/히유키_캔뱃지_16위안_단품2.png",
-    "goodsMemo": "단품2"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/히유키_캔뱃지_16위안_타입2.png",
+    "goodsMemo": "타입2"
   },
   {
     "goodsId": 0,
