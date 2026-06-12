@@ -3052,7 +3052,7 @@
     "goodsSeries": "IPSTAR",
     "goodsPrice": "39위안",
     "goodsChara": "구원",
-    "goodsCategory": "구성품",
+    "goodsCategory": "냉장고자석",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/IPSTAR_중국_2026-06-06/goods/구원_냉장고자석_39위안_단품.png",
     "goodsMemo": "구원세트"
@@ -3088,7 +3088,7 @@
     "goodsCategory": "식탁보",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/IPSTAR_중국_2026-06-06/goods/구원_식탁보_음식구매랜덤사은품_LD.png",
-    "goodsMemo": "LD"
+    "goodsMemo": "구원세트"
   },
   {
     "goodsId": 0,
