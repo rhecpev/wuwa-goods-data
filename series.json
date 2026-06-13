@@ -1,6 +1,14 @@
 [
   {
     "seriesId": 0,
+    "seriesNm": "2.5버전",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.5버전_버전_2025-08-22/mainTheme.jpg",
+    "seriesCountry": "버전",
+    "seriesCharas": "금희,남랑자,루파,샤콘,여랑자,장리,젠니,카르티시아,칸타렐라,페비,플로로",
+    "seriesDate": "2025-08-22"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2.6버전",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.6버전_버전_2025-09-30/mainTheme.jpg",
     "seriesCountry": "버전",
