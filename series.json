@@ -1,6 +1,14 @@
 [
   {
     "seriesId": 0,
+    "seriesNm": "2.6버전",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.6버전_버전_2025-09-30/mainTheme.jpg",
+    "seriesCountry": "버전",
+    "seriesCharas": "상리요,아우구스타,유노,카르티시아,카멜리아,파수인",
+    "seriesDate": "2025-09-30"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2.7버전",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.7버전_버전_2025-11-11/mainTheme.jpg",
     "seriesCountry": "버전",
