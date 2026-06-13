@@ -50,5 +50,7 @@
   {"charaId": 0, "charaNm": "벨리나", "charaUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/character/belina.jpg", "charaIsFavorite": false},
   {"charaId": 0, "charaNm": "남랑자", "charaUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/character/nanrangja.jpg", "charaIsFavorite": false},
   {"charaId": 0, "charaNm": "양양", "charaUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/character/yangyang.jpg", "charaIsFavorite": false},
+  {"charaId": 0, "charaNm": "아브", "charaUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/character/popo.jpg", "charaIsFavorite": false},
+  {"charaId": 0, "charaNm": "아브대마왕", "charaUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/character/popoking.jpg", "charaIsFavorite": false},
   {"charaId": 0, "charaNm": "치샤", "charaUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/character/Chixia.jpg", "charaIsFavorite": false}
 ]
