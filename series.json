@@ -1,6 +1,14 @@
 [
   {
     "seriesId": 0,
+    "seriesNm": "2.1버전",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.1버전_버전_2025-03-25/mainTheme.jpg",
+    "seriesCountry": "버전",
+    "seriesCharas": "금희,기염,남랑자,로코코,브렌트,상리요,여랑자,음림,장리,절지,젠니,카를로타,카멜리아,파수인,페비,플로로",
+    "seriesDate": "2025-03-25"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2.2버전",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.2버전_버전_2025-04-25/mainTheme.jpg",
     "seriesCountry": "버전",
