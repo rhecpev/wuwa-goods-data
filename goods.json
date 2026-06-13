@@ -245,6 +245,17 @@
     "goodsId": 0,
     "goodsReleaseDate": "2025-06-10",
     "goodsSeries": "2.3버전",
+    "goodsPrice": "15위안",
+    "goodsChara": "브렌트,로코코",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/브렌트,로코코_포토카드_15위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-06-10",
+    "goodsSeries": "2.3버전",
     "goodsPrice": "29.9위안",
     "goodsChara": "브렌트",
     "goodsCategory": "새알심",
@@ -416,6 +427,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/샤콘_포토카드_구성품_조수와뭇별세트.png",
     "goodsMemo": "조수와뭇별세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-06-10",
+    "goodsSeries": "2.3버전",
+    "goodsPrice": "15위안",
+    "goodsChara": "설지,상리요,모르테피",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/설지,상리요,모르테피_포토카드_15위안_단품.png",
+    "goodsMemo": "단품"
   },
   {
     "goodsId": 0,
