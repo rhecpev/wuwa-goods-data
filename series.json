@@ -1,46 +1,6 @@
 [
   {
     "seriesId": 0,
-    "seriesNm": "2.8&3.0버전",
-    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.8&3.0버전_버전_2026-01-23/mainTheme.jpg",
-    "seriesCountry": "버전",
-    "seriesCharas": "갈브레나,구원,남랑자,로코코,루크,루파,린네,모니에,브렌트,샤콘,시그리카,아우구스타,여랑자,유노,젠니,치사,카르티시아,카를로타,칸타렐라,페비,플로로",
-    "seriesDate": "2026-01-23"
-  },
-  {
-    "seriesId": 0,
-    "seriesNm": "3.1버전",
-    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/mainTheme.jpg",
-    "seriesCountry": "버전",
-    "seriesCharas": "갈브레나,구원,금희,남랑자,루실라,루크,린네,모니에,시그리카,에이메스,여랑자,치사",
-    "seriesDate": "2026-03-17"
-  },
-  {
-    "seriesId": 0,
-    "seriesNm": "3.2버전",
-    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.2버전_버전_2026-04-29/mainTheme.jpg",
-    "seriesCountry": "버전",
-    "seriesCharas": "갈브레나,구원,금희,기염,남랑자,데니아,루실라,루크,린네,모니에,상리요,시그리카,에이메스,여랑자,음림,장리,절지,치사,카멜리아,파수인",
-    "seriesDate": "2026-04-29"
-  },
-  {
-    "seriesId": 0,
-    "seriesNm": "3.3버전",
-    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/mainTheme.jpg",
-    "seriesCountry": "버전",
-    "seriesCharas": "갈브레나,구원,금희,기염,남랑자,데니아,로코코,루실라,루크,루파,린네,모니에,브렌트,상리요,샤콘,시그리카,아우구스타,에이메스,여랑자,유노,음림,장리,절지,젠니,치사,카르티시아,카를로타,카멜리아,칸타렐라,파수인,페비,플로로,히유키",
-    "seriesDate": "2026-06-03"
-  },
-  {
-    "seriesId": 0,
-    "seriesNm": "IPSTAR",
-    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/IPSTAR_중국_2026-06-06/mainTheme.avif",
-    "seriesCountry": "중국",
-    "seriesCharas": "구원,치사,카르티시아,플로로",
-    "seriesDate": "2026-06-06"
-  },
-  {
-    "seriesId": 0,
     "seriesNm": "zozotown",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/zozotown_일본_2026-05-29/mainTheme.jpg",
     "seriesCountry": "일본",
