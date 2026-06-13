@@ -80,6 +80,17 @@
     "goodsId": 0,
     "goodsReleaseDate": "2025-06-10",
     "goodsSeries": "2.3버전",
+    "goodsPrice": "구성품",
+    "goodsChara": "남랑자,여랑자",
+    "goodsCategory": "뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/남랑자,여랑자_뱃지_구성품_조수와뭇별세트.png",
+    "goodsMemo": "조수와뭇별세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-06-10",
+    "goodsSeries": "2.3버전",
     "goodsPrice": "45위안",
     "goodsChara": "남랑자,여랑자",
     "goodsCategory": "세트",
