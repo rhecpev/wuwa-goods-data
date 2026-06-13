@@ -8873,8 +8873,8 @@
     "goodsChara": "갈브레나",
     "goodsCategory": "키링",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/갈브레나_키링_25위안_랜덤.png",
-    "goodsMemo": "랜덤"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/갈브레나_키링_25위안_B세트.png",
+    "goodsMemo": "B세트"
   },
   {
     "goodsId": 0,
@@ -8895,8 +8895,8 @@
     "goodsChara": "구원",
     "goodsCategory": "키링",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/구원_키링_25위안_랜덤.png",
-    "goodsMemo": "랜덤"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/구원_키링_25위안_B세트.png",
+    "goodsMemo": "B세트"
   },
   {
     "goodsId": 0,
@@ -8917,8 +8917,8 @@
     "goodsChara": "금희",
     "goodsCategory": "키링",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/금희_키링_25위안_랜덤.png",
-    "goodsMemo": "랜덤"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/금희_키링_25위안_A세트.png",
+    "goodsMemo": "A세트"
   },
   {
     "goodsId": 0,
@@ -8928,8 +8928,19 @@
     "goodsChara": "기염",
     "goodsCategory": "키링",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/기염_키링_25위안_랜덤.png",
-    "goodsMemo": "랜덤"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/기염_키링_25위안_A세트.png",
+    "goodsMemo": "A세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-06-03",
+    "goodsSeries": "3.3버전",
+    "goodsPrice": "175위안",
+    "goodsChara": "남랑자,여랑자,기염,금희,장리,절지,상리요",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/남랑자,여랑자,기염,금희,장리,절지,상리요_세트_175위안_A세트.png",
+    "goodsMemo": "A세트"
   },
   {
     "goodsId": 0,
@@ -9038,8 +9049,8 @@
     "goodsChara": "남랑자",
     "goodsCategory": "키링",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/남랑자_키링_25위안_랜덤.png",
-    "goodsMemo": "랜덤"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/남랑자_키링_25위안_A세트.png",
+    "goodsMemo": "A세트"
   },
   {
     "goodsId": 0,
@@ -9291,8 +9302,8 @@
     "goodsChara": "데니아",
     "goodsCategory": "키링",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/데니아_키링_25위안_랜덤.png",
-    "goodsMemo": "랜덤"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/데니아_키링_25위안_C세트.png",
+    "goodsMemo": "C세트"
   },
   {
     "goodsId": 0,
@@ -9478,8 +9489,8 @@
     "goodsChara": "루크",
     "goodsCategory": "키링",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/루크_키링_25위안_랜덤.png",
-    "goodsMemo": "랜덤"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/루크_키링_25위안_C세트.png",
+    "goodsMemo": "C세트"
   },
   {
     "goodsId": 0,
@@ -9522,8 +9533,8 @@
     "goodsChara": "루파",
     "goodsCategory": "키링",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/루파_키링_25위안_랜덤.png",
-    "goodsMemo": "랜덤"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/루파_키링_25위안_B세트.png",
+    "goodsMemo": "B세트"
   },
   {
     "goodsId": 0,
@@ -9535,6 +9546,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/루파_포토카드_구성품_조수와뭇별세트.png",
     "goodsMemo": "조수와뭇별세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-06-03",
+    "goodsSeries": "3.3버전",
+    "goodsPrice": "175위안",
+    "goodsChara": "린네,모니에,에이메스,루크,시그리카,히유키,데니아",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/린네,모니에,에이메스,루크,시그리카,히유키,데니아_세트_175위안_C세트.png",
+    "goodsMemo": "C세트"
   },
   {
     "goodsId": 0,
@@ -9577,8 +9599,8 @@
     "goodsChara": "린네",
     "goodsCategory": "키링",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/린네_키링_25위안_랜덤.png",
-    "goodsMemo": "랜덤"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/린네_키링_25위안_C세트.png",
+    "goodsMemo": "C세트"
   },
   {
     "goodsId": 0,
@@ -9709,8 +9731,8 @@
     "goodsChara": "모니에",
     "goodsCategory": "키링",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/모니에_키링_25위안_랜덤.png",
-    "goodsMemo": "랜덤"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/모니에_키링_25위안_C세트.png",
+    "goodsMemo": "C세트"
   },
   {
     "goodsId": 0,
@@ -9753,8 +9775,19 @@
     "goodsChara": "상리요",
     "goodsCategory": "키링",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/상리요_키링_25위안_랜덤.png",
-    "goodsMemo": "랜덤"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/상리요_키링_25위안_A세트.png",
+    "goodsMemo": "A세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-06-03",
+    "goodsSeries": "3.3버전",
+    "goodsPrice": "175위안",
+    "goodsChara": "샤콘,루파,아우구스타,유노,갈브레나,구원,치사",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/샤콘,루파,아우구스타,유노,갈브레나,구원,치사_세트_175위안_B세트.png",
+    "goodsMemo": "B세트"
   },
   {
     "goodsId": 0,
@@ -9764,8 +9797,8 @@
     "goodsChara": "샤콘",
     "goodsCategory": "키링",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/샤콘_키링_25위안_랜덤.png",
-    "goodsMemo": "랜덤"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/샤콘_키링_25위안_B세트.png",
+    "goodsMemo": "B세트"
   },
   {
     "goodsId": 0,
@@ -9808,8 +9841,8 @@
     "goodsChara": "시그리카",
     "goodsCategory": "키링",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/시그리카_키링_25위안_랜덤.png",
-    "goodsMemo": "랜덤"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/시그리카_키링_25위안_C세트.png",
+    "goodsMemo": "C세트"
   },
   {
     "goodsId": 0,
@@ -9852,8 +9885,8 @@
     "goodsChara": "아우구스타",
     "goodsCategory": "키링",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/아우구스타_키링_25위안_랜덤.png",
-    "goodsMemo": "랜덤"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/아우구스타_키링_25위안_B세트.png",
+    "goodsMemo": "B세트"
   },
   {
     "goodsId": 0,
@@ -9929,8 +9962,8 @@
     "goodsChara": "에이메스",
     "goodsCategory": "키링",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/에이메스_키링_25위안_랜덤.png",
-    "goodsMemo": "랜덤"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/에이메스_키링_25위안_C세트.png",
+    "goodsMemo": "C세트"
   },
   {
     "goodsId": 0,
@@ -10017,8 +10050,8 @@
     "goodsChara": "여랑자",
     "goodsCategory": "키링",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/여랑자_키링_25위안_랜덤.png",
-    "goodsMemo": "랜덤"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/여랑자_키링_25위안_A세트.png",
+    "goodsMemo": "A세트"
   },
   {
     "goodsId": 0,
@@ -10050,8 +10083,8 @@
     "goodsChara": "유노",
     "goodsCategory": "키링",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/유노_키링_25위안_랜덤.png",
-    "goodsMemo": "랜덤"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/유노_키링_25위안_B세트.png",
+    "goodsMemo": "B세트"
   },
   {
     "goodsId": 0,
@@ -10072,8 +10105,8 @@
     "goodsChara": "장리",
     "goodsCategory": "키링",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/장리_키링_25위안_랜덤.png",
-    "goodsMemo": "랜덤"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/장리_키링_25위안_A세트.png",
+    "goodsMemo": "A세트"
   },
   {
     "goodsId": 0,
@@ -10094,8 +10127,8 @@
     "goodsChara": "절지",
     "goodsCategory": "키링",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/절지_키링_25위안_랜덤.png",
-    "goodsMemo": "랜덤"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/절지_키링_25위안_A세트.png",
+    "goodsMemo": "A세트"
   },
   {
     "goodsId": 0,
@@ -10193,8 +10226,8 @@
     "goodsChara": "치사",
     "goodsCategory": "키링",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/치사_키링_25위안_랜덤.png",
-    "goodsMemo": "랜덤"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/치사_키링_25위안_B세트.png",
+    "goodsMemo": "B세트"
   },
   {
     "goodsId": 0,
@@ -10413,8 +10446,8 @@
     "goodsChara": "히유키",
     "goodsCategory": "키링",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/히유키_키링_25위안_랜덤.png",
-    "goodsMemo": "랜덤"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/히유키_키링_25위안_C세트.png",
+    "goodsMemo": "C세트"
   },
   {
     "goodsId": 0,
