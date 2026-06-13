@@ -1470,17 +1470,6 @@
     "goodsChara": "칸타렐라",
     "goodsCategory": "머들러",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.2버전_버전_2025-04-25/goods/칸타렐라_머들러_구성품_칸타렐라컵세트.jpg",
-    "goodsMemo": "칸타렐라컵세트"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2025-04-25",
-    "goodsSeries": "2.2버전",
-    "goodsPrice": "구성품",
-    "goodsChara": "칸타렐라",
-    "goodsCategory": "머들러",
-    "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.2버전_버전_2025-04-25/goods/칸타렐라_머들러_구성품_칸타렐라컵세트.png",
     "goodsMemo": "칸타렐라컵세트"
   },
@@ -1527,6 +1516,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.2버전_버전_2025-04-25/goods/칸타렐라_세트_189위안_피규어세트.jpg",
     "goodsMemo": "피규어세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-04-25",
+    "goodsSeries": "2.2버전",
+    "goodsPrice": "구성품",
+    "goodsChara": "칸타렐라",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.2버전_버전_2025-04-25/goods/칸타렐라_세트_구성품_칸타렐라컵세트.jpg",
+    "goodsMemo": "칸타렐라컵세트"
   },
   {
     "goodsId": 0,
