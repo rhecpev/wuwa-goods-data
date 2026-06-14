@@ -113,6 +113,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "데니아x레이저콜라보",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/데니아x레이저콜라보_기타_2026-05-25/mainTheme.avif",
+    "seriesCountry": "기타",
+    "seriesCharas": "데니아",
+    "seriesDate": "2026-05-25"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "식광수진",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/식광수진_중국_2026-06-18/mainTheme.png",
     "seriesCountry": "중국",
