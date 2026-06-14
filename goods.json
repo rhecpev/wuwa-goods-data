@@ -19688,5 +19688,38 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/파수인피규어_기타_2026-05-15/goods/파수인_피규어_339위안_단품.png",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-02-13",
+    "goodsSeries": "페비LD피규어",
+    "goodsPrice": "999위안",
+    "goodsChara": "페비",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/페비LD피규어_기타_2026-02-13/goods/페비_세트_999위안_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-02-13",
+    "goodsSeries": "페비LD피규어",
+    "goodsPrice": "구성품",
+    "goodsChara": "페비",
+    "goodsCategory": "카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/페비LD피규어_기타_2026-02-13/goods/페비_카드_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-02-13",
+    "goodsSeries": "페비LD피규어",
+    "goodsPrice": "구성품",
+    "goodsChara": "페비",
+    "goodsCategory": "피규어",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/페비LD피규어_기타_2026-02-13/goods/페비_피규어_구성품_세트.png",
+    "goodsMemo": "세트"
   }
 ]

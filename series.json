@@ -214,5 +214,13 @@
     "seriesCountry": "기타",
     "seriesCharas": "파수인",
     "seriesDate": "2026-05-15"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "페비LD피규어",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/페비LD피규어_기타_2026-02-13/mainTheme.jpg",
+    "seriesCountry": "기타",
+    "seriesCharas": "페비",
+    "seriesDate": "2026-02-13"
   }
 ]
