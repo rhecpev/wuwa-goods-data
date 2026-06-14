@@ -273,6 +273,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "볼따구",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/볼따구_중국_2025-06-25/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "금희,기염,남랑자,벨리나,상리요,앙코,여랑자,유호,음림,장리,절지,카멜리아,파수인",
+    "seriesDate": "2025-06-25"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "수월우이어폰콜라보",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/수월우이어폰콜라보_중국_2026-01-23/mainTheme.jpg",
     "seriesCountry": "중국",
