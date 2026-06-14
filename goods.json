@@ -19086,6 +19086,83 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "수월우이어폰콜라보",
+    "goodsPrice": "299위안",
+    "goodsChara": "남랑자,여랑자",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/수월우이어폰콜라보_중국_2026-01-23/goods/남랑자,여랑자_세트_299위안_세트.jpg",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "수월우이어폰콜라보",
+    "goodsPrice": "구성품",
+    "goodsChara": "남랑자,여랑자",
+    "goodsCategory": "스트랩",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/수월우이어폰콜라보_중국_2026-01-23/goods/남랑자,여랑자_스트랩_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "수월우이어폰콜라보",
+    "goodsPrice": "구성품",
+    "goodsChara": "남랑자,여랑자",
+    "goodsCategory": "이어폰",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/수월우이어폰콜라보_중국_2026-01-23/goods/남랑자,여랑자_이어폰_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "수월우이어폰콜라보",
+    "goodsPrice": "구성품",
+    "goodsChara": "남랑자",
+    "goodsCategory": "레이저티켓",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/수월우이어폰콜라보_중국_2026-01-23/goods/남랑자_레이저티켓_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "수월우이어폰콜라보",
+    "goodsPrice": "구성품",
+    "goodsChara": "남랑자",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/수월우이어폰콜라보_중국_2026-01-23/goods/남랑자_캔뱃지_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "수월우이어폰콜라보",
+    "goodsPrice": "구성품",
+    "goodsChara": "여랑자",
+    "goodsCategory": "레이저티켓",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/수월우이어폰콜라보_중국_2026-01-23/goods/여랑자_레이저티켓_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "수월우이어폰콜라보",
+    "goodsPrice": "구성품",
+    "goodsChara": "여랑자",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/수월우이어폰콜라보_중국_2026-01-23/goods/여랑자_캔뱃지_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2026-06-18",
     "goodsSeries": "식광수진",
     "goodsPrice": "사은품",
