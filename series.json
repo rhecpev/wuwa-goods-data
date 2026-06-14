@@ -329,6 +329,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "조석소회",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/조석소회_중국_2024-12-06/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "감심,금희,기염,남랑자,능양,단근,도기,모르테피,벨리나,산화,상리요,설지,알토,앙코,양양,여랑자,연무,유호,음림,장리,절지,치샤,카카루,파수인",
+    "seriesDate": "2024-12-06"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "징동",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/징동_중국_2025-06-13/mainTheme.png",
     "seriesCountry": "중국",
