@@ -73,6 +73,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2025MOCHIPICO",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025MOCHIPICO_중국_2025-10-31/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "금희,기염,남랑자,상리요,여랑자,장리",
+    "seriesDate": "2025-10-31"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2026miniso",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026miniso_중국_2026-05-06/mainTheme.avif",
     "seriesCountry": "중국",

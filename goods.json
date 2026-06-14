@@ -8647,6 +8647,72 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2025-10-31",
+    "goodsSeries": "2025MOCHIPICO",
+    "goodsPrice": "88위안",
+    "goodsChara": "금희",
+    "goodsCategory": "인형",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025MOCHIPICO_중국_2025-10-31/goods/금희_인형_88위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-10-31",
+    "goodsSeries": "2025MOCHIPICO",
+    "goodsPrice": "88위안",
+    "goodsChara": "기염",
+    "goodsCategory": "인형",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025MOCHIPICO_중국_2025-10-31/goods/기염_인형_88위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-10-31",
+    "goodsSeries": "2025MOCHIPICO",
+    "goodsPrice": "88위안",
+    "goodsChara": "남랑자",
+    "goodsCategory": "인형",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025MOCHIPICO_중국_2025-10-31/goods/남랑자_인형_88위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-10-31",
+    "goodsSeries": "2025MOCHIPICO",
+    "goodsPrice": "88위안",
+    "goodsChara": "상리요",
+    "goodsCategory": "인형",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025MOCHIPICO_중국_2025-10-31/goods/상리요_인형_88위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-10-31",
+    "goodsSeries": "2025MOCHIPICO",
+    "goodsPrice": "88위안",
+    "goodsChara": "여랑자",
+    "goodsCategory": "인형",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025MOCHIPICO_중국_2025-10-31/goods/여랑자_인형_88위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-10-31",
+    "goodsSeries": "2025MOCHIPICO",
+    "goodsPrice": "88위안",
+    "goodsChara": "장리",
+    "goodsCategory": "인형",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025MOCHIPICO_중국_2025-10-31/goods/장리_인형_88위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2026-05-06",
     "goodsSeries": "2026miniso",
     "goodsPrice": "25위안",
