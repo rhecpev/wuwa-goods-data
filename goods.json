@@ -18745,6 +18745,28 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2026-06-27",
+    "goodsSeries": "카멜리아인형",
+    "goodsPrice": "19000포인트+0.01위안",
+    "goodsChara": "카멜리아",
+    "goodsCategory": "인형",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/카멜리아인형_중국_2026-06-27/goods/카멜리아_인형_19000포인트+0.01위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-06-27",
+    "goodsSeries": "카멜리아인형",
+    "goodsPrice": "95위안",
+    "goodsChara": "카멜리아",
+    "goodsCategory": "인형",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/카멜리아인형_중국_2026-06-27/goods/카멜리아_인형_95위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2026-05-15",
     "goodsSeries": "파수인피규어",
     "goodsPrice": "339위안",
