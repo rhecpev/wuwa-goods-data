@@ -281,6 +281,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "무신사",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/무신사_한국_2026-05-19/mainTheme.jpg",
+    "seriesCountry": "한국",
+    "seriesCharas": "남랑자,데니아,린네,에이메스",
+    "seriesDate": "2026-05-19"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "베이통1차콜라보",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/베이통1차콜라보_중국_2024-07-05/mainTheme.webp",
     "seriesCountry": "중국",
