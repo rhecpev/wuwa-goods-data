@@ -289,6 +289,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "유광비어",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/유광비어_중국_2025-07-21/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "남랑자,브렌트,여랑자,카를로타,페비",
+    "seriesDate": "2025-07-21"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "장리피규어",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/장리피규어_기타_2025-09-20/mainTheme.avif",
     "seriesCountry": "기타",
