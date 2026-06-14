@@ -73,6 +73,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2025CICF×AGF",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025CICF×AGF_중국_2025-10-02/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "아우구스타,유노",
+    "seriesDate": "2025-10-02"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2025MOCHIPICO",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025MOCHIPICO_중국_2025-10-31/mainTheme.png",
     "seriesCountry": "중국",
