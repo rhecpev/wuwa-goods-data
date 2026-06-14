@@ -193,6 +193,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "카멜리아피규어",
+    "seriesUrl": "",
+    "seriesCountry": "기타",
+    "seriesCharas": "카멜리아",
+    "seriesDate": "2026-02-27"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "파수인피규어",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/파수인피규어_기타_2026-05-15/mainTheme.png",
     "seriesCountry": "기타",

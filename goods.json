@@ -19592,6 +19592,39 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2026-02-27",
+    "goodsSeries": "카멜리아피규어",
+    "goodsPrice": "799위안",
+    "goodsChara": "카멜리아",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/카멜리아피규어_기타_2026-02-27/goods/카멜리아_세트_799위안_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-02-27",
+    "goodsSeries": "카멜리아피규어",
+    "goodsPrice": "구성품",
+    "goodsChara": "카멜리아",
+    "goodsCategory": "카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/카멜리아피규어_기타_2026-02-27/goods/카멜리아_카드_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-02-27",
+    "goodsSeries": "카멜리아피규어",
+    "goodsPrice": "구성품",
+    "goodsChara": "카멜리아",
+    "goodsCategory": "피규어",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/카멜리아피규어_기타_2026-02-27/goods/카멜리아_피규어_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2026-05-15",
     "goodsSeries": "파수인피규어",
     "goodsPrice": "339위안",
