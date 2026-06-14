@@ -153,6 +153,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "금희&장리넨도로이드",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/금희&장리넨도로이드_기타_2026-02-09/mainTheme.png",
+    "seriesCountry": "기타",
+    "seriesCharas": "금희,장리",
+    "seriesDate": "2026-02-09"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "단말기에코",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/단말기에코_중국_2026-04-24/mainTheme.png",
     "seriesCountry": "중국",

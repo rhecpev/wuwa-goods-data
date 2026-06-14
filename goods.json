@@ -18173,6 +18173,28 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2026-02-09",
+    "goodsSeries": "금희&장리넨도로이드",
+    "goodsPrice": "359위안",
+    "goodsChara": "금희",
+    "goodsCategory": "넨도로이드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/금희&장리넨도로이드_기타_2026-02-09/goods/금희_넨도로이드_359위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-02-09",
+    "goodsSeries": "금희&장리넨도로이드",
+    "goodsPrice": "359위안",
+    "goodsChara": "장리",
+    "goodsCategory": "넨도로이드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/금희&장리넨도로이드_기타_2026-02-09/goods/장리_넨도로이드_359위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2026-04-24",
     "goodsSeries": "단말기에코",
     "goodsPrice": "구성품",
