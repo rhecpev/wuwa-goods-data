@@ -113,6 +113,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "nightTale",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/nightTale_중국_2026-03-31/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "남랑자,아브,여랑자,플로로",
+    "seriesDate": "2026-03-31"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "zozotown",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/zozotown_일본_2026-05-29/mainTheme.jpg",
     "seriesCountry": "일본",
