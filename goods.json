@@ -38,10 +38,65 @@
     "goodsSeries": "1.0버전",
     "goodsPrice": "59위안",
     "goodsChara": "기염",
+    "goodsCategory": "뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/기염_뱃지_59위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-04",
+    "goodsSeries": "1.0버전",
+    "goodsPrice": "25위안",
+    "goodsChara": "기염",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/기염_세트_25위안_기염세트.png",
+    "goodsMemo": "기염세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-04",
+    "goodsSeries": "1.0버전",
+    "goodsPrice": "59위안",
+    "goodsChara": "기염",
     "goodsCategory": "아크릴블록",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/기염_아크릴블록_59위안_단품.png",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-04",
+    "goodsSeries": "1.0버전",
+    "goodsPrice": "69위안",
+    "goodsChara": "기염",
+    "goodsCategory": "아크릴스탠드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/기염_아크릴스탠드_69위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-04",
+    "goodsSeries": "1.0버전",
+    "goodsPrice": "타입1",
+    "goodsChara": "기염",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/기염_캔뱃지_타입1_기염세트.png",
+    "goodsMemo": "기염세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-04",
+    "goodsSeries": "1.0버전",
+    "goodsPrice": "타입2",
+    "goodsChara": "기염",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/기염_캔뱃지_타입2_기염세트.png",
+    "goodsMemo": "기염세트"
   },
   {
     "goodsId": 0,
@@ -58,12 +113,34 @@
     "goodsId": 0,
     "goodsReleaseDate": "2024-07-04",
     "goodsSeries": "1.0버전",
+    "goodsPrice": "199위안",
+    "goodsChara": "기염",
+    "goodsCategory": "피규어",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/기염_피규어_199위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-04",
+    "goodsSeries": "1.0버전",
     "goodsPrice": "59위안",
     "goodsChara": "남랑자",
     "goodsCategory": "아크릴스탠드",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/남랑자_아크릴스탠드_59위안_단품.png",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-04",
+    "goodsSeries": "1.0버전",
+    "goodsPrice": "25위안",
+    "goodsChara": "능양",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/능양_세트_25위안_능양세트.png",
+    "goodsMemo": "능양세트"
   },
   {
     "goodsId": 0,
@@ -85,6 +162,39 @@
     "goodsCategory": "아크릴스탠드",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/능양_아크릴스탠드_59위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-04",
+    "goodsSeries": "1.0버전",
+    "goodsPrice": "타입1",
+    "goodsChara": "능양",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/능양_캔뱃지_타입1_능양세트.png",
+    "goodsMemo": "능양세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-04",
+    "goodsSeries": "1.0버전",
+    "goodsPrice": "타입2",
+    "goodsChara": "능양",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/능양_캔뱃지_타입2_능양세트.png",
+    "goodsMemo": "능양세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-04",
+    "goodsSeries": "1.0버전",
+    "goodsPrice": "139위안",
+    "goodsChara": "능양",
+    "goodsCategory": "컵",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/능양_컵_139위안_단품.png",
     "goodsMemo": "단품"
   },
   {
@@ -113,6 +223,17 @@
     "goodsId": 0,
     "goodsReleaseDate": "2024-07-04",
     "goodsSeries": "1.0버전",
+    "goodsPrice": "25위안",
+    "goodsChara": "설지",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/설지_세트_25위안_설지세트.png",
+    "goodsMemo": "설지세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-04",
+    "goodsSeries": "1.0버전",
     "goodsPrice": "59위안",
     "goodsChara": "설지",
     "goodsCategory": "아크릴블록",
@@ -130,6 +251,39 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/설지_아크릴스탠드_59위안_단품.png",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-04",
+    "goodsSeries": "1.0버전",
+    "goodsPrice": "타입1",
+    "goodsChara": "설지",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/설지_캔뱃지_타입1_설지세트.png",
+    "goodsMemo": "설지세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-04",
+    "goodsSeries": "1.0버전",
+    "goodsPrice": "타입2",
+    "goodsChara": "설지",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/설지_캔뱃지_타입2_설지세트.png",
+    "goodsMemo": "설지세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-04",
+    "goodsSeries": "1.0버전",
+    "goodsPrice": "25위안",
+    "goodsChara": "양양",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/양양_세트_25위안_양양세트.png",
+    "goodsMemo": "양양세트"
   },
   {
     "goodsId": 0,
@@ -179,6 +333,28 @@
     "goodsId": 0,
     "goodsReleaseDate": "2024-07-04",
     "goodsSeries": "1.0버전",
+    "goodsPrice": "타입1",
+    "goodsChara": "양양",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/양양_캔뱃지_타입1_양양세트.png",
+    "goodsMemo": "양양세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-04",
+    "goodsSeries": "1.0버전",
+    "goodsPrice": "타입2",
+    "goodsChara": "양양",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/양양_캔뱃지_타입2_양양세트.png",
+    "goodsMemo": "양양세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-04",
+    "goodsSeries": "1.0버전",
     "goodsPrice": "사은품",
     "goodsChara": "양양",
     "goodsCategory": "코스터",
@@ -214,10 +390,65 @@
     "goodsSeries": "1.0버전",
     "goodsPrice": "59위안",
     "goodsChara": "음림",
+    "goodsCategory": "뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/음림_뱃지_59위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-04",
+    "goodsSeries": "1.0버전",
+    "goodsPrice": "25위안",
+    "goodsChara": "음림",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/음림_세트_25위안_음림세트.png",
+    "goodsMemo": "음림세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-04",
+    "goodsSeries": "1.0버전",
+    "goodsPrice": "59위안",
+    "goodsChara": "음림",
     "goodsCategory": "아크릴블록",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/음림_아크릴블록_59위안_단품.png",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-04",
+    "goodsSeries": "1.0버전",
+    "goodsPrice": "69위안",
+    "goodsChara": "음림",
+    "goodsCategory": "아크릴스탠드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/음림_아크릴스탠드_69위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-04",
+    "goodsSeries": "1.0버전",
+    "goodsPrice": "타입1",
+    "goodsChara": "음림",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/음림_캔뱃지_타입1_음림세트.png",
+    "goodsMemo": "음림세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-04",
+    "goodsSeries": "1.0버전",
+    "goodsPrice": "타입2",
+    "goodsChara": "음림",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/음림_캔뱃지_타입2_음림세트.png",
+    "goodsMemo": "음림세트"
   },
   {
     "goodsId": 0,
@@ -228,6 +459,17 @@
     "goodsCategory": "키링",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/음림_키링_49위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-04",
+    "goodsSeries": "1.0버전",
+    "goodsPrice": "469위안",
+    "goodsChara": "음림",
+    "goodsCategory": "키보드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/음림_키보드_469위안_단품.png",
     "goodsMemo": "단품"
   },
   {
@@ -245,12 +487,45 @@
     "goodsId": 0,
     "goodsReleaseDate": "2024-07-04",
     "goodsSeries": "1.0버전",
+    "goodsPrice": "25위안",
+    "goodsChara": "치샤",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/치샤_세트_25위안_치샤세트.png",
+    "goodsMemo": "치샤세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-04",
+    "goodsSeries": "1.0버전",
     "goodsPrice": "59위안",
     "goodsChara": "치샤",
     "goodsCategory": "아크릴블록",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/치샤_아크릴블록_59위안_단품.png",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-04",
+    "goodsSeries": "1.0버전",
+    "goodsPrice": "타입1",
+    "goodsChara": "치샤",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/치샤_캔뱃지_타입1_치샤세트.png",
+    "goodsMemo": "치샤세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-04",
+    "goodsSeries": "1.0버전",
+    "goodsPrice": "타입2",
+    "goodsChara": "치샤",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/치샤_캔뱃지_타입2_치샤세트.png",
+    "goodsMemo": "치샤세트"
   },
   {
     "goodsId": 0,
