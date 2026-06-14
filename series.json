@@ -281,11 +281,19 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "베이통1차콜라보",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/베이통1차콜라보_중국_2024-07-05/mainTheme.webp",
+    "seriesCountry": "중국",
+    "seriesCharas": "기염,음림",
+    "seriesDate": "2024-07-05"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "베이통2차콜라보",
-    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/베이통2차콜라보_중국_2026-12-09/mainTheme.jpg",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/베이통2차콜라보_중국_2025-12-09/mainTheme.jpg",
     "seriesCountry": "중국",
     "seriesCharas": "카르티시아,플로로",
-    "seriesDate": "2026-12-09"
+    "seriesDate": "2025-12-09"
   },
   {
     "seriesId": 0,
