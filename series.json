@@ -1,11 +1,19 @@
 [
   {
     "seriesId": 0,
+    "seriesNm": "1.1~1.3버전",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.1~1.3버전_버전_2024-10-25/mainTheme.jpg",
+    "seriesCountry": "버전",
+    "seriesCharas": "감심,금희,기염,남랑자,단근,산화,상리요,설지,알토,앙코,양양,여랑자,음림,장리,절지,치샤,파수인,플로로",
+    "seriesDate": "2024-10-25"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "1.4버전",
-    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.4버전_버전_2025-12-24/mainTheme.webp",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.4버전_버전_2024-12-24/mainTheme.webp",
     "seriesCountry": "버전",
     "seriesCharas": "감심,남랑자,능양,루미,벨리나,아브,앙코,여랑자,음림,장리,절지,카멜리아,카카루",
-    "seriesDate": "2025-12-24"
+    "seriesDate": "2024-12-24"
   },
   {
     "seriesId": 0,
