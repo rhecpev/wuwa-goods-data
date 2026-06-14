@@ -15101,5 +15101,38 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/식광수진_중국_2026-06-18/goods/카를로타_포토카드_타입2_카를로타포토카드세트.png",
     "goodsMemo": "카를로타포토카드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-09-20",
+    "goodsSeries": "장리피규어",
+    "goodsPrice": "699위안",
+    "goodsChara": "장리",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/장리피규어_기타_2025-09-20/goods/장리_세트_699위안_장리피규어.png",
+    "goodsMemo": "장리피규어"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-09-20",
+    "goodsSeries": "장리피규어",
+    "goodsPrice": "구성품",
+    "goodsChara": "장리",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/장리피규어_기타_2025-09-20/goods/장리_포토카드_구성품_장리피규어.png",
+    "goodsMemo": "장리피규어"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-09-20",
+    "goodsSeries": "장리피규어",
+    "goodsPrice": "구성품",
+    "goodsChara": "장리",
+    "goodsCategory": "피규어",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/장리피규어_기타_2025-09-20/goods/장리_피규어_구성품_장리피규어.png",
+    "goodsMemo": "장리피규어"
   }
 ]

@@ -118,5 +118,13 @@
     "seriesCountry": "중국",
     "seriesCharas": "브렌트,아우구스타,유노,카를로타",
     "seriesDate": "2026-06-18"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "장리피규어",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/장리피규어_기타_2025-09-20/mainTheme.avif",
+    "seriesCountry": "기타",
+    "seriesCharas": "장리",
+    "seriesDate": "2025-09-20"
   }
 ]
