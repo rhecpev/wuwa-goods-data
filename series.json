@@ -73,6 +73,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2026miniso",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026miniso_중국_2026-05-06/mainTheme.avif",
+    "seriesCountry": "중국",
+    "seriesCharas": "남랑자,루크,시그리카,아브,에이메스,여랑자",
+    "seriesDate": "2026-05-06"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "3.1버전",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/mainTheme.jpg",
     "seriesCountry": "버전",
