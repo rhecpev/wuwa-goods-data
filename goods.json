@@ -20263,6 +20263,39 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2025-12-31",
+    "goodsSeries": "젠니특설굿즈",
+    "goodsPrice": "189위안",
+    "goodsChara": "젠니",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/젠니특설굿즈_중국_2025-12-31/goods/젠니_세트_189위안_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-12-31",
+    "goodsSeries": "젠니특설굿즈",
+    "goodsPrice": "구성품",
+    "goodsChara": "젠니",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/젠니특설굿즈_중국_2025-12-31/goods/젠니_캔뱃지_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-12-31",
+    "goodsSeries": "젠니특설굿즈",
+    "goodsPrice": "발판포함",
+    "goodsChara": "젠니",
+    "goodsCategory": "피규어",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/젠니특설굿즈_중국_2025-12-31/goods/젠니_피규어_발판포함_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2026-06-27",
     "goodsSeries": "카멜리아인형",
     "goodsPrice": "19000포인트+0.01위안",

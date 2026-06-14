@@ -217,6 +217,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "젠니특설굿즈",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/젠니특설굿즈_중국_2025-12-31/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "젠니",
+    "seriesDate": "2025-12-31"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "카멜리아인형",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/카멜리아인형_중국_2026-06-27/mainTheme.png",
     "seriesCountry": "중국",
