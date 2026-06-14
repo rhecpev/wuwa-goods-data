@@ -145,6 +145,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "ChinaJoy",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/ChinaJoy_중국_2025-08-07/mainTheme.avif",
+    "seriesCountry": "중국",
+    "seriesCharas": "남랑자,여랑자,젠니,카르티시아",
+    "seriesDate": "2025-08-07"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "IPSTAR",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/IPSTAR_중국_2026-06-06/mainTheme.avif",
     "seriesCountry": "중국",
@@ -174,6 +182,14 @@
     "seriesCountry": "중국",
     "seriesCharas": "남랑자,아브,여랑자,플로로",
     "seriesDate": "2026-03-31"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "yogoods",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/yogoods_중국_2025-12-12/mainTheme.avif",
+    "seriesCountry": "중국",
+    "seriesCharas": "브렌트,젠니,카르티시아,칸타렐라",
+    "seriesDate": "2025-12-12"
   },
   {
     "seriesId": 0,
