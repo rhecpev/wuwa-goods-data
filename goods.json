@@ -15530,5 +15530,16 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/장리피규어_기타_2025-09-20/goods/장리_피규어_구성품_장리피규어.png",
     "goodsMemo": "장리피규어"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-05-15",
+    "goodsSeries": "파수인피규어",
+    "goodsPrice": "339위안",
+    "goodsChara": "파수인",
+    "goodsCategory": "피규어",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/파수인피규어_기타_2026-05-15/goods/파수인_피규어_339위안_단품.png",
+    "goodsMemo": "단품"
   }
 ]
