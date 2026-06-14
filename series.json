@@ -81,6 +81,22 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2025KUROFEST",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "금희,남랑자,루파,아브,여랑자,카르티시아",
+    "seriesDate": "2025-08-09"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "2025KUROFEST카니발",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST카니발_중국_2025-08-09/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "금희,루파,브렌트,카르티시아,페비,플로로",
+    "seriesDate": "2025-08-09"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2025MOCHIPICO",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025MOCHIPICO_중국_2025-10-31/mainTheme.png",
     "seriesCountry": "중국",
