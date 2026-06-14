@@ -169,6 +169,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "기몽환영",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/기몽환영_일본_2025-08-15/mainTheme.png",
+    "seriesCountry": "일본",
+    "seriesCharas": "금희,브렌트,상리요,장리,페비",
+    "seriesDate": "2025-08-15"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "단말기에코",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/단말기에코_중국_2026-04-24/mainTheme.png",
     "seriesCountry": "중국",
