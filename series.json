@@ -185,6 +185,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "맑은날의약속카페",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/맑은날의약속카페_중국_2026-01-01/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "남랑자,여랑자",
+    "seriesDate": "2026-01-01"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "수월우이어폰콜라보",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/수월우이어폰콜라보_중국_2026-01-23/mainTheme.jpg",
     "seriesCountry": "중국",
