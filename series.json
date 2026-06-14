@@ -110,5 +110,13 @@
     "seriesCountry": "일본",
     "seriesCharas": "장리,카멜리아,페비",
     "seriesDate": "2026-05-29"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "식광수진",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/식광수진_중국_2026-06-18/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "브렌트,아우구스타,유노,카를로타",
+    "seriesDate": "2026-06-18"
   }
 ]
