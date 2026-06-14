@@ -19625,6 +19625,61 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2026-02-26",
+    "goodsSeries": "파수인LD피규어",
+    "goodsPrice": "구성품",
+    "goodsChara": "파수인",
+    "goodsCategory": "레이저티켓",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/파수인LD피규어_기타_2026-02-26/goods/파수인_레이저티켓_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-02-26",
+    "goodsSeries": "파수인LD피규어",
+    "goodsPrice": "499위안",
+    "goodsChara": "파수인",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/파수인LD피규어_기타_2026-02-26/goods/파수인_세트_499위안_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-02-26",
+    "goodsSeries": "파수인LD피규어",
+    "goodsPrice": "구성품",
+    "goodsChara": "파수인",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/파수인LD피규어_기타_2026-02-26/goods/파수인_캔뱃지_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-02-26",
+    "goodsSeries": "파수인LD피규어",
+    "goodsPrice": "구성품",
+    "goodsChara": "파수인",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/파수인LD피규어_기타_2026-02-26/goods/파수인_키링_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-02-26",
+    "goodsSeries": "파수인LD피규어",
+    "goodsPrice": "구성품",
+    "goodsChara": "파수인",
+    "goodsCategory": "피규어",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/파수인LD피규어_기타_2026-02-26/goods/파수인_피규어_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2026-05-15",
     "goodsSeries": "파수인피규어",
     "goodsPrice": "339위안",
