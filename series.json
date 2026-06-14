@@ -105,6 +105,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2025이치방쿠지",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025이치방쿠지_중국_2025-11-28/mainTheme.avif",
+    "seriesCountry": "중국",
+    "seriesCharas": "금희,기염,남랑자,상리요,여랑자,장리,카멜리아,파수인",
+    "seriesDate": "2025-11-28"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2026miniso",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026miniso_중국_2026-05-06/mainTheme.avif",
     "seriesCountry": "중국",
