@@ -113,6 +113,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "karasumaya",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/karasumaya_중국_2026-01-31/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "남랑자,여랑자,카멜리아,파수인",
+    "seriesDate": "2026-01-31"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "nightTale",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/nightTale_중국_2026-03-31/mainTheme.png",
     "seriesCountry": "중국",
