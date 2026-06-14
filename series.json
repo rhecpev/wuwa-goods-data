@@ -321,6 +321,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "징동",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/징동_중국_2025-06-13/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "남랑자,아브,여랑자",
+    "seriesDate": "2025-06-13"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "카멜리아인형",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/카멜리아인형_중국_2026-06-27/mainTheme.png",
     "seriesCountry": "중국",
