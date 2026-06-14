@@ -217,6 +217,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "벨리나LD피규어",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/벨리나LD피규어_중국_2025-09-28/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "벨리나",
+    "seriesDate": "2025-09-28"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "수월우이어폰콜라보",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/수월우이어폰콜라보_중국_2026-01-23/mainTheme.jpg",
     "seriesCountry": "중국",
