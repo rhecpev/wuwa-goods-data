@@ -81,6 +81,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2026신년",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026신년_중국_2026-01-31/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "금희,남랑자,루크,린네,모니에,에이메스,여랑자,장리,카멜리아,파수인",
+    "seriesDate": "2026-01-31"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "3.1버전",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/mainTheme.jpg",
     "seriesCountry": "버전",
