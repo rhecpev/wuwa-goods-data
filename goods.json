@@ -29291,5 +29291,38 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/페비LD피규어_기타_2026-02-13/goods/페비_피규어_구성품_세트.png",
     "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-02-05",
+    "goodsSeries": "플릿스노우플러프를찾아라",
+    "goodsPrice": "랜덤",
+    "goodsChara": "루크,남랑자,여랑자,에이메스",
+    "goodsCategory": "클리어파일",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/플릿스노우플러프를찾아라_일본_2026-02-05/goods/루크,남랑자,여랑자,에이메스_클리어파일_랜덤_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-02-05",
+    "goodsSeries": "플릿스노우플러프를찾아라",
+    "goodsPrice": "랜덤",
+    "goodsChara": "에이메스,남랑자,여랑자",
+    "goodsCategory": "스티커",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/플릿스노우플러프를찾아라_일본_2026-02-05/goods/에이메스,남랑자,여랑자_스티커_랜덤_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-02-05",
+    "goodsSeries": "플릿스노우플러프를찾아라",
+    "goodsPrice": "랜덤",
+    "goodsChara": "에이메스",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/플릿스노우플러프를찾아라_일본_2026-02-05/goods/에이메스_포토카드_랜덤_단품.png",
+    "goodsMemo": "단품"
   }
 ]

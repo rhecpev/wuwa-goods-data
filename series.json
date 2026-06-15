@@ -430,5 +430,13 @@
     "seriesCountry": "기타",
     "seriesCharas": "페비",
     "seriesDate": "2026-02-13"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "플릿스노우플러프를찾아라",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/플릿스노우플러프를찾아라_일본_2026-02-05/mainTheme.jpg",
+    "seriesCountry": "일본",
+    "seriesCharas": "남랑자,루크,에이메스,여랑자",
+    "seriesDate": "2026-02-05"
   }
 ]
