@@ -361,6 +361,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "일본2주년",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/일본2주년_일본_2026-05-30/maintheme.jpg",
+    "seriesCountry": "일본",
+    "seriesCharas": "남랑자,데니아,루실라,루크,린네,모니에,시그리카,아브,에이메스,여랑자,젠니,카르티시아,카를로타,파수인,히유키",
+    "seriesDate": "2026-05-30"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "장리피규어",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/장리피규어_기타_2025-09-20/mainTheme.avif",
     "seriesCountry": "기타",
