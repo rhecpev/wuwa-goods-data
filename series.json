@@ -289,6 +289,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "라쿠스파",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/라쿠스파_일본_2024-11-07/maInTheme.jpg",
+    "seriesCountry": "일본",
+    "seriesCharas": "감심,금희,기염,남랑자,상리요,설지,앙코,양양,여랑자,유호,음림,장리,절지,카멜리아,파수인",
+    "seriesDate": "2024-11-07"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "맑은날의약속카페",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/맑은날의약속카페_중국_2026-01-01/mainTheme.jpg",
     "seriesCountry": "중국",
