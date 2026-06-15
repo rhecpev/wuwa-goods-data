@@ -153,6 +153,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2026이케부쿠로LIVE",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026이케부쿠로LIVE_일본_2026-02-07/mainTheme.jpg",
+    "seriesCountry": "일본",
+    "seriesCharas": "남랑자,루크,린네,모니에,에이메스,여랑자",
+    "seriesDate": "2026-02-07"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "3.1버전",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/mainTheme.jpg",
     "seriesCountry": "버전",
