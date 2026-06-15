@@ -217,6 +217,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "pizzala",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/pizzala_일본_2026-05-20/mainTheme.jpg",
+    "seriesCountry": "일본",
+    "seriesCharas": "남랑자,데니아,루실라,여랑자,젠니,카를로타",
+    "seriesDate": "2026-05-20"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "yogoods",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/yogoods_중국_2025-12-12/mainTheme.avif",
     "seriesCountry": "중국",
