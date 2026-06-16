@@ -417,6 +417,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "중국2주년오프라인",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/중국2주년오프라인_중국_2026-05-23/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "데니아,루크,에이메스,히유키",
+    "seriesDate": "2026-05-23"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "징동",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/징동_중국_2025-06-13/mainTheme.png",
     "seriesCountry": "중국",
