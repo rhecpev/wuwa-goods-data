@@ -209,6 +209,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "PARCO",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/PARCO_일본_2025-09-12/mainTheme.png",
+    "seriesCountry": "일본",
+    "seriesCharas": "아우구스타,유노",
+    "seriesDate": "2025-09-12"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "karasumaya",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/karasumaya_중국_2026-01-31/mainTheme.jpg",
     "seriesCountry": "중국",
