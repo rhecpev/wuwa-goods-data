@@ -417,6 +417,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "카멜리아UDX아키하바라",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/카멜리아UDX아키하바라_일본_2024-11-30/mainTheme.png",
+    "seriesCountry": "일본",
+    "seriesCharas": "남랑자,루미,앙코,여랑자,음림,장리,절지,카멜리아",
+    "seriesDate": "2024-11-30"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "카멜리아인형",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/카멜리아인형_중국_2026-06-27/mainTheme.png",
     "seriesCountry": "중국",
