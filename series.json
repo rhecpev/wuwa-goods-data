@@ -441,6 +441,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "중국KFC",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/중국KFC_중국_2026-01-23/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "구원,아브,카르티시아,카멜리아,파수인",
+    "seriesDate": "2026-01-23"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "징동",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/징동_중국_2025-06-13/mainTheme.png",
     "seriesCountry": "중국",
