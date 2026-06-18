@@ -32440,6 +32440,17 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2026-02-02",
+    "goodsSeries": "쿠로카페(에이메스)",
+    "goodsPrice": "구성품",
+    "goodsChara": "에이메스",
+    "goodsCategory": "스티커",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/쿠로카페(에이메스)_중국_2026-02-02/goods/에이메스_스티커_구성품_구성품.png",
+    "goodsMemo": "구성품"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2026-02-26",
     "goodsSeries": "파수인LD피규어",
     "goodsPrice": "구성품",

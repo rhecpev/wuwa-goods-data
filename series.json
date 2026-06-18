@@ -473,6 +473,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "쿠로카페(에이메스)",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/쿠로카페(에이메스)_중국_2026-02-02/mainTheme.avif",
+    "seriesCountry": "중국",
+    "seriesCharas": "에이메스",
+    "seriesDate": "2026-02-02"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "파수인LD피규어",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/파수인LD피규어_기타_2026-02-26/mainTheme.png",
     "seriesCountry": "기타",
