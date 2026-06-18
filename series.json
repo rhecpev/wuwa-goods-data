@@ -417,6 +417,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "조류사진수집캠페인",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/조류사진수집캠페인_중국_2026-03-31/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "시그리카",
+    "seriesDate": "2026-03-31"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "조석소회",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/조석소회_중국_2024-12-06/mainTheme.jpg",
     "seriesCountry": "중국",

@@ -31384,6 +31384,17 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2026-03-31",
+    "goodsSeries": "조류사진수집캠페인",
+    "goodsPrice": "구성품",
+    "goodsChara": "시그리카",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/조류사진수집캠페인_중국_2026-03-31/goods/시그리카_엽서_구성품_구성품.avif",
+    "goodsMemo": "구성품"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2024-12-06",
     "goodsSeries": "조석소회",
     "goodsPrice": "35위안",
