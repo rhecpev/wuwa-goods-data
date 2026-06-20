@@ -481,6 +481,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "anideal향수",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/anideal향수_일본_2025-06-16/mainTheme.jpg",
+    "seriesCountry": "일본",
+    "seriesCharas": "젠니,카를로타,칸타렐라,페비",
+    "seriesDate": "2025-06-16"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "karasumaya",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/karasumaya_중국_2026-01-31/mainTheme.jpg",
     "seriesCountry": "중국",
