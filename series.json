@@ -257,6 +257,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "BilibiliWorld2023",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/BilibiliWorld2023_중국_2023-07-21/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "기염,단근,설지,앙코,양양,여랑자,치샤",
+    "seriesDate": "2023-07-21"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "BilibiliWorld2024",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/BilibiliWorld2024_중국_2024-07-12/mainTheme.png",
     "seriesCountry": "중국",
