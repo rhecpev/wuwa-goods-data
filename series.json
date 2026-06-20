@@ -337,6 +337,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "로손1차(중국)",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "브렌트,젠니,카를로타,페비",
+    "seriesDate": "2025-05-31"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "로손2차(중국,일본)",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손2차(중국,일본)_일본_2025-12-23/mainTheme.png",
     "seriesCountry": "일본",
