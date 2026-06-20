@@ -11553,17 +11553,6 @@
     "goodsId": 0,
     "goodsReleaseDate": "2025-08-09",
     "goodsSeries": "2025KUROFEST",
-    "goodsPrice": "29위안",
-    "goodsChara": "남랑자",
-    "goodsCategory": "카드",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/남랑자_카드_29위안_단품.png",
-    "goodsMemo": "단품"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2025-08-09",
-    "goodsSeries": "2025KUROFEST",
     "goodsPrice": "16위안",
     "goodsChara": "남랑자",
     "goodsCategory": "캔뱃지",
@@ -11652,6 +11641,17 @@
     "goodsId": 0,
     "goodsReleaseDate": "2025-08-09",
     "goodsSeries": "2025KUROFEST",
+    "goodsPrice": "29위안",
+    "goodsChara": "남랑자",
+    "goodsCategory": "포토프롭",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/남랑자_포토프롭_29위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025KUROFEST",
     "goodsPrice": "40위안",
     "goodsChara": "루파,카르티시아",
     "goodsCategory": "아크릴색지",
@@ -11690,17 +11690,6 @@
     "goodsCategory": "아크릴스탠드",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/루파_아크릴스탠드_49위안_단품.png",
-    "goodsMemo": "단품"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2025-08-09",
-    "goodsSeries": "2025KUROFEST",
-    "goodsPrice": "29위안",
-    "goodsChara": "루파",
-    "goodsCategory": "카드",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/루파_카드_29위안_단품.png",
     "goodsMemo": "단품"
   },
   {
@@ -11751,6 +11740,17 @@
     "goodsId": 0,
     "goodsReleaseDate": "2025-08-09",
     "goodsSeries": "2025KUROFEST",
+    "goodsPrice": "29위안",
+    "goodsChara": "루파",
+    "goodsCategory": "포토프롭",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/루파_포토프롭_29위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025KUROFEST",
     "goodsPrice": "40위안",
     "goodsChara": "아브,여랑자,카르티시아,금희,남랑자",
     "goodsCategory": "아크릴색지",
@@ -11764,9 +11764,9 @@
     "goodsSeries": "2025KUROFEST",
     "goodsPrice": "29위안",
     "goodsChara": "아브",
-    "goodsCategory": "카드",
+    "goodsCategory": "포토프롭",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/아브_카드_29위안_단품.png",
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/아브_포토프롭_29위안_단품.png",
     "goodsMemo": "단품"
   },
   {
@@ -11822,17 +11822,6 @@
     "goodsCategory": "인형",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/여랑자_인형_69위안_단품.png",
-    "goodsMemo": "단품"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2025-08-09",
-    "goodsSeries": "2025KUROFEST",
-    "goodsPrice": "29위안",
-    "goodsChara": "여랑자",
-    "goodsCategory": "카드",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/여랑자_카드_29위안_단품.png",
     "goodsMemo": "단품"
   },
   {
@@ -11922,6 +11911,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/여랑자_포토카드_22위안_스티커포함.png",
     "goodsMemo": "스티커포함"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025KUROFEST",
+    "goodsPrice": "29위안",
+    "goodsChara": "여랑자",
+    "goodsCategory": "포토프롭",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/여랑자_포토프롭_29위안_단품.png",
+    "goodsMemo": "단품"
   },
   {
     "goodsId": 0,
@@ -12048,17 +12048,6 @@
     "goodsId": 0,
     "goodsReleaseDate": "2025-08-09",
     "goodsSeries": "2025KUROFEST",
-    "goodsPrice": "29위안",
-    "goodsChara": "카르티시아",
-    "goodsCategory": "카드",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/카르티시아_카드_29위안_단품.png",
-    "goodsMemo": "단품"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2025-08-09",
-    "goodsSeries": "2025KUROFEST",
     "goodsPrice": "16위안",
     "goodsChara": "카르티시아",
     "goodsCategory": "캔뱃지",
@@ -12120,6 +12109,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/카르티시아_포토카드_22위안_스티커포함.png",
     "goodsMemo": "스티커포함"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025KUROFEST",
+    "goodsPrice": "29위안",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "포토프롭",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/카르티시아_포토프롭_29위안_단품.png",
+    "goodsMemo": "단품"
   },
   {
     "goodsId": 0,
@@ -14380,17 +14380,6 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-05-06",
     "goodsSeries": "2026miniso",
-    "goodsPrice": "구성품",
-    "goodsChara": "남랑자",
-    "goodsCategory": "카드",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026miniso_중국_2026-05-06/goods/남랑자_카드_구성품_남랑자세트.png",
-    "goodsMemo": "남랑자세트"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2026-05-06",
-    "goodsSeries": "2026miniso",
     "goodsPrice": "15위안",
     "goodsChara": "남랑자",
     "goodsCategory": "캔뱃지",
@@ -14474,6 +14463,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026miniso_중국_2026-05-06/goods/남랑자_포토카드홀더_35위안_단품.png",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-05-06",
+    "goodsSeries": "2026miniso",
+    "goodsPrice": "구성품",
+    "goodsChara": "남랑자",
+    "goodsCategory": "포토프롭",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026miniso_중국_2026-05-06/goods/남랑자_포토프롭_구성품_남랑자세트.png",
+    "goodsMemo": "남랑자세트"
   },
   {
     "goodsId": 0,
@@ -14666,17 +14666,6 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-05-06",
     "goodsSeries": "2026miniso",
-    "goodsPrice": "구성품",
-    "goodsChara": "루크",
-    "goodsCategory": "카드",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026miniso_중국_2026-05-06/goods/루크_카드_구성품_루크세트.png",
-    "goodsMemo": "루크세트"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2026-05-06",
-    "goodsSeries": "2026miniso",
     "goodsPrice": "15위안",
     "goodsChara": "루크",
     "goodsCategory": "캔뱃지",
@@ -14749,6 +14738,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026miniso_중국_2026-05-06/goods/루크_포토카드홀더_35위안_단품.png",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-05-06",
+    "goodsSeries": "2026miniso",
+    "goodsPrice": "구성품",
+    "goodsChara": "루크",
+    "goodsCategory": "포토프롭",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026miniso_중국_2026-05-06/goods/루크_포토프롭_구성품_루크세트.png",
+    "goodsMemo": "루크세트"
   },
   {
     "goodsId": 0,
@@ -14930,17 +14930,6 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-05-06",
     "goodsSeries": "2026miniso",
-    "goodsPrice": "구성품",
-    "goodsChara": "시그리카",
-    "goodsCategory": "카드",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026miniso_중국_2026-05-06/goods/시그리카_카드_구성품_시그리카세트.png",
-    "goodsMemo": "시그리카세트"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2026-05-06",
-    "goodsSeries": "2026miniso",
     "goodsPrice": "15위안",
     "goodsChara": "시그리카",
     "goodsCategory": "캔뱃지",
@@ -15024,6 +15013,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026miniso_중국_2026-05-06/goods/시그리카_포토카드홀더_35위안_단품.png",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-05-06",
+    "goodsSeries": "2026miniso",
+    "goodsPrice": "구성품",
+    "goodsChara": "시그리카",
+    "goodsCategory": "포토프롭",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026miniso_중국_2026-05-06/goods/시그리카_포토프롭_구성품_시그리카세트.png",
+    "goodsMemo": "시그리카세트"
   },
   {
     "goodsId": 0,
@@ -15249,17 +15249,6 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-05-06",
     "goodsSeries": "2026miniso",
-    "goodsPrice": "구성품",
-    "goodsChara": "에이메스",
-    "goodsCategory": "카드",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026miniso_중국_2026-05-06/goods/에이메스_카드_구성품_에이메스세트.png",
-    "goodsMemo": "에이메스세트"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2026-05-06",
-    "goodsSeries": "2026miniso",
     "goodsPrice": "15위안",
     "goodsChara": "에이메스",
     "goodsCategory": "캔뱃지",
@@ -15343,6 +15332,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026miniso_중국_2026-05-06/goods/에이메스_포토카드홀더_35위안_단품.png",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-05-06",
+    "goodsSeries": "2026miniso",
+    "goodsPrice": "구성품",
+    "goodsChara": "에이메스",
+    "goodsCategory": "포토프롭",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026miniso_중국_2026-05-06/goods/에이메스_포토프롭_구성품_에이메스세트.png",
+    "goodsMemo": "에이메스세트"
   },
   {
     "goodsId": 0,
@@ -15524,17 +15524,6 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-05-06",
     "goodsSeries": "2026miniso",
-    "goodsPrice": "구성품",
-    "goodsChara": "여랑자",
-    "goodsCategory": "카드",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026miniso_중국_2026-05-06/goods/여랑자_카드_구성품_여랑자세트.png",
-    "goodsMemo": "여랑자세트"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2026-05-06",
-    "goodsSeries": "2026miniso",
     "goodsPrice": "15위안",
     "goodsChara": "여랑자",
     "goodsCategory": "캔뱃지",
@@ -15618,6 +15607,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026miniso_중국_2026-05-06/goods/여랑자_포토카드홀더_35위안_단품.png",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-05-06",
+    "goodsSeries": "2026miniso",
+    "goodsPrice": "구성품",
+    "goodsChara": "여랑자",
+    "goodsCategory": "포토프롭",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026miniso_중국_2026-05-06/goods/여랑자_포토프롭_구성품_여랑자세트.png",
+    "goodsMemo": "여랑자세트"
   },
   {
     "goodsId": 0,
@@ -32552,17 +32552,6 @@
     "goodsId": 0,
     "goodsReleaseDate": "2025-12-20",
     "goodsSeries": "명조x완다필름",
-    "goodsPrice": "행사참여",
-    "goodsChara": "린네",
-    "goodsCategory": "카드",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x완다필름_중국_2025-12-20/goods/린네_카드_행사참여_단품.png",
-    "goodsMemo": "단품"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2025-12-20",
-    "goodsSeries": "명조x완다필름",
     "goodsPrice": "16위안",
     "goodsChara": "린네",
     "goodsCategory": "캔뱃지",
@@ -32591,6 +32580,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x완다필름_중국_2025-12-20/goods/린네_포토카드_구성품_포토카드세트.png",
     "goodsMemo": "포토카드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-12-20",
+    "goodsSeries": "명조x완다필름",
+    "goodsPrice": "행사참여",
+    "goodsChara": "린네",
+    "goodsCategory": "포토프롭",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x완다필름_중국_2025-12-20/goods/린네_포토프롭_행사참여_단품.png",
+    "goodsMemo": "단품"
   },
   {
     "goodsId": 0,
@@ -32640,17 +32640,6 @@
     "goodsId": 0,
     "goodsReleaseDate": "2025-12-20",
     "goodsSeries": "명조x완다필름",
-    "goodsPrice": "행사참여",
-    "goodsChara": "모니에",
-    "goodsCategory": "카드",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x완다필름_중국_2025-12-20/goods/모니에_카드_행사참여_단품.png",
-    "goodsMemo": "단품"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2025-12-20",
-    "goodsSeries": "명조x완다필름",
     "goodsPrice": "16위안",
     "goodsChara": "모니에",
     "goodsCategory": "캔뱃지",
@@ -32679,6 +32668,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x완다필름_중국_2025-12-20/goods/모니에_포토카드_구성품_포토카드세트.png",
     "goodsMemo": "포토카드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-12-20",
+    "goodsSeries": "명조x완다필름",
+    "goodsPrice": "행사참여",
+    "goodsChara": "모니에",
+    "goodsCategory": "포토프롭",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x완다필름_중국_2025-12-20/goods/모니에_포토프롭_행사참여_단품.png",
+    "goodsMemo": "단품"
   },
   {
     "goodsId": 0,
@@ -32772,17 +32772,6 @@
     "goodsId": 0,
     "goodsReleaseDate": "2025-12-20",
     "goodsSeries": "명조x완다필름",
-    "goodsPrice": "행사참여",
-    "goodsChara": "치사",
-    "goodsCategory": "카드",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x완다필름_중국_2025-12-20/goods/치사_카드_행사참여_단품.png",
-    "goodsMemo": "단품"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2025-12-20",
-    "goodsSeries": "명조x완다필름",
     "goodsPrice": "16위안",
     "goodsChara": "치사",
     "goodsCategory": "캔뱃지",
@@ -32811,6 +32800,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x완다필름_중국_2025-12-20/goods/치사_포토카드_구성품_포토카드세트.png",
     "goodsMemo": "포토카드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-12-20",
+    "goodsSeries": "명조x완다필름",
+    "goodsPrice": "행사참여",
+    "goodsChara": "치사",
+    "goodsCategory": "포토프롭",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x완다필름_중국_2025-12-20/goods/치사_포토프롭_행사참여_단품.png",
+    "goodsMemo": "단품"
   },
   {
     "goodsId": 0,
