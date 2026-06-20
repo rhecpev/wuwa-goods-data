@@ -113,6 +113,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2025BOOKOFF",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025BOOKOFF_일본_2026-07-03/mainTheme.webp",
+    "seriesCountry": "일본",
+    "seriesCharas": "상리요,샤콘,절지,젠니",
+    "seriesDate": "2026-07-03"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2025CICF×AGF",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025CICF×AGF_중국_2025-10-02/mainTheme.jpg",
     "seriesCountry": "중국",
@@ -201,6 +209,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2026COMEBUY",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026COMEBUY_대만_2026-06-16/mainTheme.jpg",
+    "seriesCountry": "대만",
+    "seriesCharas": "데니아,루실라,카르티시아,카를로타",
+    "seriesDate": "2026-06-16"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2026bilibili",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026bilibili_중국_2026-05-23/mainTheme.jpg",
     "seriesCountry": "중국",
@@ -214,6 +230,14 @@
     "seriesCountry": "중국",
     "seriesCharas": "남랑자,루크,시그리카,아브,에이메스,여랑자",
     "seriesDate": "2026-05-06"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "2026대만교통카드",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026대만교통카드_대만_2026-05-27/mainTheme.jpg",
+    "seriesCountry": "대만",
+    "seriesCharas": "데니아,루크,에이메스,히유키",
+    "seriesDate": "2026-05-27"
   },
   {
     "seriesId": 0,
