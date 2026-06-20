@@ -449,6 +449,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "과일주스콜라보",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/과일주스콜라보_대만_2024-09-11/mainTheme.webp",
+    "seriesCountry": "대만",
+    "seriesCharas": "금희,남랑자,설지,양양,여랑자,장리",
+    "seriesDate": "2024-09-11"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "교통카드2버전초반",
     "seriesUrl": "",
     "seriesCountry": "중국",

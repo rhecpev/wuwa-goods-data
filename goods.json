@@ -31604,6 +31604,39 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2024-09-11",
+    "goodsSeries": "과일주스콜라보",
+    "goodsPrice": "가격모름",
+    "goodsChara": "금희,장리",
+    "goodsCategory": "음료수",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/과일주스콜라보_대만_2024-09-11/goods/금희,장리_음료수_가격모름_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-09-11",
+    "goodsSeries": "과일주스콜라보",
+    "goodsPrice": "가격모름",
+    "goodsChara": "남랑자,여랑자",
+    "goodsCategory": "음료수",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/과일주스콜라보_대만_2024-09-11/goods/남랑자,여랑자_음료수_가격모름_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-09-11",
+    "goodsSeries": "과일주스콜라보",
+    "goodsPrice": "가격모름",
+    "goodsChara": "설지,양양",
+    "goodsCategory": "음료수",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/과일주스콜라보_대만_2024-09-11/goods/설지,양양_음료수_가격모름_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2025-01-03",
     "goodsSeries": "교통카드2버전초반",
     "goodsPrice": "모름",
