@@ -433,6 +433,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "대만2주년",
+    "seriesUrl": "",
+    "seriesCountry": "대만",
+    "seriesCharas": "남랑자,데니아,루크,시그리카,에이메스,여랑자,히유키",
+    "seriesDate": "2026-05-22"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "데니아x레이저콜라보",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/데니아x레이저콜라보_기타_2026-05-25/mainTheme.avif",
     "seriesCountry": "기타",
