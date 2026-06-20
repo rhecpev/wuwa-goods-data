@@ -393,6 +393,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "명조x왓슨스",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x왓슨스_중국_2025-05-31/mainTheme.webp",
+    "seriesCountry": "중국",
+    "seriesCharas": "브렌트,상리요,젠니,파수인",
+    "seriesDate": "2025-05-31"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "명조x칩스아호이",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x칩스아호이_중국_2025-10-25/mainTheme.jpg",
     "seriesCountry": "중국",
