@@ -41,6 +41,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2.1오사카팝업",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.1오사카팝업_일본_2025-03-08/mainTheme.png",
+    "seriesCountry": "일본",
+    "seriesCharas": "남랑자,브렌트,여랑자,장리,페비",
+    "seriesDate": "2025-03-08"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2.2버전",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.2버전_버전_2025-04-25/mainTheme.jpg",
     "seriesCountry": "버전",
