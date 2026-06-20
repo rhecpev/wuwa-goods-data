@@ -33826,6 +33826,61 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2026-04-30",
+    "goodsSeries": "명조PS5",
+    "goodsPrice": "구성품",
+    "goodsChara": "남랑자,여랑자",
+    "goodsCategory": "디오라마",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조PS5_기타_2026-04-30/goods/남랑자,여랑자_디오라마_구성품_구성품.png",
+    "goodsMemo": "구성품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-04-30",
+    "goodsSeries": "명조PS5",
+    "goodsPrice": "구성품",
+    "goodsChara": "남랑자,여랑자",
+    "goodsCategory": "리딤코드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조PS5_기타_2026-04-30/goods/남랑자,여랑자_리딤코드_구성품_구성품.png",
+    "goodsMemo": "구성품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-04-30",
+    "goodsSeries": "명조PS5",
+    "goodsPrice": "구성품",
+    "goodsChara": "남랑자,여랑자",
+    "goodsCategory": "박스",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조PS5_기타_2026-04-30/goods/남랑자,여랑자_박스_구성품_구성품.png",
+    "goodsMemo": "구성품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-04-30",
+    "goodsSeries": "명조PS5",
+    "goodsPrice": "구성품",
+    "goodsChara": "남랑자,여랑자",
+    "goodsCategory": "아크릴색지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조PS5_기타_2026-04-30/goods/남랑자,여랑자_아크릴색지_구성품_구성품.png",
+    "goodsMemo": "구성품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-04-30",
+    "goodsSeries": "명조PS5",
+    "goodsPrice": "구성품",
+    "goodsChara": "남랑자,여랑자",
+    "goodsCategory": "카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조PS5_기타_2026-04-30/goods/남랑자,여랑자_카드_구성품_구성품.png",
+    "goodsMemo": "구성품"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2025-11-21",
     "goodsSeries": "명조xCoCo",
     "goodsPrice": "음료구매",

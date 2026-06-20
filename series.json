@@ -489,6 +489,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "명조PS5",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조PS5_기타_2026-04-30/mainTheme.jpg",
+    "seriesCountry": "기타",
+    "seriesCharas": "남랑자,여랑자",
+    "seriesDate": "2026-04-30"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "명조xCoCo",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조xCoCo_중국_2025-11-21/mainTheme.jpg",
     "seriesCountry": "중국",
