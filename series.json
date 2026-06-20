@@ -457,6 +457,22 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "SWEETSxPARADISE",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/SWEETSxPARADISE_일본_2025-05-03/mainTheme.jpeg",
+    "seriesCountry": "일본",
+    "seriesCharas": "감심,금희,기염,남랑자,능양,로코코,벨리나,브렌트,상리요,앙코,여랑자,음림,장리,절지,젠니,카를로타,카멜리아,카카루,파수인,페비",
+    "seriesDate": "2025-05-03"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "Village Vanguard",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/Village Vanguard_일본_2025-05-01/mainTheme.png",
+    "seriesCountry": "일본",
+    "seriesCharas": "기염,남랑자,로코코,브렌트,여랑자,장리,젠니,카를로타,페비,플로로",
+    "seriesDate": "2025-05-01"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "karasumaya",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/karasumaya_중국_2026-01-31/mainTheme.jpg",
     "seriesCountry": "중국",
