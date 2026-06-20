@@ -721,6 +721,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "상리요팝업",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/상리요팝업_일본_2024-09-08/mainTheme.png",
+    "seriesCountry": "일본",
+    "seriesCharas": "금희,기염,벨리나,상리요,음림,장리,절지",
+    "seriesDate": "2024-09-08"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "수월우이어폰콜라보",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/수월우이어폰콜라보_중국_2026-01-23/mainTheme.jpg",
     "seriesCountry": "중국",

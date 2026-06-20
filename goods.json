@@ -43000,6 +43000,50 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2024-09-08",
+    "goodsSeries": "상리요팝업",
+    "goodsPrice": "증정품",
+    "goodsChara": "상리요,음림,기염,벨리나,절지,장리,금희",
+    "goodsCategory": "스티커",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/상리요팝업_일본_2024-09-08/goods/상리요,음림,기염,벨리나,절지,장리,금희_스티커_증정품_증정품.png",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-09-08",
+    "goodsSeries": "상리요팝업",
+    "goodsPrice": "증정품",
+    "goodsChara": "상리요",
+    "goodsCategory": "부채",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/상리요팝업_일본_2024-09-08/goods/상리요_부채_증정품_증정품.png",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-09-08",
+    "goodsSeries": "상리요팝업",
+    "goodsPrice": "증정품",
+    "goodsChara": "상리요",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/상리요팝업_일본_2024-09-08/goods/상리요_엽서_증정품_증정품.png",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-09-08",
+    "goodsSeries": "상리요팝업",
+    "goodsPrice": "증정품",
+    "goodsChara": "상리요",
+    "goodsCategory": "클리어파일",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/상리요팝업_일본_2024-09-08/goods/상리요_클리어파일_증정품_증정품.png",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2026-01-23",
     "goodsSeries": "수월우이어폰콜라보",
     "goodsPrice": "299위안",
