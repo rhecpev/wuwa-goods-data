@@ -761,6 +761,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "치사대만교통카드",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/치사대만교통카드_대만_2025-12-04/mainTheme.jpg",
+    "seriesCountry": "대만",
+    "seriesCharas": "치사",
+    "seriesDate": "2025-12-04"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "카멜리아UDX아키하바라",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/카멜리아UDX아키하바라_일본_2024-11-30/mainTheme.png",
     "seriesCountry": "일본",
