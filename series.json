@@ -361,6 +361,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "명조2026음악회",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조2026음악회_한국_2026-08-29/mainTheme.jpg",
+    "seriesCountry": "한국",
+    "seriesCharas": "구원,금희,모니에,브렌트,에이메스,치사,카르티시아,파수인",
+    "seriesDate": "2026-08-29"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "명조xCoCo",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조xCoCo_중국_2025-11-21/mainTheme.jpg",
     "seriesCountry": "중국",
