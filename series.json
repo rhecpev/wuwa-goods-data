@@ -417,6 +417,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "명조x몽과장카페",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x몽과장카페_중국_2025-04-26/mainTheme.webp",
+    "seriesCountry": "중국",
+    "seriesCharas": "금희,기염,상리요,장리",
+    "seriesDate": "2025-04-26"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "명조x완다필름",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x완다필름_중국_2025-12-20/mainTheme.jpg",
     "seriesCountry": "중국",
