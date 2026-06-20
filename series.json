@@ -209,6 +209,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2025마루이",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025마루이_일본_2026-06-06/mainTheme.jpeg",
+    "seriesCountry": "일본",
+    "seriesCharas": "금희,남랑자,루미,아브,여랑자,장리,카를로타,카멜리아",
+    "seriesDate": "2026-06-06"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2025반디카니발",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025반디카니발_중국_2025-01-10/mainTheme.jpg",
     "seriesCountry": "중국",
