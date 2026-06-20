@@ -673,6 +673,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "여름대작전",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/여름대작전_대만_2025-05-29/mainTheme.jpg",
+    "seriesCountry": "대만",
+    "seriesCharas": "감심,금희,기염,남랑자,능양,로코코,벨리나,브렌트,상리요,샤콘,설지,앙코,양양,여랑자,음림,장리,절지,젠니,치샤,카르티시아,카를로타,카멜리아,카카루,칸타렐라,파수인,페비",
+    "seriesDate": "2025-05-29"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "유광비어",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/유광비어_중국_2025-07-21/mainTheme.jpg",
     "seriesCountry": "중국",
