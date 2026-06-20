@@ -11313,9 +11313,53 @@
     "goodsSeries": "2024반디카니발",
     "goodsPrice": "웰컴",
     "goodsChara": "남랑자,여랑자",
-    "goodsCategory": "박스",
+    "goodsCategory": "세트",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024반디카니발_중국_2024-05-01/goods/남랑자,여랑자_박스_웰컴_기념상자.png",
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024반디카니발_중국_2024-05-01/goods/남랑자,여랑자_세트_웰컴_기념상자.png",
+    "goodsMemo": "기념상자"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-05-01",
+    "goodsSeries": "2024반디카니발",
+    "goodsPrice": "구성품2",
+    "goodsChara": "몬스터",
+    "goodsCategory": "뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024반디카니발_중국_2024-05-01/goods/몬스터_뱃지_구성품2_기념상자.png",
+    "goodsMemo": "기념상자"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-05-01",
+    "goodsSeries": "2024반디카니발",
+    "goodsPrice": "구성품3",
+    "goodsChara": "몬스터",
+    "goodsCategory": "뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024반디카니발_중국_2024-05-01/goods/몬스터_뱃지_구성품3_기념상자.png",
+    "goodsMemo": "기념상자"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-05-01",
+    "goodsSeries": "2024반디카니발",
+    "goodsPrice": "구성품4",
+    "goodsChara": "몬스터",
+    "goodsCategory": "뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024반디카니발_중국_2024-05-01/goods/몬스터_뱃지_구성품4_기념상자.png",
+    "goodsMemo": "기념상자"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-05-01",
+    "goodsSeries": "2024반디카니발",
+    "goodsPrice": "구성품",
+    "goodsChara": "몬스터",
+    "goodsCategory": "뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024반디카니발_중국_2024-05-01/goods/몬스터_뱃지_구성품_기념상자.png",
     "goodsMemo": "기념상자"
   },
   {
