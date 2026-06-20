@@ -97,6 +97,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2024애니메이트",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024애니메이트_일본_2024-12-07/mainTheme.png",
+    "seriesCountry": "일본",
+    "seriesCharas": "남랑자,상리요,음림,카멜리아,파수인",
+    "seriesDate": "2024-12-07"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2025CICF×AGF",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025CICF×AGF_중국_2025-10-02/mainTheme.jpg",
     "seriesCountry": "중국",
