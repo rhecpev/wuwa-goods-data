@@ -529,6 +529,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "중국1주년오프라인",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/중국1주년오프라인_중국_2025-05-30/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "남랑자,루파,브렌트,샤콘,여랑자,젠니,카르티시아,카를로타",
+    "seriesDate": "2025-05-30"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "중국2주년오프라인",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/중국2주년오프라인_중국_2026-05-23/mainTheme.jpg",
     "seriesCountry": "중국",
