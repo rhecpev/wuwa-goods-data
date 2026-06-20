@@ -425,6 +425,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "융칭팡등불축제",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/융칭팡등불축제_중국_2025-09-20/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "유노",
+    "seriesDate": "2025-09-20"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "음림LD피규어",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/음림LD피규어_기타_2026-01-01/mainTheme.jpg",
     "seriesCountry": "기타",

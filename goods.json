@@ -32176,6 +32176,17 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2025-09-20",
+    "goodsSeries": "융칭팡등불축제",
+    "goodsPrice": "행사참여",
+    "goodsChara": "유노",
+    "goodsCategory": "카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/융칭팡등불축제_중국_2025-09-20/goods/유노_카드_행사참여_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2026-01-01",
     "goodsSeries": "음림LD피규어",
     "goodsPrice": "999위안",
