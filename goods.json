@@ -28887,6 +28887,50 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2025-09-10",
+    "goodsSeries": "명조x도향촌",
+    "goodsPrice": "구성품",
+    "goodsChara": "아우구스타,유노",
+    "goodsCategory": "박스",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x도향촌_중국_2025-09-10/goods/아우구스타,유노_박스_구성품_과자세트.png",
+    "goodsMemo": "과자세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-09-10",
+    "goodsSeries": "명조x도향촌",
+    "goodsPrice": "99위안",
+    "goodsChara": "아우구스타,유노",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x도향촌_중국_2025-09-10/goods/아우구스타,유노_세트_99위안_과자세트.png",
+    "goodsMemo": "과자세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-09-10",
+    "goodsSeries": "명조x도향촌",
+    "goodsPrice": "구성품",
+    "goodsChara": "아우구스타",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x도향촌_중국_2025-09-10/goods/아우구스타_캔뱃지_구성품_과자세트.png",
+    "goodsMemo": "과자세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-09-10",
+    "goodsSeries": "명조x도향촌",
+    "goodsPrice": "구성품",
+    "goodsChara": "유노",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x도향촌_중국_2025-09-10/goods/유노_캔뱃지_구성품_과자세트.png",
+    "goodsMemo": "과자세트"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2025-12-20",
     "goodsSeries": "명조x완다필름",
     "goodsPrice": "59위안",
