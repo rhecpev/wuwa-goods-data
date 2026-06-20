@@ -21319,6 +21319,50 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2024-07-12",
+    "goodsSeries": "BilibiliWorld2024",
+    "goodsPrice": "구성품",
+    "goodsChara": "금희,장리,산화",
+    "goodsCategory": "가방",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/BilibiliWorld2024_중국_2024-07-12/goods/금희,장리,산화_가방_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-12",
+    "goodsSeries": "BilibiliWorld2024",
+    "goodsPrice": "구성품",
+    "goodsChara": "금희,장리,산화",
+    "goodsCategory": "색지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/BilibiliWorld2024_중국_2024-07-12/goods/금희,장리,산화_색지_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-12",
+    "goodsSeries": "BilibiliWorld2024",
+    "goodsPrice": "월컴세트",
+    "goodsChara": "금희,장리,산화",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/BilibiliWorld2024_중국_2024-07-12/goods/금희,장리,산화_세트_월컴세트_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-12",
+    "goodsSeries": "BilibiliWorld2024",
+    "goodsPrice": "구성품",
+    "goodsChara": "금희,장리,산화",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/BilibiliWorld2024_중국_2024-07-12/goods/금희,장리,산화_엽서_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2025-07-11",
     "goodsSeries": "BilibiliWorld2025",
     "goodsPrice": "행사참여",

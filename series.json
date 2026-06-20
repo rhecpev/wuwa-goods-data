@@ -249,6 +249,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "BilibiliWorld2024",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/BilibiliWorld2024_중국_2024-07-12/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "금희,산화,장리",
+    "seriesDate": "2024-07-12"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "BilibiliWorld2025",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/BilibiliWorld2025_중국_2025-07-11/mainTheme.png",
     "seriesCountry": "중국",
