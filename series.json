@@ -345,6 +345,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "명조xKEEP",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조xKEEP_중국_2025-08-14/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "루파,젠니",
+    "seriesDate": "2025-08-14"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "명조x도향촌",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x도향촌_중국_2025-09-10/mainTheme.png",
     "seriesCountry": "중국",
