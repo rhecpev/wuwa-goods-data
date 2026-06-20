@@ -337,6 +337,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "명조x완다필름",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x완다필름_중국_2025-12-20/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "린네,모니에,아브,치사",
+    "seriesDate": "2025-12-20"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "무신사",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/무신사_한국_2026-05-19/mainTheme.jpg",
     "seriesCountry": "한국",
