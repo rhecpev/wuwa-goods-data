@@ -17183,6 +17183,83 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2025-10-25",
+    "goodsSeries": "2025할로윈",
+    "goodsPrice": "증정품",
+    "goodsChara": "갈브레나",
+    "goodsCategory": "사탕",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025할로윈_일본_2025-10-25/goods/갈브레나_사탕_증정품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-10-25",
+    "goodsSeries": "2025할로윈",
+    "goodsPrice": "증정품",
+    "goodsChara": "구원",
+    "goodsCategory": "사탕",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025할로윈_일본_2025-10-25/goods/구원_사탕_증정품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-10-25",
+    "goodsSeries": "2025할로윈",
+    "goodsPrice": "행사참여",
+    "goodsChara": "남랑자,여랑자,구원,갈브레나,아브",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025할로윈_일본_2025-10-25/goods/남랑자,여랑자,구원,갈브레나,아브_엽서_행사참여_증정품.png",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-10-25",
+    "goodsSeries": "2025할로윈",
+    "goodsPrice": "행사참여",
+    "goodsChara": "남랑자,여랑자,구원,갈브레나",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025할로윈_일본_2025-10-25/goods/남랑자,여랑자,구원,갈브레나_세트_행사참여_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-10-25",
+    "goodsSeries": "2025할로윈",
+    "goodsPrice": "행사참여",
+    "goodsChara": "남랑자,여랑자,구원,갈브레나",
+    "goodsCategory": "스티커",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025할로윈_일본_2025-10-25/goods/남랑자,여랑자,구원,갈브레나_스티커_행사참여_증정품.png",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-10-25",
+    "goodsSeries": "2025할로윈",
+    "goodsPrice": "증정품",
+    "goodsChara": "남랑자",
+    "goodsCategory": "사탕",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025할로윈_일본_2025-10-25/goods/남랑자_사탕_증정품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-10-25",
+    "goodsSeries": "2025할로윈",
+    "goodsPrice": "증정품",
+    "goodsChara": "여랑자",
+    "goodsCategory": "사탕",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025할로윈_일본_2025-10-25/goods/여랑자_사탕_증정품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2026-06-16",
     "goodsSeries": "2026COMEBUY",
     "goodsPrice": "음료구매",

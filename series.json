@@ -265,6 +265,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2025할로윈",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025할로윈_일본_2025-10-25/mainTheme.jpg",
+    "seriesCountry": "일본",
+    "seriesCharas": "갈브레나,구원,남랑자,아브,여랑자",
+    "seriesDate": "2025-10-25"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2026COMEBUY",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026COMEBUY_대만_2026-06-16/mainTheme.jpg",
     "seriesCountry": "대만",
