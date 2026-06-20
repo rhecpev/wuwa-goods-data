@@ -273,6 +273,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2026카츠야",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026카츠야_대만_2026-01-23/mainTheme.jpg",
+    "seriesCountry": "대만",
+    "seriesCharas": "린네,모니에,에이메스,치사",
+    "seriesDate": "2026-01-23"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "3.1버전",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/mainTheme.jpg",
     "seriesCountry": "버전",
