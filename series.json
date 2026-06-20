@@ -817,6 +817,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "숲 속",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/숲 속_일본_2025-07-04/mainTheme.jpg",
+    "seriesCountry": "일본",
+    "seriesCharas": "구원,금희,상리요,장리,파수인",
+    "seriesDate": "2025-07-04"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "식광수진",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/식광수진_중국_2026-06-18/mainTheme.png",
     "seriesCountry": "중국",
