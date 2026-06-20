@@ -793,6 +793,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "일본1주년",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/일본1주년_일본_2025-05-30/mainTheme.jpg",
+    "seriesCountry": "일본",
+    "seriesCharas": "남랑자,로코코,브렌트,샤콘,아브,여랑자,젠니,카르티시아,카를로타,칸타렐라,페비",
+    "seriesDate": "2025-05-30"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "일본2주년",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/일본2주년_일본_2026-05-30/maintheme.jpg",
     "seriesCountry": "일본",
@@ -814,6 +822,14 @@
     "seriesCountry": "중국",
     "seriesCharas": "젠니",
     "seriesDate": "2025-12-31"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "젠니팝업",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/젠니팝업_일본_2025-05-01/mainTheme.jpg",
+    "seriesCountry": "일본",
+    "seriesCharas": "젠니",
+    "seriesDate": "2025-05-01"
   },
   {
     "seriesId": 0,
