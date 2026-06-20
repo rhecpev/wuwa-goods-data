@@ -137,6 +137,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2025아쿠아리움",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025아쿠아리움_중국_2025-04-18/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "칸타렐라",
+    "seriesDate": "2025-04-18"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2025이치방쿠지",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025이치방쿠지_중국_2025-11-28/mainTheme.avif",
     "seriesCountry": "중국",
