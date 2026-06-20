@@ -12750,6 +12750,83 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025중국교통카드",
+    "goodsPrice": "39위안",
+    "goodsChara": "금희",
+    "goodsCategory": "교통카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025중국교통카드_중국_2025-08-09/goods/금희_교통카드_39위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025중국교통카드",
+    "goodsPrice": "68위안",
+    "goodsChara": "금희",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025중국교통카드_중국_2025-08-09/goods/금희_키링_68위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025중국교통카드",
+    "goodsPrice": "99위안",
+    "goodsChara": "남랑자,여랑자,카르티시아,금희",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025중국교통카드_중국_2025-08-09/goods/남랑자,여랑자,카르티시아,금희_엽서_99위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025중국교통카드",
+    "goodsPrice": "39위안",
+    "goodsChara": "남랑자",
+    "goodsCategory": "교통카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025중국교통카드_중국_2025-08-09/goods/남랑자_교통카드_39위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025중국교통카드",
+    "goodsPrice": "39위안",
+    "goodsChara": "여랑자",
+    "goodsCategory": "교통카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025중국교통카드_중국_2025-08-09/goods/여랑자_교통카드_39위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025중국교통카드",
+    "goodsPrice": "39위안",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "교통카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025중국교통카드_중국_2025-08-09/goods/카르티시아_교통카드_39위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025중국교통카드",
+    "goodsPrice": "68위안",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025중국교통카드_중국_2025-08-09/goods/카르티시아_키링_68위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2026-05-23",
     "goodsSeries": "2026bilibili",
     "goodsPrice": "99위안",

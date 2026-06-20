@@ -137,6 +137,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2025중국교통카드",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025중국교통카드_중국_2025-08-09/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "금희,남랑자,여랑자,카르티시아",
+    "seriesDate": "2025-08-09"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2026bilibili",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026bilibili_중국_2026-05-23/mainTheme.jpg",
     "seriesCountry": "중국",
