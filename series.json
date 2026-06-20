@@ -217,6 +217,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2026TGS",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026TGS_대만_2026-01-29/mainTheme.jpg",
+    "seriesCountry": "대만",
+    "seriesCharas": "구원,루크,린네,모니에,아우구스타,에이메스,유노,치사,카르티시아,플로로",
+    "seriesDate": "2026-01-29"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2026bilibili",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026bilibili_중국_2026-05-23/mainTheme.jpg",
     "seriesCountry": "중국",
