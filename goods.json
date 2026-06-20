@@ -13502,6 +13502,28 @@
     "goodsSeries": "2025TGS",
     "goodsPrice": "행사참여",
     "goodsChara": "남랑자,여랑자",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025TGS_대만_2025-01-23/goods/남랑자,여랑자_엽서_행사참여_증정품.png",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-01-23",
+    "goodsSeries": "2025TGS",
+    "goodsPrice": "행사참여",
+    "goodsChara": "남랑자,여랑자",
+    "goodsCategory": "클리어파일",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025TGS_대만_2025-01-23/goods/남랑자,여랑자_클리어파일_행사참여_증정품.png",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-01-23",
+    "goodsSeries": "2025TGS",
+    "goodsPrice": "행사참여",
+    "goodsChara": "남랑자,여랑자",
     "goodsCategory": "키링",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025TGS_대만_2025-01-23/goods/남랑자,여랑자_키링_행사참여_증정품.png",
