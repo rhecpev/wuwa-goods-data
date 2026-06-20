@@ -337,6 +337,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "교통카드2버전초반",
+    "seriesUrl": "",
+    "seriesCountry": "중국",
+    "seriesCharas": "금희,상리요,장리,카를로타,카멜리아,파수인",
+    "seriesDate": "2025-01-03"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "금희&장리넨도로이드",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/금희&장리넨도로이드_기타_2026-02-09/mainTheme.png",
     "seriesCountry": "기타",

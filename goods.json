@@ -26093,6 +26093,72 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2025-01-03",
+    "goodsSeries": "교통카드2버전초반",
+    "goodsPrice": "모름",
+    "goodsChara": "금희",
+    "goodsCategory": "교통카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/교통카드2버전초반_중국_2025-01-03/goods/금희_교통카드_모름_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-01-03",
+    "goodsSeries": "교통카드2버전초반",
+    "goodsPrice": "모름",
+    "goodsChara": "상리요",
+    "goodsCategory": "교통카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/교통카드2버전초반_중국_2025-01-03/goods/상리요_교통카드_모름_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-01-03",
+    "goodsSeries": "교통카드2버전초반",
+    "goodsPrice": "모름",
+    "goodsChara": "장리",
+    "goodsCategory": "교통카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/교통카드2버전초반_중국_2025-01-03/goods/장리_교통카드_모름_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-01-03",
+    "goodsSeries": "교통카드2버전초반",
+    "goodsPrice": "모름",
+    "goodsChara": "카를로타",
+    "goodsCategory": "교통카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/교통카드2버전초반_중국_2025-01-03/goods/카를로타_교통카드_모름_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-01-03",
+    "goodsSeries": "교통카드2버전초반",
+    "goodsPrice": "모름",
+    "goodsChara": "카멜리아",
+    "goodsCategory": "교통카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/교통카드2버전초반_중국_2025-01-03/goods/카멜리아_교통카드_모름_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-01-03",
+    "goodsSeries": "교통카드2버전초반",
+    "goodsPrice": "모름",
+    "goodsChara": "파수인",
+    "goodsCategory": "교통카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/교통카드2버전초반_중국_2025-01-03/goods/파수인_교통카드_모름_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2026-02-09",
     "goodsSeries": "금희&장리넨도로이드",
     "goodsPrice": "359위안",
