@@ -441,6 +441,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "대만아이스크림",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만아이스크림_대만_2026-04-10/mainTheme.jpg",
+    "seriesCountry": "대만",
+    "seriesCharas": "남랑자,루크,린네,모니에,시그리카,에이메스,여랑자,치사",
+    "seriesDate": "2026-04-10"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "데니아x레이저콜라보",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/데니아x레이저콜라보_기타_2026-05-25/mainTheme.avif",
     "seriesCountry": "기타",
