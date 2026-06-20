@@ -11276,6 +11276,72 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2024-05-01",
+    "goodsSeries": "2024반디카니발",
+    "goodsPrice": "구성품",
+    "goodsChara": "기염,양양,앙코,음림,능양",
+    "goodsCategory": "스티커",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024반디카니발_중국_2024-05-01/goods/기염,양양,앙코,음림,능양_스티커_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-05-01",
+    "goodsSeries": "2024반디카니발",
+    "goodsPrice": "구성품",
+    "goodsChara": "기염,양양,앙코,음림,능양",
+    "goodsCategory": "아크릴색지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024반디카니발_중국_2024-05-01/goods/기염,양양,앙코,음림,능양_아크릴색지_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-05-01",
+    "goodsSeries": "2024반디카니발",
+    "goodsPrice": "구성품",
+    "goodsChara": "기염,양양,앙코,음림,능양",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024반디카니발_중국_2024-05-01/goods/기염,양양,앙코,음림,능양_엽서_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-05-01",
+    "goodsSeries": "2024반디카니발",
+    "goodsPrice": "웰컴",
+    "goodsChara": "남랑자,여랑자",
+    "goodsCategory": "박스",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024반디카니발_중국_2024-05-01/goods/남랑자,여랑자_박스_웰컴_기념상자.png",
+    "goodsMemo": "기념상자"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-05-01",
+    "goodsSeries": "2024반디카니발",
+    "goodsPrice": "사은품",
+    "goodsChara": "플로로,앙코,알토,남랑자,여랑자,기염,단근,산화,금희,양양,치샤,설지,감심,음림,능양",
+    "goodsCategory": "가방",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024반디카니발_중국_2024-05-01/goods/플로로,앙코,알토,남랑자,여랑자,기염,단근,산화,금희,양양,치샤,설지,감심,음림,능양_가방_사은품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-05-01",
+    "goodsSeries": "2024반디카니발",
+    "goodsPrice": "사은품",
+    "goodsChara": "플로로,앙코,알토,남랑자,여랑자,기염,단근,산화,금희,양양,치샤,설지,감심",
+    "goodsCategory": "가방",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024반디카니발_중국_2024-05-01/goods/플로로,앙코,알토,남랑자,여랑자,기염,단근,산화,금희,양양,치샤,설지,감심_가방_사은품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2024-12-07",
     "goodsSeries": "2024애니메이트",
     "goodsPrice": "1210엔",
