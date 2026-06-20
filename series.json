@@ -481,6 +481,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "대만스시로",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만스시로_대만_2025-01-08/mainTheme.jpg",
+    "seriesCountry": "대만",
+    "seriesCharas": "금희,기염,상리요,장리,카멜리아,파수인",
+    "seriesDate": "2025-01-08"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "대만아이스크림",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만아이스크림_대만_2026-04-10/mainTheme.jpg",
     "seriesCountry": "대만",
