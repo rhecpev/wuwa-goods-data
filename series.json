@@ -401,6 +401,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "C107코미케",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/C107코미케_일본_2025-12-30/mainTheme.jpg",
+    "seriesCountry": "일본",
+    "seriesCharas": "갈브레나,구원,남랑자,루파,린네,모니에,아우구스타,여랑자,유노,치사,카르티시아,플로로",
+    "seriesDate": "2025-12-30"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "Cayenne카페",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/Cayenne카페_대만_2025-10-28/mainTheme.jpg",
     "seriesCountry": "대만",
