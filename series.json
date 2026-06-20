@@ -369,6 +369,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "KIRABASE",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KIRABASE_대만_2024-10-16/mainTheme.png",
+    "seriesCountry": "대만",
+    "seriesCharas": "감심,금희,기염,벨리나,상리요,설지,앙코,양양,음림,장리,절지,치샤,카카루",
+    "seriesDate": "2024-10-16"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "PARCO",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/PARCO_일본_2025-09-12/mainTheme.png",
     "seriesCountry": "일본",
