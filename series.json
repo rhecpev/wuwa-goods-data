@@ -137,6 +137,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2025스니커즈",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025스니커즈_중국_2025-01-09/mainTheme.webp",
+    "seriesCountry": "중국",
+    "seriesCharas": "남랑자,아브,여랑자",
+    "seriesDate": "2025-01-09"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2025아쿠아리움",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025아쿠아리움_중국_2025-04-18/mainTheme.jpg",
     "seriesCountry": "중국",

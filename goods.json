@@ -12497,6 +12497,28 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2025-01-09",
+    "goodsSeries": "2025스니커즈",
+    "goodsPrice": "구성품",
+    "goodsChara": "남랑자,여랑자,아브",
+    "goodsCategory": "색지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025스니커즈_중국_2025-01-09/goods/남랑자,여랑자,아브_색지_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-01-09",
+    "goodsSeries": "2025스니커즈",
+    "goodsPrice": "69.9위안",
+    "goodsChara": "남랑자,여랑자,아브",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025스니커즈_중국_2025-01-09/goods/남랑자,여랑자,아브_세트_69.9위안_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2025-04-18",
     "goodsSeries": "2025아쿠아리움",
     "goodsPrice": "티켓구매",
