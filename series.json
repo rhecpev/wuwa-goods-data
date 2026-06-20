@@ -241,6 +241,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2026대만빼빼로",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026대만빼빼로_대만_2026-03-11/mainTheme.jpg",
+    "seriesCountry": "대만",
+    "seriesCharas": "갈브레나,로코코,루파,브렌트,샤콘,아우구스타,유노,젠니,카르티시아,카를로타,칸타렐라,페비",
+    "seriesDate": "2026-03-11"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2026신년",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026신년_중국_2026-01-31/mainTheme.jpg",
     "seriesCountry": "중국",
