@@ -377,6 +377,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "명조x동북대판",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x동북대판_중국_2025-06-20/mainTheme.JPG",
+    "seriesCountry": "중국",
+    "seriesCharas": "남랑자,아브,아브대마왕,여랑자,젠니,페비",
+    "seriesDate": "2025-06-20"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "명조x완다필름",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x완다필름_중국_2025-12-20/mainTheme.jpg",
     "seriesCountry": "중국",
