@@ -353,6 +353,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "명조x칩스아호이",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x칩스아호이_중국_2025-10-25/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "갈브레나,구원,루파,페비",
+    "seriesDate": "2025-10-25"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "무신사",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/무신사_한국_2026-05-19/mainTheme.jpg",
     "seriesCountry": "한국",
