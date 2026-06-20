@@ -105,6 +105,22 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2024Gratte",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024Gratte_일본_2024-10-04/mainTheme.webp",
+    "seriesCountry": "일본",
+    "seriesCharas": "감심,금희,기염,남랑자,능양,벨리나,상리요,설지,아브,앙코,양양,여랑자,유호,음림,장리,절지,치샤,카카루,파수인",
+    "seriesDate": "2024-10-04"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "2024TGS",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024TGS_일본_2024-09-26/mainTheme.jpg",
+    "seriesCountry": "일본",
+    "seriesCharas": "금희,기염,남랑자,능양,상리요,설지,알토,앙코,양양,여랑자,음림,장리,절지,치샤,파수인",
+    "seriesDate": "2024-09-26"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2024반디카니발",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024반디카니발_중국_2024-05-01/mainTheme.jpg",
     "seriesCountry": "중국",
@@ -118,6 +134,14 @@
     "seriesCountry": "일본",
     "seriesCharas": "남랑자,상리요,음림,카멜리아,파수인",
     "seriesDate": "2024-12-07"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "2024파수인팝업",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024파수인팝업_일본_2024-10-01/mainTheme.jpg",
+    "seriesCountry": "일본",
+    "seriesCharas": "남랑자,여랑자,파수인",
+    "seriesDate": "2024-10-01"
   },
   {
     "seriesId": 0,
