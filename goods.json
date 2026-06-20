@@ -11520,6 +11520,50 @@
     "goodsId": 0,
     "goodsReleaseDate": "2024-10-04",
     "goodsSeries": "2024Gratte",
+    "goodsPrice": "개당500엔",
+    "goodsChara": "금희,장리,앙코,절지,상리요,능양",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024Gratte_일본_2024-10-04/goods/금희,장리,앙코,절지,상리요,능양_세트_개당500엔_아크릴스탠드세트.png",
+    "goodsMemo": "아크릴스탠드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-10-04",
+    "goodsSeries": "2024Gratte",
+    "goodsPrice": "개당500엔",
+    "goodsChara": "금희,장리,앙코,절지,상리요,능양",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024Gratte_일본_2024-10-04/goods/금희,장리,앙코,절지,상리요,능양_세트_개당500엔_아크릴카드세트.png",
+    "goodsMemo": "아크릴카드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-10-04",
+    "goodsSeries": "2024Gratte",
+    "goodsPrice": "랜덤",
+    "goodsChara": "금희",
+    "goodsCategory": "아크릴스탠드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024Gratte_일본_2024-10-04/goods/금희_아크릴스탠드_랜덤_아크릴스탠드세트.png",
+    "goodsMemo": "아크릴스탠드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-10-04",
+    "goodsSeries": "2024Gratte",
+    "goodsPrice": "랜덤",
+    "goodsChara": "금희",
+    "goodsCategory": "아크릴카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024Gratte_일본_2024-10-04/goods/금희_아크릴카드_랜덤_아크릴카드세트.png",
+    "goodsMemo": "아크릴카드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-10-04",
+    "goodsSeries": "2024Gratte",
     "goodsPrice": "랜덤",
     "goodsChara": "금희",
     "goodsCategory": "아크릴코스터",
@@ -11599,6 +11643,28 @@
     "goodsSeries": "2024Gratte",
     "goodsPrice": "랜덤",
     "goodsChara": "능양",
+    "goodsCategory": "아크릴스탠드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024Gratte_일본_2024-10-04/goods/능양_아크릴스탠드_랜덤_아크릴스탠드세트.png",
+    "goodsMemo": "아크릴스탠드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-10-04",
+    "goodsSeries": "2024Gratte",
+    "goodsPrice": "랜덤",
+    "goodsChara": "능양",
+    "goodsCategory": "아크릴카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024Gratte_일본_2024-10-04/goods/능양_아크릴카드_랜덤_아크릴카드세트.png",
+    "goodsMemo": "아크릴카드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-10-04",
+    "goodsSeries": "2024Gratte",
+    "goodsPrice": "랜덤",
+    "goodsChara": "능양",
     "goodsCategory": "아크릴코스터",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024Gratte_일본_2024-10-04/goods/능양_아크릴코스터_랜덤_랜덤코스터세트.png",
@@ -11636,6 +11702,28 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024Gratte_일본_2024-10-04/goods/벨리나_카드_랜덤_카드세트.png",
     "goodsMemo": "카드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-10-04",
+    "goodsSeries": "2024Gratte",
+    "goodsPrice": "랜덤",
+    "goodsChara": "상리요",
+    "goodsCategory": "아크릴스탠드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024Gratte_일본_2024-10-04/goods/상리요_아크릴스탠드_랜덤_아크릴스탠드세트.png",
+    "goodsMemo": "아크릴스탠드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-10-04",
+    "goodsSeries": "2024Gratte",
+    "goodsPrice": "랜덤",
+    "goodsChara": "상리요",
+    "goodsCategory": "아크릴카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024Gratte_일본_2024-10-04/goods/상리요_아크릴카드_랜덤_아크릴카드세트.png",
+    "goodsMemo": "아크릴카드세트"
   },
   {
     "goodsId": 0,
@@ -11724,6 +11812,28 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024Gratte_일본_2024-10-04/goods/앙코,기염,음림,금희,절지,상리요,능양,카카루,벨리나,감심,장리_세트_500엔_랜덤코스터세트.png",
     "goodsMemo": "랜덤코스터세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-10-04",
+    "goodsSeries": "2024Gratte",
+    "goodsPrice": "랜덤",
+    "goodsChara": "앙코",
+    "goodsCategory": "아크릴스탠드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024Gratte_일본_2024-10-04/goods/앙코_아크릴스탠드_랜덤_아크릴스탠드세트.png",
+    "goodsMemo": "아크릴스탠드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-10-04",
+    "goodsSeries": "2024Gratte",
+    "goodsPrice": "랜덤",
+    "goodsChara": "앙코",
+    "goodsCategory": "아크릴카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024Gratte_일본_2024-10-04/goods/앙코_아크릴카드_랜덤_아크릴카드세트.png",
+    "goodsMemo": "아크릴카드세트"
   },
   {
     "goodsId": 0,
@@ -11830,6 +11940,28 @@
     "goodsSeries": "2024Gratte",
     "goodsPrice": "랜덤",
     "goodsChara": "장리",
+    "goodsCategory": "아크릴스탠드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024Gratte_일본_2024-10-04/goods/장리_아크릴스탠드_랜덤_아크릴스탠드세트.png",
+    "goodsMemo": "아크릴스탠드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-10-04",
+    "goodsSeries": "2024Gratte",
+    "goodsPrice": "랜덤",
+    "goodsChara": "장리",
+    "goodsCategory": "아크릴카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024Gratte_일본_2024-10-04/goods/장리_아크릴카드_랜덤_아크릴카드세트.png",
+    "goodsMemo": "아크릴카드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-10-04",
+    "goodsSeries": "2024Gratte",
+    "goodsPrice": "랜덤",
+    "goodsChara": "장리",
     "goodsCategory": "아크릴코스터",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024Gratte_일본_2024-10-04/goods/장리_아크릴코스터_랜덤_랜덤코스터세트.png",
@@ -11856,6 +11988,28 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024Gratte_일본_2024-10-04/goods/장리_코롯토_랜덤_코롯토세트.png",
     "goodsMemo": "코롯토세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-10-04",
+    "goodsSeries": "2024Gratte",
+    "goodsPrice": "랜덤",
+    "goodsChara": "절지",
+    "goodsCategory": "아크릴스탠드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024Gratte_일본_2024-10-04/goods/절지_아크릴스탠드_랜덤_아크릴스탠드세트.png",
+    "goodsMemo": "아크릴스탠드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-10-04",
+    "goodsSeries": "2024Gratte",
+    "goodsPrice": "랜덤",
+    "goodsChara": "절지",
+    "goodsCategory": "아크릴카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024Gratte_일본_2024-10-04/goods/절지_아크릴카드_랜덤_아크릴카드세트.png",
+    "goodsMemo": "아크릴카드세트"
   },
   {
     "goodsId": 0,
