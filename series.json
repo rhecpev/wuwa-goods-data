@@ -137,6 +137,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2024코미케C105",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024코미케C105_일본_2024-12-29/mainTheme.jpg",
+    "seriesCountry": "일본",
+    "seriesCharas": "감심,금희,기염,남랑자,단근,로코코,루미,산화,상리요,설지,알토,앙코,양양,여랑자,음림,장리,절지,치샤,카를로타,카멜리아,파수인,플로로",
+    "seriesDate": "2024-12-29"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2024파수인팝업",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024파수인팝업_일본_2024-10-01/mainTheme.jpg",
     "seriesCountry": "일본",
