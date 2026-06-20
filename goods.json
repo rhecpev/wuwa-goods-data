@@ -27767,6 +27767,28 @@
     "goodsId": 0,
     "goodsReleaseDate": "2025-05-31",
     "goodsSeries": "로손1차(중국)",
+    "goodsPrice": "타입1",
+    "goodsChara": "금희",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/금희_포토카드_타입1_16종포토카드세트.png",
+    "goodsMemo": "16종포토카드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-05-31",
+    "goodsSeries": "로손1차(중국)",
+    "goodsPrice": "타입1",
+    "goodsChara": "로코코",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/로코코_포토카드_타입1_16종포토카드세트.png",
+    "goodsMemo": "16종포토카드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-05-31",
+    "goodsSeries": "로손1차(중국)",
     "goodsPrice": "구매특전",
     "goodsChara": "브렌트,카를로타,페비,젠니",
     "goodsCategory": "가방",
@@ -27893,6 +27915,17 @@
     "goodsCategory": "레이저티켓",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/브렌트_레이저티켓_39위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-05-31",
+    "goodsSeries": "로손1차(중국)",
+    "goodsPrice": "행사참여",
+    "goodsChara": "브렌트",
+    "goodsCategory": "메모지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/브렌트_메모지_행사참여_단품.png",
     "goodsMemo": "단품"
   },
   {
@@ -28031,12 +28064,89 @@
     "goodsId": 0,
     "goodsReleaseDate": "2025-05-31",
     "goodsSeries": "로손1차(중국)",
+    "goodsPrice": "행사참여",
+    "goodsChara": "브렌트",
+    "goodsCategory": "클립",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/브렌트_클립_행사참여_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-05-31",
+    "goodsSeries": "로손1차(중국)",
     "goodsPrice": "구성품",
     "goodsChara": "브렌트",
     "goodsCategory": "티백",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/브렌트_티백_구성품_티백세트.png",
     "goodsMemo": "티백세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-05-31",
+    "goodsSeries": "로손1차(중국)",
+    "goodsPrice": "타입1",
+    "goodsChara": "브렌트",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/브렌트_포토카드_타입1_16종포토카드세트.png",
+    "goodsMemo": "16종포토카드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-05-31",
+    "goodsSeries": "로손1차(중국)",
+    "goodsPrice": "타입2",
+    "goodsChara": "브렌트",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/브렌트_포토카드_타입2_16종포토카드세트.png",
+    "goodsMemo": "16종포토카드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-05-31",
+    "goodsSeries": "로손1차(중국)",
+    "goodsPrice": "타입1",
+    "goodsChara": "상리요",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/상리요_포토카드_타입1_16종포토카드세트.png",
+    "goodsMemo": "16종포토카드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-05-31",
+    "goodsSeries": "로손1차(중국)",
+    "goodsPrice": "타입1",
+    "goodsChara": "음림",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/음림_포토카드_타입1_16종포토카드세트.png",
+    "goodsMemo": "16종포토카드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-05-31",
+    "goodsSeries": "로손1차(중국)",
+    "goodsPrice": "타입1",
+    "goodsChara": "장리",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/장리_포토카드_타입1_16종포토카드세트.png",
+    "goodsMemo": "16종포토카드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-05-31",
+    "goodsSeries": "로손1차(중국)",
+    "goodsPrice": "포토카드세트종류",
+    "goodsChara": "젠니,브렌트,카를로타,페비,로코코,파수인,카멜리아,상리요,금희,음림,칸타렐라,장리",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/젠니,브렌트,카를로타,페비,로코코,파수인,카멜리아,상리요,금희,음림,칸타렐라,장리_세트_포토카드세트종류_16종포토카드세트.jpg",
+    "goodsMemo": "16종포토카드세트"
   },
   {
     "goodsId": 0,
@@ -28069,6 +28179,17 @@
     "goodsCategory": "레이저티켓",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/젠니_레이저티켓_39위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-05-31",
+    "goodsSeries": "로손1차(중국)",
+    "goodsPrice": "행사참여",
+    "goodsChara": "젠니",
+    "goodsCategory": "메모지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/젠니_메모지_행사참여_단품.png",
     "goodsMemo": "단품"
   },
   {
@@ -28207,12 +28328,56 @@
     "goodsId": 0,
     "goodsReleaseDate": "2025-05-31",
     "goodsSeries": "로손1차(중국)",
+    "goodsPrice": "행사참여",
+    "goodsChara": "젠니",
+    "goodsCategory": "클립",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/젠니_클립_행사참여_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-05-31",
+    "goodsSeries": "로손1차(중국)",
     "goodsPrice": "구성품",
     "goodsChara": "젠니",
     "goodsCategory": "티백",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/젠니_티백_구성품_티백세트.png",
     "goodsMemo": "티백세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-05-31",
+    "goodsSeries": "로손1차(중국)",
+    "goodsPrice": "타입1",
+    "goodsChara": "젠니",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/젠니_포토카드_타입1_16종포토카드세트.png",
+    "goodsMemo": "16종포토카드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-05-31",
+    "goodsSeries": "로손1차(중국)",
+    "goodsPrice": "타입2",
+    "goodsChara": "젠니",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/젠니_포토카드_타입2_16종포토카드세트.png",
+    "goodsMemo": "16종포토카드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-05-31",
+    "goodsSeries": "로손1차(중국)",
+    "goodsPrice": "행사참여",
+    "goodsChara": "카를로타,페비,젠니,브렌트",
+    "goodsCategory": "마우스패드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/카를로타,페비,젠니,브렌트_마우스패드_행사참여_단품.png",
+    "goodsMemo": "단품"
   },
   {
     "goodsId": 0,
@@ -28256,6 +28421,17 @@
     "goodsCategory": "레이저티켓",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/카를로타_레이저티켓_39위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-05-31",
+    "goodsSeries": "로손1차(중국)",
+    "goodsPrice": "행사참여",
+    "goodsChara": "카를로타",
+    "goodsCategory": "메모지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/카를로타_메모지_행사참여_단품.png",
     "goodsMemo": "단품"
   },
   {
@@ -28394,12 +28570,78 @@
     "goodsId": 0,
     "goodsReleaseDate": "2025-05-31",
     "goodsSeries": "로손1차(중국)",
+    "goodsPrice": "행사참여",
+    "goodsChara": "카를로타",
+    "goodsCategory": "클립",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/카를로타_클립_행사참여_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-05-31",
+    "goodsSeries": "로손1차(중국)",
     "goodsPrice": "구성품",
     "goodsChara": "카를로타",
     "goodsCategory": "티백",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/카를로타_티백_구성품_티백세트.png",
     "goodsMemo": "티백세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-05-31",
+    "goodsSeries": "로손1차(중국)",
+    "goodsPrice": "타입1",
+    "goodsChara": "카를로타",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/카를로타_포토카드_타입1_16종포토카드세트.png",
+    "goodsMemo": "16종포토카드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-05-31",
+    "goodsSeries": "로손1차(중국)",
+    "goodsPrice": "타입2",
+    "goodsChara": "카를로타",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/카를로타_포토카드_타입2_16종포토카드세트.png",
+    "goodsMemo": "16종포토카드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-05-31",
+    "goodsSeries": "로손1차(중국)",
+    "goodsPrice": "타입1",
+    "goodsChara": "카멜리아",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/카멜리아_포토카드_타입1_16종포토카드세트.png",
+    "goodsMemo": "16종포토카드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-05-31",
+    "goodsSeries": "로손1차(중국)",
+    "goodsPrice": "타입1",
+    "goodsChara": "칸타렐라",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/칸타렐라_포토카드_타입1_16종포토카드세트.png",
+    "goodsMemo": "16종포토카드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-05-31",
+    "goodsSeries": "로손1차(중국)",
+    "goodsPrice": "타입1",
+    "goodsChara": "파수인",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/파수인_포토카드_타입1_16종포토카드세트.png",
+    "goodsMemo": "16종포토카드세트"
   },
   {
     "goodsId": 0,
@@ -28421,6 +28663,17 @@
     "goodsCategory": "레이저티켓",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/페비_레이저티켓_39위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-05-31",
+    "goodsSeries": "로손1차(중국)",
+    "goodsPrice": "행사참여",
+    "goodsChara": "페비",
+    "goodsCategory": "메모지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/페비_메모지_행사참여_단품.png",
     "goodsMemo": "단품"
   },
   {
@@ -28559,12 +28812,45 @@
     "goodsId": 0,
     "goodsReleaseDate": "2025-05-31",
     "goodsSeries": "로손1차(중국)",
+    "goodsPrice": "행사참여",
+    "goodsChara": "페비",
+    "goodsCategory": "클립",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/페비_클립_행사참여_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-05-31",
+    "goodsSeries": "로손1차(중국)",
     "goodsPrice": "구성품",
     "goodsChara": "페비",
     "goodsCategory": "티백",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/페비_티백_구성품_티백세트.png",
     "goodsMemo": "티백세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-05-31",
+    "goodsSeries": "로손1차(중국)",
+    "goodsPrice": "타입1",
+    "goodsChara": "페비",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/페비_포토카드_타입1_16종포토카드세트.png",
+    "goodsMemo": "16종포토카드세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-05-31",
+    "goodsSeries": "로손1차(중국)",
+    "goodsPrice": "타입2",
+    "goodsChara": "페비",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/goods/페비_포토카드_타입2_16종포토카드세트.png",
+    "goodsMemo": "16종포토카드세트"
   },
   {
     "goodsId": 0,
