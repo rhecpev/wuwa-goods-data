@@ -393,6 +393,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "명조x나이쉐티",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x나이쉐티_중국_2025-04-28/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "아브,젠니,카를로타",
+    "seriesDate": "2025-04-28"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "명조x도향촌",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x도향촌_중국_2025-09-10/mainTheme.png",
     "seriesCountry": "중국",
