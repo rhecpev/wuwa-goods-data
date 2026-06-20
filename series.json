@@ -321,6 +321,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "REDMAGIC카멜리아",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/REDMAGIC카멜리아_중국_2025-11-11/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "카멜리아",
+    "seriesDate": "2025-11-11"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "karasumaya",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/karasumaya_중국_2026-01-31/mainTheme.jpg",
     "seriesCountry": "중국",

@@ -24179,6 +24179,72 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2025-11-11",
+    "goodsSeries": "REDMAGIC카멜리아",
+    "goodsPrice": "구성품",
+    "goodsChara": "카멜리아",
+    "goodsCategory": "USIM핀",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/REDMAGIC카멜리아_중국_2025-11-11/goods/카멜리아_USIM핀_구성품_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-11-11",
+    "goodsSeries": "REDMAGIC카멜리아",
+    "goodsPrice": "구성품",
+    "goodsChara": "카멜리아",
+    "goodsCategory": "디오라마",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/REDMAGIC카멜리아_중국_2025-11-11/goods/카멜리아_디오라마_구성품_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-11-11",
+    "goodsSeries": "REDMAGIC카멜리아",
+    "goodsPrice": "구성품",
+    "goodsChara": "카멜리아",
+    "goodsCategory": "스마트폰",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/REDMAGIC카멜리아_중국_2025-11-11/goods/카멜리아_스마트폰_구성품_단품.jpg",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-11-11",
+    "goodsSeries": "REDMAGIC카멜리아",
+    "goodsPrice": "구성품",
+    "goodsChara": "카멜리아",
+    "goodsCategory": "충전기",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/REDMAGIC카멜리아_중국_2025-11-11/goods/카멜리아_충전기_구성품_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-11-11",
+    "goodsSeries": "REDMAGIC카멜리아",
+    "goodsPrice": "구성품",
+    "goodsChara": "카멜리아",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/REDMAGIC카멜리아_중국_2025-11-11/goods/카멜리아_키링_구성품_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-11-11",
+    "goodsSeries": "REDMAGIC카멜리아",
+    "goodsPrice": "구성품",
+    "goodsChara": "카멜리아",
+    "goodsCategory": "폰케이스",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/REDMAGIC카멜리아_중국_2025-11-11/goods/카멜리아_폰케이스_구성품_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2026-01-31",
     "goodsSeries": "karasumaya",
     "goodsPrice": "298위안",
