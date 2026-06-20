@@ -31340,6 +31340,39 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2026-01-01",
+    "goodsSeries": "음림LD피규어",
+    "goodsPrice": "999위안",
+    "goodsChara": "음림",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/음림LD피규어_기타_2026-01-01/goods/음림_세트_999위안_피규어세트.jpg",
+    "goodsMemo": "피규어세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-01",
+    "goodsSeries": "음림LD피규어",
+    "goodsPrice": "구성품",
+    "goodsChara": "음림",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/음림LD피규어_기타_2026-01-01/goods/음림_캔뱃지_구성품_피규어세트.png",
+    "goodsMemo": "피규어세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-01",
+    "goodsSeries": "음림LD피규어",
+    "goodsPrice": "구성품",
+    "goodsChara": "음림",
+    "goodsCategory": "피규어",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/음림LD피규어_기타_2026-01-01/goods/음림_피규어_구성품_피규어세트.png",
+    "goodsMemo": "피규어세트"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2026-05-30",
     "goodsSeries": "일본2주년",
     "goodsPrice": "300엔",

@@ -401,6 +401,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "음림LD피규어",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/음림LD피규어_기타_2026-01-01/mainTheme.jpg",
+    "seriesCountry": "기타",
+    "seriesCharas": "음림",
+    "seriesDate": "2026-01-01"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "일본2주년",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/일본2주년_일본_2026-05-30/maintheme.jpg",
     "seriesCountry": "일본",
