@@ -129,6 +129,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2025반디카니발",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025반디카니발_중국_2025-01-10/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "로코코,카를로타",
+    "seriesDate": "2025-01-10"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2025반딧불이",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025반딧불이_중국_2025-05-03/mainTheme.jpg",
     "seriesCountry": "중국",
