@@ -161,6 +161,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2025피자헛",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025피자헛_중국_2025-01-13/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "금희,남랑자,상리요,아브,여랑자,장리",
+    "seriesDate": "2025-01-13"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2026bilibili",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026bilibili_중국_2026-05-23/mainTheme.jpg",
     "seriesCountry": "중국",
