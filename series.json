@@ -585,6 +585,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "나가사키바이오파크",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/나가사키바이오파크_일본_2025-12-05/mainTheme.jpg",
+    "seriesCountry": "일본",
+    "seriesCharas": "남랑자,여랑자,치사",
+    "seriesDate": "2025-12-05"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "단말기에코",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/단말기에코_중국_2026-04-24/mainTheme.png",
     "seriesCountry": "중국",

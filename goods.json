@@ -37973,6 +37973,61 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2025-12-05",
+    "goodsSeries": "나가사키바이오파크",
+    "goodsPrice": "증정품",
+    "goodsChara": "치사,남랑자,여랑자",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/나가사키바이오파크_일본_2025-12-05/goods/치사,남랑자,여랑자_세트_증정품_세트.jpg",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-12-05",
+    "goodsSeries": "나가사키바이오파크",
+    "goodsPrice": "구성품",
+    "goodsChara": "치사",
+    "goodsCategory": "레이저티켓",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/나가사키바이오파크_일본_2025-12-05/goods/치사_레이저티켓_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-12-05",
+    "goodsSeries": "나가사키바이오파크",
+    "goodsPrice": "구성품2",
+    "goodsChara": "치사",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/나가사키바이오파크_일본_2025-12-05/goods/치사_엽서_구성품2_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-12-05",
+    "goodsSeries": "나가사키바이오파크",
+    "goodsPrice": "구성품",
+    "goodsChara": "치사",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/나가사키바이오파크_일본_2025-12-05/goods/치사_엽서_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-12-05",
+    "goodsSeries": "나가사키바이오파크",
+    "goodsPrice": "구성품",
+    "goodsChara": "치사",
+    "goodsCategory": "클리어파일",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/나가사키바이오파크_일본_2025-12-05/goods/치사_클리어파일_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2026-04-24",
     "goodsSeries": "단말기에코",
     "goodsPrice": "구성품",
