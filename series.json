@@ -201,6 +201,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "BilibiliWorld2025",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/BilibiliWorld2025_중국_2025-07-11/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "루파,카르티시아",
+    "seriesDate": "2025-07-11"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "ChinaJoy",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/ChinaJoy_중국_2025-08-07/mainTheme.avif",
     "seriesCountry": "중국",
