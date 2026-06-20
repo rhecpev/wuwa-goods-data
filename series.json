@@ -337,6 +337,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "명조xCoCo",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조xCoCo_중국_2025-11-21/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "갈브레나,치사",
+    "seriesDate": "2025-11-21"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "명조x완다필름",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x완다필름_중국_2025-12-20/mainTheme.jpg",
     "seriesCountry": "중국",
