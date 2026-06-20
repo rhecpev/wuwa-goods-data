@@ -441,6 +441,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "명조xWESTLAKE",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조xWESTLAKE_중국_2024-11-22/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "카멜리아,파수인",
+    "seriesDate": "2024-11-22"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "명조x나이쉐티",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x나이쉐티_중국_2025-04-28/mainTheme.jpg",
     "seriesCountry": "중국",
