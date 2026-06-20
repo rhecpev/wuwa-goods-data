@@ -153,6 +153,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2025TGS",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025TGS_대만_2025-01-23/mainTheme.jpg",
+    "seriesCountry": "대만",
+    "seriesCharas": "남랑자,로코코,여랑자,카를로타",
+    "seriesDate": "2025-01-23"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2025반디카니발",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025반디카니발_중국_2025-01-10/mainTheme.jpg",
     "seriesCountry": "중국",
