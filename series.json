@@ -673,6 +673,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "띵조 캠퍼스 위크",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/띵조 캠퍼스 위크_한국_2026-01-23/mainTheme.jpg",
+    "seriesCountry": "한국",
+    "seriesCharas": "갈브레나,남랑자,린네,모니에,몬스터,여랑자,카르티시아",
+    "seriesDate": "2026-01-23"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "띵조 페스티벌 변함없이, 당신과 함께",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/띵조 페스티벌 변함없이, 당신과 함께_한국_2025-05-30/mainTheme.jpg",
     "seriesCountry": "한국",
