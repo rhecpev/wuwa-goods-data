@@ -649,6 +649,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "띵조마켓 in 신촌",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/띵조마켓 in 신촌_한국_2024-07-19/mainTheme.jpg",
+    "seriesCountry": "한국",
+    "seriesCharas": "금희,기염,남랑자,몬스터,앙코,양양,여랑자,음림,장리",
+    "seriesDate": "2024-07-19"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "라쿠스파",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/라쿠스파_일본_2024-11-07/maInTheme.jpg",
     "seriesCountry": "일본",
