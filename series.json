@@ -113,6 +113,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2024 GS25",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024 GS25_한국_2024-11-08/mainTheme.jpg",
+    "seriesCountry": "한국",
+    "seriesCharas": "금희,루미,음림,장리,카멜리아,파수인",
+    "seriesDate": "2024-11-08"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2024Gratte",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024Gratte_일본_2024-10-04/mainTheme.webp",
     "seriesCountry": "일본",
