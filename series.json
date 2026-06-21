@@ -657,6 +657,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "띵조파크 in 용산",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/띵조파크 in 용산_한국_2024-10-03/mainTheme.jpg",
+    "seriesCountry": "한국",
+    "seriesCharas": "벨리나,상리요,앙코,유호,절지,파수인",
+    "seriesDate": "2024-10-03"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "라쿠스파",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/라쿠스파_일본_2024-11-07/maInTheme.jpg",
     "seriesCountry": "일본",
