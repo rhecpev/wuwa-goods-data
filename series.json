@@ -289,6 +289,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2025컴포즈",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025컴포즈_한국_2025-06-09/mainTheme.jpg",
+    "seriesCountry": "한국",
+    "seriesCharas": "브렌트,젠니",
+    "seriesDate": "2025-06-09"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2025피자헛",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025피자헛_중국_2025-01-13/mainTheme.jpg",
     "seriesCountry": "중국",
