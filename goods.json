@@ -13190,6 +13190,17 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2024-12-14",
+    "goodsSeries": "2024랄라무브",
+    "goodsPrice": "행사참여",
+    "goodsChara": "루미",
+    "goodsCategory": "카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024랄라무브_중국_2024-12-14/goods/루미_카드_행사참여_증정품.png",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2024-06-03",
     "goodsSeries": "2024맘스터치",
     "goodsPrice": "랜덤",
