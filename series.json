@@ -209,6 +209,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2025Gratte",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025Gratte_일본_2025-11-20/mainTheme.png",
+    "seriesCountry": "일본",
+    "seriesCharas": "갈브레나,구원,루파,샤콘,아우구스타,유노,젠니,치사,플로로",
+    "seriesDate": "2025-11-20"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2025KUROFEST",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/mainTheme.jpg",
     "seriesCountry": "중국",
