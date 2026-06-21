@@ -145,6 +145,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2024랄라무브",
+    "seriesUrl": "",
+    "seriesCountry": "중국",
+    "seriesCharas": "",
+    "seriesDate": "2024-12-14"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2024맘스터치",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024맘스터치_한국_2024-06-03/mainTheme.png",
     "seriesCountry": "한국",
