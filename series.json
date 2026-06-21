@@ -657,6 +657,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "띵조 카니발 in 용산",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/띵조 카니발 in 용산_한국_2025-04-04/mainTheme.jpg",
+    "seriesCountry": "한국",
+    "seriesCharas": "금희,로코코,몬스터,브렌트,산화,앙코,양양,여랑자,젠니,카를로타,카멜리아,칸타렐라,파수인,페비",
+    "seriesDate": "2025-04-04"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "띵조마켓 in 신촌",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/띵조마켓 in 신촌_한국_2024-07-19/mainTheme.jpg",
     "seriesCountry": "한국",
