@@ -476,17 +476,6 @@
     "goodsId": 0,
     "goodsReleaseDate": "2024-07-04",
     "goodsSeries": "1.0버전",
-    "goodsPrice": "59위안",
-    "goodsChara": "치사",
-    "goodsCategory": "아크릴스탠드",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/치사_아크릴스탠드_59위안_단품.png",
-    "goodsMemo": "단품"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2024-07-04",
-    "goodsSeries": "1.0버전",
     "goodsPrice": "25위안",
     "goodsChara": "치샤",
     "goodsCategory": "세트",
@@ -503,6 +492,17 @@
     "goodsCategory": "아크릴블록",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/치샤_아크릴블록_59위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-07-04",
+    "goodsSeries": "1.0버전",
+    "goodsPrice": "59위안",
+    "goodsChara": "치샤",
+    "goodsCategory": "아크릴스탠드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.0버전_버전_2024-07-04/goods/치샤_아크릴스탠드_59위안_단품.png",
     "goodsMemo": "단품"
   },
   {
