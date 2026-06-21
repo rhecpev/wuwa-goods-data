@@ -697,6 +697,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "도쿄레드타워",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/mainTheme.jpg",
+    "seriesCountry": "일본",
+    "seriesCharas": "남랑자,루파,여랑자,장리,카르티시아,카를로타,칸타렐라,페비",
+    "seriesDate": "2025-07-18"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "띵조 월드 in AGF",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/띵조 월드 in AGF_한국_2024-12-07/mainTheme.jpg",
     "seriesCountry": "한국",
