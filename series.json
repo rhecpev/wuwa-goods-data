@@ -689,6 +689,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "띵조 페스티벌 빛나는 순간, 당신과 함께",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/띵조 페스티벌 빛나는 순간, 당신과 함께_한국_2026-05-29/mainTheme.png",
+    "seriesCountry": "한국",
+    "seriesCharas": "갈브레나,금희,남랑자,데니아,린네,샤콘,아우구스타,에이메스,여랑자,유노,젠니,치사,카르티시아,카멜리아,페비,플로로,히유키",
+    "seriesDate": "2026-05-29"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "띵조마켓 in 신촌",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/띵조마켓 in 신촌_한국_2024-07-19/mainTheme.jpg",
     "seriesCountry": "한국",
