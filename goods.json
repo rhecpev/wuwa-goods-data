@@ -51063,6 +51063,61 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2025-01-16",
+    "goodsSeries": "맘스터치2차",
+    "goodsPrice": "구매사은품",
+    "goodsChara": "로코코",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/맘스터치2차_한국_2025-01-16/goods/로코코_포토카드_구매사은품_LD.png",
+    "goodsMemo": "LD"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-01-16",
+    "goodsSeries": "맘스터치2차",
+    "goodsPrice": "구매사은품",
+    "goodsChara": "로코코",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/맘스터치2차_한국_2025-01-16/goods/로코코_포토카드_구매사은품_SD.png",
+    "goodsMemo": "SD"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-01-16",
+    "goodsSeries": "맘스터치2차",
+    "goodsPrice": "구매사은품",
+    "goodsChara": "카를로타",
+    "goodsCategory": "리딤코드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/맘스터치2차_한국_2025-01-16/goods/카를로타_리딤코드_구매사은품_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-01-16",
+    "goodsSeries": "맘스터치2차",
+    "goodsPrice": "구매사은품",
+    "goodsChara": "카를로타",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/맘스터치2차_한국_2025-01-16/goods/카를로타_포토카드_구매사은품_LD.png",
+    "goodsMemo": "LD"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-01-16",
+    "goodsSeries": "맘스터치2차",
+    "goodsPrice": "구매사은품",
+    "goodsChara": "카를로타",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/맘스터치2차_한국_2025-01-16/goods/카를로타_포토카드_구매사은품_SD.png",
+    "goodsMemo": "SD"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2024-05-27",
     "goodsSeries": "명조 in 홍대",
     "goodsPrice": "17000원",

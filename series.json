@@ -761,6 +761,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "맘스터치2차",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/맘스터치2차_한국_2025-01-16/mainTheme.jpg",
+    "seriesCountry": "한국",
+    "seriesCharas": "로코코,카를로타",
+    "seriesDate": "2025-01-16"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "명조 in 홍대",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조 in 홍대_한국_2024-05-27/mainTheme.jpg",
     "seriesCountry": "한국",
