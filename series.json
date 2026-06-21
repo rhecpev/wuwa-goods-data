@@ -193,6 +193,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2025 GS25",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025 GS25_한국_2025-12-31/mainTheme.jpg",
+    "seriesCountry": "한국",
+    "seriesCharas": "갈브레나,구원,남랑자,로코코,루미,루파,린네,브렌트,상리요,샤콘,아우구스타,여랑자,유노,유호,절지,젠니,치사,카르티시아,카를로타,카멜리아,칸타렐라,파수인,페비,플로로",
+    "seriesDate": "2025-12-31"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2025CICF×AGF",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025CICF×AGF_중국_2025-10-02/mainTheme.jpg",
     "seriesCountry": "중국",
@@ -254,6 +262,14 @@
     "seriesCountry": "중국",
     "seriesCharas": "남랑자,브렌트,여랑자,젠니,칸타렐라,페비",
     "seriesDate": "2025-05-03"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "2025반올림피자",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025반올림피자_한국_2025-10-20/mainTheme.jpg",
+    "seriesCountry": "한국",
+    "seriesCharas": "갈브레나,유노",
+    "seriesDate": "2025-10-20"
   },
   {
     "seriesId": 0,
