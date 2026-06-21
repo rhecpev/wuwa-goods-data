@@ -129,6 +129,22 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2024달콤커피",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024달콤커피_한국_2024-06-04/mainTheme.jpg",
+    "seriesCountry": "한국",
+    "seriesCharas": "감심,앙코",
+    "seriesDate": "2024-06-04"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "2024맘스터치",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024맘스터치_한국_2024-06-03/mainTheme.png",
+    "seriesCountry": "한국",
+    "seriesCharas": "설지,양양",
+    "seriesDate": "2024-06-03"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2024반디카니발",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024반디카니발_중국_2024-05-01/mainTheme.jpg",
     "seriesCountry": "중국",
