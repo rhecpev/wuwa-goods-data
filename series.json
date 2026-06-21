@@ -681,6 +681,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "명조 in 홍대",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조 in 홍대_한국_2024-05-27/mainTheme.jpg",
+    "seriesCountry": "한국",
+    "seriesCharas": "감심,금희,기염,남랑자,단근,도기,산화,설지,알토,앙코,양양,여랑자,음림,치샤,플로로",
+    "seriesDate": "2024-05-27"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "명조2026음악회",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조2026음악회_한국_2026-08-29/mainTheme.jpg",
     "seriesCountry": "한국",
