@@ -649,6 +649,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "띵조 월드 in AGF",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/띵조 월드 in AGF_한국_2024-12-07/mainTheme.jpg",
+    "seriesCountry": "한국",
+    "seriesCharas": "금희,남랑자,루미,몬스터,알토,앙코,유호,음림,장리,카멜리아,파수인",
+    "seriesDate": "2024-12-07"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "띵조마켓 in 신촌",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/띵조마켓 in 신촌_한국_2024-07-19/mainTheme.jpg",
     "seriesCountry": "한국",
