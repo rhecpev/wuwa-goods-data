@@ -42936,6 +42936,28 @@
     "goodsId": 0,
     "goodsReleaseDate": "2025-07-18",
     "goodsSeries": "도쿄레드타워",
+    "goodsPrice": "음료구매",
+    "goodsChara": "루파,여랑자,카르티시아",
+    "goodsCategory": "컵홀더",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/루파,여랑자,카르티시아_컵홀더_음료구매_증정품.png",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-07-18",
+    "goodsSeries": "도쿄레드타워",
+    "goodsPrice": "입장특전",
+    "goodsChara": "루파,여랑자,카르티시아",
+    "goodsCategory": "포스터",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/루파,여랑자,카르티시아_포스터_입장특전_증정품.png",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-07-18",
+    "goodsSeries": "도쿄레드타워",
     "goodsPrice": "1100엔",
     "goodsChara": "루파",
     "goodsCategory": "아크릴스탠드",
@@ -42964,6 +42986,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/루파_여권케이스_1650엔_단품.png",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-07-18",
+    "goodsSeries": "도쿄레드타워",
+    "goodsPrice": "LD",
+    "goodsChara": "루파",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/루파_엽서_LD_랜덤엽서.png",
+    "goodsMemo": "랜덤엽서"
   },
   {
     "goodsId": 0,
@@ -43013,12 +43046,34 @@
     "goodsId": 0,
     "goodsReleaseDate": "2025-07-18",
     "goodsSeries": "도쿄레드타워",
+    "goodsPrice": "랜덤",
+    "goodsChara": "루파",
+    "goodsCategory": "코스터",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/루파_코스터_랜덤_랜덤코스터.png",
+    "goodsMemo": "랜덤코스터"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-07-18",
+    "goodsSeries": "도쿄레드타워",
     "goodsPrice": "770엔",
     "goodsChara": "루파",
     "goodsCategory": "키홀더",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/루파_키홀더_770엔_랜덤키홀더세트.png",
     "goodsMemo": "랜덤키홀더세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-07-18",
+    "goodsSeries": "도쿄레드타워",
+    "goodsPrice": "2200엔구매증정",
+    "goodsChara": "여랑자,칸타렐라,카르티시아,카를로타,페비,루파,장리",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/여랑자,칸타렐라,카르티시아,카를로타,페비,루파,장리_세트_2200엔구매증정_랜덤엽서.jpg",
+    "goodsMemo": "랜덤엽서"
   },
   {
     "goodsId": 0,
@@ -43052,6 +43107,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/여랑자,칸타렐라,카르티시아,카를로타,페비,루파,장리_세트_5390엔_랜덤키홀더세트.png",
     "goodsMemo": "랜덤키홀더세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-07-18",
+    "goodsSeries": "도쿄레드타워",
+    "goodsPrice": "음료구매",
+    "goodsChara": "여랑자,칸타렐라,카르티시아,카를로타,페비,루파,장리",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/여랑자,칸타렐라,카르티시아,카를로타,페비,루파,장리_세트_음료구매_랜덤코스터.jpg",
+    "goodsMemo": "랜덤코스터"
   },
   {
     "goodsId": 0,
@@ -43101,6 +43167,28 @@
     "goodsId": 0,
     "goodsReleaseDate": "2025-07-18",
     "goodsSeries": "도쿄레드타워",
+    "goodsPrice": "LD",
+    "goodsChara": "여랑자",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/여랑자_엽서_LD_랜덤엽서.png",
+    "goodsMemo": "랜덤엽서"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-07-18",
+    "goodsSeries": "도쿄레드타워",
+    "goodsPrice": "SD",
+    "goodsChara": "여랑자",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/여랑자_엽서_SD_랜덤엽서.png",
+    "goodsMemo": "랜덤엽서"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-07-18",
+    "goodsSeries": "도쿄레드타워",
     "goodsPrice": "2750엔",
     "goodsChara": "여랑자",
     "goodsCategory": "족자봉",
@@ -43140,6 +43228,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/여랑자_캔뱃지_495엔_랜덤캔뱃지세트.png",
     "goodsMemo": "랜덤캔뱃지세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-07-18",
+    "goodsSeries": "도쿄레드타워",
+    "goodsPrice": "랜덤",
+    "goodsChara": "여랑자",
+    "goodsCategory": "코스터",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/여랑자_코스터_랜덤_랜덤코스터.png",
+    "goodsMemo": "랜덤코스터"
   },
   {
     "goodsId": 0,
@@ -43200,6 +43299,17 @@
     "goodsId": 0,
     "goodsReleaseDate": "2025-07-18",
     "goodsSeries": "도쿄레드타워",
+    "goodsPrice": "랜덤",
+    "goodsChara": "장리",
+    "goodsCategory": "코스터",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/장리_코스터_랜덤_랜덤코스터.png",
+    "goodsMemo": "랜덤코스터"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-07-18",
+    "goodsSeries": "도쿄레드타워",
     "goodsPrice": "770엔",
     "goodsChara": "장리",
     "goodsCategory": "키홀더",
@@ -43250,6 +43360,39 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/카르티시아_여권케이스_1650엔_단품.png",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-07-18",
+    "goodsSeries": "도쿄레드타워",
+    "goodsPrice": "LD",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/카르티시아_엽서_LD_랜덤엽서.png",
+    "goodsMemo": "랜덤엽서"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-07-18",
+    "goodsSeries": "도쿄레드타워",
+    "goodsPrice": "SD2",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/카르티시아_엽서_SD2_랜덤엽서.png",
+    "goodsMemo": "랜덤엽서"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-07-18",
+    "goodsSeries": "도쿄레드타워",
+    "goodsPrice": "SD",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/카르티시아_엽서_SD_랜덤엽서.png",
+    "goodsMemo": "랜덤엽서"
   },
   {
     "goodsId": 0,
@@ -43310,6 +43453,28 @@
     "goodsId": 0,
     "goodsReleaseDate": "2025-07-18",
     "goodsSeries": "도쿄레드타워",
+    "goodsPrice": "랜덤2",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "코스터",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/카르티시아_코스터_랜덤2_랜덤코스터.png",
+    "goodsMemo": "랜덤코스터"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-07-18",
+    "goodsSeries": "도쿄레드타워",
+    "goodsPrice": "랜덤",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "코스터",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/카르티시아_코스터_랜덤_랜덤코스터.png",
+    "goodsMemo": "랜덤코스터"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-07-18",
+    "goodsSeries": "도쿄레드타워",
     "goodsPrice": "770엔",
     "goodsChara": "카르티시아",
     "goodsCategory": "키홀더",
@@ -43360,6 +43525,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/카를로타_캔뱃지_495엔_랜덤캔뱃지세트.png",
     "goodsMemo": "랜덤캔뱃지세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-07-18",
+    "goodsSeries": "도쿄레드타워",
+    "goodsPrice": "랜덤",
+    "goodsChara": "카를로타",
+    "goodsCategory": "코스터",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/카를로타_코스터_랜덤_랜덤코스터.png",
+    "goodsMemo": "랜덤코스터"
   },
   {
     "goodsId": 0,
@@ -43420,6 +43596,17 @@
     "goodsId": 0,
     "goodsReleaseDate": "2025-07-18",
     "goodsSeries": "도쿄레드타워",
+    "goodsPrice": "랜덤",
+    "goodsChara": "칸타렐라",
+    "goodsCategory": "코스터",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/칸타렐라_코스터_랜덤_랜덤코스터.png",
+    "goodsMemo": "랜덤코스터"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-07-18",
+    "goodsSeries": "도쿄레드타워",
     "goodsPrice": "770엔",
     "goodsChara": "칸타렐라",
     "goodsCategory": "키홀더",
@@ -43470,6 +43657,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/페비_캔뱃지_495엔_랜덤캔뱃지세트.png",
     "goodsMemo": "랜덤캔뱃지세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-07-18",
+    "goodsSeries": "도쿄레드타워",
+    "goodsPrice": "랜덤",
+    "goodsChara": "페비",
+    "goodsCategory": "코스터",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/페비_코스터_랜덤_랜덤코스터.png",
+    "goodsMemo": "랜덤코스터"
   },
   {
     "goodsId": 0,
