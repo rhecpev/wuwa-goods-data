@@ -53,5 +53,7 @@
   {"charaId": 0, "charaNm": "아브", "charaUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/character/ab.png", "charaIsFavorite": false},
   {"charaId": 0, "charaNm": "아브대마왕", "charaUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/character/abking.png", "charaIsFavorite": false},
   {"charaId": 0, "charaNm": "몬스터", "charaUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/character/monster.png", "charaIsFavorite": false},
+  {"charaId": 0, "charaNm": "양양현령", "charaUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/character/yangyang2.png", "charaIsFavorite": false},
+  {"charaId": 0, "charaNm": "수수", "charaUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/character/suisui.png", "charaIsFavorite": false},
   {"charaId": 0, "charaNm": "치샤", "charaUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/character/Chixia.jpg", "charaIsFavorite": false}
 ]
