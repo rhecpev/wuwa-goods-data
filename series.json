@@ -1041,6 +1041,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "치사와 방과후의 약속",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/치사와 방과후의 약속_한국_2026-04-09/mainTheme.jpg",
+    "seriesCountry": "한국",
+    "seriesCharas": "치사",
+    "seriesDate": "2026-04-09"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "카멜리아UDX아키하바라",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/카멜리아UDX아키하바라_일본_2024-11-30/mainTheme.png",
     "seriesCountry": "일본",
