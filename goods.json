@@ -62912,6 +62912,17 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-05-30",
     "goodsSeries": "일본2주년",
+    "goodsPrice": "스탬프참여",
+    "goodsChara": "데니아",
+    "goodsCategory": "카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/일본2주년_일본_2026-05-30/goods/데니아_카드_스탬프참여_사은품.jpg",
+    "goodsMemo": "사은품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-05-30",
+    "goodsSeries": "일본2주년",
     "goodsPrice": "랜덤",
     "goodsChara": "데니아",
     "goodsCategory": "캔뱃지",
@@ -63072,6 +63083,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/일본2주년_일본_2026-05-30/goods/루크_족자봉_3300엔_단품.png",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-05-30",
+    "goodsSeries": "일본2주년",
+    "goodsPrice": "스탬프참여",
+    "goodsChara": "루크",
+    "goodsCategory": "카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/일본2주년_일본_2026-05-30/goods/루크_카드_스탬프참여_사은품.jpg",
+    "goodsMemo": "사은품"
   },
   {
     "goodsId": 0,
@@ -63297,6 +63319,17 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-05-30",
     "goodsSeries": "일본2주년",
+    "goodsPrice": "스탬프참여",
+    "goodsChara": "에이메스",
+    "goodsCategory": "카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/일본2주년_일본_2026-05-30/goods/에이메스_카드_스탬프참여_사은품.jpg",
+    "goodsMemo": "사은품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-05-30",
+    "goodsSeries": "일본2주년",
     "goodsPrice": "랜덤",
     "goodsChara": "에이메스",
     "goodsCategory": "캔뱃지",
@@ -63490,6 +63523,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/일본2주년_일본_2026-05-30/goods/히유키_족자봉_3300엔_단품.png",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-05-30",
+    "goodsSeries": "일본2주년",
+    "goodsPrice": "스탬프참여",
+    "goodsChara": "히유키",
+    "goodsCategory": "카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/일본2주년_일본_2026-05-30/goods/히유키_카드_스탬프참여_사은품.jpg",
+    "goodsMemo": "사은품"
   },
   {
     "goodsId": 0,
@@ -64386,6 +64430,17 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-05-23",
     "goodsSeries": "중국2주년오프라인",
+    "goodsPrice": "구성품",
+    "goodsChara": "데니아",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/중국2주년오프라인_중국_2026-05-23/goods/데니아_캔뱃지_구성품_캔뱃지세트.png",
+    "goodsMemo": "캔뱃지세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-05-23",
+    "goodsSeries": "중국2주년오프라인",
     "goodsPrice": "증정품",
     "goodsChara": "데니아",
     "goodsCategory": "클리어파일",
@@ -64463,12 +64518,34 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-05-23",
     "goodsSeries": "중국2주년오프라인",
+    "goodsPrice": "행사참여",
+    "goodsChara": "루크,히유키,데니아,에이메스",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/중국2주년오프라인_중국_2026-05-23/goods/루크,히유키,데니아,에이메스_세트_행사참여_캔뱃지세트.jpg",
+    "goodsMemo": "캔뱃지세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-05-23",
+    "goodsSeries": "중국2주년오프라인",
     "goodsPrice": "단품",
     "goodsChara": "루크",
     "goodsCategory": "응원봉",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/중국2주년오프라인_중국_2026-05-23/goods/루크_응원봉_단품_응원봉랜덤.png",
     "goodsMemo": "응원봉랜덤"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-05-23",
+    "goodsSeries": "중국2주년오프라인",
+    "goodsPrice": "구성품",
+    "goodsChara": "루크",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/중국2주년오프라인_중국_2026-05-23/goods/루크_캔뱃지_구성품_캔뱃지세트.png",
+    "goodsMemo": "캔뱃지세트"
   },
   {
     "goodsId": 0,
@@ -64485,12 +64562,34 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-05-23",
     "goodsSeries": "중국2주년오프라인",
+    "goodsPrice": "구성품",
+    "goodsChara": "에이메스",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/중국2주년오프라인_중국_2026-05-23/goods/에이메스_캔뱃지_구성품_캔뱃지세트.png",
+    "goodsMemo": "캔뱃지세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-05-23",
+    "goodsSeries": "중국2주년오프라인",
     "goodsPrice": "단품",
     "goodsChara": "히유키",
     "goodsCategory": "응원봉",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/중국2주년오프라인_중국_2026-05-23/goods/히유키_응원봉_단품_응원봉랜덤.png",
     "goodsMemo": "응원봉랜덤"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-05-23",
+    "goodsSeries": "중국2주년오프라인",
+    "goodsPrice": "구성품",
+    "goodsChara": "히유키",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/중국2주년오프라인_중국_2026-05-23/goods/히유키_캔뱃지_구성품_캔뱃지세트.png",
+    "goodsMemo": "캔뱃지세트"
   },
   {
     "goodsId": 0,
