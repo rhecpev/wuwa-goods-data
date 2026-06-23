@@ -25,6 +25,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "1차새알심",
+    "seriesUrl": "",
+    "seriesCountry": "중국",
+    "seriesCharas": "금희,로코코,브렌트,아브,아브대마왕,여랑자,장리,젠니,카르티시아,카를로타,카멜리아,카카루,칸타렐라,파수인,페비",
+    "seriesDate": "2025-10-17"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2.0버전",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.0버전_버전_2025-02-21/mainTheme.jpg",
     "seriesCountry": "버전",
@@ -374,6 +382,14 @@
     "seriesCountry": "중국",
     "seriesCharas": "남랑자,루크,시그리카,아브,에이메스,여랑자",
     "seriesDate": "2026-05-06"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "2026네무네무",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026네무네무_중국_2026-06-26/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "로코코,브렌트,젠니,카를로타,칸타렐라,페비",
+    "seriesDate": "2026-06-26"
   },
   {
     "seriesId": 0,
@@ -982,6 +998,14 @@
     "seriesCountry": "중국",
     "seriesCharas": "브렌트,아우구스타,유노,카를로타",
     "seriesDate": "2026-06-18"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "아니메엑스포",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/아니메엑스포_기타_2026-07-02/mainTheme.jpg",
+    "seriesCountry": "기타",
+    "seriesCharas": "수수,양양현령,카멜리아",
+    "seriesDate": "2026-07-02"
   },
   {
     "seriesId": 0,
