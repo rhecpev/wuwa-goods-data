@@ -33564,12 +33564,34 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-03-13",
     "goodsSeries": "KAKACODE",
+    "goodsPrice": "25위안",
+    "goodsChara": "구원",
+    "goodsCategory": "냉장고자석",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/구원_냉장고자석_25위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
     "goodsPrice": "15위안",
     "goodsChara": "구원",
     "goodsCategory": "레이저티켓",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/구원_레이저티켓_15위안_레이저티켓랜덤세트.png",
     "goodsMemo": "레이저티켓랜덤세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "행사참여",
+    "goodsChara": "구원",
+    "goodsCategory": "스티커",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/구원_스티커_행사참여_증정품.png",
+    "goodsMemo": "증정품"
   },
   {
     "goodsId": 0,
@@ -33603,6 +33625,28 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/구원_아크릴스탠드_68위안_단품.png",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "79위안",
+    "goodsChara": "구원",
+    "goodsCategory": "에코백",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/구원_에코백_79위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "행사참여",
+    "goodsChara": "구원",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/구원_엽서_행사참여_증정품.png",
+    "goodsMemo": "증정품"
   },
   {
     "goodsId": 0,
@@ -33685,6 +33729,28 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-03-13",
     "goodsSeries": "KAKACODE",
+    "goodsPrice": "175위안",
+    "goodsChara": "구원",
+    "goodsCategory": "케이프",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/구원_케이프_175위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "22위안",
+    "goodsChara": "구원",
+    "goodsCategory": "클리어파일",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/구원_클리어파일_22위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
     "goodsPrice": "35위안",
     "goodsChara": "구원",
     "goodsCategory": "키링",
@@ -33718,12 +33784,45 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-03-13",
     "goodsSeries": "KAKACODE",
+    "goodsPrice": "25위안",
+    "goodsChara": "루파",
+    "goodsCategory": "냉장고자석",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/루파_냉장고자석_25위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
     "goodsPrice": "15위안",
     "goodsChara": "루파",
     "goodsCategory": "레이저티켓",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/루파_레이저티켓_15위안_레이저티켓랜덤세트.png",
     "goodsMemo": "레이저티켓랜덤세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "행사참여",
+    "goodsChara": "루파",
+    "goodsCategory": "부채",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/루파_부채_행사참여_증정품.png",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "행사참여",
+    "goodsChara": "루파",
+    "goodsCategory": "스티커",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/루파_스티커_행사참여_증정품.png",
+    "goodsMemo": "증정품"
   },
   {
     "goodsId": 0,
@@ -33757,6 +33856,28 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/루파_아크릴스탠드_68위안_단품.png",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "79위안",
+    "goodsChara": "루파",
+    "goodsCategory": "에코백",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/루파_에코백_79위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "행사참여",
+    "goodsChara": "루파",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/루파_엽서_행사참여_증정품.png",
+    "goodsMemo": "증정품"
   },
   {
     "goodsId": 0,
@@ -33833,6 +33954,28 @@
     "goodsCategory": "캔뱃지",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/루파_캔뱃지_20위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "175위안",
+    "goodsChara": "루파",
+    "goodsCategory": "케이프",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/루파_케이프_175위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "22위안",
+    "goodsChara": "루파",
+    "goodsCategory": "클리어파일",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/루파_클리어파일_22위안_단품.png",
     "goodsMemo": "단품"
   },
   {
@@ -33927,12 +34070,45 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-03-13",
     "goodsSeries": "KAKACODE",
+    "goodsPrice": "25위안",
+    "goodsChara": "아우구스타",
+    "goodsCategory": "냉장고자석",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/아우구스타_냉장고자석_25위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
     "goodsPrice": "15위안",
     "goodsChara": "아우구스타",
     "goodsCategory": "레이저티켓",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/아우구스타_레이저티켓_15위안_레이저티켓랜덤세트.png",
     "goodsMemo": "레이저티켓랜덤세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "행사참여",
+    "goodsChara": "아우구스타",
+    "goodsCategory": "부채",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/아우구스타_부채_행사참여_증정품.png",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "행사참여",
+    "goodsChara": "아우구스타",
+    "goodsCategory": "스티커",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/아우구스타_스티커_행사참여_증정품.png",
+    "goodsMemo": "증정품"
   },
   {
     "goodsId": 0,
@@ -33966,6 +34142,28 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/아우구스타_아크릴스탠드_68위안_단품.png",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "79위안",
+    "goodsChara": "아우구스타",
+    "goodsCategory": "에코백",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/아우구스타_에코백_79위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "행사참여",
+    "goodsChara": "아우구스타",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/아우구스타_엽서_행사참여_증정품.png",
+    "goodsMemo": "증정품"
   },
   {
     "goodsId": 0,
@@ -34048,6 +34246,28 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-03-13",
     "goodsSeries": "KAKACODE",
+    "goodsPrice": "175위안",
+    "goodsChara": "아우구스타",
+    "goodsCategory": "케이프",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/아우구스타_케이프_175위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "22위안",
+    "goodsChara": "아우구스타",
+    "goodsCategory": "클리어파일",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/아우구스타_클리어파일_22위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
     "goodsPrice": "35위안",
     "goodsChara": "아우구스타",
     "goodsCategory": "키링",
@@ -34081,12 +34301,45 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-03-13",
     "goodsSeries": "KAKACODE",
+    "goodsPrice": "25위안",
+    "goodsChara": "유노",
+    "goodsCategory": "냉장고자석",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/유노_냉장고자석_25위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
     "goodsPrice": "15위안",
     "goodsChara": "유노",
     "goodsCategory": "레이저티켓",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/유노_레이저티켓_15위안_레이저티켓랜덤세트.png",
     "goodsMemo": "레이저티켓랜덤세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "행사참여",
+    "goodsChara": "유노",
+    "goodsCategory": "부채",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/유노_부채_행사참여_증정품.png",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "행사참여",
+    "goodsChara": "유노",
+    "goodsCategory": "스티커",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/유노_스티커_행사참여_증정품.png",
+    "goodsMemo": "증정품"
   },
   {
     "goodsId": 0,
@@ -34120,6 +34373,28 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/유노_아크릴스탠드_68위안_단품.png",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "79위안",
+    "goodsChara": "유노",
+    "goodsCategory": "에코백",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/유노_에코백_79위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "행사참여",
+    "goodsChara": "유노",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/유노_엽서_행사참여_증정품.png",
+    "goodsMemo": "증정품"
   },
   {
     "goodsId": 0,
@@ -34202,6 +34477,28 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-03-13",
     "goodsSeries": "KAKACODE",
+    "goodsPrice": "175위안",
+    "goodsChara": "유노",
+    "goodsCategory": "케이프",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/유노_케이프_175위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "22위안",
+    "goodsChara": "유노",
+    "goodsCategory": "클리어파일",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/유노_클리어파일_22위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
     "goodsPrice": "35위안",
     "goodsChara": "유노",
     "goodsCategory": "키링",
@@ -34224,11 +34521,44 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-03-13",
     "goodsSeries": "KAKACODE",
+    "goodsPrice": "59위안",
+    "goodsChara": "카르티시아,아우구스타,구원,유노,루파",
+    "goodsCategory": "가방",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/카르티시아,아우구스타,구원,유노,루파_가방_59위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "행사참여",
+    "goodsChara": "카르티시아,아우구스타,구원,유노,루파",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/카르티시아,아우구스타,구원,유노,루파_엽서_행사참여_증정품.png",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
     "goodsPrice": "49위안",
     "goodsChara": "카르티시아",
     "goodsCategory": "금속주화",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/카르티시아_금속주화_49위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "25위안",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "냉장고자석",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/카르티시아_냉장고자석_25위안_단품.png",
     "goodsMemo": "단품"
   },
   {
@@ -34241,6 +34571,28 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/카르티시아_레이저티켓_15위안_레이저티켓랜덤세트.png",
     "goodsMemo": "레이저티켓랜덤세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "행사참여",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "부채",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/카르티시아_부채_행사참여_증정품.png",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "행사참여",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "스티커",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/카르티시아_스티커_행사참여_증정품.png",
+    "goodsMemo": "증정품"
   },
   {
     "goodsId": 0,
@@ -34274,6 +34626,28 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/카르티시아_아크릴스탠드_68위안_단품.png",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "79위안",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "에코백",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/카르티시아_에코백_79위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "행사참여",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/카르티시아_엽서_행사참여_증정품.png",
+    "goodsMemo": "증정품"
   },
   {
     "goodsId": 0,
@@ -34350,6 +34724,28 @@
     "goodsCategory": "캔뱃지",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/카르티시아_캔뱃지_20위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "175위안",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "케이프",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/카르티시아_케이프_175위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "22위안",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "클리어파일",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/카르티시아_클리어파일_22위안_단품.png",
     "goodsMemo": "단품"
   },
   {
@@ -35737,6 +36133,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/REDMAGIC치사_중국_2026-03-20/goods/치사_캔뱃지_구성품_타입2.png",
     "goodsMemo": "타입2"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-20",
+    "goodsSeries": "REDMAGIC치사",
+    "goodsPrice": "구성품",
+    "goodsChara": "치사",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/REDMAGIC치사_중국_2026-03-20/goods/치사_포토카드_구성품_단품.jpg",
+    "goodsMemo": "단품"
   },
   {
     "goodsId": 0,
