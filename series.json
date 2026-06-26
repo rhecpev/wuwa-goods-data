@@ -449,6 +449,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2026컴포즈",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026컴포즈_한국_2026-02-10/mainTheme.jpg",
+    "seriesCountry": "한국",
+    "seriesCharas": "린네,에이메스",
+    "seriesDate": "2026-02-10"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "3.1버전",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/mainTheme.jpg",
     "seriesCountry": "버전",
