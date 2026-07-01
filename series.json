@@ -1073,6 +1073,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "아우구스타LD피규어",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/아우구스타LD피규어_기타_2026-07-03/mainTheme.jpg",
+    "seriesCountry": "기타",
+    "seriesCharas": "아우구스타",
+    "seriesDate": "2026-07-03"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "에코 디저트 카페",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/에코 디저트 카페_기타_미정/mainTheme.png",
     "seriesCountry": "기타",
