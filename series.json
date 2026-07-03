@@ -508,7 +508,7 @@
     "seriesNm": "BilibiliWorld2026",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/BilibiliWorld2026_중국_2026-07-10/mainTheme.jpg",
     "seriesCountry": "중국",
-    "seriesCharas": "",
+    "seriesCharas": "수수,양양현령",
     "seriesDate": "2026-07-10"
   },
   {
@@ -606,6 +606,14 @@
     "seriesCountry": "일본",
     "seriesCharas": "젠니,카를로타,칸타렐라,페비",
     "seriesDate": "2025-06-16"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "funism콜라보",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/funism콜라보_중국_2026-07-10/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "금희,기염,벨리나,앙코,음림,장리,절지,카카루",
+    "seriesDate": "2026-07-10"
   },
   {
     "seriesId": 0,
@@ -1118,6 +1126,14 @@
     "seriesCountry": "기타",
     "seriesCharas": "음림",
     "seriesDate": "2026-01-01"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "음악회x상하이교통카드",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/음악회x상하이교통카드_중국_2026-07-06/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "구원,금희,모니에,브렌트,에이메스,치사,카르티시아,파수인",
+    "seriesDate": "2026-07-06"
   },
   {
     "seriesId": 0,
