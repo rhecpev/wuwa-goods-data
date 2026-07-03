@@ -15128,6 +15128,17 @@
     "goodsId": 0,
     "goodsReleaseDate": "2025-12-31",
     "goodsSeries": "2025 GS25",
+    "goodsPrice": "2차",
+    "goodsChara": "린네",
+    "goodsCategory": "클립",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025 GS25_한국_2025-12-31/goods/린네_클립_2차_랜덤.png",
+    "goodsMemo": "랜덤"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-12-31",
+    "goodsSeries": "2025 GS25",
     "goodsPrice": "스탬프",
     "goodsChara": "린네",
     "goodsCategory": "클립",
@@ -15469,6 +15480,17 @@
     "goodsId": 0,
     "goodsReleaseDate": "2025-12-31",
     "goodsSeries": "2025 GS25",
+    "goodsPrice": "2차",
+    "goodsChara": "유노",
+    "goodsCategory": "클립",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025 GS25_한국_2025-12-31/goods/유노_클립_2차_랜덤.png",
+    "goodsMemo": "랜덤"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-12-31",
+    "goodsSeries": "2025 GS25",
     "goodsPrice": "스탬프",
     "goodsChara": "유노",
     "goodsCategory": "클립",
@@ -15695,6 +15717,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025 GS25_한국_2025-12-31/goods/치사_캔뱃지_행사참여_단품.png",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-12-31",
+    "goodsSeries": "2025 GS25",
+    "goodsPrice": "2차",
+    "goodsChara": "치사",
+    "goodsCategory": "클립",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025 GS25_한국_2025-12-31/goods/치사_클립_2차_랜덤.png",
+    "goodsMemo": "랜덤"
   },
   {
     "goodsId": 0,
@@ -16047,6 +16080,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025 GS25_한국_2025-12-31/goods/페비_캔뱃지_행사참여_단품.png",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-12-31",
+    "goodsSeries": "2025 GS25",
+    "goodsPrice": "2차",
+    "goodsChara": "페비",
+    "goodsCategory": "클립",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025 GS25_한국_2025-12-31/goods/페비_클립_2차_랜덤.png",
+    "goodsMemo": "랜덤"
   },
   {
     "goodsId": 0,
