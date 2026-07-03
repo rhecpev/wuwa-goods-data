@@ -57445,6 +57445,17 @@
     "goodsId": 0,
     "goodsReleaseDate": "2025-11-21",
     "goodsSeries": "명조xCoCo",
+    "goodsPrice": "행사참여",
+    "goodsChara": "갈브레나,치사",
+    "goodsCategory": "스티커",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조xCoCo_중국_2025-11-21/goods/갈브레나,치사_스티커_행사참여_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-11-21",
+    "goodsSeries": "명조xCoCo",
     "goodsPrice": "음료구매",
     "goodsChara": "갈브레나",
     "goodsCategory": "가방",
@@ -57461,17 +57472,6 @@
     "goodsCategory": "레이저티켓",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조xCoCo_중국_2025-11-21/goods/갈브레나_레이저티켓_음료구매_단품.png",
-    "goodsMemo": "단품"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2025-11-21",
-    "goodsSeries": "명조xCoCo",
-    "goodsPrice": "행사참여",
-    "goodsChara": "갈브레나",
-    "goodsCategory": "스티커",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조xCoCo_중국_2025-11-21/goods/갈브레나_스티커_행사참여_단품.png",
     "goodsMemo": "단품"
   },
   {
