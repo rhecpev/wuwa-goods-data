@@ -30946,12 +30946,56 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-07-10",
     "goodsSeries": "BilibiliWorld2026",
+    "goodsPrice": "행사참여",
+    "goodsChara": "수수,양양현령",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/BilibiliWorld2026_중국_2026-07-10/goods/수수,양양현령_엽서_행사참여_증정품.png",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-07-10",
+    "goodsSeries": "BilibiliWorld2026",
+    "goodsPrice": "행사참여",
+    "goodsChara": "수수,양양현령",
+    "goodsCategory": "장패드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/BilibiliWorld2026_중국_2026-07-10/goods/수수,양양현령_장패드_행사참여_증정품.png",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-07-10",
+    "goodsSeries": "BilibiliWorld2026",
+    "goodsPrice": "행사참여",
+    "goodsChara": "수수,양양현령",
+    "goodsCategory": "클리어파일",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/BilibiliWorld2026_중국_2026-07-10/goods/수수,양양현령_클리어파일_행사참여_증정품.png",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-07-10",
+    "goodsSeries": "BilibiliWorld2026",
     "goodsPrice": "구성품",
     "goodsChara": "수수",
     "goodsCategory": "레이저티켓",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/BilibiliWorld2026_중국_2026-07-10/goods/수수_레이저티켓_구성품_수수종이세트.png",
     "goodsMemo": "수수종이세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-07-10",
+    "goodsSeries": "BilibiliWorld2026",
+    "goodsPrice": "행사참여",
+    "goodsChara": "수수",
+    "goodsCategory": "봉투",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/BilibiliWorld2026_중국_2026-07-10/goods/수수_봉투_행사참여_증정품.png",
+    "goodsMemo": "증정품"
   },
   {
     "goodsId": 0,
@@ -31007,6 +31051,28 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/BilibiliWorld2026_중국_2026-07-10/goods/수수_아크릴스탠드_69위안_단품.png",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-07-10",
+    "goodsSeries": "BilibiliWorld2026",
+    "goodsPrice": "행사참여",
+    "goodsChara": "수수",
+    "goodsCategory": "아크릴스탠드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/BilibiliWorld2026_중국_2026-07-10/goods/수수_아크릴스탠드_행사참여_회전.png",
+    "goodsMemo": "회전"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-07-10",
+    "goodsSeries": "BilibiliWorld2026",
+    "goodsPrice": "행사참여",
+    "goodsChara": "수수",
+    "goodsCategory": "책갈피",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/BilibiliWorld2026_중국_2026-07-10/goods/수수_책갈피_행사참여_증정품.png",
+    "goodsMemo": "증정품"
   },
   {
     "goodsId": 0,
@@ -31139,6 +31205,39 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/BilibiliWorld2026_중국_2026-07-10/goods/양양현령_아크릴스탠드_69위안_단품.png",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-07-10",
+    "goodsSeries": "BilibiliWorld2026",
+    "goodsPrice": "행사참여",
+    "goodsChara": "양양현령",
+    "goodsCategory": "아크릴스탠드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/BilibiliWorld2026_중국_2026-07-10/goods/양양현령_아크릴스탠드_행사참여_회전.png",
+    "goodsMemo": "회전"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-07-10",
+    "goodsSeries": "BilibiliWorld2026",
+    "goodsPrice": "행사참여",
+    "goodsChara": "양양현령",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/BilibiliWorld2026_중국_2026-07-10/goods/양양현령_엽서_행사참여_증정품.png",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-07-10",
+    "goodsSeries": "BilibiliWorld2026",
+    "goodsPrice": "행사참여",
+    "goodsChara": "양양현령",
+    "goodsCategory": "책갈피",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/BilibiliWorld2026_중국_2026-07-10/goods/양양현령_책갈피_행사참여_증정품.png",
+    "goodsMemo": "증정품"
   },
   {
     "goodsId": 0,
