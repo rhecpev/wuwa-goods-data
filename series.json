@@ -370,10 +370,10 @@
   {
     "seriesId": 0,
     "seriesNm": "2026SANFU콜라보",
-    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026SANFU콜라보_중국_미정/mainTheme.jpg",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026SANFU콜라보_중국_2026-07-24/mainTheme.jpg",
     "seriesCountry": "중국",
-    "seriesCharas": "",
-    "seriesDate": "미정"
+    "seriesCharas": "데니아,루크,린네,모니에",
+    "seriesDate": "2026-07-24"
   },
   {
     "seriesId": 0,
@@ -484,7 +484,7 @@
     "seriesNm": "3.4버전",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.4버전_버전_2026-07-10/mainTheme.jpg",
     "seriesCountry": "버전",
-    "seriesCharas": "남랑자,데니아,루실라,루크,린네,모니에,시그리카,에이메스,여랑자,유노,카멜리아,페비,히유키",
+    "seriesCharas": "남랑자,데니아,루실라,루크,린네,모니에,시그리카,에이메스,여랑자,히유키",
     "seriesDate": "2026-07-10"
   },
   {
@@ -1114,10 +1114,10 @@
   {
     "seriesId": 0,
     "seriesNm": "에코 디저트 카페",
-    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/에코 디저트 카페_기타_미정/mainTheme.png",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/에코 디저트 카페_기타_2026-07-24/mainTheme.png",
     "seriesCountry": "기타",
-    "seriesCharas": "",
-    "seriesDate": "미정"
+    "seriesCharas": "몬스터",
+    "seriesDate": "2026-07-24"
   },
   {
     "seriesId": 0,
@@ -1174,6 +1174,14 @@
     "seriesCountry": "중국",
     "seriesCharas": "구원,금희,모니에,브렌트,에이메스,치사,카르티시아,파수인",
     "seriesDate": "2026-07-06"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "음악회x상하이교통카드",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/음악회x상하이교통카드_중국_2026-07-16/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "구원,금희,모니에,브렌트,에이메스,치사,카르티시아,파수인",
+    "seriesDate": "2026-07-16"
   },
   {
     "seriesId": 0,
