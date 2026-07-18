@@ -59700,17 +59700,6 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-08-29",
     "goodsSeries": "명조2026음악회",
-    "goodsPrice": "SAB석",
-    "goodsChara": "구원,모니에,치사,카르티시아,브렌트,파수인,에이메스,금희",
-    "goodsCategory": "세트",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조2026음악회_한국_2026-08-29/goods/구원,모니에,치사,카르티시아,브렌트,파수인,에이메스,금희_세트_SAB석_렌티큘러세트.png",
-    "goodsMemo": "렌티큘러세트"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2026-08-29",
-    "goodsSeries": "명조2026음악회",
     "goodsPrice": "S석한정",
     "goodsChara": "구원,모니에,치사,카르티시아,브렌트,파수인,에이메스,금희",
     "goodsCategory": "세트",
@@ -59821,6 +59810,17 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-08-29",
     "goodsSeries": "명조2026음악회",
+    "goodsPrice": "SAB석",
+    "goodsChara": "구원,모니에,치사,카르티시아,브렌트,파수인,에이메스,금희",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조2026음악회_한국_2026-08-29/goods/구원,모니에,치사,카르티시아,브렌트,파수인,에이메스,금희_포토카드_SAB석_렌티큘러카드.png",
+    "goodsMemo": "렌티큘러카드"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-08-29",
+    "goodsSeries": "명조2026음악회",
     "goodsPrice": "랜덤",
     "goodsChara": "구원",
     "goodsCategory": "아크릴블록",
@@ -59849,17 +59849,6 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조2026음악회_한국_2026-08-29/goods/구원_응원봉_랜덤_응원봉세트.png",
     "goodsMemo": "응원봉세트"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2026-08-29",
-    "goodsSeries": "명조2026음악회",
-    "goodsPrice": "랜덤",
-    "goodsChara": "구원",
-    "goodsCategory": "카드",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조2026음악회_한국_2026-08-29/goods/구원_카드_랜덤_렌티큘러세트.png",
-    "goodsMemo": "렌티큘러세트"
   },
   {
     "goodsId": 0,
@@ -59913,17 +59902,6 @@
     "goodsChara": "금희",
     "goodsCategory": "카드",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조2026음악회_한국_2026-08-29/goods/금희_카드_랜덤_렌티큘러세트.png",
-    "goodsMemo": "렌티큘러세트"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2026-08-29",
-    "goodsSeries": "명조2026음악회",
-    "goodsPrice": "랜덤",
-    "goodsChara": "금희",
-    "goodsCategory": "카드",
-    "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조2026음악회_한국_2026-08-29/goods/금희_카드_랜덤_카드세트.png",
     "goodsMemo": "카드세트"
   },
@@ -59959,17 +59937,6 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조2026음악회_한국_2026-08-29/goods/모니에_응원봉_랜덤_응원봉세트.png",
     "goodsMemo": "응원봉세트"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2026-08-29",
-    "goodsSeries": "명조2026음악회",
-    "goodsPrice": "랜덤",
-    "goodsChara": "모니에",
-    "goodsCategory": "카드",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조2026음악회_한국_2026-08-29/goods/모니에_카드_랜덤_렌티큘러세트.png",
-    "goodsMemo": "렌티큘러세트"
   },
   {
     "goodsId": 0,
@@ -60023,17 +59990,6 @@
     "goodsChara": "브렌트",
     "goodsCategory": "카드",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조2026음악회_한국_2026-08-29/goods/브렌트_카드_랜덤_렌티큘러세트.png",
-    "goodsMemo": "렌티큘러세트"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2026-08-29",
-    "goodsSeries": "명조2026음악회",
-    "goodsPrice": "랜덤",
-    "goodsChara": "브렌트",
-    "goodsCategory": "카드",
-    "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조2026음악회_한국_2026-08-29/goods/브렌트_카드_랜덤_카드세트.png",
     "goodsMemo": "카드세트"
   },
@@ -60069,17 +60025,6 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조2026음악회_한국_2026-08-29/goods/에이메스_응원봉_랜덤_응원봉세트.png",
     "goodsMemo": "응원봉세트"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2026-08-29",
-    "goodsSeries": "명조2026음악회",
-    "goodsPrice": "랜덤",
-    "goodsChara": "에이메스",
-    "goodsCategory": "카드",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조2026음악회_한국_2026-08-29/goods/에이메스_카드_랜덤_렌티큘러세트.png",
-    "goodsMemo": "렌티큘러세트"
   },
   {
     "goodsId": 0,
@@ -60133,17 +60078,6 @@
     "goodsChara": "치사",
     "goodsCategory": "카드",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조2026음악회_한국_2026-08-29/goods/치사_카드_랜덤_렌티큘러세트.png",
-    "goodsMemo": "렌티큘러세트"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2026-08-29",
-    "goodsSeries": "명조2026음악회",
-    "goodsPrice": "랜덤",
-    "goodsChara": "치사",
-    "goodsCategory": "카드",
-    "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조2026음악회_한국_2026-08-29/goods/치사_카드_랜덤_카드세트.png",
     "goodsMemo": "카드세트"
   },
@@ -60188,17 +60122,6 @@
     "goodsChara": "카르티시아",
     "goodsCategory": "카드",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조2026음악회_한국_2026-08-29/goods/카르티시아_카드_랜덤_렌티큘러세트.png",
-    "goodsMemo": "렌티큘러세트"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2026-08-29",
-    "goodsSeries": "명조2026음악회",
-    "goodsPrice": "랜덤",
-    "goodsChara": "카르티시아",
-    "goodsCategory": "카드",
-    "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조2026음악회_한국_2026-08-29/goods/카르티시아_카드_랜덤_카드세트.png",
     "goodsMemo": "카드세트"
   },
@@ -60234,17 +60157,6 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조2026음악회_한국_2026-08-29/goods/파수인_응원봉_랜덤_응원봉세트.png",
     "goodsMemo": "응원봉세트"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2026-08-29",
-    "goodsSeries": "명조2026음악회",
-    "goodsPrice": "랜덤",
-    "goodsChara": "파수인",
-    "goodsCategory": "카드",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조2026음악회_한국_2026-08-29/goods/파수인_카드_랜덤_렌티큘러세트.png",
-    "goodsMemo": "렌티큘러세트"
   },
   {
     "goodsId": 0,
