@@ -425,6 +425,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2026도미노",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026도미노_한국_2026-08-21/mainTheme.jpg",
+    "seriesCountry": "한국",
+    "seriesCharas": "수수,양양현령",
+    "seriesDate": "2026-08-21"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2026신년",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026신년_중국_2026-01-31/mainTheme.jpg",
     "seriesCountry": "중국",
@@ -785,6 +793,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "데니아 레이저 오프라인 행사",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/데니아 레이저 오프라인 행사_기타_2026-08-22/mainTheme.jpg",
+    "seriesCountry": "기타",
+    "seriesCharas": "데니아",
+    "seriesDate": "2026-08-22"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "데니아x레이저콜라보",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/데니아x레이저콜라보_기타_2026-05-25/mainTheme.avif",
     "seriesCountry": "기타",
@@ -1014,6 +1030,14 @@
     "seriesCountry": "중국",
     "seriesCharas": "갈브레나,구원,루파,페비",
     "seriesDate": "2025-10-25"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "명조설정집",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조설정집_중국_2026-08-14/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "남랑자,아브,여랑자",
+    "seriesDate": "2026-08-14"
   },
   {
     "seriesId": 0,
