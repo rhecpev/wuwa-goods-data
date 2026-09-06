@@ -441,6 +441,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2026도도거",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026도도거_중국_2026-09-04/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "수수,양양현령",
+    "seriesDate": "2026-09-04"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2026도미노",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026도미노_한국_2026-08-21/mainTheme.jpg",
     "seriesCountry": "한국",
