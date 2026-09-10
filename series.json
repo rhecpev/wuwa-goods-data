@@ -1017,6 +1017,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "명조1차tcg굿즈",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조1차tcg굿즈_중국_2026-09-12/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "금희,남랑자,산화,앙코,양양,여랑자,치샤,카멜리아,파수인",
+    "seriesDate": "2026-09-12"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "명조2026음악회",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조2026음악회_한국_2026-08-29/mainTheme.jpg",
     "seriesCountry": "한국",
@@ -1030,6 +1038,14 @@
     "seriesCountry": "기타",
     "seriesCharas": "남랑자,여랑자",
     "seriesDate": "2026-04-30"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "명조TCG1탄",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조TCG1탄_기타_2026-09-12/mainTheme.png",
+    "seriesCountry": "기타",
+    "seriesCharas": "금희,남랑자,몬스터,산화,앙코,양양,여랑자,치샤,카멜리아,파수인",
+    "seriesDate": "2026-09-12"
   },
   {
     "seriesId": 0,
@@ -1118,14 +1134,6 @@
     "seriesCountry": "중국",
     "seriesCharas": "남랑자,아브,여랑자",
     "seriesDate": "2026-08-14"
-  },
-  {
-    "seriesId": 0,
-    "seriesNm": "명조카드게임",
-    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조카드게임_기타_미정/mainTheme.jpg",
-    "seriesCountry": "기타",
-    "seriesCharas": "",
-    "seriesDate": "미정"
   },
   {
     "seriesId": 0,
