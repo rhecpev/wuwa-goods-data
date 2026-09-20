@@ -361,6 +361,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2026CICFxAGF",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026CICFxAGF_중국_2026-10-02/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "",
+    "seriesDate": "2026-10-02"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2026COMEBUY",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026COMEBUY_대만_2026-06-16/mainTheme.jpg",
     "seriesCountry": "대만",
@@ -374,6 +382,14 @@
     "seriesCountry": "일본",
     "seriesCharas": "데니아,루크,수수,양양현령,에이메스,청초",
     "seriesDate": "2026-09-19"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "2026GLOBALWORK",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026GLOBALWORK_중국_2026-10-01/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "",
+    "seriesDate": "2026-10-01"
   },
   {
     "seriesId": 0,
@@ -473,6 +489,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2026롯데시네마",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026롯데시네마_한국_2026-10-19/mainTheme.jpg",
+    "seriesCountry": "한국",
+    "seriesCharas": "",
+    "seriesDate": "2026-10-19"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2026명조캠퍼스투어",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026명조캠퍼스투어_중국_2026-09-13/mainTheme.png",
     "seriesCountry": "중국",
@@ -518,6 +542,14 @@
     "seriesCountry": "한국",
     "seriesCharas": "린네,에이메스",
     "seriesDate": "2026-02-10"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "2026하이디라오",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026하이디라오_대만_2026-10-02/mainTheme.jpg",
+    "seriesCountry": "대만",
+    "seriesCharas": "",
+    "seriesDate": "2026-10-02"
   },
   {
     "seriesId": 0,
