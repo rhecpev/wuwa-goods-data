@@ -369,6 +369,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2026GIGO",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026GIGO_일본_2026-09-19/mainTheme.jpg",
+    "seriesCountry": "일본",
+    "seriesCharas": "데니아,루크,수수,양양현령,에이메스,청초",
+    "seriesDate": "2026-09-19"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2026SANFU콜라보",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026SANFU콜라보_중국_2026-07-24/mainTheme.jpg",
     "seriesCountry": "중국",
