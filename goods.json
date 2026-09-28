@@ -69083,6 +69083,17 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-08-14",
     "goodsSeries": "명조설정집",
+    "goodsPrice": "사은품",
+    "goodsChara": "남랑자,여랑자",
+    "goodsCategory": "색지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조설정집_중국_2026-08-14/goods/남랑자,여랑자_색지_사은품_오프라인 이벤트 한정.png",
+    "goodsMemo": "오프라인 이벤트 한정"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-08-14",
+    "goodsSeries": "명조설정집",
     "goodsPrice": "359위안",
     "goodsChara": "남랑자,여랑자",
     "goodsCategory": "설정집",
