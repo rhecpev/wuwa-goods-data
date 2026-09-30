@@ -81503,6 +81503,17 @@
     "goodsReleaseDate": "2026-09-28",
     "goodsSeries": "카르티시아,파수인 SD피규어",
     "goodsPrice": "230위안",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "피규어",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/카르티시아,파수인 SD피규어_기타_2026-09-28/goods/카르티시아_피규어_230위안_단품.jpg",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-09-28",
+    "goodsSeries": "카르티시아,파수인 SD피규어",
+    "goodsPrice": "230위안",
     "goodsChara": "파수인",
     "goodsCategory": "피규어",
     "goodsIsGotten": false,
