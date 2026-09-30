@@ -353,6 +353,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2026 red Land",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 red Land_중국_2026-10-02/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "쇄명,여우의 별자리",
+    "seriesDate": "2026-10-02"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2026BOOKOFF",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026BOOKOFF_일본_2026-07-03/mainTheme.webp",
     "seriesCountry": "일본",
@@ -364,7 +372,7 @@
     "seriesNm": "2026CICFxAGF",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026CICFxAGF_중국_2026-10-02/mainTheme.jpg",
     "seriesCountry": "중국",
-    "seriesCharas": "",
+    "seriesCharas": "쇄명,여우의 별자리",
     "seriesDate": "2026-10-02"
   },
   {
@@ -606,6 +614,14 @@
     "seriesCountry": "중국",
     "seriesCharas": "남랑자,수수,양양현령,여랑자",
     "seriesDate": "2026-08-10"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "3.6버전",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.6버전_버전_2026-09-29/mainTheme.jpg",
+    "seriesCountry": "버전",
+    "seriesCharas": "경연,구원,금희,기염,남랑자,상리요,쇄명,수수,아브,양양현령,여랑자,여우의 별자리,음림,장리,절지,청초",
+    "seriesDate": "2026-09-29"
   },
   {
     "seriesId": 0,
@@ -1486,6 +1502,14 @@
     "seriesCountry": "한국",
     "seriesCharas": "치사",
     "seriesDate": "2026-04-09"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "카르티시아,파수인 SD피규어",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/카르티시아,파수인 SD피규어_기타_2026-09-28/mainTheme.jpg",
+    "seriesCountry": "기타",
+    "seriesCharas": "파수인",
+    "seriesDate": "2026-09-28"
   },
   {
     "seriesId": 0,
