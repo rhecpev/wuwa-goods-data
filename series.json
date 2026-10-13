@@ -1329,6 +1329,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "에이메스 빅스비",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/에이메스 빅스비_한국_2026-10-26/mainTheme.jpg",
+    "seriesCountry": "한국",
+    "seriesCharas": "에이메스",
+    "seriesDate": "2026-10-26"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "에코 디저트 카페",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/에코 디저트 카페_기타_2026-07-24/mainTheme.png",
     "seriesCountry": "기타",

@@ -28438,6 +28438,28 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-10-19",
     "goodsSeries": "2026롯데시네마",
+    "goodsPrice": "5000원",
+    "goodsChara": "쇄명",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026롯데시네마_한국_2026-10-19/goods/쇄명_포토카드_5000원_LD.png",
+    "goodsMemo": "LD"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-10-19",
+    "goodsSeries": "2026롯데시네마",
+    "goodsPrice": "5000원",
+    "goodsChara": "쇄명",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026롯데시네마_한국_2026-10-19/goods/쇄명_포토카드_5000원_SD.png",
+    "goodsMemo": "SD"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-10-19",
+    "goodsSeries": "2026롯데시네마",
     "goodsPrice": "35000원",
     "goodsChara": "여우의 별자리,쇄명",
     "goodsCategory": "라이트박스",
@@ -28455,6 +28477,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026롯데시네마_한국_2026-10-19/goods/여우의 별자리,쇄명_라이트박스_35000원_SD.png",
     "goodsMemo": "SD"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-10-19",
+    "goodsSeries": "2026롯데시네마",
+    "goodsPrice": "증정품",
+    "goodsChara": "여우의 별자리,쇄명",
+    "goodsCategory": "메모지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026롯데시네마_한국_2026-10-19/goods/여우의 별자리,쇄명_메모지_증정품_증정품.png",
+    "goodsMemo": "증정품"
   },
   {
     "goodsId": 0,
@@ -28493,6 +28526,17 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-10-19",
     "goodsSeries": "2026롯데시네마",
+    "goodsPrice": "증정품",
+    "goodsChara": "여우의 별자리,쇄명",
+    "goodsCategory": "스티커",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026롯데시네마_한국_2026-10-19/goods/여우의 별자리,쇄명_스티커_증정품_증정품.png",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-10-19",
+    "goodsSeries": "2026롯데시네마",
     "goodsPrice": "39000원",
     "goodsChara": "여우의 별자리,쇄명",
     "goodsCategory": "아크릴장식",
@@ -28521,6 +28565,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026롯데시네마_한국_2026-10-19/goods/여우의 별자리,쇄명_우산_45000원_단품.png",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-10-19",
+    "goodsSeries": "2026롯데시네마",
+    "goodsPrice": "증정품",
+    "goodsChara": "여우의 별자리,쇄명",
+    "goodsCategory": "인생네컷",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026롯데시네마_한국_2026-10-19/goods/여우의 별자리,쇄명_인생네컷_증정품_증정품.png",
+    "goodsMemo": "증정품"
   },
   {
     "goodsId": 0,
@@ -28785,6 +28840,28 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026롯데시네마_한국_2026-10-19/goods/여우의 별자리_키링_9900원_랜덤2.png",
     "goodsMemo": "랜덤2"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-10-19",
+    "goodsSeries": "2026롯데시네마",
+    "goodsPrice": "5000원",
+    "goodsChara": "여우의 별자리",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026롯데시네마_한국_2026-10-19/goods/여우의 별자리_포토카드_5000원_LD.png",
+    "goodsMemo": "LD"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-10-19",
+    "goodsSeries": "2026롯데시네마",
+    "goodsPrice": "5000원",
+    "goodsChara": "여우의 별자리",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026롯데시네마_한국_2026-10-19/goods/여우의 별자리_포토카드_5000원_SD.png",
+    "goodsMemo": "SD"
   },
   {
     "goodsId": 0,
@@ -74500,6 +74577,83 @@
     "goodsCategory": "포토카드",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/애니미디어2026 6월호_일본_2026-05-11/goods/히유키_포토카드_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-10-26",
+    "goodsSeries": "에이메스 빅스비",
+    "goodsPrice": "구성품",
+    "goodsChara": "에이메스",
+    "goodsCategory": "리딤코드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/에이메스 빅스비_한국_2026-10-26/goods/에이메스_리딤코드_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-10-26",
+    "goodsSeries": "에이메스 빅스비",
+    "goodsPrice": "구성품",
+    "goodsChara": "에이메스",
+    "goodsCategory": "맥세이프",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/에이메스 빅스비_한국_2026-10-26/goods/에이메스_맥세이프_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-10-26",
+    "goodsSeries": "에이메스 빅스비",
+    "goodsPrice": "구성품",
+    "goodsChara": "에이메스",
+    "goodsCategory": "박스",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/에이메스 빅스비_한국_2026-10-26/goods/에이메스_박스_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-10-26",
+    "goodsSeries": "에이메스 빅스비",
+    "goodsPrice": "119000원",
+    "goodsChara": "에이메스",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/에이메스 빅스비_한국_2026-10-26/goods/에이메스_세트_119000원_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-10-26",
+    "goodsSeries": "에이메스 빅스비",
+    "goodsPrice": "구성품",
+    "goodsChara": "에이메스",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/에이메스 빅스비_한국_2026-10-26/goods/에이메스_키링_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-10-26",
+    "goodsSeries": "에이메스 빅스비",
+    "goodsPrice": "구성품1",
+    "goodsChara": "에이메스",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/에이메스 빅스비_한국_2026-10-26/goods/에이메스_포토카드_구성품1_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-10-26",
+    "goodsSeries": "에이메스 빅스비",
+    "goodsPrice": "구성품2",
+    "goodsChara": "에이메스",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/에이메스 빅스비_한국_2026-10-26/goods/에이메스_포토카드_구성품2_세트.png",
     "goodsMemo": "세트"
   },
   {
