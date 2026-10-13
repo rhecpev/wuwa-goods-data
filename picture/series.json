@@ -140,7 +140,7 @@
     "seriesNm": "2024TGS",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2024TGS_일본_2024-09-26/mainTheme.jpg",
     "seriesCountry": "일본",
-    "seriesCharas": "금희,기염,남랑자,능양,상리요,설지,알토,앙코,양양,여랑자,음림,장리,절지,치샤,파수인",
+    "seriesCharas": "감심,금희,기염,남랑자,능양,단근,산화,상리요,설지,알토,앙코,양양,여랑자,음림,장리,절지,치샤,파수인,플로로",
     "seriesDate": "2024-09-26"
   },
   {
@@ -297,6 +297,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2025아미아미",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025아미아미_일본_2025-01-31/mainTheme.jpg",
+    "seriesCountry": "일본",
+    "seriesCharas": "금희,상리요,장리,카를로타,카멜리아,파수인",
+    "seriesDate": "2025-01-31"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2025아쿠아리움",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025아쿠아리움_중국_2025-04-18/mainTheme.jpg",
     "seriesCountry": "중국",
@@ -345,11 +353,27 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2026 red Land",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 red Land_중국_2026-10-02/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "쇄명,여우의 별자리",
+    "seriesDate": "2026-10-02"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2026BOOKOFF",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026BOOKOFF_일본_2026-07-03/mainTheme.webp",
     "seriesCountry": "일본",
     "seriesCharas": "상리요,샤콘,절지,젠니",
     "seriesDate": "2026-07-03"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "2026CICFxAGF",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026CICFxAGF_중국_2026-10-02/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "쇄명,여우의 별자리",
+    "seriesDate": "2026-10-02"
   },
   {
     "seriesId": 0,
@@ -361,6 +385,38 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2026FUNUSM피규어",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026FUNUSM피규어_중국_2026-09-27/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "갈브레나,구원,루파,아우구스타,유노,카르티시아",
+    "seriesDate": "2026-09-27"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "2026GIGO",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026GIGO_일본_2026-09-19/mainTheme.jpg",
+    "seriesCountry": "일본",
+    "seriesCharas": "데니아,루크,수수,양양현령,에이메스,청초",
+    "seriesDate": "2026-09-19"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "2026GLOBALWORK",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026GLOBALWORK_중국_2026-10-01/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "경연,금희,산화,수수,양양현령,청초",
+    "seriesDate": "2026-10-01"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "2026SANFU콜라보",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026SANFU콜라보_중국_2026-07-24/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "데니아,루크,린네,모니에",
+    "seriesDate": "2026-07-24"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2026TGS",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026TGS_대만_2026-01-29/mainTheme.jpg",
     "seriesCountry": "대만",
@@ -369,11 +425,27 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2026bilibili2차콜라보",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026bilibili2차콜라보_중국_2026-08-26/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "남랑자,브렌트,아브,아우구스타,여랑자,유노,카르티시아",
+    "seriesDate": "2026-08-26"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2026bilibili",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026bilibili_중국_2026-05-23/mainTheme.jpg",
     "seriesCountry": "중국",
     "seriesCharas": "남랑자,브렌트,아우구스타,여랑자,유노,카르티시아",
     "seriesDate": "2026-05-23"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "2026chinajoy",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026chinajoy_중국_2026-07-31/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "치사",
+    "seriesDate": "2026-07-31"
   },
   {
     "seriesId": 0,
@@ -409,6 +481,54 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2026도도거",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026도도거_중국_2026-09-04/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "수수,양양현령",
+    "seriesDate": "2026-09-04"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "2026도미노",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026도미노_한국_2026-08-21/mainTheme.jpg",
+    "seriesCountry": "한국",
+    "seriesCharas": "수수,양양현령",
+    "seriesDate": "2026-08-21"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "2026도미노세미팝업",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026도미노세미팝업_한국_2026-08-29/mainTheme.jpg",
+    "seriesCountry": "한국",
+    "seriesCharas": "수수,양양현령",
+    "seriesDate": "2026-08-29"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "2026롯데시네마",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026롯데시네마_한국_2026-10-19/mainTheme.jpg",
+    "seriesCountry": "한국",
+    "seriesCharas": "쇄명,여우의 별자리",
+    "seriesDate": "2026-10-19"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "2026명조캠퍼스투어",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026명조캠퍼스투어_중국_2026-09-13/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "남랑자,양양현령,여랑자,청초",
+    "seriesDate": "2026-09-13"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "2026새알심",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026새알심_중국_2026-08-28/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "데니아,루크,린네,모니에,시그리카,아우구스타,에이메스,유노,치사,플로로,히유키",
+    "seriesDate": "2026-08-28"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2026신년",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026신년_중국_2026-01-31/mainTheme.jpg",
     "seriesCountry": "중국",
@@ -430,6 +550,22 @@
     "seriesCountry": "대만",
     "seriesCharas": "린네,모니에,에이메스,치사",
     "seriesDate": "2026-01-23"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "2026컴포즈",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026컴포즈_한국_2026-02-10/mainTheme.jpg",
+    "seriesCountry": "한국",
+    "seriesCharas": "린네,에이메스",
+    "seriesDate": "2026-02-10"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "2026하이디라오",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026하이디라오_대만_2026-10-02/mainTheme.jpg",
+    "seriesCountry": "대만",
+    "seriesCharas": "쇄명,여우의 별자리",
+    "seriesDate": "2026-10-02"
   },
   {
     "seriesId": 0,
@@ -457,6 +593,54 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "3.4버전",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.4버전_버전_2026-07-10/mainTheme.jpg",
+    "seriesCountry": "버전",
+    "seriesCharas": "남랑자,데니아,루실라,루크,린네,모니에,시그리카,에이메스,여랑자,히유키",
+    "seriesDate": "2026-07-10"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "3.5버전",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.5버전_버전_2026-08-19/mainTheme.jpg",
+    "seriesCountry": "버전",
+    "seriesCharas": "금희,데니아,루실라,루크,린네,모니에,수수,시그리카,양양현령,에이메스,유노,유호,장리,치사,카멜리아,페비,히유키",
+    "seriesDate": "2026-08-19"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "3.5잡지",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.5잡지_중국_2026-08-10/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "남랑자,수수,양양현령,여랑자",
+    "seriesDate": "2026-08-10"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "3.6버전",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.6버전_버전_2026-09-29/mainTheme.jpg",
+    "seriesCountry": "버전",
+    "seriesCharas": "경연,구원,금희,기염,남랑자,상리요,쇄명,수수,아브,양양현령,여랑자,여우의 별자리,음림,장리,절지,청초",
+    "seriesDate": "2026-09-29"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "88vip 3.1버전",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/88vip 3.1버전_중국_2026-03-17/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "루크,에이메스",
+    "seriesDate": "2026-03-17"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "88vip 3.5버전",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/88vip 3.5버전_중국_2026-08-18/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "수수,양양현령",
+    "seriesDate": "2026-08-18"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "BilibiliWorld2023",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/BilibiliWorld2023_중국_2023-07-21/mainTheme.jpg",
     "seriesCountry": "중국",
@@ -478,6 +662,14 @@
     "seriesCountry": "중국",
     "seriesCharas": "루파,카르티시아",
     "seriesDate": "2025-07-11"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "BilibiliWorld2026",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/BilibiliWorld2026_중국_2026-07-10/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "수수,양양현령",
+    "seriesDate": "2026-07-10"
   },
   {
     "seriesId": 0,
@@ -537,6 +729,30 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "PATH! 2025 04월호",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/PATH! 2025 04월호_일본_2025-03-10/mainTheme.jpg",
+    "seriesCountry": "일본",
+    "seriesCharas": "브렌트",
+    "seriesDate": "2025-03-10"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "PATH! 2025 11월호",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/PATH! 2025 11월호_일본_2025-10-09/mainTheme.jpg",
+    "seriesCountry": "일본",
+    "seriesCharas": "구원",
+    "seriesDate": "2025-10-09"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "PATH! 2026 10월호",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/PATH! 2026 10월호_일본_2026-09-10/mainTheme.jpg",
+    "seriesCountry": "일본",
+    "seriesCharas": "경연",
+    "seriesDate": "2026-09-10"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "REDMAGIC치사",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/REDMAGIC치사_중국_2026-03-20/mainTheme.png",
     "seriesCountry": "중국",
@@ -569,11 +785,27 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "anan 2026 03 11호",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/anan 2026 03 11호_일본_2026-03-11/mainTheme.webp",
+    "seriesCountry": "일본",
+    "seriesCharas": "루크",
+    "seriesDate": "2026-03-11"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "anideal향수",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/anideal향수_일본_2025-06-16/mainTheme.jpg",
     "seriesCountry": "일본",
     "seriesCharas": "젠니,카를로타,칸타렐라,페비",
     "seriesDate": "2025-06-16"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "funism콜라보",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/funism콜라보_중국_2026-07-10/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "금희,기염,벨리나,앙코,음림,장리,절지,카카루",
+    "seriesDate": "2026-07-10"
   },
   {
     "seriesId": 0,
@@ -601,6 +833,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "solar5",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/solar5_중국_2026-07-10/mainTheme.jpeg",
+    "seriesCountry": "중국",
+    "seriesCharas": "데니아,린네,유노,카멜리아,페비",
+    "seriesDate": "2026-07-10"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "yogoods",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/yogoods_중국_2025-12-12/mainTheme.avif",
     "seriesCountry": "중국",
@@ -622,6 +862,22 @@
     "seriesCountry": "일본",
     "seriesCharas": "치사",
     "seriesDate": "2025-11-22"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "경덕진도자기",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/경덕진도자기_중국_2026-06-25/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "금희,유호,장리",
+    "seriesDate": "2026-06-25"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "고양이우체국콜라보",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/고양이우체국콜라보_중국_2026-07-10/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "양양현령",
+    "seriesDate": "2026-07-10"
   },
   {
     "seriesId": 0,
@@ -654,6 +910,14 @@
     "seriesCountry": "기타",
     "seriesCharas": "금희,장리",
     "seriesDate": "2026-02-09"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "금희LD피규어",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/금희LD피규어_기타_2026-07-03/mainTheme.jpg",
+    "seriesCountry": "기타",
+    "seriesCharas": "금희",
+    "seriesDate": "2026-07-03"
   },
   {
     "seriesId": 0,
@@ -702,6 +966,14 @@
     "seriesCountry": "대만",
     "seriesCharas": "남랑자,루크,린네,모니에,시그리카,에이메스,여랑자,치사",
     "seriesDate": "2026-04-10"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "데니아 레이저 오프라인 행사",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/데니아 레이저 오프라인 행사_기타_2026-08-22/mainTheme.jpg",
+    "seriesCountry": "기타",
+    "seriesCharas": "데니아",
+    "seriesDate": "2026-08-22"
   },
   {
     "seriesId": 0,
@@ -833,10 +1105,26 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "명조 카카오톡 2차",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조 카카오톡 2차_한국_2026-07-10/mainTheme.png",
+    "seriesCountry": "한국",
+    "seriesCharas": "남랑자,데니아,루실라,린네,모니에,수수,시그리카,양양,양양현령,에이메스,여랑자,페비,히유키",
+    "seriesDate": "2026-07-10"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "명조1차tcg굿즈",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조1차tcg굿즈_중국_2026-09-12/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "금희,남랑자,산화,앙코,양양,여랑자,치샤,카멜리아,파수인",
+    "seriesDate": "2026-09-12"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "명조2026음악회",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조2026음악회_한국_2026-08-29/mainTheme.jpg",
     "seriesCountry": "한국",
-    "seriesCharas": "구원,금희,모니에,브렌트,에이메스,치사,카르티시아,파수인",
+    "seriesCharas": "구원,금희,남랑자,모니에,브렌트,에이메스,여랑자,치사,카르티시아,파수인",
     "seriesDate": "2026-08-29"
   },
   {
@@ -846,6 +1134,14 @@
     "seriesCountry": "기타",
     "seriesCharas": "남랑자,여랑자",
     "seriesDate": "2026-04-30"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "명조TCG1탄",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조TCG1탄_기타_2026-09-12/mainTheme.png",
+    "seriesCountry": "기타",
+    "seriesCharas": "금희,남랑자,몬스터,산화,앙코,양양,여랑자,치샤,카멜리아,파수인",
+    "seriesDate": "2026-09-12"
   },
   {
     "seriesId": 0,
@@ -929,6 +1225,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "명조설정집",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조설정집_중국_2026-08-14/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "남랑자,아브,여랑자",
+    "seriesDate": "2026-08-14"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "무신사",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/무신사_한국_2026-05-19/mainTheme.jpg",
     "seriesCountry": "한국",
@@ -1009,6 +1313,38 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "아우구스타LD피규어",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/아우구스타LD피규어_기타_2026-07-03/mainTheme.jpg",
+    "seriesCountry": "기타",
+    "seriesCharas": "아우구스타",
+    "seriesDate": "2026-07-03"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "애니미디어2026 6월호",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/애니미디어2026 6월호_일본_2026-05-11/mainTheme.jpg",
+    "seriesCountry": "일본",
+    "seriesCharas": "남랑자,데니아,루크,린네,모니에,시그리카,에이메스,여랑자,치사,히유키",
+    "seriesDate": "2026-05-11"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "에이메스 빅스비",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/에이메스 빅스비_한국_2026-10-26/mainTheme.jpg",
+    "seriesCountry": "한국",
+    "seriesCharas": "에이메스",
+    "seriesDate": "2026-10-26"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "에코 디저트 카페",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/에코 디저트 카페_기타_2026-07-24/mainTheme.png",
+    "seriesCountry": "기타",
+    "seriesCharas": "몬스터",
+    "seriesDate": "2026-07-24"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "여름대작전",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/여름대작전_대만_2025-05-29/mainTheme.jpg",
     "seriesCountry": "대만",
@@ -1038,6 +1374,38 @@
     "seriesCountry": "기타",
     "seriesCharas": "음림",
     "seriesDate": "2026-01-01"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "음악회xAlipay",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/음악회xAlipay_중국_2026-07-16/maintheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "구원,금희,모니에,브렌트,에이메스,치사,카르티시아,파수인",
+    "seriesDate": "2026-07-16"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "음악회xTME",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/음악회xTME_중국_2026-07-18/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "구원,금희,모니에,브렌트,에이메스,치사,카르티시아,파수인",
+    "seriesDate": "2026-07-18"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "음악회x상하이교통카드",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/음악회x상하이교통카드_중국_2026-07-16/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "구원,금희,모니에,브렌트,에이메스,치사,카르티시아,파수인",
+    "seriesDate": "2026-07-16"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "음악회팝업",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/음악회팝업_중국_2026-07-16/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "구원,금희,모니에,브렌트,에이메스,치사,카르티시아,파수인",
+    "seriesDate": "2026-07-16"
   },
   {
     "seriesId": 0,
@@ -1145,6 +1513,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "카르티시아,파수인 SD피규어",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/카르티시아,파수인 SD피규어_기타_2026-09-28/mainTheme.jpg",
+    "seriesCountry": "기타",
+    "seriesCharas": "카르티시아,파수인",
+    "seriesDate": "2026-09-28"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "카멜리아UDX아키하바라",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/카멜리아UDX아키하바라_일본_2024-11-30/mainTheme.png",
     "seriesCountry": "일본",
@@ -1206,5 +1582,13 @@
     "seriesCountry": "일본",
     "seriesCharas": "남랑자,루크,에이메스,여랑자",
     "seriesDate": "2026-02-05"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "하비사쿠라 모니에LD피규어",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/하비사쿠라 모니에LD피규어_기타_2026-09-25/mainTheme.jpg",
+    "seriesCountry": "기타",
+    "seriesCharas": "모니에",
+    "seriesDate": "2026-09-25"
   }
 ]
