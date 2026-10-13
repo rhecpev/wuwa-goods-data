@@ -1,0 +1,2544 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>명조 굿즈 도감</title>
+<style>
+  :root {
+    --bg: #f4f2ee;
+    --surface: #ffffff;
+    --surface-2: #ebe8e1;
+    --line: #dcd7cd;
+    --text: #1d1b18;
+    --muted: #6f6a61;
+    --accent: #a8791f;
+    --accent-soft: #f3e6c8;
+    --on-accent: #ffffff;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .06), 0 6px 18px rgba(0, 0, 0, .06);
+    --radius: 12px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111316;
+      --surface: #1a1d22;
+      --surface-2: #23272e;
+      --line: #2f343d;
+      --text: #ecebe7;
+      --muted: #9a9ea8;
+      --accent: #e0b55a;
+      --accent-soft: #3a3120;
+      --on-accent: #17130a;
+      --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 8px 22px rgba(0, 0, 0, .35);
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: 140px; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", system-ui, -apple-system, sans-serif;
+    font-size: 15px;
+    line-height: 1.45;
+  }
+  button, input, select { font: inherit; color: inherit; }
+  button { cursor: pointer; }
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .bar {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 12px 16px;
+  }
+  .top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  h1 {
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: -.02em;
+  }
+  h1 span { color: var(--accent); }
+  .tabs {
+    display: flex;
+    gap: 4px;
+    padding: 3px;
+    background: var(--surface-2);
+    border-radius: 999px;
+  }
+  .tabs button {
+    border: 0;
+    background: transparent;
+    padding: 6px 14px;
+    border-radius: 999px;
+    color: var(--muted);
+    font-weight: 600;
+  }
+  .tabs button[aria-selected="true"] {
+    background: var(--surface);
+    color: var(--text);
+    box-shadow: var(--shadow);
+  }
+  .tabs small { font-weight: 500; opacity: .7; margin-left: 4px; }
+
+  .filters {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  .filters input,
+  .filters select,
+  .filters button {
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface);
+    min-width: 0;
+  }
+  .filters input { flex: 1 1 200px; }
+  .filters select { flex: 0 1 160px; }
+  .filters button { color: var(--muted); }
+  .filters button:hover { color: var(--text); }
+  input:focus-visible, select:focus-visible, button:focus-visible, .card:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+  }
+
+  main {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 16px 16px 60px;
+  }
+  .status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  .series-banner {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 14px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+  }
+  .series-banner img {
+    width: 120px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 8px;
+    background: var(--surface-2);
+    flex: none;
+  }
+  .series-banner .info { flex: 1; min-width: 0; }
+  .series-banner h2 { margin: 0 0 2px; font-size: 18px; }
+  .series-banner p { margin: 0; color: var(--muted); font-size: 13px; }
+  .series-banner button {
+    border: 1px solid var(--line);
+    background: var(--surface-2);
+    border-radius: 8px;
+    padding: 6px 12px;
+    flex: none;
+  }
+
+  .grid {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  }
+  .grid.series { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    text-align: left;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+  }
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+    border-color: var(--accent);
+  }
+  .thumb {
+    width: 100%;
+    aspect-ratio: 1;
+    background: var(--surface-2);
+    display: block;
+    object-fit: contain;
+  }
+  .series .thumb { aspect-ratio: 16 / 9; object-fit: cover; }
+  .thumb.broken { opacity: .25; }
+  .body { padding: 9px 11px 11px; min-width: 0; width: 100%; }
+  .title {
+    font-weight: 700;
+    overflow-wrap: anywhere;
+  }
+  .meta {
+    margin-top: 3px;
+    color: var(--muted);
+    font-size: 12.5px;
+    overflow-wrap: anywhere;
+  }
+  .tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 7px; }
+  .tag {
+    font-size: 11.5px;
+    padding: 1px 7px;
+    border-radius: 999px;
+    background: var(--surface-2);
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .tag.accent { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+
+  .empty, .error {
+    padding: 60px 16px;
+    text-align: center;
+    color: var(--muted);
+  }
+  .error code {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 4px 8px;
+    background: var(--surface-2);
+    border-radius: 6px;
+    color: var(--text);
+  }
+  #sentinel { height: 1px; }
+  [hidden] { display: none !important; }
+
+  .panel {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 18px;
+    margin-bottom: 12px;
+  }
+  .panel h2, .panel h3 { margin: 0 0 8px; font-size: 17px; }
+  .panel h3 { font-size: 15px; }
+  .panel p { margin: 0 0 10px; }
+  .panel code, .issue code {
+    padding: 1px 5px;
+    border-radius: 5px;
+    background: var(--surface-2);
+    font-size: 13px;
+  }
+  .rules { margin: 0 0 14px; padding-left: 20px; color: var(--muted); font-size: 13.5px; }
+  .rules li { margin: 2px 0; }
+  .muted { color: var(--muted); font-size: 13px; }
+  .row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .row button, .row label.check {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    background: var(--surface-2);
+  }
+  .row button.primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--on-accent);
+    font-weight: 600;
+  }
+  .row button:disabled { opacity: .45; cursor: not-allowed; }
+  .row label.check { display: flex; gap: 8px; align-items: center; cursor: pointer; }
+  .checks { display: grid; gap: 6px; margin-bottom: 10px; }
+  .checks label { display: flex; gap: 8px; align-items: center; cursor: pointer; }
+  .panel .row + .row { margin-top: 10px; }
+  .panel a.muted { color: var(--accent); }
+  .panel p.muted { margin: 10px 0 0; }
+  .panel .issue { background: var(--bg); margin: 8px 0 0; }
+  .form { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-bottom: 12px; }
+  .form label { display: grid; gap: 4px; font-size: 13px; color: var(--muted); }
+  .form input, .form select {
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--bg);
+    color: var(--text);
+    min-width: 0;
+  }
+  .form input[type="file"] { padding: 5px 6px; }
+  .preview { display: flex; gap: 12px; align-items: center; margin-bottom: 12px; }
+  .preview img {
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    background: var(--surface-2);
+  }
+  .grid.charas { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
+  .tabs { flex-wrap: wrap; border-radius: 18px; }
+  .panel h3 { margin-top: 18px; }
+  .panel h2 + p + h3 { margin-top: 6px; }
+  .form button {
+    height: 36px;
+    padding: 0 12px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface-2);
+    color: var(--text);
+  }
+  .bulk { padding: 10px; border: 1px dashed var(--line); border-radius: 8px; margin-bottom: 12px; }
+  .bulk .form { margin: 10px 0; }
+  .bulk .row label.check { padding: 6px 10px; }
+  .goods-row { cursor: pointer; }
+  .goods-row label, .goods-row input[type="text"] { cursor: auto; }
+  .goods-row.checked { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, var(--bg)); }
+  .goods-row .pick { width: 20px; height: 20px; margin-top: 4px; cursor: pointer; accent-color: var(--accent); }
+  .preview img.wide { width: 420px; max-width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+  .panel.dragover { outline: 2px dashed var(--accent); outline-offset: -4px; }
+  .goods-rows { display: grid; gap: 8px; margin-bottom: 14px; }
+  .goods-row {
+    display: grid;
+    grid-template-columns: auto 220px minmax(0, 1fr) auto;
+    gap: 14px;
+    align-items: start;
+    padding: 8px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--bg);
+  }
+  .goods-row.invalid { border-color: #d64545; }
+  .goods-row img {
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+    border-radius: 6px;
+    background: var(--surface-2);
+    cursor: zoom-in;
+  }
+  .preview img.wide { cursor: zoom-in; }
+  #zoom {
+    width: auto;
+    max-width: 96vw;
+    max-height: 96vh;
+    background: transparent;
+    overflow: visible;
+  }
+  #zoom img {
+    display: block;
+    max-width: 96vw;
+    max-height: 94vh;
+    object-fit: contain;
+    border-radius: 8px;
+    background: var(--surface-2);
+    cursor: zoom-out;
+  }
+  @media (max-width: 720px) {
+    .goods-row { grid-template-columns: auto minmax(0, 1fr) auto; }
+    .goods-row img { grid-column: 1 / -1; grid-row: 2; width: 100%; height: auto; max-height: 60vh; }
+    .goods-row > div { grid-column: 1 / -1; grid-row: 3; }
+  }
+  .goods-row .form { margin: 0 0 6px; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 6px; }
+  .goods-row .form input { background: var(--surface); }
+  .goods-row .name { font-size: 12.5px; color: var(--muted); overflow-wrap: anywhere; }
+  .goods-row .name b { color: var(--accent); font-weight: 600; }
+  .goods-row .problem { font-size: 12.5px; color: #d64545; }
+  .goods-row button {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--muted);
+    padding: 4px 9px;
+  }
+  .panel input[type="text"].full {
+    width: 100%;
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--bg);
+    color: var(--text);
+    margin-bottom: 10px;
+  }
+  pre.log {
+    margin: 10px 0 0;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    font-size: 12.5px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    max-height: 320px;
+    overflow: auto;
+  }
+  .charas .card { cursor: pointer; }
+  .charas .card.selected { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
+  .row button.danger { color: #d64545; border-color: #d64545; background: transparent; }
+  .row a.muted { color: var(--accent); }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 12px; }
+  .tile {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 12px 14px;
+  }
+  .tile b { display: block; font-size: 24px; letter-spacing: -.02em; }
+  .tile span { color: var(--muted); font-size: 12.5px; }
+  .issue {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--muted);
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+  }
+  .issue.error { border-left-color: #d64545; }
+  .issue.warn { border-left-color: var(--accent); }
+  .issue.ok { border-left-color: #3f9d63; }
+  .issue summary { cursor: pointer; font-weight: 600; }
+  .issue p { margin: 6px 0 0; color: var(--muted); font-size: 13px; }
+  .issue ul { margin: 8px 0 0; padding-left: 20px; font-size: 13px; max-height: 260px; overflow: auto; }
+  .issue li { margin: 2px 0; overflow-wrap: anywhere; }
+  .issue h4 { margin: 14px 0 6px; font-size: 13.5px; }
+  .thumbs { display: grid; gap: 8px; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  .thumbs .card { text-decoration: none; color: inherit; }
+  .thumbs .meta { margin: 0; color: var(--text); }
+  .issue a { color: var(--accent); }
+  .dupes { display: grid; gap: 8px; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); }
+  .dupe {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 8px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+  }
+  .dupe .thumb { width: 84px; border-radius: 6px; flex: none; }
+  .dupe ul { margin: 0; max-height: none; }
+
+  dialog {
+    border: 0;
+    padding: 0;
+    width: min(1100px, 96vw);
+    max-height: 94vh;
+    background: var(--surface);
+    color: var(--text);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  dialog::backdrop { background: rgba(0, 0, 0, .72); }
+  .viewer {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    max-height: 94vh;
+  }
+  .viewer .stage {
+    position: relative;
+    background: var(--surface-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+  }
+  .viewer .stage img {
+    max-width: 100%;
+    max-height: 94vh;
+    object-fit: contain;
+    display: block;
+  }
+  .nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 56px;
+    border: 0;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, .45);
+    color: #fff;
+    font-size: 22px;
+  }
+  .nav:hover { background: rgba(0, 0, 0, .7); }
+  .nav.prev { left: 8px; }
+  .nav.next { right: 8px; }
+  .viewer aside {
+    padding: 18px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .viewer h2 { margin: 0; font-size: 18px; overflow-wrap: anywhere; }
+  .viewer dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; font-size: 14px; }
+  .viewer dt { color: var(--muted); white-space: nowrap; }
+  .viewer dd { margin: 0; overflow-wrap: anywhere; }
+  .viewer .actions { margin-top: auto; display: flex; gap: 8px; flex-wrap: wrap; }
+  .viewer .actions a,
+  .viewer .actions button {
+    flex: 1;
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    background: var(--surface-2);
+    color: var(--text);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .viewer .actions .primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--on-accent);
+    font-weight: 600;
+  }
+  .viewer .pos { color: var(--muted); font-size: 12.5px; }
+
+  @media (max-width: 720px) {
+    .grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; }
+    .grid.series { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+    .filters select { flex: 1 1 130px; }
+    .viewer { grid-template-columns: 1fr; overflow: auto; }
+    .viewer .stage img { max-height: 60vh; }
+    .series-banner img { width: 84px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <div class="top">
+      <h1><span>명조</span> 굿즈 도감</h1>
+      <div class="tabs" role="tablist">
+        <button role="tab" data-view="series" aria-selected="true">시리즈<small id="seriesTotal"></small></button>
+        <button role="tab" data-view="goods" aria-selected="false">굿즈<small id="goodsTotal"></small></button>
+        <button role="tab" data-view="chara" aria-selected="false">캐릭터<small id="charaTotal"></small></button>
+        <button role="tab" data-view="add" aria-selected="false">추가</button>
+        <button role="tab" data-view="build" aria-selected="false">JSON 생성</button>
+        <button role="tab" data-view="issues" aria-selected="false">문제<small id="issuesTotal"></small></button>
+        <button role="tab" data-view="push" aria-selected="false">올리기</button>
+      </div>
+    </div>
+    <div class="filters" id="filters">
+      <input id="q" type="search" placeholder="검색 (캐릭터, 카테고리, 시리즈, 가격…)" autocomplete="off">
+      <select id="country" aria-label="국가"></select>
+      <select id="chara" aria-label="캐릭터"></select>
+      <select id="category" aria-label="카테고리"></select>
+      <select id="sort" aria-label="정렬">
+        <option value="desc">최신순</option>
+        <option value="asc">오래된순</option>
+      </select>
+      <button id="reset" type="button">초기화</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div id="browse">
+    <div id="banner"></div>
+    <div class="status"><span id="count"></span></div>
+    <div id="grid" class="grid series"></div>
+    <div id="sentinel"></div>
+  </div>
+
+  <section id="build" hidden>
+    <div class="panel">
+      <h2>JSON 생성</h2>
+      <p>이 프로젝트의 <code>picture</code> 폴더를 읽어 <code>series.json</code>, <code>goods.json</code>, <code>categories.json</code>을 만듭니다. <code>generate_json_folder2.py</code>와 같은 규칙입니다. 문제를 확인한 뒤 저장하면 프로젝트 폴더의 JSON을 덮어씁니다.</p>
+      <ul class="rules">
+        <li>시리즈 폴더: <code>picture/시리즈명_국가_날짜/</code></li>
+        <li>대표 이미지: 시리즈 폴더 안의 <code>mainTheme.*</code></li>
+        <li>굿즈 파일: <code>goods/캐릭터_카테고리_가격_메모.확장자</code> (캐릭터는 콤마로 여러 명, 메모는 생략 가능)</li>
+      </ul>
+      <div class="row">
+        <button id="runBuild" type="button" class="primary">다시 생성</button>
+        <span id="buildStatus" class="muted">이 프로젝트의 <code>picture</code> 폴더를 읽습니다.</span>
+      </div>
+    </div>
+    <div id="buildResult"></div>
+  </section>
+
+  <section id="issues" hidden>
+    <div class="panel">
+      <h2>문제</h2>
+      <p><code>picture</code> 폴더를 검사해서 손봐야 할 파일을 모아 보여줍니다. 이미지를 누르면 원본이 열립니다.</p>
+      <div class="row">
+        <button id="runIssues" type="button" class="primary">다시 검사</button>
+        <span id="issuesStatus" class="muted"></span>
+      </div>
+    </div>
+    <div id="issuesResult"></div>
+    <div id="duplicates" class="panel" hidden>
+      <h3>중복 이미지 검사</h3>
+      <p>같은 시리즈 안에서 내용이 똑같은 이미지를 찾습니다.</p>
+      <div class="row">
+        <button id="runDuplicates" type="button">중복 이미지 찾기</button>
+        <span id="duplicatesStatus" class="muted"></span>
+      </div>
+    </div>
+    <div id="duplicatesResult"></div>
+  </section>
+
+  <section id="characters" hidden>
+    <div class="panel">
+      <h2 id="charaTitle">캐릭터 추가</h2>
+      <p id="charaHelp"></p>
+      <div class="form">
+        <label>이름
+          <input id="charaName" type="text" autocomplete="off" placeholder="굿즈 파일명에 쓰는 이름 그대로">
+        </label>
+        <label><span id="charaFileLabel">이미지</span>
+          <input id="charaFile" type="file" accept="image/*">
+        </label>
+      </div>
+      <div id="charaPreview" class="preview" hidden>
+        <img id="charaPreviewImg" alt="">
+        <div id="charaPreviewInfo" class="muted"></div>
+      </div>
+      <div class="row">
+        <button id="charaAdd" type="button" class="primary" disabled>추가</button>
+        <button id="charaDelete" type="button" class="danger" hidden>삭제</button>
+        <button id="charaCancel" type="button" hidden>취소</button>
+        <a id="charaGoods" class="muted" hidden>이 캐릭터 굿즈 보기</a>
+        <span id="charaStatus" class="muted"></span>
+      </div>
+    </div>
+    <div class="status"><span id="charaCount"></span></div>
+    <div id="charaGrid" class="grid charas"></div>
+  </section>
+
+  <section id="addTab" hidden>
+    <div class="panel">
+      <h2>시리즈·굿즈 추가</h2>
+      <p>시리즈와 그 굿즈 사진을 한 번에 <code>picture</code> 폴더에 저장합니다. 저장하면 JSON 생성 탭으로 넘어가서 달라지는 점을 확인하고 JSON에 반영합니다.</p>
+
+      <h3>1. 시리즈</h3>
+      <div class="form">
+        <label>시리즈
+          <select id="addSeries"></select>
+        </label>
+      </div>
+      <div id="addNew">
+        <div class="form">
+          <label>이름
+            <input id="addName" type="text" autocomplete="off" placeholder="예: 3.7버전">
+          </label>
+          <label>국가
+            <input id="addCountry" type="text" autocomplete="off" list="addCountryList" placeholder="예: 중국">
+          </label>
+          <label>날짜
+            <input id="addDate" type="date">
+          </label>
+          <label>대표 이미지 (mainTheme)
+            <input id="addMainFile" type="file" accept="image/*">
+          </label>
+        </div>
+        <div id="addMainPreview" class="preview" hidden>
+          <img id="addMainImg" alt="" class="wide">
+        </div>
+      </div>
+      <p id="addFolderInfo" class="muted"></p>
+
+      <h3>2. 굿즈</h3>
+      <p class="muted">사진을 여러 장 고르거나 이 칸에 끌어다 놓으세요. 사진을 누르면 크게 볼 수 있습니다. 파일명이 이미 <code>캐릭터_카테고리_가격_메모</code> 형식이면 칸이 자동으로 채워집니다.</p>
+      <div class="form">
+        <label>굿즈 사진
+          <input id="addFiles" type="file" accept="image/*" multiple>
+        </label>
+      </div>
+      <div id="addBulk" class="bulk" hidden>
+        <div class="row">
+          <label class="check"><input id="addCheckAll" type="checkbox"><span>전체 선택</span></label>
+          <span class="muted">체크한 굿즈에 아래 값을 한꺼번에 넣습니다. 비워 둔 칸은 건드리지 않습니다.</span>
+        </div>
+        <div class="form">
+          <label>캐릭터
+            <input id="addBulkChara" type="text" autocomplete="off" list="addCharaList">
+          </label>
+          <label>카테고리
+            <input id="addBulkCategory" type="text" autocomplete="off" list="addCategoryList">
+          </label>
+          <label>가격
+            <input id="addBulkPrice" type="text" autocomplete="off" list="addPriceList">
+          </label>
+          <label>메모
+            <input id="addBulkMemo" type="text" autocomplete="off">
+          </label>
+        </div>
+        <div class="row">
+          <button id="addBulkApply" type="button" disabled>체크한 굿즈에 적용</button>
+          <span id="addBulkStatus" class="muted"></span>
+        </div>
+      </div>
+      <div id="addRows" class="goods-rows"></div>
+
+      <div class="row">
+        <button id="addSubmit" type="button" class="primary" disabled>저장</button>
+        <button id="addClear" type="button">비우기</button>
+        <span id="addStatus" class="muted"></span>
+      </div>
+      <datalist id="addCountryList"></datalist>
+      <datalist id="addCharaList"></datalist>
+      <datalist id="addCategoryList"></datalist>
+      <datalist id="addPriceList"></datalist>
+    </div>
+  </section>
+
+  <section id="pushTab" hidden>
+    <div class="panel">
+      <h2>올리기</h2>
+      <p>프로젝트 폴더에서 바뀐 내용을 커밋해서 GitHub에 푸시합니다. 푸시하면 앱이 읽는 데이터가 바로 바뀝니다.</p>
+      <div class="row">
+        <button id="pushRefresh" type="button">새로 고침</button>
+        <span id="pushStatus" class="muted"></span>
+      </div>
+    </div>
+    <div id="pushResult"></div>
+  </section>
+</main>
+
+<dialog id="zoom"><img id="zoomImg" alt=""></dialog>
+
+<dialog id="viewer">
+  <div class="viewer">
+    <div class="stage">
+      <img id="vImg" alt="">
+      <button class="nav prev" id="vPrev" type="button" aria-label="이전">‹</button>
+      <button class="nav next" id="vNext" type="button" aria-label="다음">›</button>
+    </div>
+    <aside>
+      <h2 id="vTitle"></h2>
+      <dl id="vInfo"></dl>
+      <div class="pos" id="vPos"></div>
+      <div class="actions">
+        <button id="vSeries" type="button" class="primary">이 시리즈 보기</button>
+        <a id="vOpen" target="_blank" rel="noopener">원본 열기</a>
+        <button id="vClose" type="button">닫기</button>
+      </div>
+    </aside>
+  </div>
+</dialog>
+
+<script>
+const REPO = "rhecpev/wuwa-goods-data";
+const BRANCH = "main";
+const RAW_PREFIX = `https://raw.githubusercontent.com/${REPO}/refs/heads/${BRANCH}/`;
+const PAGE_SIZE = 60;
+
+const $ = (id) => document.getElementById(id);
+const el = (tag, className, text) => {
+  const node = document.createElement(tag);
+  if (className) node.className = className;
+  if (text != null) node.textContent = text;
+  return node;
+};
+
+const state = {
+  view: "series",
+  q: "",
+  country: "",
+  chara: "",
+  category: "",
+  series: "",
+  sort: "desc",
+};
+
+let allSeries = [];
+let allGoods = [];
+let seriesByName = new Map();
+let filtered = [];
+let rendered = 0;
+let viewerIndex = -1;
+let loadError = null;
+let scanStarted = false;
+let lastScreen = "";
+let allCharacters = [];
+let serverCheck = null;
+
+// JSON의 URL은 raw.githubusercontent 절대경로라서, 같은 저장소에서 서빙될 때는 상대경로를 먼저 쓴다.
+function imagePaths(url) {
+  if (!url || !url.startsWith(RAW_PREFIX)) return { local: url, remote: url };
+  const encoded = url.slice(RAW_PREFIX.length).split("/").map(encodeURIComponent).join("/");
+  return { local: encoded, remote: RAW_PREFIX + encoded };
+}
+
+function setImage(img, url) {
+  const { local, remote } = imagePaths(url);
+  img.classList.remove("broken");
+  img.onerror = () => {
+    if (local !== remote && img.dataset.fallback !== "1") {
+      img.dataset.fallback = "1";
+      img.src = remote;
+    } else {
+      img.onerror = null;
+      img.classList.add("broken");
+    }
+  };
+  delete img.dataset.fallback;
+  img.src = local;
+}
+
+function splitCharas(value) {
+  return (value || "").split(",").map((c) => c.trim()).filter(Boolean);
+}
+
+function countBy(items, keysOf) {
+  const counts = new Map();
+  for (const item of items) {
+    for (const key of keysOf(item)) counts.set(key, (counts.get(key) || 0) + 1);
+  }
+  return counts;
+}
+
+function fillSelect(select, label, entries) {
+  select.replaceChildren(new Option(label, ""));
+  for (const [value, count] of entries) select.add(new Option(`${value} (${count})`, value));
+}
+
+async function load() {
+  const [series, goods, characters] = await Promise.all(
+    ["series.json", "goods.json", "characters.json"].map(async (file) => {
+      const res = await fetch(file, { cache: "no-store" });
+      if (!res.ok) throw new Error(`${file} ${res.status}`);
+      return res.json();
+    })
+  );
+
+  allSeries = series.map((s) => ({
+    ...s,
+    charas: splitCharas(s.seriesCharas),
+    categories: new Set(),
+    goodsCount: 0,
+  }));
+  const enriched = new Map(allSeries.map((s) => [s.seriesNm, s]));
+
+  allGoods = goods.map((g) => {
+    const parent = enriched.get(g.goodsSeries);
+    if (parent) {
+      parent.goodsCount++;
+      parent.categories.add(g.goodsCategory);
+    }
+    const charas = splitCharas(g.goodsChara);
+    return {
+      ...g,
+      charas,
+      country: parent ? parent.seriesCountry : "",
+      haystack: [g.goodsChara, g.goodsCategory, g.goodsPrice, g.goodsMemo, g.goodsSeries].join(" ").toLowerCase(),
+    };
+  });
+  for (const s of allSeries) {
+    s.haystack = [s.seriesNm, s.seriesCountry, s.seriesCharas, s.seriesDate].join(" ").toLowerCase();
+  }
+  seriesByName = enriched;
+  allCharacters = characters;
+  $("charaTotal").textContent = characters.length.toLocaleString();
+
+  $("seriesTotal").textContent = allSeries.length.toLocaleString();
+  $("goodsTotal").textContent = allGoods.length.toLocaleString();
+
+  const byCount = (a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ko");
+  fillSelect($("country"), "국가 전체", [...countBy(allSeries, (s) => [s.seriesCountry])].sort(byCount));
+  fillSelect($("category"), "카테고리 전체", [...countBy(allGoods, (g) => [g.goodsCategory])].sort(byCount));
+
+  // 캐릭터는 characters.json 순서(최신 캐릭터 우선)를 따르고, 굿즈가 없는 캐릭터는 뺀다.
+  const charaCounts = countBy(allGoods, (g) => g.charas);
+  const known = characters.map((c) => c.charaNm).filter((name) => charaCounts.has(name));
+  const unknown = [...charaCounts.keys()].filter((name) => !known.includes(name));
+  fillSelect($("chara"), "캐릭터 전체", [...known, ...unknown].map((name) => [name, charaCounts.get(name)]));
+
+  readHash();
+  apply();
+}
+
+function matches(item) {
+  if (state.q) {
+    for (const token of state.q.toLowerCase().split(/\s+/)) {
+      if (token && !item.haystack.includes(token)) return false;
+    }
+  }
+  if (state.chara && !item.charas.includes(state.chara)) return false;
+  if (state.view === "series") {
+    if (state.country && item.seriesCountry !== state.country) return false;
+    if (state.category && !item.categories.has(state.category)) return false;
+  } else {
+    if (state.country && item.country !== state.country) return false;
+    if (state.category && item.goodsCategory !== state.category) return false;
+    if (state.series && item.goodsSeries !== state.series) return false;
+  }
+  return true;
+}
+
+function apply() {
+  for (const tab of document.querySelectorAll(".tabs button")) {
+    tab.setAttribute("aria-selected", String(tab.dataset.view === state.view));
+  }
+  const isBuild = ["build", "issues", "chara", "add", "push"].includes(state.view);
+  $("build").hidden = state.view !== "build";
+  $("issues").hidden = state.view !== "issues";
+  $("characters").hidden = state.view !== "chara";
+  $("addTab").hidden = state.view !== "add";
+  $("pushTab").hidden = state.view !== "push";
+  $("browse").hidden = isBuild;
+  $("filters").hidden = isBuild;
+  if (isBuild) {
+    writeHash();
+    if (state.view === "chara") renderCharacters();
+    else if (state.view === "add") renderAdd();
+    else if (state.view === "push") renderPush();
+    else if (!scanStarted) runScan();
+    return;
+  }
+  if (loadError) {
+    showLoadError();
+    return;
+  }
+
+  const isSeries = state.view === "series";
+  const source = isSeries ? allSeries : allGoods;
+  const dateOf = isSeries ? (s) => s.seriesDate : (g) => g.goodsReleaseDate;
+  const direction = state.sort === "asc" ? 1 : -1;
+
+  // 정렬은 안정 정렬이라 같은 날짜 안에서는 JSON 순서(시리즈별 파일명 순)가 유지된다.
+  filtered = source.filter(matches).sort((a, b) => direction * dateOf(a).localeCompare(dateOf(b)));
+
+  $("q").value = state.q;
+  $("country").value = state.country;
+  $("chara").value = state.chara;
+  $("category").value = state.category;
+  $("sort").value = state.sort;
+
+  renderBanner();
+  $("count").textContent = `${isSeries ? "시리즈" : "굿즈"} ${filtered.length.toLocaleString()}개`;
+
+  const grid = $("grid");
+  grid.className = isSeries ? "grid series" : "grid";
+  grid.replaceChildren();
+  rendered = 0;
+  if (!filtered.length) grid.append(el("div", "empty", "조건에 맞는 항목이 없습니다."));
+  renderMore();
+  writeHash();
+}
+
+function renderBanner() {
+  const banner = $("banner");
+  banner.replaceChildren();
+  const series = state.view === "goods" && state.series ? seriesByName.get(state.series) : null;
+  if (!series) return;
+
+  const box = el("div", "series-banner");
+  const img = el("img");
+  img.alt = "";
+  setImage(img, series.seriesUrl);
+  const info = el("div", "info");
+  info.append(
+    el("h2", "", series.seriesNm),
+    el("p", "", `${series.seriesCountry} · ${series.seriesDate} · 굿즈 ${series.goodsCount}개`),
+    el("p", "", series.charas.join(", "))
+  );
+  const back = el("button", "", "← 시리즈 목록");
+  back.type = "button";
+  back.onclick = () => {
+    state.series = "";
+    state.view = "series";
+    apply();
+    window.scrollTo(0, 0);
+  };
+  box.append(img, info, back);
+  banner.append(box);
+}
+
+function seriesCard(series) {
+  const card = el("button", "card");
+  card.type = "button";
+  const img = el("img", "thumb");
+  img.loading = "lazy";
+  img.alt = series.seriesNm;
+  setImage(img, series.seriesUrl);
+
+  const body = el("div", "body");
+  body.append(el("div", "title", series.seriesNm), el("div", "meta", series.seriesDate));
+  const tags = el("div", "tags");
+  tags.append(
+    el("span", "tag accent", series.seriesCountry),
+    el("span", "tag", `굿즈 ${series.goodsCount}`),
+    el("span", "tag", `캐릭터 ${series.charas.length}`)
+  );
+  body.append(tags);
+  card.append(img, body);
+  card.onclick = () => openSeries(series.seriesNm);
+  return card;
+}
+
+function goodsCard(goods, index) {
+  const card = el("button", "card");
+  card.type = "button";
+  const img = el("img", "thumb");
+  img.loading = "lazy";
+  img.alt = `${goods.goodsChara} ${goods.goodsCategory}`;
+  setImage(img, goods.goodsUrl);
+
+  const body = el("div", "body");
+  body.append(el("div", "title", goods.goodsChara), el("div", "meta", goods.goodsSeries));
+  const tags = el("div", "tags");
+  tags.append(el("span", "tag accent", goods.goodsCategory), el("span", "tag", goods.goodsPrice));
+  if (goods.goodsMemo) tags.append(el("span", "tag", goods.goodsMemo));
+  body.append(tags);
+  card.append(img, body);
+  card.onclick = () => openViewer(index);
+  return card;
+}
+
+function renderMore() {
+  if (rendered >= filtered.length) return;
+  const fragment = document.createDocumentFragment();
+  const end = Math.min(rendered + PAGE_SIZE, filtered.length);
+  for (let i = rendered; i < end; i++) {
+    fragment.append(state.view === "series" ? seriesCard(filtered[i]) : goodsCard(filtered[i], i));
+  }
+  rendered = end;
+  $("grid").append(fragment);
+}
+
+function openSeries(name) {
+  state.view = "goods";
+  state.series = name;
+  state.q = "";
+  state.category = "";
+  state.country = "";
+  apply();
+  window.scrollTo(0, 0);
+}
+
+function openViewer(index) {
+  viewerIndex = index;
+  const goods = filtered[index];
+  setImage($("vImg"), goods.goodsUrl);
+  $("vImg").alt = `${goods.goodsChara} ${goods.goodsCategory}`;
+  $("vTitle").textContent = `${goods.goodsChara} ${goods.goodsCategory}`;
+
+  const info = $("vInfo");
+  info.replaceChildren();
+  const rows = [
+    ["시리즈", goods.goodsSeries],
+    ["국가", goods.country],
+    ["출시일", goods.goodsReleaseDate],
+    ["캐릭터", goods.charas.join(", ")],
+    ["카테고리", goods.goodsCategory],
+    ["가격", goods.goodsPrice],
+    ["메모", goods.goodsMemo],
+  ];
+  for (const [label, value] of rows) {
+    if (value) info.append(el("dt", "", label), el("dd", "", value));
+  }
+  $("vPos").textContent = `${(index + 1).toLocaleString()} / ${filtered.length.toLocaleString()}`;
+  $("vOpen").href = imagePaths(goods.goodsUrl).remote;
+  $("vSeries").hidden = state.series === goods.goodsSeries;
+  $("vPrev").hidden = index === 0;
+  $("vNext").hidden = index === filtered.length - 1;
+  if (!$("viewer").open) $("viewer").showModal();
+}
+
+function stepViewer(delta) {
+  const next = viewerIndex + delta;
+  if (next >= 0 && next < filtered.length) openViewer(next);
+}
+
+// 필터 상태를 주소에 남겨서 새로고침·공유·뒤로가기가 되게 한다.
+function writeHash() {
+  const params = new URLSearchParams();
+  for (const [key, value] of Object.entries(state)) {
+    const isDefault = (key === "view" && value === "series") || (key === "sort" && value === "desc");
+    if (value && !isDefault) params.set(key, value);
+  }
+  const hash = params.toString();
+  const screen = `${state.view}|${state.series}`;
+  if (hash !== location.hash.slice(1)) {
+    const url = hash ? "#" + hash : location.pathname + location.search;
+    // 탭이나 시리즈를 옮길 때만 방문 기록을 남겨서 뒤로가기가 이전 화면으로 가게 한다.
+    // 검색어·필터를 바꿀 때마다 남기면 뒤로가기를 여러 번 눌러야 해서 그때는 덮어쓴다.
+    if (lastScreen && screen !== lastScreen) history.pushState(null, "", url);
+    else history.replaceState(null, "", url);
+  }
+  lastScreen = screen;
+}
+
+function readHash() {
+  const params = new URLSearchParams(location.hash.slice(1));
+  Object.assign(state, { view: "series", q: "", country: "", chara: "", category: "", series: "", sort: "desc" });
+  for (const key of Object.keys(state)) {
+    if (params.has(key)) state[key] = params.get(key);
+  }
+  if (state.sort !== "asc") state.sort = "desc";
+  if (!["series", "goods", "build", "issues", "chara", "add", "push"].includes(state.view)) state.view = "series";
+  if (state.series && !seriesByName.has(state.series)) state.series = "";
+}
+
+for (const tab of document.querySelectorAll(".tabs button")) {
+  tab.onclick = () => {
+    state.view = tab.dataset.view;
+    state.series = "";
+    apply();
+    window.scrollTo(0, 0);
+  };
+}
+
+let searchTimer;
+$("q").oninput = (event) => {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => {
+    state.q = event.target.value.trim();
+    apply();
+  }, 150);
+};
+for (const key of ["country", "chara", "category", "sort"]) {
+  $(key).onchange = (event) => {
+    state[key] = event.target.value;
+    apply();
+  };
+}
+$("reset").onclick = () => {
+  Object.assign(state, { q: "", country: "", chara: "", category: "", series: "", sort: "desc" });
+  apply();
+};
+
+$("vPrev").onclick = () => stepViewer(-1);
+$("vNext").onclick = () => stepViewer(1);
+$("vClose").onclick = () => $("viewer").close();
+$("vSeries").onclick = () => {
+  const name = filtered[viewerIndex].goodsSeries;
+  $("viewer").close();
+  openSeries(name);
+};
+$("viewer").onclick = (event) => {
+  if (event.target === $("viewer")) $("viewer").close();
+};
+document.addEventListener("keydown", (event) => {
+  if (!$("viewer").open) return;
+  if (event.key === "ArrowLeft") stepViewer(-1);
+  if (event.key === "ArrowRight") stepViewer(1);
+});
+
+// 한 번 채운 뒤에도 바닥이 화면 안에 남아 있으면 다시 관찰해서 이어서 채운다.
+const scrollObserver = new IntersectionObserver(
+  (entries) => {
+    if (!entries[0].isIntersecting || rendered >= filtered.length) return;
+    renderMore();
+    scrollObserver.unobserve($("sentinel"));
+    scrollObserver.observe($("sentinel"));
+  },
+  { rootMargin: "800px" }
+);
+scrollObserver.observe($("sentinel"));
+
+window.addEventListener("hashchange", () => {
+  readHash();
+  apply();
+});
+
+function showLoadError() {
+  const box = el("div", "error");
+  box.append(el("div", "", "데이터를 불러오지 못했습니다."), el("code", "", String(loadError.message || loadError)));
+  if (location.protocol === "file:") {
+    box.append(
+      el("div", "", "파일을 직접 열면 브라우저가 JSON 읽기를 막습니다. 이 폴더에서 아래 명령으로 실행하세요."),
+      el("code", "", "python -m http.server 8000  →  http://localhost:8000")
+    );
+  }
+  $("count").textContent = "";
+  $("grid").className = "";
+  $("grid").replaceChildren(box);
+}
+
+// ── JSON 생성: generate_json_folder2.py와 같은 규칙 ──────────────────────────
+
+function stripExtension(name) {
+  const dot = name.lastIndexOf(".");
+  return dot > 0 ? name.slice(0, dot) : name;
+}
+
+// tree: Map<시리즈 폴더명, { files: string[], goods: string[] | null }>
+function generateData(tree, validCharacters, existingCategories) {
+  const result = {
+    series: [],
+    goods: [],
+    categories: [],
+    newCategories: [],
+    unknownCharas: [],
+    duplicateGoods: [],
+    skippedFiles: [],
+    badFolders: [],
+    noGoods: [],
+    noMainTheme: [],
+  };
+  const known = new Set(existingCategories);
+  const seen = new Set();
+
+  for (const folder of [...tree.keys()].sort()) {
+    const parts = folder.split("_");
+    if (parts.length < 3) {
+      result.badFolders.push(folder);
+      continue;
+    }
+    const seriesDate = parts[parts.length - 1];
+    const seriesCountry = parts[parts.length - 2];
+    const seriesNm = parts.slice(0, -2).join("_");
+    const entry = tree.get(folder);
+
+    let mainThemeUrl = "";
+    for (const file of [...entry.files].sort()) {
+      if (file.toLowerCase().startsWith("maintheme")) mainThemeUrl = `${RAW_PREFIX}picture/${folder}/${file}`;
+    }
+    if (!mainThemeUrl) result.noMainTheme.push(folder);
+
+    const seriesCharas = new Map();
+    const sameContent = new Map();
+    if (entry.goods) {
+      for (const filename of [...entry.goods].sort()) {
+        const goodsParts = stripExtension(filename).split("_");
+        if (goodsParts.length < 3) {
+          result.skippedFiles.push(`${folder}/goods/${filename}`);
+          continue;
+        }
+        // 파일명에서 확장자를 뺀 부분이 곧 캐릭터·카테고리·가격·메모다
+        const content = stripExtension(filename).toLowerCase();
+        if (!sameContent.has(content)) sameContent.set(content, []);
+        sameContent.get(content).push(filename);
+        const [chara, category, price] = goodsParts;
+        for (const name of splitCharas(chara)) {
+          if (!seriesCharas.has(name)) seriesCharas.set(name, filename);
+        }
+        if (!known.has(category) && !seen.has(category)) result.newCategories.push({ category, folder, filename });
+        seen.add(category);
+
+        result.goods.push({
+          goodsId: 0,
+          goodsReleaseDate: seriesDate,
+          goodsSeries: seriesNm,
+          goodsPrice: price,
+          goodsChara: chara,
+          goodsCategory: category,
+          goodsIsGotten: false,
+          goodsUrl: `${RAW_PREFIX}picture/${folder}/goods/${filename}`,
+          goodsMemo: goodsParts.slice(3).join("_"),
+        });
+      }
+    } else {
+      result.noGoods.push(folder);
+    }
+
+    for (const [name, filename] of seriesCharas) {
+      if (!validCharacters.has(name)) result.unknownCharas.push({ chara: name, folder, filename });
+    }
+    for (const filenames of sameContent.values()) {
+      if (filenames.length > 1) result.duplicateGoods.push(...filenames.map((filename) => ({ folder, filename })));
+    }
+
+    result.series.push({
+      seriesId: 0,
+      seriesNm,
+      seriesUrl: mainThemeUrl,
+      seriesCountry,
+      seriesCharas: [...seriesCharas.keys()].sort().join(","),
+      seriesDate,
+    });
+  }
+
+  result.categories = [...new Set([...known, ...seen])].sort();
+  return result;
+}
+
+// picture 폴더는 이 프로젝트 것으로 고정한다. 브라우저는 폴더를 직접 못 읽으므로,
+// 로컬 서버(python -m http.server 등)의 폴더 목록을 읽고, 목록이 없는 곳(GitHub Pages)에서는 저장소 트리를 읽는다.
+async function listDirectory(url) {
+  const res = await fetch(url);
+  if (!res.ok || !(res.headers.get("content-type") || "").includes("html")) return null;
+  const page = new DOMParser().parseFromString(await res.text(), "text/html");
+  const entries = { dirs: [], files: [] };
+  for (const link of page.querySelectorAll("a[href]")) {
+    const href = link.getAttribute("href");
+    if (/^([a-z]+:|[/?#.])/i.test(href)) continue;
+    const name = decodeURIComponent(href);
+    if (name.endsWith("/")) entries.dirs.push(name.slice(0, -1));
+    else entries.files.push(name);
+  }
+  return entries;
+}
+
+async function readFromServer() {
+  const top = await listDirectory("picture/");
+  if (!top || !top.dirs.length) return null;
+
+  const tree = new Map();
+  const queue = [...top.dirs];
+  const worker = async () => {
+    while (queue.length) {
+      const folder = queue.shift();
+      const base = `picture/${encodeURIComponent(folder)}/`;
+      const listing = await listDirectory(base);
+      if (!listing) throw new Error(`폴더 목록을 읽지 못했습니다: ${folder}`);
+      const entry = { files: listing.files, goods: null };
+      const goodsDir = listing.dirs.find((name) => name.toLowerCase() === "goods");
+      if (goodsDir) {
+        const goods = await listDirectory(`${base}${encodeURIComponent(goodsDir)}/`);
+        if (!goods) throw new Error(`폴더 목록을 읽지 못했습니다: ${folder}/goods`);
+        entry.goods = goods.files;
+      }
+      tree.set(folder, entry);
+      $("buildStatus").textContent = `picture 폴더 읽는 중… ${tree.size} / ${top.dirs.length}`;
+    }
+  };
+  await Promise.all(Array.from({ length: 6 }, worker));
+  return { tree, label: "이 서버의 picture 폴더 (로컬 파일)" };
+}
+
+async function readFromGitHub() {
+  const res = await fetch(`https://api.github.com/repos/${REPO}/git/trees/${BRANCH}?recursive=1`);
+  if (!res.ok) throw new Error(`GitHub에서 폴더 목록을 읽지 못했습니다 (${res.status})`);
+  const data = await res.json();
+  if (data.truncated) throw new Error("저장소가 너무 커서 GitHub가 목록을 잘라 보냈습니다. 로컬 서버에서 실행하세요.");
+
+  const tree = new Map();
+  const shas = new Map();
+  for (const item of data.tree) {
+    const parts = item.path.split("/");
+    if (parts[0] !== "picture" || parts.length < 3 || item.type !== "blob") continue;
+    if (!tree.has(parts[1])) tree.set(parts[1], { files: [], goods: null });
+    const entry = tree.get(parts[1]);
+    if (parts.length === 3) entry.files.push(parts[2]);
+    else if (parts.length === 4 && parts[2].toLowerCase() === "goods") {
+      (entry.goods ||= []).push(parts[3]);
+      shas.set(`${parts[1]}/goods/${parts[3]}`, item.sha);
+    }
+  }
+  if (!tree.size) throw new Error("저장소에 picture 폴더가 없습니다.");
+  return { tree, shas, label: `GitHub ${REPO} (${BRANCH} 브랜치에 올라간 상태)` };
+}
+
+async function siteJson(name) {
+  try {
+    const res = await fetch(name, { cache: "no-store" });
+    return res.ok ? await res.json() : null;
+  } catch {
+    return null;
+  }
+}
+
+// 생성 탭과 문제 탭이 같은 검사 결과를 쓴다.
+// serve.py로 띄웠을 때만 프로젝트 폴더에 쓸 수 있다.
+function checkServer() {
+  serverCheck ||= siteJson("api/ping").then((ping) => Boolean(ping && ping.save));
+  return serverCheck;
+}
+
+async function scanProject() {
+  const source = (await readFromServer()) || (await readFromGitHub());
+  canSave = await checkServer();
+
+  const characters = await siteJson("characters.json");
+  if (!characters) throw new Error("characters.json을 찾을 수 없습니다. picture 폴더와 같은 위치에 있어야 합니다.");
+  const categories = await siteJson("categories.json");
+
+  const valid = new Set(characters.filter((c) => c.charaNm).map((c) => c.charaNm.trim()));
+  const result = generateData(source.tree, valid, categories || []);
+  const summary =
+    `${source.label} · characters.json ${valid.size}명 · categories.json ${categories ? `${categories.length}개` : "없음 (새로 생성)"}`;
+  return {
+    source,
+    result,
+    summary,
+    problems: collectProblems(source, result),
+    changes: collectChanges(result, categories),
+  };
+}
+
+const IMAGE_FILE = /\.(png|jpe?g|webp|avif|gif)$/i;
+const DOUBLE_EXTENSION = /\.(png|jpe?g|webp|avif|gif)\.[^.]+$/i;
+
+// 문제 탭에 보여줄 항목. path는 picture/ 아래 경로이고, 있으면 이미지로 보여준다.
+function collectProblems(source, result) {
+  const goodsPath = (folder, filename) => `${folder}/goods/${filename}`;
+  const problems = [];
+  const add = (kind, title, note, items) => {
+    if (items.length) problems.push({ kind, title, note, items });
+  };
+
+  add("error", "등록되지 않은 캐릭터",
+    "characters.json에 없는 이름입니다. 파일명을 고치거나 캐릭터 탭에서 추가하기 전에는 JSON을 저장할 수 없습니다.",
+    result.unknownCharas.map((u) => ({ path: goodsPath(u.folder, u.filename), caption: `[${u.chara}] ${u.filename}` })));
+
+  add("error", "내용이 완전히 같은 굿즈",
+    "한 시리즈 안에서 캐릭터·카테고리·가격·메모가 전부 같고 확장자만 다릅니다. 앱에서 구분할 수 없으니 하나를 지우거나 메모로 구분하기 전에는 JSON을 저장할 수 없습니다.",
+    result.duplicateGoods.map((d) => ({ path: goodsPath(d.folder, d.filename), caption: d.filename, keepExtension: true })));
+
+  add("warn", "파일명 형식이 틀린 굿즈",
+    "캐릭터_카테고리_가격 형식이 아니라서 goods.json에 들어가지 않습니다.",
+    result.skippedFiles.map((path) => ({ path, caption: path.split("/").pop() })));
+
+  const oddFiles = [];
+  for (const [folder, entry] of source.tree) {
+    for (const filename of entry.goods || []) {
+      if (DOUBLE_EXTENSION.test(filename) || !IMAGE_FILE.test(filename)) {
+        oddFiles.push({ path: goodsPath(folder, filename), caption: filename, keepExtension: true });
+      }
+    }
+  }
+  add("warn", "확장자가 이상한 파일",
+    "확장자가 두 번 붙었거나 이미지가 아닌 파일입니다. 그대로 굿즈로 등록됩니다.", oddFiles);
+
+  add("warn", "새 카테고리",
+    "categories.json에 없던 카테고리입니다. 오타가 아닌지 확인하세요.",
+    result.newCategories.map((n) => ({ path: goodsPath(n.folder, n.filename), caption: `[${n.category}] ${n.filename}` })));
+
+  add("warn", "폴더명 형식이 틀린 시리즈", "시리즈명_국가_날짜 형식이 아니라서 통째로 빠집니다.",
+    result.badFolders.map((folder) => ({ caption: folder })));
+  add("warn", "goods 폴더가 없는 시리즈", "", result.noGoods.map((folder) => ({ caption: folder })));
+  add("warn", "mainTheme 이미지가 없는 시리즈", "", result.noMainTheme.map((folder) => ({ caption: folder })));
+
+  return problems;
+}
+
+// 지금 프로젝트에 있는 JSON과 새로 만든 결과를 비교한다. 저장하면 실제로 바뀌는 내용이다.
+function collectChanges(result, currentCategories) {
+  if (loadError) return null;
+  const changes = [];
+  const add = (title, note, items) => {
+    if (items.length) changes.push({ kind: "ok", title, note, items });
+  };
+  const toPath = (url) => url.slice(RAW_PREFIX.length + "picture/".length);
+  const fileOf = (url) => (url ? url.split("/").pop() : "(없음)");
+
+  const before = new Set(allGoods.map((g) => g.goodsUrl));
+  const after = new Set(result.goods.map((g) => g.goodsUrl));
+  add("추가되는 굿즈", "picture 폴더에 새로 생겼거나 이름이 바뀐 파일입니다.",
+    [...after].filter((url) => !before.has(url)).map((url) => ({ path: toPath(url), caption: fileOf(url) })));
+  add("삭제되는 굿즈", "지금 JSON에는 있지만 picture 폴더에 파일이 없습니다.",
+    [...before].filter((url) => !after.has(url)).map((url) => ({ caption: toPath(url) })));
+
+  const oldSeries = new Map(allSeries.map((series) => [series.seriesNm, series]));
+  const newNames = new Set(result.series.map((series) => series.seriesNm));
+  add("추가되는 시리즈", "",
+    result.series.filter((series) => !oldSeries.has(series.seriesNm))
+      .map((series) => ({ caption: `${series.seriesNm} (${series.seriesCountry}, ${series.seriesDate})` })));
+  add("삭제되는 시리즈", "",
+    allSeries.filter((series) => !newNames.has(series.seriesNm)).map((series) => ({ caption: series.seriesNm })));
+
+  const edits = [];
+  for (const series of result.series) {
+    const old = oldSeries.get(series.seriesNm);
+    if (!old) continue;
+    if (old.seriesCharas !== series.seriesCharas) {
+      const was = new Set(splitCharas(old.seriesCharas));
+      const now = new Set(splitCharas(series.seriesCharas));
+      const parts = [
+        ...[...now].filter((name) => !was.has(name)).map((name) => `+${name}`),
+        ...[...was].filter((name) => !now.has(name)).map((name) => `−${name}`),
+      ];
+      edits.push({ caption: `${series.seriesNm} · 캐릭터 ${parts.join(" ")}` });
+    }
+    if (old.seriesUrl !== series.seriesUrl) {
+      edits.push({ caption: `${series.seriesNm} · 대표 이미지 ${fileOf(old.seriesUrl)} → ${fileOf(series.seriesUrl)}` });
+    }
+    for (const [key, label] of [["seriesCountry", "국가"], ["seriesDate", "날짜"]]) {
+      if (old[key] !== series[key]) edits.push({ caption: `${series.seriesNm} · ${label} ${old[key]} → ${series[key]}` });
+    }
+  }
+  add("내용이 바뀌는 시리즈", "", edits);
+
+  const oldCategories = new Set(currentCategories || []);
+  const newCategories = new Set(result.categories);
+  add("추가되는 카테고리", "", result.categories.filter((c) => !oldCategories.has(c)).map((c) => ({ caption: c })));
+  add("삭제되는 카테고리", "", [...oldCategories].filter((c) => !newCategories.has(c)).map((c) => ({ caption: c })));
+  return changes;
+}
+
+function problemCount(problems) {
+  return problems.reduce((sum, problem) => sum + problem.items.length, 0);
+}
+
+function pictureUrl(path) {
+  return "picture/" + path.split("/").map(encodeURIComponent).join("/");
+}
+
+function thumbCard(path, caption) {
+  const card = el("a", "card");
+  card.href = pictureUrl(path);
+  card.target = "_blank";
+  card.rel = "noopener";
+  const img = el("img", "thumb");
+  img.loading = "lazy";
+  img.alt = "";
+  img.src = card.href;
+  img.onerror = () => img.classList.add("broken");
+  const body = el("div", "body");
+  body.append(el("div", "meta", caption));
+  card.append(img, body);
+  return card;
+}
+
+// 이미지가 있는 항목은 시리즈별로 묶어 썸네일로, 없는 항목은 글자 목록으로 보여준다.
+function issueBox(kind, title, items, note) {
+  const box = el("details", `issue ${kind}`);
+  box.open = true;
+  box.append(el("summary", "", `${title} (${items.length})`));
+  if (note) box.append(el("p", "", note));
+
+  const plain = items.filter((item) => !item.path);
+  if (plain.length) {
+    const list = el("ul");
+    for (const item of plain) list.append(el("li", "", item.caption));
+    box.append(list);
+  }
+
+  const groups = new Map();
+  for (const item of items.filter((item) => item.path)) {
+    const folder = item.path.split("/")[0];
+    if (!groups.has(folder)) groups.set(folder, []);
+    groups.get(folder).push(item);
+  }
+  for (const [folder, group] of groups) {
+    box.append(el("h4", "", `${folder} (${group.length})`));
+    const grid = el("div", "thumbs");
+    for (const item of group) {
+      grid.append(thumbCard(item.path, item.keepExtension ? item.caption : stripExtension(item.caption)));
+    }
+    box.append(grid);
+  }
+  return box;
+}
+
+function download(name, text) {
+  const link = el("a");
+  link.href = URL.createObjectURL(new Blob([text], { type: "application/json" }));
+  link.download = name;
+  link.click();
+  setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+}
+
+function renderBuild({ result, problems, changes }) {
+  const changeCount = changes ? problemCount(changes) : 0;
+  const out = $("buildResult");
+  out.replaceChildren();
+
+  const tiles = el("div", "tiles");
+  for (const [label, value] of [
+    ["시리즈", result.series.length],
+    ["굿즈", result.goods.length],
+    ["카테고리", result.categories.length],
+    ["문제", problemCount(problems)],
+    ["변경", changes ? changeCount : "?"],
+  ]) {
+    const tile = el("div", "tile");
+    tile.append(el("b", "", value.toLocaleString()), el("span", "", label));
+    tiles.append(tile);
+  }
+  out.append(tiles);
+
+  if (problems.length) {
+    const notice = el("div", `issue ${problems.some((problem) => problem.kind === "error") ? "error" : "warn"}`);
+    notice.append(el("b", "", `확인할 문제가 ${problemCount(problems)}건 있습니다. `));
+    const link = el("a", "", "문제 탭에서 보기");
+    link.href = "#view=issues";
+    notice.append(link);
+    out.append(notice);
+  } else {
+    const fine = el("div", "issue ok");
+    fine.append(el("b", "", "문제가 없습니다."));
+    out.append(fine);
+  }
+
+  // 저장하면 지금 JSON에서 무엇이 달라지는지
+  const diff = el("div", "panel");
+  diff.append(el("h3", "", `지금 JSON과 달라지는 점 (${changes ? changeCount : "?"})`));
+  if (!changes) {
+    diff.append(el("p", "muted", "현재 JSON을 읽지 못해서 비교할 수 없습니다."));
+  } else if (!changes.length) {
+    diff.append(el("p", "muted", "달라지는 것이 없습니다. 저장해도 JSON 내용은 그대로입니다."));
+  } else {
+    diff.append(el("p", "muted", "저장하면 아래 내용이 프로젝트의 JSON에 반영됩니다."));
+    for (const change of changes) diff.append(issueBox(change.kind, change.title, change.items, change.note));
+  }
+  out.append(diff);
+
+  // exe(파이썬, Windows)가 쓰는 파일과 바이트 단위로 같도록 줄바꿈을 CRLF로 맞춘다.
+  const toText = (data) => JSON.stringify(data, null, 2).replace(/\n/g, "\r\n");
+  const files = {
+    "series.json": toText(result.series),
+    "goods.json": toText(result.goods),
+    "categories.json": toText(result.categories),
+  };
+
+  const panel = el("div", "panel");
+  panel.append(el("h3", "", "확인 후 저장"));
+
+  // 문제마다 확인 체크를 받는다. 미등록 캐릭터와 내용이 같은 굿즈는 확인으로 넘어갈 수 없다.
+  const checks = [];
+  const blockers = problems.filter((problem) => problem.kind === "error");
+  const confirmable = problems.filter((problem) => problem.kind !== "error");
+  const confirmations = confirmable.map((problem) => (problem.title === "새 카테고리"
+    ? `새 카테고리 ${problem.items.length}개를 categories.json에 추가합니다`
+    : `문제: ${problem.title} ${problem.items.length}건 — 확인했습니다`));
+  if (changeCount) confirmations.push(`달라지는 점 ${changeCount}건 — 확인했습니다`);
+  if (confirmations.length) {
+    const list = el("div", "checks");
+    for (const text of confirmations) {
+      const label = el("label", "check");
+      const box = el("input");
+      box.type = "checkbox";
+      label.append(box, el("span", "", text));
+      list.append(label);
+      checks.push(box);
+    }
+    panel.append(list);
+    const all = el("button", "", "모두 확인");
+    all.type = "button";
+    all.onclick = () => {
+      for (const box of checks) box.checked = true;
+      refresh();
+    };
+    const tools = el("div", "row");
+    tools.append(all);
+    if (confirmable.length) {
+      const view = el("a", "muted", "문제 탭에서 내용 보기");
+      view.href = "#view=issues";
+      tools.append(view);
+    }
+    panel.append(tools);
+  }
+
+  const row = el("div", "row");
+  const buttons = [];
+  const message = el("span", "muted");
+
+  if (canSave) {
+    const save = el("button", "primary", "프로젝트 폴더에 저장");
+    save.type = "button";
+    save.onclick = async () => {
+      for (const button of buttons) button.disabled = true;
+      message.textContent = "저장 중…";
+      try {
+        const res = await fetch("api/save", {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "X-Goods-Save": "1" },
+          body: JSON.stringify({ files }),
+        });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error || res.status);
+        // 저장한 JSON으로 화면 전체를 다시 읽는다
+        await load();
+        await runScan();
+        $("buildStatus").textContent = `저장 완료: ${data.saved.join(", ")} · ${$("buildStatus").textContent}`;
+      } catch (error) {
+        message.textContent = `저장 실패: ${error.message}`;
+        refresh();
+      }
+    };
+    buttons.push(save);
+  }
+  for (const [name, text] of Object.entries(files)) {
+    const button = el("button", "", `${name} 다운로드`);
+    button.type = "button";
+    button.onclick = () => download(name, text);
+    buttons.push(button);
+  }
+  row.append(...buttons, message);
+  panel.append(row);
+  if (!canSave) {
+    const hint = el("p", "muted");
+    hint.append("프로젝트 폴더에 바로 저장하려면 ", el("code", "", "python serve.py"), "로 실행하세요. 지금은 다운로드만 됩니다.");
+    panel.append(hint);
+  }
+  out.append(panel);
+
+  function refresh() {
+    const unchecked = checks.filter((box) => !box.checked).length;
+    for (const button of buttons) button.disabled = blockers.length > 0 || unchecked > 0;
+    if (blockers.length) message.textContent = `${blockers.map((problem) => problem.title).join(", ")} 문제가 있어 저장할 수 없습니다.`;
+    else if (unchecked) message.textContent = `확인하지 않은 항목 ${unchecked}개`;
+    else message.textContent = "";
+  }
+  for (const box of checks) box.onchange = refresh;
+  refresh();
+}
+
+function renderIssues({ problems }) {
+  const out = $("issuesResult");
+  out.replaceChildren();
+  if (!problems.length) {
+    const fine = el("div", "issue ok");
+    fine.append(el("b", "", "문제가 없습니다."));
+    out.append(fine);
+  }
+  for (const problem of problems) out.append(issueBox(problem.kind, problem.title, problem.items, problem.note));
+  $("duplicates").hidden = false;
+  $("duplicatesResult").replaceChildren();
+  $("duplicatesStatus").textContent = "굿즈 이미지 전체를 비교하므로 조금 걸립니다.";
+}
+
+// 같은 시리즈 안에서 내용이 똑같은 이미지를 찾는다.
+// GitHub에서 읽었으면 저장소가 알려 준 해시를 쓰고, 로컬이면 크기가 같은 파일만 내려받아 비교한다.
+async function findDuplicates(source, onProgress) {
+  const files = [];
+  for (const [folder, entry] of source.tree) {
+    for (const filename of entry.goods || []) files.push({ folder, filename, path: `${folder}/goods/${filename}` });
+  }
+
+  const pool = async (items, task) => {
+    let next = 0;
+    let done = 0;
+    await Promise.all(Array.from({ length: 8 }, async () => {
+      while (next < items.length) {
+        await task(items[next++]);
+        onProgress(++done, items.length);
+      }
+    }));
+  };
+  const groupBy = (items, keyOf) => {
+    const groups = new Map();
+    for (const item of items) {
+      const key = keyOf(item);
+      if (key == null) continue;
+      if (!groups.has(key)) groups.set(key, []);
+      groups.get(key).push(item);
+    }
+    return [...groups.values()].filter((group) => group.length > 1);
+  };
+
+  if (source.shas) {
+    for (const file of files) file.hash = source.shas.get(file.path);
+  } else {
+    await pool(files, async (file) => {
+      const res = await fetch(pictureUrl(file.path), { method: "HEAD" });
+      file.size = res.ok ? res.headers.get("content-length") : null;
+    });
+    const candidates = groupBy(files, (file) => (file.size == null ? null : `${file.folder}/${file.size}`)).flat();
+    await pool(candidates, async (file) => {
+      const bytes = await (await fetch(pictureUrl(file.path))).arrayBuffer();
+      const digest = new Uint8Array(await crypto.subtle.digest("SHA-256", bytes));
+      file.hash = Array.from(digest, (byte) => byte.toString(16).padStart(2, "0")).join("");
+    });
+  }
+  return groupBy(files, (file) => (file.hash ? `${file.folder}/${file.hash}` : null));
+}
+
+function renderDuplicates(groups) {
+  const out = $("duplicatesResult");
+  out.replaceChildren();
+  if (!groups.length) {
+    const fine = el("div", "issue ok");
+    fine.append(el("b", "", "같은 이미지를 쓰는 파일이 없습니다."));
+    out.append(fine);
+    return;
+  }
+
+  const box = el("details", "issue warn");
+  box.open = true;
+  box.append(
+    el("summary", "", `같은 이미지를 쓰는 파일 (${groups.length}묶음)`),
+    el("p", "", "세트 대표 이미지와 구성품처럼 일부러 같은 사진을 쓴 경우도 있습니다. 이름만 바꾸고 옛 파일이 남은 것이 있는지 확인하세요.")
+  );
+  let folder = "";
+  let grid;
+  for (const group of groups) {
+    if (group[0].folder !== folder) {
+      folder = group[0].folder;
+      box.append(el("h4", "", folder));
+      grid = el("div", "dupes");
+      box.append(grid);
+    }
+    const row = el("div", "dupe");
+    const link = el("a");
+    link.href = pictureUrl(group[0].path);
+    link.target = "_blank";
+    link.rel = "noopener";
+    const img = el("img", "thumb");
+    img.loading = "lazy";
+    img.alt = "";
+    img.src = link.href;
+    link.append(img);
+    const names = el("ul");
+    for (const file of group) names.append(el("li", "", file.filename));
+    row.append(link, names);
+    grid.append(row);
+  }
+  out.append(box);
+}
+
+// ── 캐릭터 탭 ────────────────────────────────────────────────────────────────
+
+// 굿즈 파일명이 캐릭터_카테고리_가격이고 캐릭터는 콤마로 나누므로, 이 글자들은 이름에 쓸 수 없다.
+const BAD_NAME_CHARS = /[_,/\\:*?"<>|.]/;
+let charaImage = null;   // 새로 고른 이미지 (PNG로 바꾼 것)
+let charaEditing = null; // 수정 중인 캐릭터. null이면 추가
+let charaVersion = 0;    // 이미지를 덮어쓴 뒤 브라우저가 옛 그림을 보여주지 않게 주소에 붙인다
+
+function charaGoodsCount(name) {
+  return allGoods.filter((g) => g.charas.includes(name)).length;
+}
+
+function charaImageUrl(chara) {
+  const { local } = imagePaths(chara.charaUrl);
+  return charaVersion ? `${local}?v=${charaVersion}` : local;
+}
+
+function renderCharacters() {
+  const counts = countBy(allGoods, (g) => g.charas);
+  $("charaCount").textContent =
+    `등록된 캐릭터 ${allCharacters.length.toLocaleString()}명 (characters.json 순서) · 눌러서 수정·삭제`;
+  const grid = $("charaGrid");
+  grid.replaceChildren();
+  for (const chara of allCharacters) {
+    const card = el("button", "card");
+    card.type = "button";
+    if (charaEditing && charaEditing.charaNm === chara.charaNm) card.classList.add("selected");
+    const img = el("img", "thumb");
+    img.loading = "lazy";
+    img.alt = chara.charaNm;
+    img.onerror = () => img.classList.add("broken");
+    img.src = charaImageUrl(chara);
+    const body = el("div", "body");
+    body.append(
+      el("div", "title", chara.charaNm),
+      el("div", "meta", `굿즈 ${(counts.get(chara.charaNm.trim()) || 0).toLocaleString()}개`)
+    );
+    card.append(img, body);
+    card.onclick = () => editCharacter(chara);
+    grid.append(card);
+  }
+  updateCharaForm();
+}
+
+function editCharacter(chara) {
+  charaEditing = chara;
+  charaImage = null;
+  $("charaName").value = chara ? chara.charaNm : "";
+  $("charaFile").value = "";
+  $("charaStatus").textContent = "";
+  renderCharacters();
+  if (chara) $("characters").scrollIntoView({ block: "start" });
+}
+
+async function updateCharaForm() {
+  const editing = charaEditing;
+  const name = $("charaName").value.trim();
+  const oldName = editing ? editing.charaNm.trim() : "";
+  const saveable = await checkServer();
+
+  $("charaTitle").textContent = editing ? `캐릭터 수정: ${oldName}` : "캐릭터 추가";
+  $("charaHelp").textContent = editing
+    ? "이름을 바꾸거나 이미지를 새로 고르면 characters.json과 character 폴더의 이미지가 바뀝니다."
+    : "characters.json 맨 위에 캐릭터를 추가하고, 이미지를 character 폴더에 PNG로 저장합니다.";
+  $("charaFileLabel").textContent = editing ? "이미지 (바꿀 때만 선택)" : "이미지";
+  $("charaAdd").textContent = editing ? "수정 저장" : "추가";
+  $("charaDelete").hidden = !editing;
+  $("charaCancel").hidden = !editing;
+  $("charaGoods").hidden = !editing;
+  if (editing) $("charaGoods").href = "#" + new URLSearchParams({ view: "goods", chara: oldName });
+
+  let problem = "";
+  if (!saveable) problem = "python serve.py로 실행해야 추가·수정·삭제할 수 있습니다.";
+  else if (!name) problem = "이름을 입력하세요.";
+  else if (name !== oldName && BAD_NAME_CHARS.test(name)) problem = "이름에 _ , . / 같은 글자는 쓸 수 없습니다.";
+  else if (name !== oldName && allCharacters.some((c) => c.charaNm.trim() === name)) problem = `이미 등록된 캐릭터입니다: ${name}`;
+  else if (!editing && !charaImage) problem = "이미지를 고르세요.";
+  else if (editing && name === oldName && !charaImage) problem = "바꿀 내용이 없습니다.";
+
+  $("charaAdd").disabled = Boolean(problem);
+  $("charaDelete").disabled = !saveable;
+  // 방금 끝난 작업의 결과 문구는 다음 입력 전까지 남겨 둔다
+  if (!$("charaStatus").dataset.keep) $("charaStatus").textContent = problem;
+  delete $("charaStatus").dataset.keep;
+
+  // 미리보기: 새로 고른 이미지가 있으면 그것, 수정 중이면 지금 이미지
+  if (charaImage) {
+    const filename = editing
+      ? `${imagePaths(editing.charaUrl).remote.split("/").pop()} 덮어씀`
+      : name ? `character/${name.replace(/ /g, "-")}.png` : "(이름을 입력하면 파일명이 정해집니다)";
+    $("charaPreviewImg").src = charaImage.dataUrl;
+    $("charaPreviewInfo").textContent = `${decodeURIComponent(filename)} · ${charaImage.width}×${charaImage.height}`;
+    $("charaPreview").hidden = false;
+  } else if (editing) {
+    $("charaPreviewImg").src = charaImageUrl(editing);
+    $("charaPreviewInfo").textContent =
+      `지금 이미지: character/${editing.charaUrl.split("/").pop()} · 굿즈 ${charaGoodsCount(oldName).toLocaleString()}개`;
+    $("charaPreview").hidden = false;
+  } else {
+    $("charaPreview").hidden = true;
+  }
+}
+
+// 어떤 형식으로 골라도 PNG로 바꿔서 저장한다 (기존 캐릭터 이미지가 전부 .png).
+function toPng(file) {
+  return new Promise((resolve, reject) => {
+    const url = URL.createObjectURL(file);
+    const img = new Image();
+    img.onload = () => {
+      const canvas = document.createElement("canvas");
+      canvas.width = img.naturalWidth;
+      canvas.height = img.naturalHeight;
+      canvas.getContext("2d").drawImage(img, 0, 0);
+      URL.revokeObjectURL(url);
+      const dataUrl = canvas.toDataURL("image/png");
+      resolve({ dataUrl, base64: dataUrl.split(",")[1], width: canvas.width, height: canvas.height });
+    };
+    img.onerror = () => {
+      URL.revokeObjectURL(url);
+      reject(new Error("이미지를 읽을 수 없습니다."));
+    };
+    img.src = url;
+  });
+}
+
+// 저장이 끝나면 화면 전체를 새 characters.json으로 다시 읽는다.
+async function sendCharacter(body, doneMessage) {
+  for (const id of ["charaAdd", "charaDelete"]) $(id).disabled = true;
+  $("charaStatus").textContent = "저장 중…";
+  try {
+    const res = await fetch("api/character", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "X-Goods-Save": "1" },
+      body: JSON.stringify(body),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || res.status);
+
+    charaEditing = null;
+    charaImage = null;
+    charaVersion = Date.now();
+    $("charaName").value = "";
+    $("charaFile").value = "";
+    scanStarted = false; // 캐릭터 목록이 바뀌었으니 다음에 생성·문제 탭을 열 때 다시 검사
+    addReady = false;
+    $("charaStatus").dataset.keep = "1";
+    $("charaStatus").textContent = doneMessage(data);
+    await load();
+  } catch (error) {
+    $("charaStatus").dataset.keep = "1";
+    $("charaStatus").textContent = `실패: ${error.message}`;
+    updateCharaForm();
+  }
+}
+
+$("charaName").oninput = updateCharaForm;
+$("charaFile").onchange = async (event) => {
+  const file = event.target.files[0];
+  charaImage = null;
+  if (file) {
+    try {
+      charaImage = await toPng(file);
+    } catch (error) {
+      event.target.value = "";
+      $("charaStatus").dataset.keep = "1";
+      $("charaStatus").textContent = error.message;
+    }
+  }
+  updateCharaForm();
+};
+$("charaAdd").onclick = () => {
+  const name = $("charaName").value.trim();
+  if (!charaEditing) {
+    sendCharacter({ action: "add", name, image: charaImage.base64 }, (data) => `추가 완료: ${name} (${data.image})`);
+    return;
+  }
+  const oldName = charaEditing.charaNm.trim();
+  const used = charaGoodsCount(oldName);
+  if (name !== oldName && used) {
+    const ok = confirm(
+      `굿즈 ${used.toLocaleString()}개가 "${oldName}" 이름을 쓰고 있습니다.\n` +
+      `이름을 "${name}"(으)로 바꾸면 그 굿즈 파일들은 미등록 캐릭터가 되어 JSON을 저장할 수 없게 됩니다.\n` +
+      "굿즈 파일명도 직접 바꿔야 합니다. 계속할까요?"
+    );
+    if (!ok) return;
+  }
+  const body = { action: "update", name: oldName, newName: name };
+  if (charaImage) body.image = charaImage.base64;
+  sendCharacter(body, () => `수정 완료: ${name}`);
+};
+$("charaDelete").onclick = () => {
+  const name = charaEditing.charaNm.trim();
+  const used = charaGoodsCount(name);
+  const ok = confirm(
+    `"${name}" 캐릭터를 삭제합니다.\ncharacters.json에서 빠지고 이미지 파일도 지워집니다.` +
+    (used ? `\n\n굿즈 ${used.toLocaleString()}개가 이 이름을 쓰고 있어서, 삭제하면 미등록 캐릭터가 되어 JSON을 저장할 수 없게 됩니다.` : "")
+  );
+  if (!ok) return;
+  sendCharacter({ action: "delete", name }, (data) =>
+    `삭제 완료: ${name}` + (data.removedImage ? ` (${data.removedImage} 삭제)` : ""));
+};
+$("charaCancel").onclick = () => editCharacter(null);
+
+// 사진을 누르면 화면 가득 크게 보여 준다. 아무 데나 누르면 닫힌다.
+function zoomImage(url) {
+  $("zoomImg").src = url;
+  $("zoom").showModal();
+}
+$("zoom").onclick = () => $("zoom").close();
+
+// ── 추가 탭: 시리즈와 굿즈를 한 번에 picture 폴더에 넣는다 ─────────────────
+
+const BAD_PATH_CHARS = /[/\\:*?"<>|]/;
+const BULK_FIELDS = [
+  ["chara", "addBulkChara", "캐릭터"],
+  ["category", "addBulkCategory", "카테고리"],
+  ["price", "addBulkPrice", "가격"],
+  ["memo", "addBulkMemo", "메모"],
+];
+let addRows = [];           // { file, url, ext, chara, category, price, memo, checked, dom }
+let addMain = null;         // 새 시리즈의 대표 이미지 { file, url, ext }
+let addFolders = [];        // picture 안의 실제 시리즈 폴더 이름
+let addExisting = new Set(); // 고른 시리즈에 이미 있는 굿즈 (확장자 뺀 파일명, 소문자)
+let addCategories = new Set();
+let addReady = false;
+
+function fileExtension(name) {
+  const match = /\.[^.]+$/.exec(name);
+  return match ? match[0].toLowerCase() : "";
+}
+
+function fillDatalist(id, values) {
+  $(id).replaceChildren(...values.map((value) => new Option(value)));
+}
+
+async function renderAdd() {
+  if (!addReady) {
+    addReady = true;
+    const [top, categories] = await Promise.all([listDirectory("picture/").catch(() => null), siteJson("categories.json")]);
+    addFolders = top && top.dirs.length
+      ? top.dirs
+      : allSeries.map((s) => `${s.seriesNm}_${s.seriesCountry}_${s.seriesDate}`);
+    addCategories = new Set(categories || []);
+
+    // 최신 시리즈가 위로 오게 날짜(폴더명 마지막 칸) 내림차순
+    const dateOf = (folder) => folder.split("_").pop();
+    const chosen = $("addSeries").value;
+    $("addSeries").replaceChildren(
+      new Option("새 시리즈 만들기", ""),
+      ...[...addFolders].sort((a, b) => dateOf(b).localeCompare(dateOf(a))).map((folder) => new Option(folder, folder))
+    );
+    $("addSeries").value = addFolders.includes(chosen) ? chosen : "";
+
+    const byCount = (map) => [...map].sort((a, b) => b[1] - a[1]).map(([value]) => value);
+    fillDatalist("addCountryList", byCount(countBy(allSeries, (s) => [s.seriesCountry])));
+    fillDatalist("addCharaList", allCharacters.map((c) => c.charaNm.trim()));
+    fillDatalist("addCategoryList", [...addCategories]);
+    fillDatalist("addPriceList", byCount(countBy(allGoods, (g) => [g.goodsPrice])).slice(0, 60));
+  }
+  updateAdd();
+}
+
+function addGoodsFiles(files) {
+  for (const file of files) {
+    const ext = fileExtension(file.name);
+    if (!IMAGE_FILE.test(file.name)) continue;
+    const row = { file, ext, url: URL.createObjectURL(file), chara: "", category: "", price: "", memo: "" };
+
+    // 파일명이 이미 캐릭터_카테고리_가격_메모 형식이면 그대로 채우고, 아니면 바로 위 굿즈의 값을 이어받는다
+    const parts = stripExtension(file.name).split("_");
+    const previous = addRows[addRows.length - 1];
+    if (parts.length >= 3) {
+      [row.chara, row.category, row.price] = parts;
+      row.memo = parts.slice(3).join("_");
+    } else if (previous) {
+      row.category = previous.category;
+      row.price = previous.price;
+      row.memo = previous.memo;
+    }
+    addRows.push(row);
+  }
+  renderAddRows();
+}
+
+function renderAddRows() {
+  const box = $("addRows");
+  box.replaceChildren();
+  $("addBulk").hidden = !addRows.length;
+  for (const row of addRows) {
+    const line = el("div", "goods-row");
+    const pick = el("input", "pick");
+    pick.type = "checkbox";
+    pick.title = "일괄 적용할 굿즈로 선택";
+    pick.checked = Boolean(row.checked);
+    pick.onchange = () => {
+      row.checked = pick.checked;
+      updateBulk();
+    };
+    // 카드의 빈 곳을 눌러도 체크된다. 입력 칸·사진·버튼은 원래 동작 그대로.
+    line.onclick = (event) => {
+      if (event.target.closest("input, button, img, label")) return;
+      pick.checked = !pick.checked;
+      pick.onchange();
+    };
+    const img = el("img");
+    img.alt = "";
+    img.src = row.url;
+    img.title = "눌러서 크게 보기";
+    img.onclick = () => zoomImage(row.url);
+
+    const middle = el("div");
+    const fields = el("div", "form");
+    const inputs = {};
+    for (const [key, label, list] of [
+      ["chara", "캐릭터 (여러 명은 콤마)", "addCharaList"],
+      ["category", "카테고리", "addCategoryList"],
+      ["price", "가격", "addPriceList"],
+      ["memo", "메모 (없어도 됨)", ""],
+    ]) {
+      const wrap = el("label", "", label);
+      const input = el("input");
+      input.type = "text";
+      input.autocomplete = "off";
+      if (list) input.setAttribute("list", list);
+      input.value = row[key];
+      input.oninput = () => {
+        row[key] = input.value;
+        updateAdd();
+      };
+      wrap.append(input);
+      fields.append(wrap);
+      inputs[key] = input;
+    }
+    const name = el("div", "name");
+    const problem = el("div", "problem");
+    middle.append(fields, name, problem);
+
+    const remove = el("button", "", "빼기");
+    remove.type = "button";
+    remove.onclick = () => {
+      URL.revokeObjectURL(row.url);
+      addRows = addRows.filter((other) => other !== row);
+      renderAddRows();
+    };
+
+    line.append(pick, img, middle, remove);
+    row.dom = { line, name, problem, inputs, pick };
+    box.append(line);
+  }
+  updateBulk();
+  updateAdd();
+}
+
+// 체크한 굿즈 수와 일괄 적용 버튼 상태
+function updateBulk() {
+  const checked = addRows.filter((row) => row.checked);
+  for (const row of addRows) row.dom.line.classList.toggle("checked", Boolean(row.checked));
+  $("addCheckAll").checked = addRows.length > 0 && checked.length === addRows.length;
+  $("addCheckAll").indeterminate = checked.length > 0 && checked.length < addRows.length;
+
+  const filled = BULK_FIELDS.filter(([, id]) => $(id).value.trim());
+  $("addBulkApply").disabled = !checked.length || !filled.length;
+  $("addBulkApply").textContent = checked.length ? `체크한 ${checked.length}개에 적용` : "체크한 굿즈에 적용";
+  if (!$("addBulkStatus").dataset.keep) {
+    $("addBulkStatus").textContent = !checked.length
+      ? "적용할 굿즈를 왼쪽 체크박스로 고르세요."
+      : !filled.length ? "넣을 값을 한 칸 이상 적으세요." : `${filled.map(([, , label]) => label).join(", ")}만 바뀝니다.`;
+  }
+  delete $("addBulkStatus").dataset.keep;
+}
+
+function addRowName(row) {
+  const charas = splitCharas(row.chara).join(",");
+  const parts = [charas, row.category.trim(), row.price.trim()];
+  if (row.memo.trim()) parts.push(row.memo.trim());
+  return parts.join("_") + row.ext;
+}
+
+function addSeriesState() {
+  const folder = $("addSeries").value;
+  if (folder) return { folder, problem: "" };
+
+  const name = $("addName").value.trim();
+  const country = $("addCountry").value.trim();
+  const date = $("addDate").value;
+  const newFolder = `${name}_${country}_${date}`;
+  let problem = "";
+  if (!name) problem = "시리즈 이름을 입력하세요.";
+  else if (BAD_PATH_CHARS.test(name) || name.endsWith(".")) problem = "시리즈 이름에 쓸 수 없는 글자가 있습니다.";
+  else if (!country) problem = "국가를 입력하세요.";
+  else if (/[_]/.test(country) || BAD_PATH_CHARS.test(country)) problem = "국가에 _ 같은 글자는 쓸 수 없습니다.";
+  else if (!date) problem = "날짜를 고르세요.";
+  else if (addFolders.some((other) => other.toLowerCase() === newFolder.toLowerCase())) problem = `이미 있는 시리즈입니다: ${newFolder}`;
+  else if (allSeries.some((s) => s.seriesNm === name)) problem = `같은 이름의 시리즈가 이미 있습니다: ${name}`;
+  else if (!addMain) problem = "대표 이미지를 고르세요.";
+  return { newFolder: name && country && date ? newFolder : "", name, country, date, problem };
+}
+
+async function updateAdd() {
+  const saveable = await checkServer();
+  const series = addSeriesState();
+  $("addNew").hidden = Boolean(series.folder);
+  $("addFolderInfo").textContent = series.folder
+    ? `picture/${series.folder}/goods 에 굿즈를 추가합니다.`
+    : series.newFolder ? `새 폴더: picture/${series.newFolder}` : "";
+
+  const valid = new Set(allCharacters.map((c) => c.charaNm.trim()));
+  // 확장자만 다른 것도 같은 굿즈다
+  const contentOf = (filename) => stripExtension(filename).toLowerCase();
+  const names = addRows.map((row) => contentOf(addRowName(row)));
+  let invalid = 0;
+  let fresh = 0;
+  addRows.forEach((row, index) => {
+    const charas = splitCharas(row.chara);
+    const unknown = charas.filter((name) => !valid.has(name));
+    const category = row.category.trim();
+    const price = row.price.trim();
+    const name = addRowName(row);
+    let problem = "";
+    if (!charas.length) problem = "캐릭터를 입력하세요.";
+    else if (unknown.length) problem = `등록되지 않은 캐릭터: ${unknown.join(", ")} (캐릭터 탭에서 먼저 추가)`;
+    else if (!category) problem = "카테고리를 입력하세요.";
+    else if (category.includes("_")) problem = "카테고리에 _ 는 쓸 수 없습니다.";
+    else if (!price) problem = "가격을 입력하세요.";
+    else if (price.includes("_")) problem = "가격에 _ 는 쓸 수 없습니다.";
+    else if (BAD_PATH_CHARS.test(name)) problem = "파일명에 쓸 수 없는 글자가 있습니다.";
+    else if (names.indexOf(contentOf(name)) !== index || names.lastIndexOf(contentOf(name)) !== index) problem = "캐릭터·카테고리·가격·메모가 전부 같은 굿즈가 또 있습니다. 메모로 구분하세요.";
+    else if (series.folder && addExisting.has(contentOf(name))) problem = "이 시리즈에 내용이 같은 굿즈가 이미 있습니다. 메모로 구분하세요.";
+
+    const isNew = category && !category.includes("_") && !addCategories.has(category);
+    if (isNew) fresh++;
+    if (problem) invalid++;
+    row.dom.line.classList.toggle("invalid", Boolean(problem));
+    row.dom.problem.textContent = problem;
+    row.dom.name.replaceChildren(name);
+    if (isNew) row.dom.name.append(" ", el("b", "", "새 카테고리"));
+  });
+
+  let status = "";
+  if (!saveable) status = "python serve.py로 실행해야 추가할 수 있습니다.";
+  else if (series.problem) status = series.problem;
+  else if (!addRows.length) status = "굿즈 사진을 한 장 이상 넣으세요.";
+  else if (invalid) status = `굿즈 ${invalid}개에 고칠 곳이 있습니다.`;
+  $("addSubmit").disabled = Boolean(status);
+  $("addSubmit").textContent = addRows.length
+    ? `저장 (${series.folder ? "기존 시리즈" : "새 시리즈"} + 굿즈 ${addRows.length}개)`
+    : "저장";
+  if (!status && fresh) status = `새 카테고리가 ${fresh}개 굿즈에 쓰였습니다. 오타가 아닌지 확인하세요.`;
+  if (!$("addStatus").dataset.keep) $("addStatus").textContent = status;
+  delete $("addStatus").dataset.keep;
+}
+
+function clearAdd() {
+  for (const row of addRows) URL.revokeObjectURL(row.url);
+  if (addMain) URL.revokeObjectURL(addMain.url);
+  addRows = [];
+  addMain = null;
+  for (const id of ["addName", "addCountry", "addDate", "addMainFile", "addFiles", ...BULK_FIELDS.map(([, id]) => id)]) $(id).value = "";
+  $("addSeries").value = "";
+  $("addMainPreview").hidden = true;
+  addExisting = new Set();
+  renderAddRows();
+}
+
+async function submitAdd() {
+  const series = addSeriesState();
+  $("addSubmit").disabled = true;
+  $("addStatus").textContent = "저장 중…";
+  try {
+    const files = [];
+    const meta = {
+      series: series.folder ? { folder: series.folder } : { name: series.name, country: series.country, date: series.date },
+      mainTheme: null,
+      goods: [],
+    };
+    if (!series.folder) {
+      meta.mainTheme = { ext: addMain.ext, size: addMain.file.size };
+      files.push(addMain.file);
+    }
+    for (const row of addRows) {
+      meta.goods.push({
+        chara: splitCharas(row.chara).join(","),
+        category: row.category.trim(),
+        price: row.price.trim(),
+        memo: row.memo.trim(),
+        ext: row.ext,
+        size: row.file.size,
+      });
+      files.push(row.file);
+    }
+
+    // [정보 길이 4바이트][정보 JSON][이미지들] 순서로 붙여 한 번에 보낸다
+    const metaBytes = new TextEncoder().encode(JSON.stringify(meta));
+    const length = new DataView(new ArrayBuffer(4));
+    length.setUint32(0, metaBytes.length);
+    const res = await fetch("api/goods", {
+      method: "POST",
+      headers: { "Content-Type": "application/octet-stream", "X-Goods-Save": "1" },
+      body: new Blob([length, metaBytes, ...files]),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || res.status);
+
+    // 넣은 사진을 JSON에 반영하도록 생성 탭으로 넘어간다
+    clearAdd();
+    addReady = false;
+    scanStarted = false;
+    state.view = "build";
+    apply();
+    window.scrollTo(0, 0);
+  } catch (error) {
+    $("addStatus").dataset.keep = "1";
+    $("addStatus").textContent = `저장 실패: ${error.message}`;
+    updateAdd();
+  }
+}
+
+$("addSeries").onchange = async () => {
+  const folder = $("addSeries").value;
+  addExisting = new Set();
+  if (folder) {
+    const listing = await listDirectory(`picture/${encodeURIComponent(folder)}/goods/`).catch(() => null);
+    if (listing) addExisting = new Set(listing.files.map((name) => stripExtension(name).toLowerCase()));
+  }
+  updateAdd();
+};
+for (const id of ["addName", "addCountry", "addDate"]) $(id).oninput = updateAdd;
+$("addMainFile").onchange = (event) => {
+  const file = event.target.files[0];
+  if (addMain) URL.revokeObjectURL(addMain.url);
+  addMain = file && IMAGE_FILE.test(file.name) ? { file, ext: fileExtension(file.name), url: URL.createObjectURL(file) } : null;
+  $("addMainPreview").hidden = !addMain;
+  if (addMain) $("addMainImg").src = addMain.url;
+  $("addMainImg").onclick = () => addMain && zoomImage(addMain.url);
+  updateAdd();
+};
+$("addFiles").onchange = (event) => {
+  addGoodsFiles([...event.target.files]);
+  event.target.value = "";
+};
+$("addBulkApply").onclick = () => {
+  // 체크한 굿즈에만, 값을 적은 칸만 넣는다. 빈 칸은 원래 값을 그대로 둔다.
+  const checked = addRows.filter((row) => row.checked);
+  const applied = [];
+  for (const [key, id, label] of BULK_FIELDS) {
+    const value = $(id).value.trim();
+    if (!value) continue;
+    for (const row of checked) {
+      row[key] = value;
+      row.dom.inputs[key].value = value;
+    }
+    applied.push(label);
+    $(id).value = "";
+  }
+  // 적용이 끝나면 체크를 풀어서 다음 묶음을 바로 고를 수 있게 한다
+  for (const row of checked) {
+    row.checked = false;
+    row.dom.pick.checked = false;
+  }
+  $("addBulkStatus").dataset.keep = "1";
+  $("addBulkStatus").textContent = `${checked.length}개에 ${applied.join(", ")} 적용했습니다.`;
+  updateBulk();
+  updateAdd();
+};
+$("addCheckAll").onchange = () => {
+  for (const row of addRows) {
+    row.checked = $("addCheckAll").checked;
+    row.dom.pick.checked = row.checked;
+  }
+  updateBulk();
+};
+for (const [, id] of BULK_FIELDS) $(id).oninput = updateBulk;
+$("addSubmit").onclick = submitAdd;
+$("addClear").onclick = clearAdd;
+
+const addPanel = $("addTab").querySelector(".panel");
+addPanel.ondragover = (event) => {
+  event.preventDefault();
+  addPanel.classList.add("dragover");
+};
+addPanel.ondragleave = () => addPanel.classList.remove("dragover");
+addPanel.ondrop = (event) => {
+  event.preventDefault();
+  addPanel.classList.remove("dragover");
+  addGoodsFiles([...event.dataTransfer.files]);
+};
+
+// ── 올리기 탭: 커밋하고 GitHub에 푸시 ────────────────────────────────────────
+
+async function renderPush(log) {
+  const out = $("pushResult");
+  out.replaceChildren();
+  if (!(await checkServer())) {
+    $("pushStatus").textContent = "python serve.py로 실행해야 올릴 수 있습니다.";
+    return;
+  }
+
+  $("pushStatus").textContent = "바뀐 내용 확인 중…";
+  let status;
+  try {
+    const res = await fetch("api/git/status", { cache: "no-store" });
+    status = await res.json();
+    if (!res.ok) throw new Error(status.error || res.status);
+  } catch (error) {
+    $("pushStatus").textContent = "";
+    out.append(issueBox("error", "git 상태를 읽지 못했습니다", [{ caption: String(error.message || error) }]));
+    return;
+  }
+  $("pushStatus").textContent = `${status.branch} 브랜치`;
+
+  const groups = [
+    ["added", "추가"],
+    ["modified", "수정"],
+    ["deleted", "삭제"],
+  ].map(([kind, label]) => [label, status.changes.filter((change) => change.kind === kind)]);
+
+  const tiles = el("div", "tiles");
+  for (const [label, value] of [...groups.map(([label, list]) => [label, list.length]), ["푸시 안 된 커밋", status.ahead ?? "?"]]) {
+    const tile = el("div", "tile");
+    tile.append(el("b", "", value.toLocaleString()), el("span", "", label));
+    tiles.append(tile);
+  }
+  out.append(tiles);
+
+  // JSON이 picture 폴더와 어긋난 채로 올리지 않게 알려 준다
+  if (!scanStarted) await runScan();
+  if (scanData) {
+    const pending = (scanData.changes ? problemCount(scanData.changes) : 0) + problemCount(scanData.problems);
+    if (pending) {
+      const warn = el("div", "issue warn");
+      warn.append(el("b", "", `JSON에 아직 반영하지 않은 내용이 ${pending}건 있습니다. `));
+      const link = el("a", "", "JSON 생성 탭에서 먼저 저장");
+      link.href = "#view=build";
+      warn.append(link);
+      out.append(warn);
+    }
+  }
+
+  const nothing = !status.changes.length && !status.ahead;
+  if (nothing) {
+    const fine = el("div", "issue ok");
+    fine.append(el("b", "", "올릴 것이 없습니다. GitHub와 같은 상태입니다."));
+    out.append(fine);
+  }
+  for (const [label, list] of groups) {
+    if (!list.length) continue;
+    const box = issueBox("ok", `${label}된 파일`, list.map((change) => ({ caption: change.path })));
+    box.open = list.length <= 30;
+    out.append(box);
+  }
+
+  if (!nothing) {
+    const panel = el("div", "panel");
+    panel.append(el("h3", "", "커밋하고 푸시"));
+    const message = el("input", "full");
+    message.type = "text";
+    message.value = `굿즈 데이터 업데이트 (${new Date().toLocaleDateString("sv-SE")})`;
+    const agree = el("input");
+    agree.type = "checkbox";
+    const label = el("label", "check");
+    label.append(agree, el("span", "", status.changes.length
+      ? `바뀐 파일 ${status.changes.length.toLocaleString()}개를 확인했고 GitHub에 올립니다`
+      : `푸시 안 된 커밋 ${status.ahead}개를 GitHub에 올립니다`));
+    const checks = el("div", "checks");
+    checks.append(label);
+    const button = el("button", "primary", status.changes.length ? "커밋하고 푸시" : "푸시");
+    button.type = "button";
+    button.disabled = true;
+    const note = el("span", "muted");
+    const row = el("div", "row");
+    row.append(button, note);
+    panel.append(message, checks, row);
+    out.append(panel);
+
+    const refresh = () => { button.disabled = !agree.checked || !message.value.trim(); };
+    agree.onchange = refresh;
+    message.oninput = refresh;
+    button.onclick = async () => {
+      button.disabled = true;
+      agree.disabled = true;
+      note.textContent = "올리는 중… 파일이 많으면 몇 분 걸릴 수 있습니다.";
+      let result;
+      try {
+        const res = await fetch("api/git/push", {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "X-Goods-Save": "1" },
+          body: JSON.stringify({ message: message.value.trim() }),
+        });
+        result = await res.json();
+        result.ok = res.ok;
+      } catch (error) {
+        result = { ok: false, error: String(error.message || error), log: "" };
+      }
+      await renderPush(result);
+    };
+  }
+
+  if (log) {
+    const box = el("div", `issue ${log.ok ? "ok" : "error"}`);
+    box.append(el("b", "", log.ok ? "푸시 완료" : `실패: ${log.error}`));
+    if (log.log) box.append(el("pre", "log", log.log));
+    out.prepend(box);
+  }
+}
+
+$("pushRefresh").onclick = () => renderPush();
+
+let scanData = null;
+let canSave = false;
+
+async function runScan() {
+  scanStarted = true;
+  scanData = null;
+  for (const id of ["buildResult", "issuesResult", "duplicatesResult"]) $(id).replaceChildren();
+  $("duplicates").hidden = true;
+  $("issuesTotal").textContent = "";
+  for (const id of ["buildStatus", "issuesStatus"]) $(id).textContent = "picture 폴더 읽는 중…";
+  for (const id of ["runBuild", "runIssues"]) $(id).disabled = true;
+  try {
+    scanData = await scanProject();
+    for (const id of ["buildStatus", "issuesStatus"]) $(id).textContent = scanData.summary;
+    $("issuesTotal").textContent = problemCount(scanData.problems).toLocaleString();
+    renderBuild(scanData);
+    renderIssues(scanData);
+  } catch (error) {
+    for (const id of ["buildStatus", "issuesStatus"]) $(id).textContent = "";
+    for (const id of ["buildResult", "issuesResult"]) {
+      $(id).replaceChildren(issueBox("error", "검사 실패", [{ caption: String(error.message || error) }]));
+    }
+  } finally {
+    for (const id of ["runBuild", "runIssues"]) $(id).disabled = false;
+  }
+}
+
+$("runBuild").onclick = runScan;
+$("runIssues").onclick = runScan;
+$("runDuplicates").onclick = async () => {
+  if (!scanData) return;
+  $("runDuplicates").disabled = true;
+  try {
+    const groups = await findDuplicates(scanData.source, (done, total) => {
+      $("duplicatesStatus").textContent = `비교 중… ${done.toLocaleString()} / ${total.toLocaleString()}`;
+    });
+    $("duplicatesStatus").textContent = `${groups.length}묶음 발견`;
+    renderDuplicates(groups);
+  } catch (error) {
+    $("duplicatesStatus").textContent = `검사 실패: ${error.message}`;
+  } finally {
+    $("runDuplicates").disabled = false;
+  }
+};
+
+load().catch((error) => {
+  loadError = error;
+  readHash();
+  apply();
+});
+</script>
+</body>
+</html>

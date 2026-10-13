@@ -531,17 +531,6 @@
     "goodsId": 0,
     "goodsReleaseDate": "2024-10-25",
     "goodsSeries": "1.1~1.3버전",
-    "goodsPrice": "28위안",
-    "goodsChara": "",
-    "goodsCategory": "아크릴스탠드",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.1~1.3버전_버전_2024-10-25/goods/_아크릴스탠드_28위안_타입1.png",
-    "goodsMemo": "타입1"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2024-10-25",
-    "goodsSeries": "1.1~1.3버전",
     "goodsPrice": "사은품",
     "goodsChara": "금희",
     "goodsCategory": "레이저티켓",
@@ -1076,6 +1065,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.1~1.3버전_버전_2024-10-25/goods/음림_색지_38위안_단품.png",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2024-10-25",
+    "goodsSeries": "1.1~1.3버전",
+    "goodsPrice": "28위안",
+    "goodsChara": "음림",
+    "goodsCategory": "아크릴스탠드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1.1~1.3버전_버전_2024-10-25/goods/음림_아크릴스탠드_28위안_타입1.png",
+    "goodsMemo": "타입1"
   },
   {
     "goodsId": 0,
@@ -2637,6 +2637,17 @@
     "goodsCategory": "인형",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/금희_인형_29.9위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "29.9위안",
+    "goodsChara": "남랑자",
+    "goodsCategory": "인형",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/남랑자_인형_29.9위안_단품.png",
     "goodsMemo": "단품"
   },
   {
@@ -5327,17 +5338,6 @@
     "goodsId": 0,
     "goodsReleaseDate": "2025-06-10",
     "goodsSeries": "2.3버전",
-    "goodsPrice": "구성품",
-    "goodsChara": "남랑자,여랑자",
-    "goodsCategory": "뱃지",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/남랑자,여랑자_뱃지_구성품_조수와뭇별세트.png",
-    "goodsMemo": "조수와뭇별세트"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2025-06-10",
-    "goodsSeries": "2.3버전",
     "goodsPrice": "45위안",
     "goodsChara": "남랑자,여랑자",
     "goodsCategory": "세트",
@@ -5410,6 +5410,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/남랑자_목걸이_사은품_남랑자목걸이사은품.png",
     "goodsMemo": "남랑자목걸이사은품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-06-10",
+    "goodsSeries": "2.3버전",
+    "goodsPrice": "구성품",
+    "goodsChara": "남랑자",
+    "goodsCategory": "뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/남랑자_뱃지_구성품_조수와뭇별세트.png",
+    "goodsMemo": "조수와뭇별세트"
   },
   {
     "goodsId": 0,
@@ -5773,6 +5784,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/여랑자_목걸이_사은품_여랑자목걸이사은품.png",
     "goodsMemo": "여랑자목걸이사은품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-06-10",
+    "goodsSeries": "2.3버전",
+    "goodsPrice": "구성품",
+    "goodsChara": "여랑자",
+    "goodsCategory": "뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/여랑자_뱃지_구성품_조수와뭇별세트.png",
+    "goodsMemo": "조수와뭇별세트"
   },
   {
     "goodsId": 0,
@@ -30123,6 +30145,17 @@
     "goodsSeries": "2026카츠야",
     "goodsPrice": "음식구매",
     "goodsChara": "에이메스",
+    "goodsCategory": "코스터",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026카츠야_대만_2026-01-23/goods/에이메스_코스터_음식구매_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-01-23",
+    "goodsSeries": "2026카츠야",
+    "goodsPrice": "음식구매",
+    "goodsChara": "에이메스",
     "goodsCategory": "키링",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026카츠야_대만_2026-01-23/goods/에이메스_키링_음식구매_단품.png",
@@ -35115,6 +35148,17 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-07-10",
     "goodsSeries": "3.4버전",
+    "goodsPrice": "구매증정품",
+    "goodsChara": "데니아",
+    "goodsCategory": "레이저티켓",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.4버전_버전_2026-07-10/goods/데니아_레이저티켓_구매증정품_증정품.png",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-07-10",
+    "goodsSeries": "3.4버전",
     "goodsPrice": "구성품",
     "goodsChara": "데니아",
     "goodsCategory": "레이저티켓",
@@ -35720,6 +35764,17 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-07-10",
     "goodsSeries": "3.4버전",
+    "goodsPrice": "구매증정품",
+    "goodsChara": "린네",
+    "goodsCategory": "레이저티켓",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.4버전_버전_2026-07-10/goods/린네_레이저티켓_구매증정품_증정품.png",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-07-10",
+    "goodsSeries": "3.4버전",
     "goodsPrice": "특전",
     "goodsChara": "모니에,에이메스,남랑자,여랑자,린네,시그리카,린네",
     "goodsCategory": "엽서",
@@ -35924,6 +35979,39 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.4버전_버전_2026-07-10/goods/에이메스_포토카드_구성품_에이메스티켓세트.png",
     "goodsMemo": "에이메스티켓세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-07-10",
+    "goodsSeries": "3.4버전",
+    "goodsPrice": "구매증정품",
+    "goodsChara": "유노",
+    "goodsCategory": "레이저티켓",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.4버전_버전_2026-07-10/goods/유노_레이저티켓_구매증정품_증정품.png",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-07-10",
+    "goodsSeries": "3.4버전",
+    "goodsPrice": "구매증정품",
+    "goodsChara": "카멜리아",
+    "goodsCategory": "레이저티켓",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.4버전_버전_2026-07-10/goods/카멜리아_레이저티켓_구매증정품_증정품.png",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-07-10",
+    "goodsSeries": "3.4버전",
+    "goodsPrice": "구매증정품",
+    "goodsChara": "페비",
+    "goodsCategory": "레이저티켓",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.4버전_버전_2026-07-10/goods/페비_레이저티켓_구매증정품_증정품.png",
+    "goodsMemo": "증정품"
   },
   {
     "goodsId": 0,
@@ -42359,6 +42447,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/구원_레이저티켓_15위안_레이저티켓랜덤세트.png",
     "goodsMemo": "레이저티켓랜덤세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-03-13",
+    "goodsSeries": "KAKACODE",
+    "goodsPrice": "행사참여",
+    "goodsChara": "구원",
+    "goodsCategory": "부채",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/KAKACODE_중국_2026-03-13/goods/구원_부채_행사참여_증정품.png",
+    "goodsMemo": "증정품"
   },
   {
     "goodsId": 0,
@@ -53831,6 +53930,17 @@
     "goodsCategory": "엽서",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/루파_엽서_LD_랜덤엽서.png",
+    "goodsMemo": "랜덤엽서"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-07-18",
+    "goodsSeries": "도쿄레드타워",
+    "goodsPrice": "SD",
+    "goodsChara": "루파",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/도쿄레드타워_일본_2025-07-18/goods/루파_엽서_SD_랜덤엽서.png",
     "goodsMemo": "랜덤엽서"
   },
   {
@@ -66157,6 +66267,17 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-08-29",
     "goodsSeries": "명조2026음악회",
+    "goodsPrice": "한국전용엽서",
+    "goodsChara": "구원,모니에,치사,카르티시아,브렌트,파수인,에이메스,금희",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조2026음악회_한국_2026-08-29/goods/구원,모니에,치사,카르티시아,브렌트,파수인,에이메스,금희_엽서_한국전용엽서_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-08-29",
+    "goodsSeries": "명조2026음악회",
     "goodsPrice": "전체증정",
     "goodsChara": "구원,모니에,치사,카르티시아,브렌트,파수인,에이메스,금희",
     "goodsCategory": "종이",
@@ -69623,6 +69744,17 @@
     "goodsReleaseDate": "2025-06-20",
     "goodsSeries": "명조x동북대판",
     "goodsPrice": "구성품",
+    "goodsChara": "페비,젠니,아브,아브대마왕",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조x동북대판_중국_2025-06-20/goods/페비,젠니,아브,아브대마왕_키링_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2025-06-20",
+    "goodsSeries": "명조x동북대판",
+    "goodsPrice": "구성품",
     "goodsChara": "페비",
     "goodsCategory": "아이스크림",
     "goodsIsGotten": false,
@@ -71783,6 +71915,17 @@
     "goodsCategory": "박스",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/무신사_한국_2026-05-19/goods/린네,에이메스,남랑자,데니아_박스_120,000원_구성품개별구매가능.webp",
+    "goodsMemo": "구성품개별구매가능"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-05-19",
+    "goodsSeries": "무신사",
+    "goodsPrice": "120,000원",
+    "goodsChara": "린네,에이메스,남랑자,데니아",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/무신사_한국_2026-05-19/goods/린네,에이메스,남랑자,데니아_세트_120,000원_구성품개별구매가능.jpg",
     "goodsMemo": "구성품개별구매가능"
   },
   {
