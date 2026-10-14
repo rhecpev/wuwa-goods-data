@@ -35148,17 +35148,6 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-07-10",
     "goodsSeries": "3.4버전",
-    "goodsPrice": "구매증정품",
-    "goodsChara": "데니아",
-    "goodsCategory": "레이저티켓",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.4버전_버전_2026-07-10/goods/데니아_레이저티켓_구매증정품_증정품.png",
-    "goodsMemo": "증정품"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2026-07-10",
-    "goodsSeries": "3.4버전",
     "goodsPrice": "구성품",
     "goodsChara": "데니아",
     "goodsCategory": "레이저티켓",
@@ -35764,17 +35753,6 @@
     "goodsId": 0,
     "goodsReleaseDate": "2026-07-10",
     "goodsSeries": "3.4버전",
-    "goodsPrice": "구매증정품",
-    "goodsChara": "린네",
-    "goodsCategory": "레이저티켓",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.4버전_버전_2026-07-10/goods/린네_레이저티켓_구매증정품_증정품.png",
-    "goodsMemo": "증정품"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2026-07-10",
-    "goodsSeries": "3.4버전",
     "goodsPrice": "특전",
     "goodsChara": "모니에,에이메스,남랑자,여랑자,린네,시그리카,린네",
     "goodsCategory": "엽서",
@@ -35979,39 +35957,6 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.4버전_버전_2026-07-10/goods/에이메스_포토카드_구성품_에이메스티켓세트.png",
     "goodsMemo": "에이메스티켓세트"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2026-07-10",
-    "goodsSeries": "3.4버전",
-    "goodsPrice": "구매증정품",
-    "goodsChara": "유노",
-    "goodsCategory": "레이저티켓",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.4버전_버전_2026-07-10/goods/유노_레이저티켓_구매증정품_증정품.png",
-    "goodsMemo": "증정품"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2026-07-10",
-    "goodsSeries": "3.4버전",
-    "goodsPrice": "구매증정품",
-    "goodsChara": "카멜리아",
-    "goodsCategory": "레이저티켓",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.4버전_버전_2026-07-10/goods/카멜리아_레이저티켓_구매증정품_증정품.png",
-    "goodsMemo": "증정품"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2026-07-10",
-    "goodsSeries": "3.4버전",
-    "goodsPrice": "구매증정품",
-    "goodsChara": "페비",
-    "goodsCategory": "레이저티켓",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.4버전_버전_2026-07-10/goods/페비_레이저티켓_구매증정품_증정품.png",
-    "goodsMemo": "증정품"
   },
   {
     "goodsId": 0,
@@ -66261,17 +66206,6 @@
     "goodsCategory": "엽서",
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조2026음악회_한국_2026-08-29/goods/구원,모니에,치사,카르티시아,브렌트,파수인,에이메스,금희_엽서_중국전용엽서_단품.png",
-    "goodsMemo": "단품"
-  },
-  {
-    "goodsId": 0,
-    "goodsReleaseDate": "2026-08-29",
-    "goodsSeries": "명조2026음악회",
-    "goodsPrice": "한국전용엽서",
-    "goodsChara": "구원,모니에,치사,카르티시아,브렌트,파수인,에이메스,금희",
-    "goodsCategory": "엽서",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조2026음악회_한국_2026-08-29/goods/구원,모니에,치사,카르티시아,브렌트,파수인,에이메스,금희_엽서_한국전용엽서_단품.png",
     "goodsMemo": "단품"
   },
   {
