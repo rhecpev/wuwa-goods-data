@@ -2312,6 +2312,7 @@ function renderAddRows() {
     row.dom = { line, name, problem, inputs, pick };
     box.append(line);
   }
+  if (focusedKey) focused.dom.inputs[focusedKey].focus();
   updateBulk();
   updateAdd();
 }
@@ -2588,8 +2589,7 @@ $("addBulkApply").onclick = () => {
   }
   $("addBulkStatus").dataset.keep = "1";
   $("addBulkStatus").textContent = `${checked.length}개에 ${applied.join(", ")} 적용했습니다.`;
-  updateBulk();
-  updateAdd();
+  renderAddRows();
 };
 $("addSetApply").onclick = () => {
   const file = $("addSetFile").files[0];
