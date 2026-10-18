@@ -705,6 +705,23 @@
           <button id="addBulkApply" type="button" disabled>체크한 굿즈에 적용</button>
           <span id="addBulkStatus" class="muted"></span>
         </div>
+        <h3>세트로 묶기</h3>
+        <p class="muted">체크한 굿즈를 구성품으로 하는 세트 대표 사진을 추가합니다. 캐릭터는 체크한 굿즈의 캐릭터를 모두 모아 넣고, 카테고리는 <code>세트</code>로 넣습니다. 체크한 굿즈의 메모는 세트 메모로 바뀝니다.</p>
+        <div class="form">
+          <label>세트 사진
+            <input id="addSetFile" type="file" accept="image/*">
+          </label>
+          <label>세트 가격
+            <input id="addSetPrice" type="text" autocomplete="off" placeholder="예: 25위안">
+          </label>
+          <label>세트 메모
+            <input id="addSetMemo" type="text" autocomplete="off" placeholder="예: 기염세트">
+          </label>
+        </div>
+        <div class="row">
+          <button id="addSetApply" type="button" disabled>세트 만들기</button>
+          <span id="addSetStatus" class="muted"></span>
+        </div>
       </div>
       <div id="addRows" class="goods-rows"></div>
 
@@ -2061,7 +2078,7 @@ function attachSuggest(input, listId, multi) {
     if (multi) {
       const parts = input.value.split(",").map((part) => part.trim());
       parts[parts.length - 1] = value;
-      input.value = parts.join(", ");
+      input.value = parts.join(",");
     } else {
       input.value = value;
     }
@@ -2230,6 +2247,7 @@ function renderAddRows() {
       input.value = row[key];
       input.oninput = () => {
         row[key] = input.value;
+        if (key === "chara") updateSet();
         updateAdd();
       };
       wrap.append(input);
@@ -2272,6 +2290,38 @@ function updateBulk() {
       : !filled.length ? "넣을 값을 한 칸 이상 적으세요." : `${filled.map(([, , label]) => label).join(", ")}만 바뀝니다.`;
   }
   delete $("addBulkStatus").dataset.keep;
+  updateSet();
+}
+
+// 체크한 굿즈의 캐릭터를 처음 나온 순서대로 겹치지 않게 모은다
+function addSetCharas() {
+  const charas = [];
+  for (const row of addRows) {
+    if (!row.checked) continue;
+    for (const name of splitCharas(row.chara)) if (!charas.includes(name)) charas.push(name);
+  }
+  return charas;
+}
+
+function updateSet() {
+  const checked = addRows.filter((row) => row.checked).length;
+  const file = $("addSetFile").files[0];
+  const price = $("addSetPrice").value.trim();
+  const memo = $("addSetMemo").value.trim();
+  const charas = addSetCharas();
+  let problem = "";
+  if (!checked) problem = "구성품이 될 굿즈를 체크하세요.";
+  else if (!charas.length) problem = "체크한 굿즈에 캐릭터를 먼저 넣으세요.";
+  else if (!file) problem = "세트 사진을 고르세요.";
+  else if (!price) problem = "세트 가격을 적으세요.";
+  else if (!memo) problem = "세트 메모를 적으세요.";
+  else if (/_/.test(memo) || BAD_PATH_CHARS.test(memo) || BAD_PATH_CHARS.test(price) || /_/.test(price)) problem = "가격·메모에 _ 같은 글자는 쓸 수 없습니다.";
+  $("addSetApply").disabled = Boolean(problem);
+  $("addSetApply").textContent = checked ? `체크한 ${checked}개로 세트 만들기` : "세트 만들기";
+  if (!$("addSetStatus").dataset.keep) {
+    $("addSetStatus").textContent = problem || `캐릭터: ${charas.join(",")}`;
+  }
+  delete $("addSetStatus").dataset.keep;
 }
 
 function addRowName(row) {
@@ -2376,7 +2426,7 @@ function clearAdd() {
   if (addMain) URL.revokeObjectURL(addMain.url);
   addRows = [];
   addMain = null;
-  for (const id of ["addName", "addCountry", "addDate", "addMainFile", "addFiles", ...BULK_FIELDS.map(([, id]) => id)]) $(id).value = "";
+  for (const id of ["addName", "addCountry", "addDate", "addMainFile", "addFiles", "addSetFile", "addSetPrice", "addSetMemo", ...BULK_FIELDS.map(([, id]) => id)]) $(id).value = "";
   $("addSeries").value = "";
   $("addSeriesQ").value = "";
   fillAddSeries();
@@ -2442,6 +2492,7 @@ attachSuggest($("addCountry"), "addCountryList", false);
 attachSuggest($("addBulkChara"), "addCharaList", true);
 attachSuggest($("addBulkCategory"), "addCategoryList", false);
 attachSuggest($("addBulkPrice"), "addPriceList", false);
+attachSuggest($("addSetPrice"), "addPriceList", false);
 $("addSeriesQ").oninput = fillAddSeries;
 $("addSeriesQ").onkeydown = (event) => {
   if (event.key !== "Enter") return;
@@ -2498,6 +2549,33 @@ $("addBulkApply").onclick = () => {
   updateBulk();
   updateAdd();
 };
+$("addSetApply").onclick = () => {
+  const file = $("addSetFile").files[0];
+  if (!file || !IMAGE_FILE.test(file.name)) return;
+  const checked = addRows.filter((row) => row.checked);
+  const memo = $("addSetMemo").value.trim();
+  const setRow = {
+    file,
+    ext: fileExtension(file.name),
+    url: URL.createObjectURL(file),
+    chara: addSetCharas().join(","),
+    category: "세트",
+    price: $("addSetPrice").value.trim(),
+    memo,
+  };
+  for (const row of checked) {
+    row.memo = memo;
+    row.checked = false;
+  }
+  // 세트 사진은 구성품 바로 앞에 둔다
+  addRows.splice(addRows.indexOf(checked[0]), 0, setRow);
+  for (const id of ["addSetFile", "addSetPrice", "addSetMemo"]) $(id).value = "";
+  $("addSetStatus").dataset.keep = "1";
+  $("addSetStatus").textContent = `세트 "${memo}"를 만들고 구성품 ${checked.length}개의 메모를 바꿨습니다.`;
+  renderAddRows();
+};
+$("addSetFile").onchange = updateSet;
+for (const id of ["addSetPrice", "addSetMemo"]) $(id).addEventListener("input", updateSet);
 $("addCheckAll").onchange = () => {
   for (const row of addRows) {
     row.checked = $("addCheckAll").checked;
