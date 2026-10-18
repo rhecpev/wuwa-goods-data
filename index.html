@@ -2340,7 +2340,37 @@ function addDragRowsFor(row) {
 
 // 메모·카테고리를 바꿔서 세트 묶음이 달라졌을 때만 다시 그린다
 function regroupAddRows() {
+  clearTimeout(regroupTimer);
   if (addRows.length && addGroupKey() !== addRows.groupKey) renderAddRows();
+}
+
+// 타이핑 중에 다시 그리면 한글 조합이 끊긴다(ㅅㅔ트). 그래서 조합이 끝나고 잠깐 멈췄을 때 다시 그린다.
+let regroupTimer;
+let addComposing = false;
+function regroupSoon() {
+  clearTimeout(regroupTimer);
+  regroupTimer = setTimeout(() => {
+    if (addComposing) regroupSoon();
+    else regroupAddRows();
+  }, 500);
+}
+
+// 끄는 동안 헤더 바로 아래나 화면 아래쪽에 가까이 가면 그쪽으로 스크롤한다.
+// 브라우저 기본 자동 스크롤은 화면 맨 끝에서만 되는데, 위쪽은 고정 헤더가 가리고 있어서 안 된다.
+let dragPointerY = null;
+document.addEventListener("dragover", (event) => {
+  if (addDragRows) dragPointerY = event.clientY;
+});
+function dragAutoScroll() {
+  if (!addDragRows) return;
+  const zone = 90;
+  const top = document.querySelector("header").getBoundingClientRect().bottom + zone;
+  const bottom = window.innerHeight - zone;
+  let step = 0;
+  if (dragPointerY != null && dragPointerY < top) step = -Math.min(30, Math.ceil((top - dragPointerY) / 5));
+  else if (dragPointerY != null && dragPointerY > bottom) step = Math.min(30, Math.ceil((dragPointerY - bottom) / 5));
+  if (step) window.scrollBy(0, step);
+  requestAnimationFrame(dragAutoScroll);
 }
 
 // 세트 줄의 "구성품 추가": 지금 목록에서 골라 넣는다
@@ -2444,11 +2474,13 @@ function renderAddRows() {
       if (key === "chara" && components) input.readOnly = true;
       input.oninput = () => {
         row[key] = input.value;
-        // 카테고리를 세트로 바꾸거나 메모를 세트 메모와 맞추는 순간 바로 세트로 묶는다
-        if (key === "memo" || key === "category") regroupAddRows();
+        // 카테고리를 세트로 바꾸거나 메모를 세트 메모와 맞추면 세트로 묶는다 (타이핑이 멈췄을 때)
+        if (key === "memo" || key === "category") regroupSoon();
         if (key !== "price") updateSet();
         updateAdd();
       };
+      input.addEventListener("compositionstart", () => { addComposing = true; });
+      input.addEventListener("compositionend", () => { addComposing = false; });
       wrap.append(input);
       fields.append(wrap);
       inputs[key] = input;
@@ -2470,6 +2502,8 @@ function renderAddRows() {
         event.dataTransfer.setData("text/plain", "");
         event.dataTransfer.setDragImage(line, 20, 20);
         for (const other of addDragRows) other.dom.line.classList.add("dragging");
+        dragPointerY = null;
+        requestAnimationFrame(dragAutoScroll);
       };
       handle.ondragend = () => {
         for (const other of addRows) other.dom.line.classList.remove("dragging", "drop-target");
