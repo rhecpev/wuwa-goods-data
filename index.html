@@ -311,6 +311,10 @@
   .goods-row { cursor: pointer; }
   .goods-row label, .goods-row input[type="text"] { cursor: auto; }
   .goods-row.checked { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, var(--bg)); }
+  .goods-row .lead, .goods-row .actions { display: grid; gap: 8px; justify-items: center; align-content: start; }
+  .goods-row .handle { cursor: grab; font-size: 18px; line-height: 1; color: var(--muted); user-select: none; }
+  .goods-row.dragging { opacity: 0.45; }
+  .goods-row.drop-target { outline: 2px dashed var(--accent); outline-offset: 2px; }
   .goods-row .pick { width: 20px; height: 20px; margin-top: 4px; cursor: pointer; accent-color: var(--accent); }
   .preview img.wide { width: 420px; max-width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
   .panel.dragover { outline: 2px dashed var(--accent); outline-offset: -4px; }
@@ -2234,6 +2238,19 @@ function addGroupKey() {
   return order.map((row) => `${addRows.indexOf(row)}:${parentOf(row) ? addRows.indexOf(parentOf(row)) : ""}`).join(",");
 }
 
+// rows를 세트 줄의 구성품으로 넣는다: 메모를 세트 메모로 맞추고, 세트 캐릭터에 구성품 캐릭터를 합친다
+function addRowsToSet(setRow, rows) {
+  const charas = splitCharas(setRow.chara);
+  for (const row of rows) {
+    row.memo = setRow.memo.trim();
+    row.checked = false;
+    for (const name of splitCharas(row.chara)) if (!charas.includes(name)) charas.push(name);
+  }
+  setRow.chara = charas.join(",");
+}
+
+let addDragRows = null; // 끌고 있는 굿즈 줄들
+
 // 메모·카테고리를 바꿔서 세트 묶음이 달라졌을 때만 다시 그린다
 function regroupAddRows() {
   if (addRows.length && addGroupKey() !== addRows.groupKey) renderAddRows();
@@ -2262,7 +2279,7 @@ function renderAddRows() {
     };
     // 카드의 빈 곳을 눌러도 체크된다. 입력 칸·사진·버튼은 원래 동작 그대로.
     line.onclick = (event) => {
-      if (event.target.closest("input, button, img, label")) return;
+      if (event.target.closest("input, button, img, label, .handle")) return;
       pick.checked = !pick.checked;
       pick.onchange();
     };
@@ -2313,7 +2330,68 @@ function renderAddRows() {
       renderAddRows();
     };
 
-    line.append(pick, img, middle, remove);
+    // 손잡이(⠿)를 잡고 세트 줄이나 그 구성품 줄에 놓으면 세트에 들어간다. 체크된 줄을 끌면 체크된 것 전부가 같이 간다.
+    const lead = el("span", "lead");
+    const isSet = sets.get(row.memo.trim()) === row;
+    if (!isSet) {
+      const handle = el("span", "handle", "⠿");
+      handle.title = "끌어서 세트에 넣기";
+      handle.onmousedown = () => { line.draggable = true; };
+      handle.onmouseup = () => { line.draggable = false; };
+      lead.append(handle);
+    }
+    lead.prepend(pick);
+    line.ondragstart = (event) => {
+      addDragRows = row.checked ? addRows.filter((other) => other.checked && sets.get(other.memo.trim()) !== other) : [row];
+      event.dataTransfer.effectAllowed = "move";
+      event.dataTransfer.setData("text/plain", "");
+      for (const other of addDragRows) other.dom.line.classList.add("dragging");
+    };
+    line.ondragend = () => {
+      line.draggable = false;
+      for (const other of addRows) other.dom.line.classList.remove("dragging", "drop-target");
+      addDragRows = null;
+    };
+    const dropSet = isSet ? row : parentOf(row);
+    if (dropSet) {
+      line.ondragover = (event) => {
+        if (!addDragRows || addDragRows.every((other) => parentOf(other) === dropSet)) return;
+        event.preventDefault();
+        event.dataTransfer.dropEffect = "move";
+        line.classList.add("drop-target");
+      };
+      line.ondragleave = (event) => {
+        if (!line.contains(event.relatedTarget)) line.classList.remove("drop-target");
+      };
+      line.ondrop = (event) => {
+        event.preventDefault();
+        const moving = addDragRows.filter((other) => other !== dropSet);
+        addDragRows = null;
+        addRowsToSet(dropSet, moving);
+        $("addSetStatus").dataset.keep = "1";
+        $("addSetStatus").textContent = `"${dropSet.memo.trim()}"에 ${moving.length}개를 넣었습니다.`;
+        renderAddRows();
+      };
+    }
+
+    const actions = el("span", "actions");
+    actions.append(remove);
+    if (parentOf(row)) {
+      const leave = el("button", "", "세트 해제");
+      leave.type = "button";
+      leave.title = "세트에서 빼고 메모를 비웁니다";
+      leave.onclick = () => {
+        // 남은 구성품 중 아무도 안 가진 이 줄의 캐릭터는 세트 캐릭터에서도 뺀다
+        const set = parentOf(row);
+        const rest = addRows.filter((other) => other !== row && parentOf(other) === set).flatMap((other) => splitCharas(other.chara));
+        const gone = splitCharas(row.chara).filter((name) => !rest.includes(name));
+        set.chara = splitCharas(set.chara).filter((name) => !gone.includes(name)).join(",");
+        row.memo = "";
+        renderAddRows();
+      };
+      actions.append(leave);
+    }
+    line.append(lead, img, middle, actions);
     row.dom = { line, name, problem, inputs, pick };
     box.append(line);
   }
@@ -2649,14 +2727,14 @@ $("addSetApply").onclick = () => {
     // 기존 세트에 넣기: 메모를 맞추고, 이번에 추가하는 세트면 캐릭터도 합친다
     const checked = addRows.filter((row) => row.checked && row !== target.row);
     if (target.row) {
-      const merged = [...new Set([...splitCharas(target.row.chara), ...addSetCharas()])];
-      target.row.chara = merged.join(",");
+      addRowsToSet(target.row, checked);
+      target.row.checked = false;
+    } else {
+      for (const row of checked) {
+        row.memo = target.memo;
+        row.checked = false;
+      }
     }
-    for (const row of checked) {
-      row.memo = target.memo;
-      row.checked = false;
-    }
-    if (target.row) target.row.checked = false;
     $("addSetStatus").dataset.keep = "1";
     $("addSetStatus").textContent = `"${target.memo}"에 ${checked.length}개를 넣었습니다.`;
     renderAddRows();
