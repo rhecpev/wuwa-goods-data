@@ -44716,6 +44716,72 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2026-10-20",
+    "goodsSeries": "NICEFUN 인형",
+    "goodsPrice": "168위안",
+    "goodsChara": "금희",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/NICEFUN 인형_중국_2026-10-20/goods/금희_세트_168위안_금희세트.png",
+    "goodsMemo": "금희세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-10-20",
+    "goodsSeries": "NICEFUN 인형",
+    "goodsPrice": "구성품",
+    "goodsChara": "금희",
+    "goodsCategory": "인형",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/NICEFUN 인형_중국_2026-10-20/goods/금희_인형_구성품_금희세트.png",
+    "goodsMemo": "금희세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-10-20",
+    "goodsSeries": "NICEFUN 인형",
+    "goodsPrice": "구성품",
+    "goodsChara": "금희",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/NICEFUN 인형_중국_2026-10-20/goods/금희_포토카드_구성품_금희세트.png",
+    "goodsMemo": "금희세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-10-20",
+    "goodsSeries": "NICEFUN 인형",
+    "goodsPrice": "168위안",
+    "goodsChara": "장리",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/NICEFUN 인형_중국_2026-10-20/goods/장리_세트_168위안_장리세트.png",
+    "goodsMemo": "장리세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-10-20",
+    "goodsSeries": "NICEFUN 인형",
+    "goodsPrice": "구성품",
+    "goodsChara": "장리",
+    "goodsCategory": "인형",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/NICEFUN 인형_중국_2026-10-20/goods/장리_인형_구성품_장리세트.png",
+    "goodsMemo": "장리세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-10-20",
+    "goodsSeries": "NICEFUN 인형",
+    "goodsPrice": "구성품",
+    "goodsChara": "장리",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/NICEFUN 인형_중국_2026-10-20/goods/장리_포토카드_구성품_장리세트.png",
+    "goodsMemo": "장리세트"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2025-09-12",
     "goodsSeries": "PARCO",
     "goodsPrice": "880엔",
