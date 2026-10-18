@@ -384,6 +384,16 @@
   .pick-item img { width: 100%; aspect-ratio: 1; object-fit: contain; border-radius: 6px; background: var(--surface-2); }
   .pick-item input { width: 18px; height: 18px; accent-color: var(--accent); }
   .goods-row input[readonly] { color: var(--muted); }
+  .bulk-thumbs { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }
+  .bulk-thumbs img {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: var(--surface-2);
+    cursor: zoom-in;
+  }
   .suggest {
     position: fixed;
     z-index: 1000;
@@ -727,6 +737,7 @@
             <input id="addBulkMemo" type="text" autocomplete="off">
           </label>
         </div>
+        <div id="addBulkThumbs" class="bulk-thumbs" hidden></div>
         <div class="row">
           <button id="addBulkApply" type="button" disabled>체크한 굿즈에 적용</button>
           <span id="addBulkStatus" class="muted"></span>
@@ -782,6 +793,7 @@
       <div id="addRows" class="goods-rows"></div>
 
       <div class="row">
+        <label id="addNewCatCheck" class="check" hidden><input id="addNewCatOk" type="checkbox"><span id="addNewCatText"></span></label>
         <button id="addSubmit" type="button" class="primary" disabled>저장</button>
         <button id="addClear" type="button">비우기</button>
         <span id="addStatus" class="muted"></span>
@@ -2578,6 +2590,16 @@ function renderAddRows() {
 // 체크한 굿즈 수와 일괄 적용 버튼 상태
 function updateBulk() {
   const checked = addRows.filter((row) => row.checked);
+  // 체크한 굿즈 사진을 적용 버튼 위에 띄운다
+  $("addBulkThumbs").hidden = !checked.length;
+  $("addBulkThumbs").replaceChildren(...checked.map((row) => {
+    const img = el("img");
+    img.alt = "";
+    img.src = row.url;
+    img.title = stripExtension(addRowName(row));
+    img.onclick = () => zoomImage(row.url);
+    return img;
+  }));
   for (const row of addRows) row.dom.line.classList.toggle("checked", Boolean(row.checked));
   updateCheckAll();
 
@@ -2713,57 +2735,72 @@ function addSeriesState() {
   return { newFolder: name && country && date ? newFolder : "", name, country, date, problem };
 }
 
-async function updateAdd() {
-  syncSetCharas();
-  const saveable = await checkServer();
+// 저장 전 검사. 화면 표시(updateAdd)와 저장 직전(submitAdd)이 같은 검사를 쓴다.
+function addValidate() {
   const series = addSeriesState();
-  $("addNew").hidden = Boolean(series.folder);
-  $("addFolderInfo").textContent = series.folder
-    ? `picture/${series.folder}/goods 에 굿즈를 추가합니다.`
-    : series.newFolder ? `새 폴더: picture/${series.newFolder}` : "";
-
   const valid = new Set(allCharacters.map((c) => c.charaNm.trim()));
+  const { parentOf, sets } = addRowGroups();
   // 확장자만 다른 것도 같은 굿즈다
   const contentOf = (filename) => stripExtension(filename).toLowerCase();
   const names = addRows.map((row) => contentOf(addRowName(row)));
-  let invalid = 0;
-  let fresh = 0;
-  addRows.forEach((row, index) => {
+  const newCategories = new Set();
+  const problems = addRows.map((row, index) => {
     const charas = splitCharas(row.chara);
     const unknown = charas.filter((name) => !valid.has(name));
     const category = row.category.trim();
     const price = row.price.trim();
     const name = addRowName(row);
-    let problem = "";
-    if (!charas.length) problem = "캐릭터를 입력하세요.";
-    else if (unknown.length) problem = `등록되지 않은 캐릭터: ${unknown.join(", ")} (캐릭터 탭에서 먼저 추가)`;
-    else if (!category) problem = "카테고리를 입력하세요.";
-    else if (category.includes("_")) problem = "카테고리에 _ 는 쓸 수 없습니다.";
-    else if (!price) problem = "가격을 입력하세요.";
-    else if (price.includes("_")) problem = "가격에 _ 는 쓸 수 없습니다.";
-    else if (BAD_PATH_CHARS.test(name)) problem = "파일명에 쓸 수 없는 글자가 있습니다.";
-    else if (names.indexOf(contentOf(name)) !== index || names.lastIndexOf(contentOf(name)) !== index) problem = "캐릭터·카테고리·가격·메모가 전부 같은 굿즈가 또 있습니다. 메모로 구분하세요.";
-    else if (series.folder && addExisting.has(contentOf(name))) problem = "이 시리즈에 내용이 같은 굿즈가 이미 있습니다. 메모로 구분하세요.";
+    if (category && !category.includes("_") && !addCategories.has(category)) newCategories.add(category);
+    if (!charas.length) return "캐릭터를 입력하세요.";
+    if (unknown.length) return `등록되지 않은 캐릭터: ${unknown.join(", ")} (캐릭터 탭에서 먼저 추가)`;
+    if (!category) return "카테고리를 입력하세요.";
+    if (category.includes("_")) return "카테고리에 _ 는 쓸 수 없습니다.";
+    if (!price) return "가격을 입력하세요.";
+    if (price.includes("_")) return "가격에 _ 는 쓸 수 없습니다.";
+    if (BAD_PATH_CHARS.test(name)) return "파일명에 쓸 수 없는 글자가 있습니다.";
+    if (names.indexOf(contentOf(name)) !== index || names.lastIndexOf(contentOf(name)) !== index) return "캐릭터·카테고리·가격·메모가 전부 같은 굿즈가 또 있습니다. 메모로 구분하세요.";
+    if (series.folder && addExisting.has(contentOf(name))) return "이 시리즈에 내용이 같은 굿즈가 이미 있습니다. 메모로 구분하세요.";
+    if (category === "세트" && !row.memo.trim()) return "세트는 메모(세트 이름)를 적어야 구성품과 묶입니다.";
+    if (sets.get(row.memo.trim()) === row && !addRows.some((other) => parentOf(other) === row)) return "구성품이 없는 세트입니다. 구성품을 넣거나 카테고리를 바꾸세요.";
+    return "";
+  });
+  return { series, problems, invalid: problems.filter(Boolean).length, newCategories: [...newCategories] };
+}
 
-    const isNew = category && !category.includes("_") && !addCategories.has(category);
-    if (isNew) fresh++;
-    if (problem) invalid++;
+async function updateAdd() {
+  syncSetCharas();
+  const saveable = await checkServer();
+  const { series, problems, invalid, newCategories } = addValidate();
+  $("addNew").hidden = Boolean(series.folder);
+  $("addFolderInfo").textContent = series.folder
+    ? `picture/${series.folder}/goods 에 굿즈를 추가합니다.`
+    : series.newFolder ? `새 폴더: picture/${series.newFolder}` : "";
+
+  addRows.forEach((row, index) => {
+    const problem = problems[index];
     row.dom.line.classList.toggle("invalid", Boolean(problem));
     row.dom.problem.textContent = problem;
-    row.dom.name.replaceChildren(name);
-    if (isNew) row.dom.name.append(" ", el("b", "", "새 카테고리"));
+    row.dom.name.replaceChildren(addRowName(row));
+    if (newCategories.includes(row.category.trim())) row.dom.name.append(" ", el("b", "", "새 카테고리"));
   });
+
+  // 새 카테고리는 오타일 수 있어서 확인 체크를 받아야 저장된다. 새 카테고리가 바뀌면 다시 확인받는다.
+  const newKey = newCategories.join(",");
+  if ($("addNewCatOk").dataset.key !== newKey) $("addNewCatOk").checked = false;
+  $("addNewCatOk").dataset.key = newKey;
+  $("addNewCatCheck").hidden = !newCategories.length;
+  $("addNewCatText").textContent = `새 카테고리 확인: ${newCategories.join(", ")}`;
 
   let status = "";
   if (!saveable) status = "python serve.py로 실행해야 추가할 수 있습니다.";
   else if (series.problem) status = series.problem;
   else if (!addRows.length) status = "굿즈 사진을 한 장 이상 넣으세요.";
-  else if (invalid) status = `굿즈 ${invalid}개에 고칠 곳이 있습니다.`;
+  else if (invalid) status = `굿즈 ${invalid}개에 고칠 곳이 있어 저장할 수 없습니다. 보기에서 "고칠 곳 있는 것"으로 모아 볼 수 있습니다.`;
+  else if (newCategories.length && !$("addNewCatOk").checked) status = "새 카테고리가 오타가 아닌지 확인하고 체크하세요.";
   $("addSubmit").disabled = Boolean(status);
   $("addSubmit").textContent = addRows.length
     ? `저장 (${series.folder ? "기존 시리즈" : "새 시리즈"} + 굿즈 ${addRows.length}개)`
     : "저장";
-  if (!status && fresh) status = `새 카테고리가 ${fresh}개 굿즈에 쓰였습니다. 오타가 아닌지 확인하세요.`;
   if (!$("addStatus").dataset.keep) $("addStatus").textContent = status;
   delete $("addStatus").dataset.keep;
   applyAddFilter();
@@ -2832,7 +2869,16 @@ function clearAdd() {
 }
 
 async function submitAdd() {
-  const series = addSeriesState();
+  // 버튼 상태가 늦게 바뀌었을 수 있으니 저장 직전에 한 번 더 검사한다
+  regroupAddRows();
+  syncSetCharas();
+  const { series, invalid, newCategories } = addValidate();
+  if (series.problem || !addRows.length || invalid || (newCategories.length && !$("addNewCatOk").checked)) {
+    $("addStatus").dataset.keep = "1";
+    $("addStatus").textContent = "고칠 곳이 있어서 저장하지 않았습니다.";
+    updateAdd();
+    return;
+  }
   $("addSubmit").disabled = true;
   $("addStatus").textContent = "저장 중…";
   try {
@@ -3019,6 +3065,7 @@ $("addCheckAll").onchange = () => {
 };
 for (const [, id] of BULK_FIELDS) $(id).oninput = updateBulk;
 $("addSubmit").onclick = submitAdd;
+$("addNewCatOk").onchange = updateAdd;
 $("addClear").onclick = clearAdd;
 
 const addPanel = $("addTab").querySelector(".panel");
