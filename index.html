@@ -709,8 +709,13 @@
           <span id="addBulkStatus" class="muted"></span>
         </div>
         <h3>세트로 묶기</h3>
-        <p class="muted">체크한 굿즈를 구성품으로 하는 세트 대표 사진을 추가합니다. 캐릭터는 체크한 굿즈의 캐릭터를 모두 모아 넣고, 카테고리는 <code>세트</code>로 넣습니다. 체크한 굿즈의 메모는 세트 메모로 바뀝니다.</p>
+        <p class="muted">체크한 굿즈를 구성품으로 하는 세트 대표 사진을 추가합니다. 캐릭터는 체크한 굿즈의 캐릭터를 모두 모아 넣고, 카테고리는 <code>세트</code>로 넣습니다. 체크한 굿즈의 메모는 세트 메모로 바뀝니다. 이미 있는 세트를 고르면 체크한 굿즈를 그 세트의 구성품으로 넣습니다.</p>
         <div class="form">
+          <label>세트
+            <select id="addSetTarget"></select>
+          </label>
+        </div>
+        <div id="addSetNew" class="form">
           <label>세트 사진
             <input id="addSetFile" type="file" accept="image/*">
           </label>
@@ -2288,7 +2293,7 @@ function renderAddRows() {
       input.value = row[key];
       input.oninput = () => {
         row[key] = input.value;
-        if (key === "chara") updateSet();
+        if (key !== "price") updateSet();
         updateAdd();
       };
       if (key === "memo" || key === "category") input.onchange = regroupAddRows;
@@ -2346,13 +2351,59 @@ function addSetCharas() {
   return charas;
 }
 
+// 고를 수 있는 기존 세트: 이번에 추가하는 세트 줄 + 고른 시리즈에 이미 저장된 세트
+function addSetTargets() {
+  const targets = [];
+  for (const row of addRows) {
+    const memo = row.memo.trim();
+    if (row.category.trim() === "세트" && memo && !targets.some((t) => t.memo === memo)) {
+      targets.push({ key: `row:${memo}`, memo, row, label: `${memo} (이번에 추가하는 세트)` });
+    }
+  }
+  const folder = $("addSeries").value;
+  const seriesName = folder ? folder.split("_")[0] : "";
+  for (const g of allGoods) {
+    const memo = (g.goodsMemo || "").trim();
+    if (g.goodsSeries !== seriesName || g.goodsCategory !== "세트" || !memo || targets.some((t) => t.memo === memo)) continue;
+    targets.push({ key: `saved:${memo}`, memo, charas: splitCharas(g.goodsChara), label: `${memo} (저장된 세트)` });
+  }
+  return targets;
+}
+
+function addSetTarget() {
+  return addSetTargets().find((t) => t.key === $("addSetTarget").value) || null;
+}
+
 function updateSet() {
+  const targets = addSetTargets();
+  const chosen = $("addSetTarget").value;
+  $("addSetTarget").replaceChildren(new Option("새 세트 만들기", ""), ...targets.map((t) => new Option(t.label, t.key)));
+  $("addSetTarget").value = targets.some((t) => t.key === chosen) ? chosen : "";
+  const target = addSetTarget();
+  $("addSetNew").hidden = Boolean(target);
+
   const checked = addRows.filter((row) => row.checked).length;
   const file = $("addSetFile").files[0];
   const price = $("addSetPrice").value.trim();
   const memo = $("addSetMemo").value.trim();
   const charas = addSetCharas();
   let problem = "";
+  if (target) {
+    const others = addRows.filter((row) => row.checked && row !== target.row).length;
+    const merged = [...new Set([...(target.row ? splitCharas(target.row.chara) : target.charas), ...charas])];
+    if (!others) problem = "세트에 넣을 굿즈를 체크하세요.";
+    $("addSetApply").disabled = Boolean(problem);
+    $("addSetApply").textContent = others ? `체크한 ${others}개를 "${target.memo}"에 넣기` : "세트에 넣기";
+    if (!$("addSetStatus").dataset.keep) {
+      const added = charas.filter((name) => !(target.row ? splitCharas(target.row.chara) : target.charas).includes(name));
+      $("addSetStatus").textContent = problem
+        || (target.row
+          ? `세트 캐릭터: ${merged.join(",")}`
+          : added.length ? `저장된 세트 사진의 캐릭터는 그대로입니다 (${added.join(",")}는 빠져 있음). 메모만 맞춥니다.` : "메모를 세트 메모로 맞춥니다.");
+    }
+    delete $("addSetStatus").dataset.keep;
+    return;
+  }
   if (!checked) problem = "구성품이 될 굿즈를 체크하세요.";
   else if (!charas.length) problem = "체크한 굿즈에 캐릭터를 먼저 넣으세요.";
   else if (!file) problem = "세트 사진을 고르세요.";
@@ -2552,6 +2603,7 @@ $("addSeries").onchange = async () => {
     const listing = await listDirectory(`picture/${encodeURIComponent(folder)}/goods/`).catch(() => null);
     if (listing) addExisting = new Set(listing.files.map((name) => stripExtension(name).toLowerCase()));
   }
+  updateSet();
   updateAdd();
 };
 for (const id of ["addName", "addCountry", "addDate"]) $(id).oninput = updateAdd;
@@ -2592,6 +2644,24 @@ $("addBulkApply").onclick = () => {
   renderAddRows();
 };
 $("addSetApply").onclick = () => {
+  const target = addSetTarget();
+  if (target) {
+    // 기존 세트에 넣기: 메모를 맞추고, 이번에 추가하는 세트면 캐릭터도 합친다
+    const checked = addRows.filter((row) => row.checked && row !== target.row);
+    if (target.row) {
+      const merged = [...new Set([...splitCharas(target.row.chara), ...addSetCharas()])];
+      target.row.chara = merged.join(",");
+    }
+    for (const row of checked) {
+      row.memo = target.memo;
+      row.checked = false;
+    }
+    if (target.row) target.row.checked = false;
+    $("addSetStatus").dataset.keep = "1";
+    $("addSetStatus").textContent = `"${target.memo}"에 ${checked.length}개를 넣었습니다.`;
+    renderAddRows();
+    return;
+  }
   const file = $("addSetFile").files[0];
   if (!file || !IMAGE_FILE.test(file.name)) return;
   const checked = addRows.filter((row) => row.checked);
@@ -2617,6 +2687,7 @@ $("addSetApply").onclick = () => {
   renderAddRows();
 };
 $("addSetFile").onchange = updateSet;
+$("addSetTarget").onchange = updateSet;
 for (const id of ["addSetPrice", "addSetMemo"]) $(id).addEventListener("input", updateSet);
 $("addCheckAll").onchange = () => {
   for (const row of addRows) {
