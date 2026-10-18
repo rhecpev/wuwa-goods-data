@@ -361,6 +361,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2026 아이후이쇼우",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 아이후이쇼우_중국_2026-10-14/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "남랑자,아브,여랑자",
+    "seriesDate": "2026-10-14"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2026 중과금 선물 박스",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 중과금 선물 박스_중국_2026-09-28/mainTheme.jpg",
     "seriesCountry": "중국",
