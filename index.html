@@ -365,6 +365,25 @@
   }
   .goods-row .form { margin: 0 0 6px; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 6px; }
   .goods-row .form input { background: var(--surface); }
+  #addPick { width: min(900px, 96vw); }
+  .pick-dialog { padding: 18px; display: grid; gap: 10px; }
+  .pick-dialog h3 { margin: 0; font-size: 17px; }
+  .pick-dialog p { margin: 0; }
+  .pick-list { display: grid; gap: 8px; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); max-height: 62vh; overflow: auto; }
+  .pick-item {
+    display: grid;
+    gap: 4px;
+    padding: 6px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    font-size: 12.5px;
+    overflow-wrap: anywhere;
+    cursor: pointer;
+  }
+  .pick-item.on { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, transparent); }
+  .pick-item img { width: 100%; aspect-ratio: 1; object-fit: contain; border-radius: 6px; background: var(--surface-2); }
+  .pick-item input { width: 18px; height: 18px; accent-color: var(--accent); }
+  .goods-row input[readonly] { color: var(--muted); }
   .suggest {
     position: fixed;
     z-index: 1000;
@@ -763,6 +782,18 @@
 </main>
 
 <dialog id="zoom"><img id="zoomImg" alt=""></dialog>
+
+<dialog id="addPick">
+  <div class="pick-dialog">
+    <h3 id="addPickTitle"></h3>
+    <p class="muted">넣을 굿즈를 고르세요. 다른 세트에 들어 있던 굿즈는 그 세트에서 빠지고 이 세트로 옮겨집니다.</p>
+    <div id="addPickList" class="pick-list"></div>
+    <div class="row">
+      <button id="addPickOk" type="button" class="primary" disabled>넣기</button>
+      <button id="addPickCancel" type="button">취소</button>
+    </div>
+  </div>
+</dialog>
 
 <dialog id="viewer">
   <div class="viewer">
@@ -2098,6 +2129,7 @@ function attachSuggest(input, listId, multi) {
     input.dispatchEvent(new Event("input", { bubbles: true }));
   };
   const show = () => {
+    if (input.readOnly) return closeSuggest();
     const q = query();
     const taken = multi ? new Set(input.value.split(",").slice(0, -1).map((part) => part.trim())) : new Set();
     const onlyJamo = q && [...q].every((ch) => CHOSUNG.includes(ch));
@@ -2234,39 +2266,118 @@ function addRowGroups() {
 }
 
 function addGroupKey() {
-  const { order, parentOf } = addRowGroups();
-  return order.map((row) => `${addRows.indexOf(row)}:${parentOf(row) ? addRows.indexOf(parentOf(row)) : ""}`).join(",");
+  const { order, parentOf, sets } = addRowGroups();
+  return order.map((row) => {
+    const parent = parentOf(row);
+    return `${addRows.indexOf(row)}:${parent ? addRows.indexOf(parent) : ""}${sets.get(row.memo.trim()) === row ? "S" : ""}`;
+  }).join(",");
 }
 
-// rows를 세트 줄의 구성품으로 넣는다: 메모를 세트 메모로 맞추고, 세트 캐릭터에 구성품 캐릭터를 합친다
+// 세트 줄이면 그 세트, 구성품 줄이면 속한 세트, 아니면 null
+function addSetOf(row) {
+  const { parentOf, sets } = addRowGroups();
+  return sets.get(row.memo.trim()) === row ? row : parentOf(row);
+}
+
+// 세트 캐릭터는 구성품 캐릭터를 처음 나온 순서대로 모은 것으로 늘 맞춘다. 구성품이 없으면 손으로 쓴 값 그대로 둔다.
+function syncSetCharas() {
+  const { parentOf, sets } = addRowGroups();
+  for (const setRow of sets.values()) {
+    const charas = [];
+    for (const row of addRows) {
+      if (parentOf(row) !== setRow) continue;
+      for (const name of splitCharas(row.chara)) if (!charas.includes(name)) charas.push(name);
+    }
+    if (!charas.length || setRow.chara === charas.join(",")) continue;
+    setRow.chara = charas.join(",");
+    if (setRow.dom) setRow.dom.inputs.chara.value = setRow.chara;
+  }
+}
+
+// rows를 세트 줄의 구성품으로 넣는다. 캐릭터는 syncSetCharas가 맞춘다.
 function addRowsToSet(setRow, rows) {
-  const charas = splitCharas(setRow.chara);
   for (const row of rows) {
     row.memo = setRow.memo.trim();
     row.checked = false;
-    for (const name of splitCharas(row.chara)) if (!charas.includes(name)) charas.push(name);
   }
-  setRow.chara = charas.join(",");
+  setRow.checked = false;
 }
 
 let addDragRows = null; // 끌고 있는 굿즈 줄들
+
+// 끄는 줄 + 체크한 줄(세트 줄은 빼고)을 한꺼번에 옮긴다
+function addDragRowsFor(row) {
+  const { sets } = addRowGroups();
+  const rows = addRows.filter((other) => other.checked && sets.get(other.memo.trim()) !== other);
+  if (!rows.includes(row)) rows.push(row);
+  return rows;
+}
 
 // 메모·카테고리를 바꿔서 세트 묶음이 달라졌을 때만 다시 그린다
 function regroupAddRows() {
   if (addRows.length && addGroupKey() !== addRows.groupKey) renderAddRows();
 }
 
+// 세트 줄의 "구성품 추가": 지금 목록에서 골라 넣는다
+let addPickSet = null;
+function openAddPick(setRow) {
+  addPickSet = setRow;
+  const { parentOf, sets } = addRowGroups();
+  const candidates = addRows.filter((row) => sets.get(row.memo.trim()) !== row && parentOf(row) !== setRow);
+  $("addPickTitle").textContent = `"${setRow.memo.trim()}"에 구성품 추가`;
+  const list = $("addPickList");
+  list.replaceChildren();
+  if (!candidates.length) list.append(el("p", "muted", "넣을 수 있는 굿즈가 없습니다. 세트 줄과 이미 이 세트에 든 굿즈는 빠집니다."));
+  for (const row of candidates) {
+    const item = el("label", "pick-item");
+    const box = el("input");
+    box.type = "checkbox";
+    box.onchange = () => {
+      item.classList.toggle("on", box.checked);
+      updateAddPick();
+    };
+    const img = el("img");
+    img.alt = "";
+    img.src = row.url;
+    item.append(img, el("span", "", stripExtension(addRowName(row))));
+    const other = parentOf(row);
+    if (other) item.append(el("span", "muted", `지금: ${other.memo.trim()}`));
+    const top = el("span", "pick-top");
+    top.append(box);
+    item.prepend(top);
+    item.row = row;
+    item.box = box;
+    list.append(item);
+  }
+  updateAddPick();
+  $("addPick").showModal();
+}
+
+function addPickChosen() {
+  return [...$("addPickList").querySelectorAll(".pick-item")].filter((item) => item.box.checked).map((item) => item.row);
+}
+
+function updateAddPick() {
+  const count = addPickChosen().length;
+  $("addPickOk").disabled = !count;
+  $("addPickOk").textContent = count ? `${count}개 넣기` : "넣기";
+}
+
 function renderAddRows() {
   const box = $("addRows");
-  // 다시 그려도 쓰던 입력칸에 커서가 남게 한다
-  const focused = addRows.find((row) => row.dom && Object.values(row.dom.inputs).includes(document.activeElement));
-  const focusedKey = focused && Object.keys(focused.dom.inputs).find((key) => focused.dom.inputs[key] === document.activeElement);
+  // 다시 그려도 쓰던 입력칸에 커서가 같은 자리에 남게 한다
+  const active = document.activeElement;
+  const focused = addRows.find((row) => row.dom && Object.values(row.dom.inputs).includes(active));
+  const focusedKey = focused && Object.keys(focused.dom.inputs).find((key) => focused.dom.inputs[key] === active);
+  const caret = focusedKey ? [active.selectionStart, active.selectionEnd] : null;
   const { order, parentOf, sets } = addRowGroups();
   addRows = order;
   addRows.groupKey = addGroupKey();
   box.replaceChildren();
   $("addBulk").hidden = !addRows.length;
   for (const row of addRows) {
+    const isSet = sets.get(row.memo.trim()) === row;
+    const components = isSet ? addRows.filter((other) => parentOf(other) === row).length : 0;
     const line = el("div", "goods-row");
     if (parentOf(row)) line.classList.add("component");
     const pick = el("input", "pick");
@@ -2290,17 +2401,14 @@ function renderAddRows() {
     img.onclick = () => zoomImage(row.url);
 
     const middle = el("div");
-    if (sets.get(row.memo.trim()) === row) {
-      const count = addRows.filter((other) => parentOf(other) === row).length;
-      middle.append(el("div", "set-badge", `세트 · 구성품 ${count}개`));
-    }
+    if (isSet) middle.append(el("div", "set-badge", `세트 · 구성품 ${components}개`));
     const fields = el("div", "form");
     const inputs = {};
     for (const [key, label, list] of [
-      ["chara", "캐릭터 (여러 명은 콤마)", "addCharaList"],
+      ["chara", components ? "캐릭터 (구성품에서 자동)" : "캐릭터 (여러 명은 콤마)", "addCharaList"],
       ["category", "카테고리", "addCategoryList"],
       ["price", "가격", "addPriceList"],
-      ["memo", "메모 (없어도 됨)", ""],
+      ["memo", isSet ? "메모 (세트 이름)" : "메모 (없어도 됨)", ""],
     ]) {
       const wrap = el("label", "", label);
       const input = el("input");
@@ -2308,12 +2416,14 @@ function renderAddRows() {
       input.autocomplete = "off";
       if (list) attachSuggest(input, list, key === "chara");
       input.value = row[key];
+      if (key === "chara" && components) input.readOnly = true;
       input.oninput = () => {
         row[key] = input.value;
+        // 카테고리를 세트로 바꾸거나 메모를 세트 메모와 맞추는 순간 바로 세트로 묶는다
+        if (key === "memo" || key === "category") regroupAddRows();
         if (key !== "price") updateSet();
         updateAdd();
       };
-      if (key === "memo" || key === "category") input.onchange = regroupAddRows;
       wrap.append(input);
       fields.append(wrap);
       inputs[key] = input;
@@ -2322,6 +2432,53 @@ function renderAddRows() {
     const problem = el("div", "problem");
     middle.append(fields, name, problem);
 
+    // 손잡이(⠿)를 잡고 세트 줄이나 그 구성품 줄에 놓으면 세트에 들어간다. 체크한 줄도 같이 간다.
+    const lead = el("span", "lead");
+    lead.append(pick);
+    if (!isSet) {
+      const handle = el("span", "handle", "⠿");
+      handle.title = "끌어서 세트에 넣기 (체크한 굿즈도 같이 옮겨집니다)";
+      handle.draggable = true;
+      handle.ondragstart = (event) => {
+        addDragRows = addDragRowsFor(row);
+        event.dataTransfer.effectAllowed = "move";
+        event.dataTransfer.setData("text/plain", "");
+        event.dataTransfer.setDragImage(line, 20, 20);
+        for (const other of addDragRows) other.dom.line.classList.add("dragging");
+      };
+      handle.ondragend = () => {
+        for (const other of addRows) other.dom.line.classList.remove("dragging", "drop-target");
+        addDragRows = null;
+      };
+      lead.append(handle);
+    }
+    // 놓을 세트는 놓는 순간의 값으로 정한다 (그린 뒤에 세트가 된 줄에도 놓을 수 있게)
+    line.ondragover = (event) => {
+      if (!addDragRows) return;
+      const target = addSetOf(row);
+      if (!target || addDragRows.every((other) => addSetOf(other) === target && other !== target)) return;
+      event.preventDefault();
+      event.stopPropagation();
+      event.dataTransfer.dropEffect = "move";
+      line.classList.add("drop-target");
+    };
+    line.ondragleave = (event) => {
+      if (!line.contains(event.relatedTarget)) line.classList.remove("drop-target");
+    };
+    line.ondrop = (event) => {
+      const target = addSetOf(row);
+      if (!addDragRows || !target) return;
+      event.preventDefault();
+      event.stopPropagation();
+      const moving = addDragRows.filter((other) => other !== target);
+      addDragRows = null;
+      addRowsToSet(target, moving);
+      $("addSetStatus").dataset.keep = "1";
+      $("addSetStatus").textContent = `"${target.memo.trim()}"에 ${moving.length}개를 넣었습니다.`;
+      renderAddRows();
+    };
+
+    const actions = el("span", "actions");
     const remove = el("button", "", "빼기");
     remove.type = "button";
     remove.onclick = () => {
@@ -2329,63 +2486,18 @@ function renderAddRows() {
       addRows = addRows.filter((other) => other !== row);
       renderAddRows();
     };
-
-    // 손잡이(⠿)를 잡고 세트 줄이나 그 구성품 줄에 놓으면 세트에 들어간다. 체크된 줄을 끌면 체크된 것 전부가 같이 간다.
-    const lead = el("span", "lead");
-    const isSet = sets.get(row.memo.trim()) === row;
-    if (!isSet) {
-      const handle = el("span", "handle", "⠿");
-      handle.title = "끌어서 세트에 넣기";
-      handle.onmousedown = () => { line.draggable = true; };
-      handle.onmouseup = () => { line.draggable = false; };
-      lead.append(handle);
-    }
-    lead.prepend(pick);
-    line.ondragstart = (event) => {
-      addDragRows = row.checked ? addRows.filter((other) => other.checked && sets.get(other.memo.trim()) !== other) : [row];
-      event.dataTransfer.effectAllowed = "move";
-      event.dataTransfer.setData("text/plain", "");
-      for (const other of addDragRows) other.dom.line.classList.add("dragging");
-    };
-    line.ondragend = () => {
-      line.draggable = false;
-      for (const other of addRows) other.dom.line.classList.remove("dragging", "drop-target");
-      addDragRows = null;
-    };
-    const dropSet = isSet ? row : parentOf(row);
-    if (dropSet) {
-      line.ondragover = (event) => {
-        if (!addDragRows || addDragRows.every((other) => parentOf(other) === dropSet)) return;
-        event.preventDefault();
-        event.dataTransfer.dropEffect = "move";
-        line.classList.add("drop-target");
-      };
-      line.ondragleave = (event) => {
-        if (!line.contains(event.relatedTarget)) line.classList.remove("drop-target");
-      };
-      line.ondrop = (event) => {
-        event.preventDefault();
-        const moving = addDragRows.filter((other) => other !== dropSet);
-        addDragRows = null;
-        addRowsToSet(dropSet, moving);
-        $("addSetStatus").dataset.keep = "1";
-        $("addSetStatus").textContent = `"${dropSet.memo.trim()}"에 ${moving.length}개를 넣었습니다.`;
-        renderAddRows();
-      };
-    }
-
-    const actions = el("span", "actions");
     actions.append(remove);
+    if (isSet) {
+      const more = el("button", "", "구성품 추가");
+      more.type = "button";
+      more.onclick = () => openAddPick(row);
+      actions.append(more);
+    }
     if (parentOf(row)) {
       const leave = el("button", "", "세트 해제");
       leave.type = "button";
       leave.title = "세트에서 빼고 메모를 비웁니다";
       leave.onclick = () => {
-        // 남은 구성품 중 아무도 안 가진 이 줄의 캐릭터는 세트 캐릭터에서도 뺀다
-        const set = parentOf(row);
-        const rest = addRows.filter((other) => other !== row && parentOf(other) === set).flatMap((other) => splitCharas(other.chara));
-        const gone = splitCharas(row.chara).filter((name) => !rest.includes(name));
-        set.chara = splitCharas(set.chara).filter((name) => !gone.includes(name)).join(",");
         row.memo = "";
         renderAddRows();
       };
@@ -2395,7 +2507,11 @@ function renderAddRows() {
     row.dom = { line, name, problem, inputs, pick };
     box.append(line);
   }
-  if (focusedKey) focused.dom.inputs[focusedKey].focus();
+  if (focusedKey) {
+    const input = focused.dom.inputs[focusedKey];
+    input.focus();
+    input.setSelectionRange(...caret);
+  }
   updateBulk();
   updateAdd();
 }
@@ -2540,6 +2656,7 @@ function addSeriesState() {
 }
 
 async function updateAdd() {
+  syncSetCharas();
   const saveable = await checkServer();
   const series = addSeriesState();
   $("addNew").hidden = Boolean(series.folder);
@@ -2767,6 +2884,18 @@ $("addSetApply").onclick = () => {
 $("addSetFile").onchange = updateSet;
 $("addSetTarget").onchange = updateSet;
 for (const id of ["addSetPrice", "addSetMemo"]) $(id).addEventListener("input", updateSet);
+$("addPickOk").onclick = () => {
+  const chosen = addPickChosen();
+  addRowsToSet(addPickSet, chosen);
+  $("addPick").close();
+  $("addSetStatus").dataset.keep = "1";
+  $("addSetStatus").textContent = `"${addPickSet.memo.trim()}"에 ${chosen.length}개를 넣었습니다.`;
+  renderAddRows();
+};
+$("addPickCancel").onclick = () => $("addPick").close();
+$("addPick").onclick = (event) => {
+  if (event.target === $("addPick")) $("addPick").close();
+};
 $("addCheckAll").onchange = () => {
   for (const row of addRows) {
     row.checked = $("addCheckAll").checked;
@@ -2780,11 +2909,13 @@ $("addClear").onclick = clearAdd;
 
 const addPanel = $("addTab").querySelector(".panel");
 addPanel.ondragover = (event) => {
+  if (addDragRows) return; // 굿즈 줄을 끄는 중이면 사진 넣기가 아니다
   event.preventDefault();
   addPanel.classList.add("dragover");
 };
 addPanel.ondragleave = () => addPanel.classList.remove("dragover");
 addPanel.ondrop = (event) => {
+  if (addDragRows) return;
   event.preventDefault();
   addPanel.classList.remove("dragover");
   addGoodsFiles([...event.dataTransfer.files]);
