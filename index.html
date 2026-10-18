@@ -754,6 +754,31 @@
           <span id="addSetStatus" class="muted"></span>
         </div>
       </div>
+      <div id="addFilter" hidden>
+        <div class="form">
+          <label>목록 검색
+            <input id="addFilterQ" type="search" autocomplete="off" placeholder="파일명으로 거르기 (띄어쓰기로 여러 낱말)">
+          </label>
+          <label>카테고리
+            <select id="addFilterCategory"></select>
+          </label>
+          <label>캐릭터
+            <select id="addFilterChara"></select>
+          </label>
+          <label>보기
+            <select id="addFilterKind">
+              <option value="">전체</option>
+              <option value="set">세트와 구성품</option>
+              <option value="loose">세트 밖 굿즈</option>
+              <option value="problem">고칠 곳 있는 것</option>
+            </select>
+          </label>
+        </div>
+        <div class="row">
+          <button id="addFilterReset" type="button">거르기 초기화</button>
+          <span id="addFilterInfo" class="muted"></span>
+        </div>
+      </div>
       <div id="addRows" class="goods-rows"></div>
 
       <div class="row">
@@ -2520,8 +2545,7 @@ function renderAddRows() {
 function updateBulk() {
   const checked = addRows.filter((row) => row.checked);
   for (const row of addRows) row.dom.line.classList.toggle("checked", Boolean(row.checked));
-  $("addCheckAll").checked = addRows.length > 0 && checked.length === addRows.length;
-  $("addCheckAll").indeterminate = checked.length > 0 && checked.length < addRows.length;
+  updateCheckAll();
 
   const filled = BULK_FIELDS.filter(([, id]) => $(id).value.trim());
   $("addBulkApply").disabled = !checked.length || !filled.length;
@@ -2708,6 +2732,55 @@ async function updateAdd() {
   if (!status && fresh) status = `새 카테고리가 ${fresh}개 굿즈에 쓰였습니다. 오타가 아닌지 확인하세요.`;
   if (!$("addStatus").dataset.keep) $("addStatus").textContent = status;
   delete $("addStatus").dataset.keep;
+  applyAddFilter();
+}
+
+// 아래 굿즈 목록을 검색어·카테고리·캐릭터·종류로 걸러서 맞지 않는 줄은 숨긴다 (데이터는 그대로)
+function fillAddFilterSelect(id, label, values) {
+  const select = $(id);
+  const chosen = select.value;
+  const counts = new Map();
+  for (const value of values) counts.set(value, (counts.get(value) || 0) + 1);
+  select.replaceChildren(new Option(label, ""), ...[...counts].map(([value, count]) => new Option(`${value} (${count})`, value)));
+  // 고른 값이 목록에서 사라졌으면 전체로 돌린다
+  select.value = counts.has(chosen) ? chosen : "";
+}
+
+function applyAddFilter() {
+  $("addFilter").hidden = !addRows.length;
+  fillAddFilterSelect("addFilterCategory", "카테고리 전체", addRows.map((row) => row.category.trim()).filter(Boolean));
+  fillAddFilterSelect("addFilterChara", "캐릭터 전체", addRows.flatMap((row) => splitCharas(row.chara)));
+
+  const terms = $("addFilterQ").value.toLowerCase().split(/\s+/).filter(Boolean);
+  const category = $("addFilterCategory").value;
+  const chara = $("addFilterChara").value;
+  const kind = $("addFilterKind").value;
+  let shown = 0;
+  let hiddenChecked = 0;
+  for (const row of addRows) {
+    const name = addRowName(row).toLowerCase();
+    const inSet = Boolean(addSetOf(row));
+    const visible = terms.every((term) => name.includes(term))
+      && (!category || row.category.trim() === category)
+      && (!chara || splitCharas(row.chara).includes(chara))
+      && (!kind || (kind === "set" ? inSet : kind === "loose" ? !inSet : Boolean(row.dom.problem.textContent)));
+    row.dom.line.hidden = !visible;
+    if (visible) shown++;
+    else if (row.checked) hiddenChecked++;
+  }
+  const filtering = terms.length || category || chara || kind;
+  $("addFilterReset").disabled = !filtering;
+  $("addFilterInfo").textContent = !filtering ? `굿즈 ${addRows.length}개`
+    : `${addRows.length}개 중 ${shown}개 표시` + (hiddenChecked ? ` · 숨겨진 굿즈 중 체크된 것 ${hiddenChecked}개도 일괄 적용·세트에 같이 들어갑니다` : "");
+  updateCheckAll();
+}
+
+// 전체 선택은 지금 보이는 줄 기준
+function updateCheckAll() {
+  const visible = addRows.filter((row) => !row.dom.line.hidden);
+  const checked = visible.filter((row) => row.checked).length;
+  $("addCheckAll").checked = visible.length > 0 && checked === visible.length;
+  $("addCheckAll").indeterminate = checked > 0 && checked < visible.length;
 }
 
 function clearAdd() {
@@ -2715,7 +2788,7 @@ function clearAdd() {
   if (addMain) URL.revokeObjectURL(addMain.url);
   addRows = [];
   addMain = null;
-  for (const id of ["addName", "addCountry", "addDate", "addMainFile", "addFiles", "addSetFile", "addSetPrice", "addSetMemo", ...BULK_FIELDS.map(([, id]) => id)]) $(id).value = "";
+  for (const id of ["addName", "addCountry", "addDate", "addMainFile", "addFiles", "addSetFile", "addSetPrice", "addSetMemo", "addFilterQ", "addFilterCategory", "addFilterChara", "addFilterKind", ...BULK_FIELDS.map(([, id]) => id)]) $(id).value = "";
   $("addSeries").value = "";
   $("addSeriesQ").value = "";
   fillAddSeries();
@@ -2896,8 +2969,15 @@ $("addPickCancel").onclick = () => $("addPick").close();
 $("addPick").onclick = (event) => {
   if (event.target === $("addPick")) $("addPick").close();
 };
+$("addFilterQ").oninput = applyAddFilter;
+for (const id of ["addFilterCategory", "addFilterChara", "addFilterKind"]) $(id).onchange = applyAddFilter;
+$("addFilterReset").onclick = () => {
+  for (const id of ["addFilterQ", "addFilterCategory", "addFilterChara", "addFilterKind"]) $(id).value = "";
+  applyAddFilter();
+};
 $("addCheckAll").onchange = () => {
   for (const row of addRows) {
+    if (row.dom.line.hidden) continue;
     row.checked = $("addCheckAll").checked;
     row.dom.pick.checked = row.checked;
   }
