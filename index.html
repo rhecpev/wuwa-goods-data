@@ -633,6 +633,9 @@
 
       <h3>1. 시리즈</h3>
       <div class="form">
+        <label>시리즈 검색
+          <input id="addSeriesQ" type="search" autocomplete="off" placeholder="이름, 국가, 날짜로 거르기 (Enter: 첫 항목 선택)">
+        </label>
         <label>시리즈
           <select id="addSeries"></select>
         </label>
@@ -2028,12 +2031,8 @@ async function renderAdd() {
 
     // 최신 시리즈가 위로 오게 날짜(폴더명 마지막 칸) 내림차순
     const dateOf = (folder) => folder.split("_").pop();
-    const chosen = $("addSeries").value;
-    $("addSeries").replaceChildren(
-      new Option("새 시리즈 만들기", ""),
-      ...[...addFolders].sort((a, b) => dateOf(b).localeCompare(dateOf(a))).map((folder) => new Option(folder, folder))
-    );
-    $("addSeries").value = addFolders.includes(chosen) ? chosen : "";
+    addFolders = [...addFolders].sort((a, b) => dateOf(b).localeCompare(dateOf(a)));
+    fillAddSeries();
 
     const byCount = (map) => [...map].sort((a, b) => b[1] - a[1]).map(([value]) => value);
     fillDatalist("addCountryList", byCount(countBy(allSeries, (s) => [s.seriesCountry])));
@@ -2160,6 +2159,22 @@ function addRowName(row) {
   return parts.join("_") + row.ext;
 }
 
+// 검색어(공백으로 나눈 낱말이 모두 들어간 폴더)로 시리즈 목록을 거른다. 고른 시리즈는 걸러져도 남겨 둔다.
+function addSeriesMatches() {
+  const terms = $("addSeriesQ").value.toLowerCase().split(/\s+/).filter(Boolean);
+  return addFolders.filter((folder) => terms.every((term) => folder.toLowerCase().includes(term)));
+}
+
+function fillAddSeries() {
+  const chosen = $("addSeries").value;
+  const matches = addSeriesMatches();
+  if (chosen && !matches.includes(chosen) && addFolders.includes(chosen)) matches.unshift(chosen);
+  const total = addFolders.length;
+  const label = $("addSeriesQ").value.trim() ? `새 시리즈 만들기 (검색 결과 ${matches.length}/${total})` : "새 시리즈 만들기";
+  $("addSeries").replaceChildren(new Option(label, ""), ...matches.map((folder) => new Option(folder, folder)));
+  $("addSeries").value = addFolders.includes(chosen) ? chosen : "";
+}
+
 function addSeriesState() {
   const folder = $("addSeries").value;
   if (folder) return { folder, problem: "" };
@@ -2241,6 +2256,8 @@ function clearAdd() {
   addMain = null;
   for (const id of ["addName", "addCountry", "addDate", "addMainFile", "addFiles", ...BULK_FIELDS.map(([, id]) => id)]) $(id).value = "";
   $("addSeries").value = "";
+  $("addSeriesQ").value = "";
+  fillAddSeries();
   $("addMainPreview").hidden = true;
   addExisting = new Set();
   renderAddRows();
@@ -2299,6 +2316,15 @@ async function submitAdd() {
   }
 }
 
+$("addSeriesQ").oninput = fillAddSeries;
+$("addSeriesQ").onkeydown = (event) => {
+  if (event.key !== "Enter") return;
+  event.preventDefault();
+  const first = addSeriesMatches()[0];
+  if (!first || first === $("addSeries").value) return;
+  $("addSeries").value = first;
+  $("addSeries").onchange();
+};
 $("addSeries").onchange = async () => {
   const folder = $("addSeries").value;
   addExisting = new Set();
