@@ -570,6 +570,260 @@
     .viewer .stage img { max-height: 60vh; }
     .series-banner img { width: 84px; }
   }
+  /* ── 가독성: 대비를 올린 색, 넉넉한 줄 간격, 한글은 단어 단위로 줄바꿈 ── */
+  :root {
+    --muted: #5f5a52;
+    --label: #3d3a35;
+    --line-strong: #c9c2b5;
+    --danger: #c23a3a;
+    --danger-soft: #fbeaea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --muted: #a8adb6;
+      --label: #d3d5da;
+      --line-strong: #444b56;
+      --danger: #f07171;
+      --danger-soft: #3a2224;
+    }
+  }
+  body { line-height: 1.6; word-break: keep-all; overflow-wrap: anywhere; }
+
+  /* ── 추가 탭: 단계별 카드 ── */
+  #addTab { display: grid; gap: 16px; padding-bottom: 8px; }
+  #addTab[hidden] { display: none; }
+  #addTab .page-head h2 { margin: 4px 0 4px; font-size: 22px; letter-spacing: -.02em; }
+  #addTab .page-head p { margin: 0; color: var(--muted); }
+  #addTab .panel { margin: 0; padding: 20px; }
+  #addTab .step-head { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 16px; }
+  #addTab .step-no {
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 14px;
+  }
+  #addTab .step-head > div { flex: 1; min-width: 0; }
+  #addTab .panel .step-head h3 { margin: 2px 0 2px; font-size: 17px; }
+  #addTab .step-head p { margin: 0; color: var(--muted); font-size: 13.5px; }
+  #addTab .step-meta { flex: none; color: var(--muted); font-size: 13.5px; font-weight: 600; padding-top: 4px; }
+  #addTab .subgroup { padding: 14px 14px 2px; border-radius: 10px; background: var(--bg); margin-bottom: 12px; }
+  #addTab .path {
+    margin: 0;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: var(--surface-2);
+    color: var(--label);
+    font-size: 13px;
+  }
+  #addTab .path:empty { display: none; }
+
+  /* 입력칸: 라벨은 진하게, 칸은 테두리를 또렷하게 */
+  #addTab .form { gap: 14px; margin-bottom: 14px; }
+  #addTab .form label { gap: 6px; font-size: 13px; font-weight: 600; color: var(--label); }
+  #addTab .form input, #addTab .form select, #addTab .toolbar input, #addTab .toolbar select {
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid var(--line-strong);
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--text);
+    font-weight: 400;
+    min-width: 0;
+  }
+  #addTab .form input[type="file"] { padding: 7px 8px; }
+  #addTab input:focus, #addTab select:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent);
+  }
+  #addTab input[readonly] { background: var(--surface-2); color: var(--muted); }
+
+  /* 버튼 한 가지 모양으로 통일 */
+  #addTab button, #addTab label.check {
+    height: 38px;
+    padding: 0 14px;
+    border: 1px solid var(--line-strong);
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--text);
+    font-weight: 600;
+    font-size: 14px;
+  }
+  #addTab button:hover:not(:disabled) { background: var(--surface-2); }
+  #addTab button.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+  #addTab button.primary:hover:not(:disabled) { background: color-mix(in srgb, var(--accent) 88%, #000); }
+  #addTab button:disabled { opacity: .45; cursor: not-allowed; }
+  #addTab label.check { display: inline-flex; gap: 8px; align-items: center; cursor: pointer; white-space: nowrap; }
+  #addTab label.check[hidden] { display: none; }
+  #addTab label.check input { width: 17px; height: 17px; accent-color: var(--accent); }
+  #addTab .row { gap: 12px; }
+  #addTab .row .muted { font-size: 13.5px; }
+
+  /* 사진 넣는 곳 */
+  #addTab .dropzone {
+    position: relative;
+    display: grid;
+    gap: 4px;
+    place-items: center;
+    padding: 28px 16px;
+    border: 2px dashed var(--line-strong);
+    border-radius: 12px;
+    background: var(--bg);
+    text-align: center;
+    cursor: pointer;
+    transition: border-color .15s, background .15s;
+  }
+  #addTab .dropzone:hover, #addTab.dragover .dropzone {
+    border-color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 8%, var(--bg));
+  }
+  #addTab .dropzone input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+  #addTab .dropzone strong { font-size: 15px; }
+  #addTab .dropzone span { color: var(--muted); font-size: 13px; }
+
+  /* 일괄 고치기와 세트 묶기는 넓은 화면에서 나란히 */
+  #addTab .tool-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); align-items: start; }
+  #addTab .tool-grid[hidden] { display: none; }
+  #addTab .tool-grid .form { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #addTab .tool-grid .form:has(> label:only-child) { grid-template-columns: 1fr; }
+  #addTab #addSetNew label:first-child { grid-column: 1 / -1; }
+  #addTab .selection {
+    display: grid;
+    gap: 8px;
+    margin-bottom: 14px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: var(--bg);
+  }
+  #addTab .selection-count { font-size: 13.5px; font-weight: 600; color: var(--label); }
+  #addTab .bulk-thumbs { margin: 0; }
+  #addTab .bulk-thumbs img { width: 56px; height: 56px; background: var(--surface); }
+
+  /* 목록 위 도구줄 */
+  #addTab .toolbar {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: auto minmax(160px, 2fr) repeat(3, minmax(120px, 1fr)) auto;
+    align-items: center;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  /* 굿즈 줄 */
+  #addTab .goods-rows { gap: 10px; margin: 0; }
+  #addTab .goods-row {
+    position: relative;
+    grid-template-columns: auto 168px minmax(0, 1fr) auto;
+    gap: 16px;
+    padding: 12px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--surface);
+    transition: box-shadow .12s, border-color .12s;
+  }
+  #addTab .goods-row:hover { border-color: var(--line-strong); }
+  #addTab .goods-row img { width: 168px; height: 168px; border-radius: 8px; }
+  #addTab .goods-row .form { gap: 10px; margin-bottom: 8px; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+  #addTab .goods-row .form input { height: 38px; }
+  #addTab .goods-row.checked {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 1px var(--accent);
+    background: color-mix(in srgb, var(--accent) 6%, var(--surface));
+  }
+  /* 고칠 곳은 왼쪽 띠와 안내 문구로만 표시해서 목록 전체가 빨갛게 보이지 않게 한다 */
+  #addTab .goods-row.invalid { border-color: var(--line); box-shadow: inset 4px 0 0 var(--danger); }
+  #addTab .goods-row.invalid.checked { border-color: var(--accent); box-shadow: inset 4px 0 0 var(--danger), 0 0 0 1px var(--accent); }
+  #addTab .goods-row .name {
+    display: inline-block;
+    padding: 3px 9px;
+    border-radius: 6px;
+    background: var(--surface-2);
+    color: var(--label);
+    font-size: 12.5px;
+  }
+  #addTab .goods-row .name b { margin-left: 4px; }
+  #addTab .goods-row .problem:not(:empty) {
+    margin-top: 8px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    background: var(--danger-soft);
+    color: var(--danger);
+    font-size: 13px;
+    font-weight: 600;
+  }
+  #addTab .goods-row .problem:not(:empty)::before { content: "⚠ "; }
+  #addTab .goods-row .set-badge {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 2px 10px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 12.5px;
+    font-weight: 700;
+  }
+  #addTab .goods-row .lead { gap: 10px; padding-top: 2px; }
+  #addTab .goods-row .handle { font-size: 20px; padding: 2px 4px; border-radius: 6px; }
+  #addTab .goods-row .handle:hover { background: var(--surface-2); color: var(--text); }
+  #addTab .goods-row .actions { justify-items: stretch; }
+  #addTab .goods-row .actions button { height: 34px; padding: 0 12px; font-size: 13px; }
+  /* 구성품: 세트 밑으로 들여 쓰고 연결선을 그린다 */
+  #addTab .goods-row.component { margin-left: 40px; }
+  #addTab .goods-row.component::before {
+    content: "";
+    position: absolute;
+    left: -26px;
+    top: -11px;
+    width: 18px;
+    height: calc(50% + 11px);
+    border-left: 2px solid color-mix(in srgb, var(--accent) 55%, transparent);
+    border-bottom: 2px solid color-mix(in srgb, var(--accent) 55%, transparent);
+    border-bottom-left-radius: 10px;
+  }
+  #addTab .goods-row.drop-target { outline: 2px dashed var(--accent); outline-offset: 3px; }
+
+  /* 저장 줄은 화면 아래에 붙어 있어서 목록이 길어도 바로 누를 수 있다 */
+  #addTab .save-bar {
+    position: sticky;
+    bottom: 12px;
+    z-index: 5;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 16px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: color-mix(in srgb, var(--surface) 92%, transparent);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, .12);
+  }
+  #addTab .save-status { flex: 1 1 240px; color: var(--label); font-size: 13.5px; }
+  #addTab .save-actions { display: flex; gap: 8px; margin-left: auto; }
+  #addTab .save-actions button { height: 42px; padding: 0 20px; }
+
+  #addPick .pick-item { background: var(--surface); }
+
+  @media (max-width: 720px) {
+    #addTab .panel { padding: 16px; }
+    #addTab .tool-grid { grid-template-columns: 1fr; }
+    #addTab .toolbar { grid-template-columns: 1fr 1fr; }
+    #addTab .toolbar input[type="search"] { grid-column: 1 / -1; }
+    #addTab .goods-row { grid-template-columns: auto minmax(0, 1fr) auto; }
+    #addTab .goods-row img { width: 100%; height: 220px; max-height: none; }
+    #addTab .goods-row .lead { display: flex; align-items: center; }
+    #addTab .goods-row .actions { grid-column: 3; display: flex; gap: 6px; }
+    #addTab .goods-row.component { margin-left: 24px; }
+    #addTab .goods-row.component::before { left: -16px; width: 10px; }
+    #addTab .save-bar { bottom: 8px; }
+  }
 </style>
 </head>
 <body>
@@ -677,20 +931,28 @@
   </section>
 
   <section id="addTab" hidden>
-    <div class="panel">
+    <div class="page-head">
       <h2>시리즈·굿즈 추가</h2>
-      <p>시리즈와 그 굿즈 사진을 한 번에 <code>picture</code> 폴더에 저장합니다. 저장하면 JSON 생성 탭으로 넘어가서 달라지는 점을 확인하고 JSON에 반영합니다.</p>
+      <p>사진을 <code>picture</code> 폴더에 저장합니다. 저장하면 JSON 생성 탭으로 넘어가서 바뀌는 내용을 확인한 뒤 JSON에 반영합니다.</p>
+    </div>
 
-      <h3>1. 시리즈</h3>
+    <div class="panel step">
+      <div class="step-head">
+        <span class="step-no">1</span>
+        <div>
+          <h3>시리즈</h3>
+          <p>이미 있는 시리즈를 고르거나, 목록 맨 위 "새 시리즈 만들기"로 새로 만듭니다.</p>
+        </div>
+      </div>
       <div class="form">
         <label>시리즈 검색
-          <input id="addSeriesQ" type="search" autocomplete="off" placeholder="이름, 국가, 날짜로 거르기 (Enter: 첫 항목 선택)">
+          <input id="addSeriesQ" type="search" autocomplete="off" placeholder="이름·국가·날짜 (Enter: 첫 항목 선택)">
         </label>
         <label>시리즈
           <select id="addSeries"></select>
         </label>
       </div>
-      <div id="addNew">
+      <div id="addNew" class="subgroup">
         <div class="form">
           <label>이름
             <input id="addName" type="text" autocomplete="off" placeholder="예: 3.7버전">
@@ -709,19 +971,36 @@
           <img id="addMainImg" alt="" class="wide">
         </div>
       </div>
-      <p id="addFolderInfo" class="muted"></p>
+      <p id="addFolderInfo" class="path"></p>
+    </div>
 
-      <h3>2. 굿즈</h3>
-      <p class="muted">사진을 여러 장 고르거나 이 칸에 끌어다 놓으세요. 사진을 누르면 크게 볼 수 있습니다. 파일명이 이미 <code>캐릭터_카테고리_가격_메모</code> 형식이면 칸이 자동으로 채워집니다.</p>
-      <div class="form">
-        <label>굿즈 사진
-          <input id="addFiles" type="file" accept="image/*" multiple>
-        </label>
+    <div class="panel step">
+      <div class="step-head">
+        <span class="step-no">2</span>
+        <div>
+          <h3>굿즈 사진</h3>
+          <p>파일명이 <code>캐릭터_카테고리_가격_메모</code> 형식이면 칸이 자동으로 채워집니다.</p>
+        </div>
       </div>
-      <div id="addBulk" class="bulk" hidden>
-        <div class="row">
-          <label class="check"><input id="addCheckAll" type="checkbox"><span>전체 선택</span></label>
-          <span class="muted">체크한 굿즈에 아래 값을 한꺼번에 넣습니다. 비워 둔 칸은 건드리지 않습니다.</span>
+      <label class="dropzone">
+        <input id="addFiles" type="file" accept="image/*" multiple>
+        <strong>사진을 여기에 끌어다 놓거나 눌러서 고르세요</strong>
+        <span>여러 장을 한 번에 넣을 수 있습니다</span>
+      </label>
+    </div>
+
+    <div id="addBulk" class="tool-grid" hidden>
+      <div class="panel step">
+        <div class="step-head">
+          <span class="step-no">3</span>
+          <div>
+            <h3>체크한 굿즈 한꺼번에 고치기</h3>
+            <p>적은 칸만 바뀌고, 비워 둔 칸은 그대로입니다.</p>
+          </div>
+        </div>
+        <div class="selection">
+          <span id="addBulkCount" class="selection-count"></span>
+          <div id="addBulkThumbs" class="bulk-thumbs" hidden></div>
         </div>
         <div class="form">
           <label>캐릭터
@@ -737,13 +1016,20 @@
             <input id="addBulkMemo" type="text" autocomplete="off">
           </label>
         </div>
-        <div id="addBulkThumbs" class="bulk-thumbs" hidden></div>
         <div class="row">
-          <button id="addBulkApply" type="button" disabled>체크한 굿즈에 적용</button>
+          <button id="addBulkApply" type="button" class="primary" disabled>체크한 굿즈에 적용</button>
           <span id="addBulkStatus" class="muted"></span>
         </div>
-        <h3>세트로 묶기</h3>
-        <p class="muted">체크한 굿즈를 구성품으로 하는 세트 대표 사진을 추가합니다. 캐릭터는 체크한 굿즈의 캐릭터를 모두 모아 넣고, 카테고리는 <code>세트</code>로 넣습니다. 체크한 굿즈의 메모는 세트 메모로 바뀝니다. 이미 있는 세트를 고르면 체크한 굿즈를 그 세트의 구성품으로 넣습니다.</p>
+      </div>
+
+      <div class="panel step">
+        <div class="step-head">
+          <span class="step-no">◆</span>
+          <div>
+            <h3>세트로 묶기</h3>
+            <p>체크한 굿즈를 구성품으로 묶습니다. 세트 캐릭터는 구성품 캐릭터로 자동으로 채워집니다.</p>
+          </div>
+        </div>
         <div class="form">
           <label>세트
             <select id="addSetTarget"></select>
@@ -756,53 +1042,54 @@
           <label>세트 가격
             <input id="addSetPrice" type="text" autocomplete="off" placeholder="예: 25위안">
           </label>
-          <label>세트 메모
+          <label>세트 메모 (세트 이름)
             <input id="addSetMemo" type="text" autocomplete="off" placeholder="예: 기염세트">
           </label>
         </div>
         <div class="row">
-          <button id="addSetApply" type="button" disabled>세트 만들기</button>
+          <button id="addSetApply" type="button" class="primary" disabled>세트 만들기</button>
           <span id="addSetStatus" class="muted"></span>
         </div>
       </div>
-      <div id="addFilter" hidden>
-        <div class="form">
-          <label>목록 검색
-            <input id="addFilterQ" type="search" autocomplete="off" placeholder="파일명으로 거르기 (띄어쓰기로 여러 낱말)">
-          </label>
-          <label>카테고리
-            <select id="addFilterCategory"></select>
-          </label>
-          <label>캐릭터
-            <select id="addFilterChara"></select>
-          </label>
-          <label>보기
-            <select id="addFilterKind">
-              <option value="">전체</option>
-              <option value="set">세트와 구성품</option>
-              <option value="loose">세트 밖 굿즈</option>
-              <option value="problem">고칠 곳 있는 것</option>
-            </select>
-          </label>
+    </div>
+
+    <div id="addFilter" class="panel step" hidden>
+      <div class="step-head">
+        <span class="step-no">4</span>
+        <div>
+          <h3>굿즈 목록</h3>
+          <p>⠿ 손잡이를 끌어 세트에 넣을 수 있습니다. 체크한 굿즈도 같이 옮겨집니다.</p>
         </div>
-        <div class="row">
-          <button id="addFilterReset" type="button">거르기 초기화</button>
-          <span id="addFilterInfo" class="muted"></span>
-        </div>
+        <span id="addFilterInfo" class="step-meta"></span>
+      </div>
+      <div class="toolbar">
+        <label class="check"><input id="addCheckAll" type="checkbox"><span>보이는 것 전체 선택</span></label>
+        <input id="addFilterQ" type="search" autocomplete="off" placeholder="파일명 검색" aria-label="목록 검색">
+        <select id="addFilterCategory" aria-label="카테고리"></select>
+        <select id="addFilterChara" aria-label="캐릭터"></select>
+        <select id="addFilterKind" aria-label="보기">
+          <option value="">전체 보기</option>
+          <option value="set">세트와 구성품</option>
+          <option value="loose">세트 밖 굿즈</option>
+          <option value="problem">고칠 곳 있는 것</option>
+        </select>
+        <button id="addFilterReset" type="button">초기화</button>
       </div>
       <div id="addRows" class="goods-rows"></div>
-
-      <div class="row">
-        <label id="addNewCatCheck" class="check" hidden><input id="addNewCatOk" type="checkbox"><span id="addNewCatText"></span></label>
-        <button id="addSubmit" type="button" class="primary" disabled>저장</button>
-        <button id="addClear" type="button">비우기</button>
-        <span id="addStatus" class="muted"></span>
-      </div>
-      <datalist id="addCountryList"></datalist>
-      <datalist id="addCharaList"></datalist>
-      <datalist id="addCategoryList"></datalist>
-      <datalist id="addPriceList"></datalist>
     </div>
+
+    <div class="save-bar">
+      <label id="addNewCatCheck" class="check" hidden><input id="addNewCatOk" type="checkbox"><span id="addNewCatText"></span></label>
+      <span id="addStatus" class="save-status"></span>
+      <div class="save-actions">
+        <button id="addClear" type="button">비우기</button>
+        <button id="addSubmit" type="button" class="primary" disabled>저장</button>
+      </div>
+    </div>
+    <datalist id="addCountryList"></datalist>
+    <datalist id="addCharaList"></datalist>
+    <datalist id="addCategoryList"></datalist>
+    <datalist id="addPriceList"></datalist>
   </section>
 
   <section id="pushTab" hidden>
@@ -2442,6 +2729,7 @@ function renderAddRows() {
   addRows.groupKey = addGroupKey();
   box.replaceChildren();
   $("addBulk").hidden = !addRows.length;
+  $("addFilter").hidden = !addRows.length;
   for (const row of addRows) {
     const isSet = sets.get(row.memo.trim()) === row;
     const components = isSet ? addRows.filter((other) => parentOf(other) === row).length : 0;
@@ -2592,6 +2880,7 @@ function updateBulk() {
   const checked = addRows.filter((row) => row.checked);
   // 체크한 굿즈 사진을 적용 버튼 위에 띄운다
   $("addBulkThumbs").hidden = !checked.length;
+  $("addBulkCount").textContent = checked.length ? `체크한 굿즈 ${checked.length}개` : "아래 목록에서 고칠 굿즈를 체크하세요.";
   $("addBulkThumbs").replaceChildren(...checked.map((row) => {
     const img = el("img");
     img.alt = "";
@@ -3068,7 +3357,7 @@ $("addSubmit").onclick = submitAdd;
 $("addNewCatOk").onchange = updateAdd;
 $("addClear").onclick = clearAdd;
 
-const addPanel = $("addTab").querySelector(".panel");
+const addPanel = $("addTab");
 addPanel.ondragover = (event) => {
   if (addDragRows) return; // 굿즈 줄을 끄는 중이면 사진 넣기가 아니다
   event.preventDefault();
