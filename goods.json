@@ -21022,6 +21022,83 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2026-09-28",
+    "goodsSeries": "2026 중과금 선물 박스",
+    "goodsPrice": "구성품",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "박스",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 중과금 선물 박스_중국_2026-09-28/goods/카르티시아_박스_구성품_세트.jpg",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-09-28",
+    "goodsSeries": "2026 중과금 선물 박스",
+    "goodsPrice": "사은품",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 중과금 선물 박스_중국_2026-09-28/goods/카르티시아_세트_사은품_세트.jpg",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-09-28",
+    "goodsSeries": "2026 중과금 선물 박스",
+    "goodsPrice": "구성품",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "아크릴색지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 중과금 선물 박스_중국_2026-09-28/goods/카르티시아_아크릴색지_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-09-28",
+    "goodsSeries": "2026 중과금 선물 박스",
+    "goodsPrice": "구성품",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "책갈피",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 중과금 선물 박스_중국_2026-09-28/goods/카르티시아_책갈피_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-09-28",
+    "goodsSeries": "2026 중과금 선물 박스",
+    "goodsPrice": "구성품",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 중과금 선물 박스_중국_2026-09-28/goods/카르티시아_캔뱃지_구성품_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-09-28",
+    "goodsSeries": "2026 중과금 선물 박스",
+    "goodsPrice": "구성품1",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "피규어",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 중과금 선물 박스_중국_2026-09-28/goods/카르티시아_피규어_구성품1_세트.jpg",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-09-28",
+    "goodsSeries": "2026 중과금 선물 박스",
+    "goodsPrice": "구성품2",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "피규어",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 중과금 선물 박스_중국_2026-09-28/goods/카르티시아_피규어_구성품2_세트.png",
+    "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2026-07-03",
     "goodsSeries": "2026BOOKOFF",
     "goodsPrice": "3850엔",
@@ -36158,6 +36235,50 @@
   },
   {
     "goodsId": 0,
+    "goodsReleaseDate": "2026-07-10",
+    "goodsSeries": "3.5 bilibili 이벤트",
+    "goodsPrice": "사은품",
+    "goodsChara": "수수",
+    "goodsCategory": "책갈피",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.5 bilibili 이벤트_중국_2026-07-10/goods/수수_책갈피_사은품_사은품.png",
+    "goodsMemo": "사은품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-07-10",
+    "goodsSeries": "3.5 bilibili 이벤트",
+    "goodsPrice": "사은품",
+    "goodsChara": "양양현령",
+    "goodsCategory": "책갈피",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.5 bilibili 이벤트_중국_2026-07-10/goods/양양현령_책갈피_사은품_사은품.png",
+    "goodsMemo": "사은품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-10-01",
+    "goodsSeries": "3.5 샤오홍슈",
+    "goodsPrice": "사은푼",
+    "goodsChara": "수수",
+    "goodsCategory": "책갈피",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.5 샤오홍슈_중국_2026-10-01/goods/수수_책갈피_사은푼_사은푼.png",
+    "goodsMemo": "사은푼"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-10-01",
+    "goodsSeries": "3.5 샤오홍슈",
+    "goodsPrice": "사은품",
+    "goodsChara": "양양현령",
+    "goodsCategory": "책갈피",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.5 샤오홍슈_중국_2026-10-01/goods/양양현령_책갈피_사은품_사은품.png",
+    "goodsMemo": "사은품"
+  },
+  {
+    "goodsId": 0,
     "goodsReleaseDate": "2026-08-19",
     "goodsSeries": "3.5버전",
     "goodsPrice": "59위안",
@@ -50554,6 +50675,17 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/고양이우체국콜라보_중국_2026-07-10/goods/양양현령_엽서_행사참여_증정품.png",
     "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
+    "goodsReleaseDate": "2026-07-10",
+    "goodsSeries": "고양이우체국콜라보",
+    "goodsPrice": "사은품",
+    "goodsChara": "양양현령",
+    "goodsCategory": "책갈피",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/고양이우체국콜라보_중국_2026-07-10/goods/양양현령_책갈피_사은품_사은품.png",
+    "goodsMemo": "사은품"
   },
   {
     "goodsId": 0,

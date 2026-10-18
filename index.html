@@ -325,6 +325,8 @@
     border-radius: 8px;
     background: var(--bg);
   }
+  .goods-row.component { margin-left: 48px; border-left: 3px solid var(--accent); }
+  .goods-row .set-badge { margin-bottom: 6px; font-size: 13px; font-weight: 600; color: var(--accent); }
   .goods-row.invalid { border-color: #d64545; }
   .goods-row img {
     width: 220px;
@@ -355,6 +357,7 @@
     .goods-row { grid-template-columns: auto minmax(0, 1fr) auto; }
     .goods-row img { grid-column: 1 / -1; grid-row: 2; width: 100%; height: auto; max-height: 60vh; }
     .goods-row > div { grid-column: 1 / -1; grid-row: 3; }
+    .goods-row.component { margin-left: 20px; }
   }
   .goods-row .form { margin: 0 0 6px; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 6px; }
   .goods-row .form input { background: var(--surface); }
@@ -2204,12 +2207,46 @@ function addGoodsFiles(files) {
   renderAddRows();
 }
 
+// 카테고리가 세트인 줄 바로 밑에, 메모가 같은 굿즈를 구성품으로 들여 써서 모은다
+function addRowGroups() {
+  const sets = new Map();
+  for (const row of addRows) {
+    const memo = row.memo.trim();
+    if (row.category.trim() === "세트" && memo && !sets.has(memo)) sets.set(memo, row);
+  }
+  const parentOf = (row) => (row.category.trim() !== "세트" && sets.get(row.memo.trim())) || null;
+  const order = [];
+  for (const row of addRows) {
+    if (parentOf(row)) continue;
+    order.push(row);
+    if (sets.get(row.memo.trim()) === row) order.push(...addRows.filter((other) => parentOf(other) === row));
+  }
+  return { order, parentOf, sets };
+}
+
+function addGroupKey() {
+  const { order, parentOf } = addRowGroups();
+  return order.map((row) => `${addRows.indexOf(row)}:${parentOf(row) ? addRows.indexOf(parentOf(row)) : ""}`).join(",");
+}
+
+// 메모·카테고리를 바꿔서 세트 묶음이 달라졌을 때만 다시 그린다
+function regroupAddRows() {
+  if (addRows.length && addGroupKey() !== addRows.groupKey) renderAddRows();
+}
+
 function renderAddRows() {
   const box = $("addRows");
+  // 다시 그려도 쓰던 입력칸에 커서가 남게 한다
+  const focused = addRows.find((row) => row.dom && Object.values(row.dom.inputs).includes(document.activeElement));
+  const focusedKey = focused && Object.keys(focused.dom.inputs).find((key) => focused.dom.inputs[key] === document.activeElement);
+  const { order, parentOf, sets } = addRowGroups();
+  addRows = order;
+  addRows.groupKey = addGroupKey();
   box.replaceChildren();
   $("addBulk").hidden = !addRows.length;
   for (const row of addRows) {
     const line = el("div", "goods-row");
+    if (parentOf(row)) line.classList.add("component");
     const pick = el("input", "pick");
     pick.type = "checkbox";
     pick.title = "일괄 적용할 굿즈로 선택";
@@ -2231,6 +2268,10 @@ function renderAddRows() {
     img.onclick = () => zoomImage(row.url);
 
     const middle = el("div");
+    if (sets.get(row.memo.trim()) === row) {
+      const count = addRows.filter((other) => parentOf(other) === row).length;
+      middle.append(el("div", "set-badge", `세트 · 구성품 ${count}개`));
+    }
     const fields = el("div", "form");
     const inputs = {};
     for (const [key, label, list] of [
@@ -2250,6 +2291,7 @@ function renderAddRows() {
         if (key === "chara") updateSet();
         updateAdd();
       };
+      if (key === "memo" || key === "category") input.onchange = regroupAddRows;
       wrap.append(input);
       fields.append(wrap);
       inputs[key] = input;
