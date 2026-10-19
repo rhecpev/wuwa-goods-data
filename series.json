@@ -1121,6 +1121,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "라하이로이 블루투스 스피커",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/라하이로이 블루투스 스피커_중국_2026-10-20/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "남랑자,아브,에이메스,여랑자",
+    "seriesDate": "2026-10-20"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "로손1차(중국)",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/로손1차(중국)_중국_2025-05-31/mainTheme.png",
     "seriesCountry": "중국",
