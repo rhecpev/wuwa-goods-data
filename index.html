@@ -541,7 +541,8 @@
   .viewer dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; font-size: 14px; }
   .viewer dt { color: var(--muted); white-space: nowrap; }
   .viewer dd { margin: 0; overflow-wrap: anywhere; }
-  .viewer .actions { margin-top: auto; display: flex; gap: 8px; flex-wrap: wrap; }
+  .viewer .foot { margin-top: auto; display: grid; gap: 8px; }
+  .viewer .actions { display: flex; gap: 8px; flex-wrap: wrap; }
   .viewer .actions a,
   .viewer .actions button {
     flex: 1;
@@ -561,6 +562,60 @@
     font-weight: 600;
   }
   .viewer .pos { color: var(--muted); font-size: 12.5px; }
+  .viewer .actions .danger { color: #d64545; border-color: #d64545; background: transparent; }
+  .viewer .actions button:disabled { opacity: .45; cursor: not-allowed; }
+  .edit-form { display: grid; gap: 10px; }
+  .edit-form label { display: grid; gap: 4px; font-size: 13px; font-weight: 600; }
+  .edit-form input {
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--bg);
+    color: var(--text);
+    min-width: 0;
+    font: inherit;
+    font-weight: 400;
+  }
+  .edit-form input[type="file"] { height: auto; padding: 6px; }
+  .edit-name { font-size: 12.5px; color: var(--muted); overflow-wrap: anywhere; }
+  .edit-name b { color: var(--accent); font-weight: 600; }
+  .edit-name .problem { color: #d64545; }
+  .v-status { font-size: 13px; color: #d64545; overflow-wrap: anywhere; }
+  #ask { width: min(560px, 96vw); }
+  .ask-list { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; margin: 0; font-size: 14px; }
+  .ask-list dt { color: var(--muted); white-space: nowrap; }
+  .ask-list dd { margin: 0; overflow-wrap: anywhere; }
+  .ask-list del { color: var(--muted); }
+  .ask-images { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .ask-images img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface-2);
+  }
+  .pending {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 0 12px;
+    padding: 10px 14px;
+    border: 1px solid var(--accent);
+    border-radius: var(--radius);
+    background: var(--accent-soft);
+    font-size: 14px;
+  }
+  .pending button {
+    padding: 6px 12px;
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    background: var(--accent);
+    color: var(--on-accent);
+    font-weight: 600;
+  }
 
   @media (max-width: 720px) {
     .grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; }
@@ -859,6 +914,7 @@
 <main>
   <div id="browse">
     <div id="banner"></div>
+    <div id="pending" class="pending" hidden></div>
     <div class="status"><span id="count"></span></div>
     <div id="grid" class="grid series"></div>
     <div id="sentinel"></div>
@@ -1129,13 +1185,49 @@
     <aside>
       <h2 id="vTitle"></h2>
       <dl id="vInfo"></dl>
+      <div id="vEdit" class="edit-form" hidden>
+        <label>캐릭터 (여러 명은 콤마)<input id="vEditChara" type="text" autocomplete="off"></label>
+        <label>카테고리<input id="vEditCategory" type="text" autocomplete="off"></label>
+        <label>가격<input id="vEditPrice" type="text" autocomplete="off"></label>
+        <label>메모 (없으면 비워 두기)<input id="vEditMemo" type="text" autocomplete="off"></label>
+        <label>사진 바꾸기 (안 고르면 그대로)<input id="vEditFile" type="file" accept="image/*"></label>
+        <div id="vEditName" class="edit-name"></div>
+      </div>
       <div class="pos" id="vPos"></div>
-      <div class="actions">
-        <button id="vSeries" type="button" class="primary">이 시리즈 보기</button>
-        <a id="vOpen" target="_blank" rel="noopener">원본 열기</a>
-        <button id="vClose" type="button">닫기</button>
+      <div class="foot">
+        <div id="vStatus" class="v-status" hidden></div>
+        <div class="actions" id="vActions">
+          <button id="vSeries" type="button" class="primary">이 시리즈 보기</button>
+          <a id="vOpen" target="_blank" rel="noopener">원본 열기</a>
+          <button id="vClose" type="button">닫기</button>
+        </div>
+        <div class="actions" id="vManage" hidden>
+          <button id="vEditStart" type="button">수정</button>
+          <button id="vDelete" type="button" class="danger">삭제</button>
+        </div>
+        <div class="actions" id="vEditActions" hidden>
+          <button id="vEditApply" type="button" class="primary">수정 적용</button>
+          <button id="vEditCancel" type="button">취소</button>
+        </div>
       </div>
     </aside>
+  </div>
+  <datalist id="editCharaList"></datalist>
+  <datalist id="editCategoryList"></datalist>
+  <datalist id="editPriceList"></datalist>
+  <datalist id="editMemoList"></datalist>
+</dialog>
+
+<dialog id="ask">
+  <div class="pick-dialog">
+    <h3 id="askTitle"></h3>
+    <div id="askImages" class="ask-images"></div>
+    <dl id="askList" class="ask-list"></dl>
+    <p id="askNote" class="muted"></p>
+    <div class="row">
+      <button id="askOk" type="button"></button>
+      <button id="askCancel" type="button">취소</button>
+    </div>
   </div>
 </dialog>
 
@@ -1251,6 +1343,13 @@ async function load() {
   }
   seriesByName = enriched;
   allCharacters = characters;
+
+  // 굿즈 탭에서 고친 것 중 JSON에 반영된 것은 빼고, 아직 저장 안 한 것만 남긴다
+  const urls = new Set(goods.map((g) => g.goodsUrl));
+  for (const [url, edit] of goodsEdits) {
+    const saved = edit ? urls.has(edit.goodsUrl) && (edit.goodsUrl === url || !urls.has(url)) : !urls.has(url);
+    if (saved) goodsEdits.delete(url);
+  }
   $("charaTotal").textContent = characters.length.toLocaleString();
 
   $("seriesTotal").textContent = allSeries.length.toLocaleString();
@@ -1314,7 +1413,7 @@ function apply() {
   }
 
   const isSeries = state.view === "series";
-  const source = isSeries ? allSeries : allGoods;
+  const source = isSeries ? allSeries : shownGoods();
   const dateOf = isSeries ? (s) => s.seriesDate : (g) => g.goodsReleaseDate;
   const direction = state.sort === "asc" ? 1 : -1;
 
@@ -1328,6 +1427,7 @@ function apply() {
   $("sort").value = state.sort;
 
   renderBanner();
+  renderPending();
   $("count").textContent = `${isSeries ? "시리즈" : "굿즈"} ${filtered.length.toLocaleString()}개`;
 
   const grid = $("grid");
@@ -1389,22 +1489,24 @@ function seriesCard(series) {
   return card;
 }
 
-function goodsCard(goods, index) {
+function goodsCard(goods) {
   const card = el("button", "card");
   card.type = "button";
   const img = el("img", "thumb");
   img.loading = "lazy";
   img.alt = `${goods.goodsChara} ${goods.goodsCategory}`;
-  setImage(img, goods.goodsUrl);
+  showGoodsImage(img, goods);
 
   const body = el("div", "body");
   body.append(el("div", "title", goods.goodsChara), el("div", "meta", goods.goodsSeries));
   const tags = el("div", "tags");
   tags.append(el("span", "tag accent", goods.goodsCategory), el("span", "tag", goods.goodsPrice));
   if (goods.goodsMemo) tags.append(el("span", "tag", goods.goodsMemo));
+  if (goods.edited) tags.append(el("span", "tag accent", "수정됨"));
   body.append(tags);
   card.append(img, body);
-  card.onclick = () => openViewer(index);
+  // 수정·삭제로 순서가 밀릴 수 있어서 누를 때 위치를 찾는다
+  card.onclick = () => openViewer(filtered.indexOf(goods));
   return card;
 }
 
@@ -1413,7 +1515,7 @@ function renderMore() {
   const fragment = document.createDocumentFragment();
   const end = Math.min(rendered + PAGE_SIZE, filtered.length);
   for (let i = rendered; i < end; i++) {
-    fragment.append(state.view === "series" ? seriesCard(filtered[i]) : goodsCard(filtered[i], i));
+    fragment.append(state.view === "series" ? seriesCard(filtered[i]) : goodsCard(filtered[i]));
   }
   rendered = end;
   $("grid").append(fragment);
@@ -1432,7 +1534,8 @@ function openSeries(name) {
 function openViewer(index) {
   viewerIndex = index;
   const goods = filtered[index];
-  setImage($("vImg"), goods.goodsUrl);
+  setGoodsEditing(false);
+  showGoodsImage($("vImg"), goods);
   $("vImg").alt = `${goods.goodsChara} ${goods.goodsCategory}`;
   $("vTitle").textContent = `${goods.goodsChara} ${goods.goodsCategory}`;
 
@@ -1451,7 +1554,12 @@ function openViewer(index) {
     if (value) info.append(el("dt", "", label), el("dd", "", value));
   }
   $("vPos").textContent = `${(index + 1).toLocaleString()} / ${filtered.length.toLocaleString()}`;
-  $("vOpen").href = imagePaths(goods.goodsUrl).remote;
+  // 고친 굿즈는 아직 GitHub에 없으니 로컬 파일을 연다
+  $("vOpen").href = goods.edited ? imagePaths(goods.goodsUrl).local : imagePaths(goods.goodsUrl).remote;
+  $("vStatus").hidden = true;
+  checkServer().then((ok) => {
+    if (!viewerEditing) $("vManage").hidden = !ok;
+  });
   $("vSeries").hidden = state.series === goods.goodsSeries;
   $("vPrev").hidden = index === 0;
   $("vNext").hidden = index === filtered.length - 1;
@@ -1533,7 +1641,7 @@ $("viewer").onclick = (event) => {
   if (event.target === $("viewer")) $("viewer").close();
 };
 document.addEventListener("keydown", (event) => {
-  if (!$("viewer").open) return;
+  if (!$("viewer").open || viewerEditing || $("ask").open) return;
   if (event.key === "ArrowLeft") stepViewer(-1);
   if (event.key === "ArrowRight") stepViewer(1);
 });
@@ -1768,7 +1876,18 @@ async function scanProject() {
     summary,
     problems: collectProblems(source, result),
     changes: collectChanges(result, categories),
+    photoChanges: await collectPhotoChanges(result),
   };
+}
+
+// 파일 이름은 그대로고 사진만 바뀐 굿즈. JSON에는 차이가 없어서 git 변경 내역으로 찾는다
+async function collectPhotoChanges(result) {
+  const status = canSave ? await siteJson("api/git/status") : null;
+  if (!status || !status.changes) return [];
+  const urls = new Set(result.goods.map((g) => g.goodsUrl));
+  return status.changes
+    .filter((change) => change.kind === "modified" && urls.has(RAW_PREFIX + change.path))
+    .map((change) => ({ path: change.path.slice("picture/".length), caption: change.path.split("/").pop(), keepExtension: true, fresh: true }));
 }
 
 const IMAGE_FILE = /\.(png|jpe?g|webp|avif|gif)$/i;
@@ -1829,10 +1948,23 @@ function collectChanges(result, currentCategories) {
 
   const before = new Set(allGoods.map((g) => g.goodsUrl));
   const after = new Set(result.goods.map((g) => g.goodsUrl));
+
+  // 굿즈 탭에서 이름을 바꾼 굿즈는 추가·삭제로 나누지 않고 한 줄로 보여 준다
+  const renamed = [...goodsEdits].filter(([url, edit]) =>
+    edit && edit.goodsUrl !== url && before.has(url) && !after.has(url) && after.has(edit.goodsUrl) && !before.has(edit.goodsUrl));
+  const renamedFrom = new Set(renamed.map(([url]) => url));
+  const renamedTo = new Set(renamed.map(([, edit]) => edit.goodsUrl));
+  add("이름이 바뀌는 굿즈", "굿즈 탭에서 정보를 고친 굿즈입니다.",
+    renamed.map(([url, edit]) => ({
+      path: toPath(edit.goodsUrl),
+      caption: `${fileOf(url)} → ${fileOf(edit.goodsUrl)}${edit.imageVersion ? " (사진도 바뀜)" : ""}`,
+      keepExtension: true,
+      fresh: Boolean(edit.imageVersion),
+    })));
   add("추가되는 굿즈", "picture 폴더에 새로 생겼거나 이름이 바뀐 파일입니다.",
-    [...after].filter((url) => !before.has(url)).map((url) => ({ path: toPath(url), caption: fileOf(url) })));
+    [...after].filter((url) => !before.has(url) && !renamedTo.has(url)).map((url) => ({ path: toPath(url), caption: fileOf(url) })));
   add("삭제되는 굿즈", "지금 JSON에는 있지만 picture 폴더에 파일이 없습니다.",
-    [...before].filter((url) => !after.has(url)).map((url) => ({ caption: toPath(url) })));
+    [...before].filter((url) => !after.has(url) && !renamedFrom.has(url)).map((url) => ({ caption: toPath(url) })));
 
   const oldSeries = new Map(allSeries.map((series) => [series.seriesNm, series]));
   const newNames = new Set(result.series.map((series) => series.seriesNm));
@@ -1879,7 +2011,7 @@ function pictureUrl(path) {
   return "picture/" + path.split("/").map(encodeURIComponent).join("/");
 }
 
-function thumbCard(path, caption) {
+function thumbCard(path, caption, fresh) {
   const card = el("a", "card");
   card.href = pictureUrl(path);
   card.target = "_blank";
@@ -1887,7 +2019,8 @@ function thumbCard(path, caption) {
   const img = el("img", "thumb");
   img.loading = "lazy";
   img.alt = "";
-  img.src = card.href;
+  // 사진이 바뀐 파일은 브라우저에 남은 옛 사진을 쓰지 않게 한다
+  img.src = fresh ? `${card.href}?v=${Date.now()}` : card.href;
   img.onerror = () => img.classList.add("broken");
   const body = el("div", "body");
   body.append(el("div", "meta", caption));
@@ -1919,7 +2052,7 @@ function issueBox(kind, title, items, note) {
     box.append(el("h4", "", `${folder} (${group.length})`));
     const grid = el("div", "thumbs");
     for (const item of group) {
-      grid.append(thumbCard(item.path, item.keepExtension ? item.caption : stripExtension(item.caption)));
+      grid.append(thumbCard(item.path, item.keepExtension ? item.caption : stripExtension(item.caption), item.fresh));
     }
     box.append(grid);
   }
@@ -1934,7 +2067,7 @@ function download(name, text) {
   setTimeout(() => URL.revokeObjectURL(link.href), 1000);
 }
 
-function renderBuild({ result, problems, changes }) {
+function renderBuild({ result, problems, changes, photoChanges }) {
   const changeCount = changes ? problemCount(changes) : 0;
   const out = $("buildResult");
   out.replaceChildren();
@@ -1978,6 +2111,15 @@ function renderBuild({ result, problems, changes }) {
     for (const change of changes) diff.append(issueBox(change.kind, change.title, change.items, change.note));
   }
   out.append(diff);
+
+  // JSON은 그대로라 저장과 상관없지만, 올리기 전에 무엇이 바뀌었는지 볼 수 있게 한다
+  if (photoChanges.length) {
+    const photos = el("div", "panel");
+    photos.append(el("h3", "", `사진만 바뀐 굿즈 (${photoChanges.length})`));
+    photos.append(issueBox("ok", "사진 변경", photoChanges,
+      "파일 이름이 그대로라 JSON 내용은 달라지지 않습니다. 올리기 탭에서 커밋·푸시하면 앱에 반영됩니다."));
+    out.append(photos);
+  }
 
   // exe(파이썬, Windows)가 쓰는 파일과 바이트 단위로 같도록 줄바꿈을 CRLF로 맞춘다.
   const toText = (data) => JSON.stringify(data, null, 2).replace(/\n/g, "\r\n");
@@ -2511,6 +2653,9 @@ function renderSuggest() {
     };
     return item;
   }));
+  // 열린 창(dialog) 안의 칸이면 목록도 그 안에 넣어야 창 위에 보인다
+  const host = input.closest("dialog") || document.body;
+  if (suggestBox.parentNode !== host) host.append(suggestBox);
   const rect = input.getBoundingClientRect();
   const below = window.innerHeight - rect.bottom;
   suggestBox.style.left = `${rect.left}px`;
@@ -3370,6 +3515,358 @@ addPanel.ondrop = (event) => {
   addPanel.classList.remove("dragover");
   addGoodsFiles([...event.dataTransfer.files]);
 };
+
+// ── 굿즈 탭: 굿즈 하나를 고치거나 지운다 ─────────────────────────────────────
+// picture 폴더의 파일 이름(=정보)과 사진을 바로 바꾸고, JSON은 생성 탭에서 저장할 때 반영된다.
+// 그 전까지는 goodsEdits에 적어 두고 굿즈 탭에 바뀐 모습으로 보여 준다.
+
+let goodsEdits = new Map(); // JSON의 goodsUrl → 바뀐 굿즈 (지웠으면 null)
+let viewerEditing = false;
+let editPreviewUrl = null;
+let askResolve = null;
+
+function shownGoods() {
+  if (!goodsEdits.size) return allGoods;
+  return allGoods.flatMap((g) => {
+    if (!goodsEdits.has(g.goodsUrl)) return [g];
+    const edit = goodsEdits.get(g.goodsUrl);
+    return edit ? [edit] : [];
+  });
+}
+
+function showGoodsImage(img, goods) {
+  setImage(img, goods.goodsUrl);
+  // 같은 이름으로 사진만 바꿨을 때 브라우저에 남은 옛 사진을 쓰지 않게 한다
+  if (goods.imageVersion) img.src = `${imagePaths(goods.goodsUrl).local}?v=${goods.imageVersion}`;
+}
+
+function goodsPath(goods) {
+  return goods.goodsUrl.slice(RAW_PREFIX.length + "picture/".length);
+}
+
+function goodsFolderUrl(goods) {
+  return goods.goodsUrl.slice(0, goods.goodsUrl.lastIndexOf("/") + 1);
+}
+
+function renderPending() {
+  const box = $("pending");
+  const edits = [...goodsEdits.values()];
+  box.hidden = !edits.length || state.view !== "goods";
+  if (box.hidden) return;
+  const deleted = edits.filter((edit) => !edit).length;
+  const counts = [edits.length - deleted && `수정 ${edits.length - deleted}개`, deleted && `삭제 ${deleted}개`].filter(Boolean);
+  const go = el("button", "", "JSON 생성 탭으로");
+  go.type = "button";
+  go.onclick = () => {
+    state.view = "build";
+    state.series = "";
+    apply();
+    window.scrollTo(0, 0);
+  };
+  box.replaceChildren(
+    el("span", "", `JSON에 저장 안 한 굿즈 변경: ${counts.join(", ")}. picture 폴더의 파일은 이미 바뀌었고, JSON 생성 탭에서 저장해야 데이터에 반영됩니다.`),
+    go
+  );
+}
+
+// 바뀐 굿즈 하나만 목록과 화면에서 바꿔 끼운다 (전체를 다시 그리면 스크롤이 처음으로 간다)
+function replaceShown(old, next) {
+  const index = filtered.indexOf(old);
+  if (index < 0) return -1;
+  const card = index < rendered ? $("grid").children[index] : null;
+  if (next) {
+    filtered[index] = next;
+    if (card) card.replaceWith(goodsCard(next));
+  } else {
+    filtered.splice(index, 1);
+    if (card) {
+      card.remove();
+      rendered--;
+    }
+  }
+  $("count").textContent = `굿즈 ${filtered.length.toLocaleString()}개`;
+  renderPending();
+  return index;
+}
+
+function setGoodsEditing(on) {
+  viewerEditing = on;
+  closeSuggest();
+  $("vEdit").hidden = !on;
+  $("vInfo").hidden = on;
+  $("vActions").hidden = on;
+  $("vEditActions").hidden = !on;
+  if (on) $("vManage").hidden = true;
+  if (on) $("vPrev").hidden = $("vNext").hidden = true;
+  $("vEditFile").value = "";
+  if (editPreviewUrl) URL.revokeObjectURL(editPreviewUrl);
+  editPreviewUrl = null;
+}
+
+function startGoodsEdit() {
+  const goods = filtered[viewerIndex];
+  setGoodsEditing(true);
+  $("vStatus").hidden = true;
+  $("vEditChara").value = goods.charas.join(",");
+  $("vEditCategory").value = goods.goodsCategory;
+  $("vEditPrice").value = goods.goodsPrice;
+  $("vEditMemo").value = goods.goodsMemo || "";
+
+  const shown = shownGoods();
+  const byCount = (map) => [...map].sort((a, b) => b[1] - a[1]).map(([value]) => value);
+  const folder = goodsFolderUrl(goods);
+  fillDatalist("editCharaList", allCharacters.map((c) => c.charaNm.trim()));
+  fillDatalist("editCategoryList", byCount(countBy(shown, (g) => [g.goodsCategory])));
+  fillDatalist("editPriceList", byCount(countBy(shown, (g) => [g.goodsPrice])).slice(0, 60));
+  fillDatalist("editMemoList", byCount(countBy(shown.filter((g) => goodsFolderUrl(g) === folder && g.goodsMemo), (g) => [g.goodsMemo])));
+  updateGoodsEdit();
+  $("vEditChara").focus();
+}
+
+function cancelGoodsEdit() {
+  openViewer(viewerIndex);
+}
+
+function goodsEditState() {
+  const goods = filtered[viewerIndex];
+  const charas = splitCharas($("vEditChara").value);
+  const values = {
+    chara: charas.join(","),
+    category: $("vEditCategory").value.trim(),
+    price: $("vEditPrice").value.trim(),
+    memo: $("vEditMemo").value.trim(),
+  };
+  const file = $("vEditFile").files[0] || null;
+  const oldName = goods.goodsUrl.split("/").pop();
+  const ext = file ? fileExtension(file.name) : fileExtension(oldName);
+  const name = [values.chara, values.category, values.price, values.memo].filter(Boolean).join("_") + ext;
+
+  const known = new Set(allCharacters.map((c) => c.charaNm.trim()));
+  const missing = charas.filter((c) => !known.has(c));
+  let problem = "";
+  if (!charas.length) problem = "캐릭터를 적어 주세요.";
+  else if (missing.length) problem = `등록되지 않은 캐릭터: ${missing.join(", ")}`;
+  else if (!values.category || !values.price) problem = "카테고리와 가격은 꼭 적어야 합니다.";
+  else if (values.category.includes("_") || values.price.includes("_")) problem = "카테고리·가격에는 _ 를 쓸 수 없습니다.";
+  else if (BAD_PATH_CHARS.test(name)) problem = '파일명에 쓸 수 없는 글자가 있습니다: / \\ : * ? " < > |';
+  else if (file && !IMAGE_FILE.test(file.name)) problem = "쓸 수 없는 사진 형식입니다 (png, jpg, webp, avif, gif).";
+  else {
+    // 확장자만 다른 것도 같은 굿즈로 본다
+    const folder = goodsFolderUrl(goods);
+    const stem = stripExtension(name).toLowerCase();
+    const same = shownGoods().find((g) =>
+      g !== goods && goodsFolderUrl(g) === folder && stripExtension(g.goodsUrl.split("/").pop()).toLowerCase() === stem);
+    if (same) problem = "같은 시리즈에 내용이 완전히 같은 굿즈가 이미 있습니다.";
+  }
+  return { goods, values, file, ext, name, oldName, problem, changed: name !== oldName || Boolean(file) };
+}
+
+function updateGoodsEdit() {
+  const edit = goodsEditState();
+  const box = $("vEditName");
+  box.replaceChildren();
+  if (edit.problem) box.append(el("div", "problem", edit.problem));
+  else if (!edit.changed) box.append(el("div", "", "바뀐 것이 없습니다."));
+  else {
+    const line = el("div", "", "새 파일명: ");
+    line.append(el("b", "", edit.name));
+    box.append(line);
+  }
+  $("vEditApply").disabled = Boolean(edit.problem) || !edit.changed;
+}
+
+// 진짜 할지 묻는 창. 고르면 true, 취소·바깥 누르기·Esc면 false
+function askConfirm({ title, images, rows, note, ok, danger }) {
+  closeSuggest();
+  $("askTitle").textContent = title;
+  $("askImages").replaceChildren(...images);
+  $("askImages").hidden = !images.length;
+  $("askList").replaceChildren();
+  for (const [label, before, after] of rows) {
+    const value = el("dd");
+    if (after == null) value.textContent = before;
+    else value.append(el("del", "", before || "(없음)"), " → ", el("b", "", after || "(없음)"));
+    $("askList").append(el("dt", "", label), value);
+  }
+  $("askNote").textContent = note || "";
+  $("askNote").hidden = !note;
+  $("askOk").textContent = ok;
+  $("askOk").className = danger ? "danger" : "primary";
+  $("ask").showModal();
+  $("askCancel").focus(); // 잘못 Enter를 눌러도 실행되지 않게 취소에 둔다
+  return new Promise((resolve) => (askResolve = resolve));
+}
+
+function answerAsk(answer) {
+  const resolve = askResolve;
+  askResolve = null;
+  if ($("ask").open) $("ask").close();
+  if (resolve) resolve(answer);
+}
+
+function fileBase64(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result.split(",")[1]);
+    reader.onerror = () => reject(reader.error);
+    reader.readAsDataURL(file);
+  });
+}
+
+async function sendGoodsEdit(body) {
+  const res = await fetch("api/goods/edit", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "X-Goods-Save": "1" },
+    body: JSON.stringify(body),
+  });
+  const data = await res.json();
+  if (!res.ok) throw new Error(data.error || res.status);
+  return data;
+}
+
+function goodsBusy(on) {
+  for (const id of ["vEditApply", "vEditCancel", "vEditStart", "vDelete"]) $(id).disabled = on;
+  if (on) {
+    $("vStatus").hidden = false;
+    $("vStatus").textContent = "저장 중…";
+  }
+}
+
+function goodsFailed(error) {
+  $("vStatus").hidden = false;
+  $("vStatus").textContent = `실패: ${error.message}`;
+  if (viewerEditing) updateGoodsEdit();
+}
+
+async function applyGoodsEdit() {
+  const edit = goodsEditState();
+  if (edit.problem || !edit.changed) return;
+  const { goods, values, file } = edit;
+
+  const images = [];
+  const before = el("img");
+  before.alt = "지금 사진";
+  showGoodsImage(before, goods);
+  images.push(before);
+  if (file) {
+    const after = el("img");
+    after.alt = "새 사진";
+    after.src = editPreviewUrl;
+    images.push(el("span", "muted", "→"), after);
+  }
+  const rows = [
+    ["캐릭터", goods.charas.join(","), values.chara],
+    ["카테고리", goods.goodsCategory, values.category],
+    ["가격", goods.goodsPrice, values.price],
+    ["메모", goods.goodsMemo || "", values.memo],
+  ].filter(([, a, b]) => a !== b);
+  if (edit.name !== edit.oldName) rows.push(["파일명", edit.oldName, edit.name]);
+  if (file) rows.push(["사진", "새 사진으로 바꿉니다"]);
+  const ok = await askConfirm({
+    title: "이 굿즈를 수정할까요?",
+    images,
+    rows,
+    note: `${goods.goodsSeries} 시리즈 · picture 폴더의 파일이 바로 바뀝니다.`,
+    ok: "수정",
+  });
+  if (!ok) return;
+
+  goodsBusy(true);
+  try {
+    const body = { action: "update", path: goodsPath(goods), ...values };
+    if (file) Object.assign(body, { image: await fileBase64(file), ext: edit.ext });
+    const data = await sendGoodsEdit(body);
+
+    const key = goods.jsonUrl || goods.goodsUrl;
+    const next = {
+      ...goods,
+      goodsChara: values.chara,
+      charas: splitCharas(values.chara),
+      goodsCategory: values.category,
+      goodsPrice: values.price,
+      goodsMemo: values.memo,
+      goodsUrl: goodsFolderUrl(goods) + data.name,
+      haystack: [values.chara, values.category, values.price, values.memo, goods.goodsSeries].join(" ").toLowerCase(),
+      jsonUrl: key,
+      imageVersion: file ? Date.now() : goods.imageVersion,
+      edited: true,
+    };
+    goodsEdits.set(key, next);
+    scanStarted = false; // 다음에 생성·문제 탭을 열 때 다시 검사
+    addReady = false;
+    goodsBusy(false);
+    openViewer(replaceShown(goods, next));
+  } catch (error) {
+    goodsBusy(false);
+    goodsFailed(error);
+  }
+}
+
+async function deleteGoods() {
+  const goods = filtered[viewerIndex];
+  const image = el("img");
+  image.alt = "";
+  showGoodsImage(image, goods);
+  // 세트 사진을 지워도 메모로 묶인 구성품은 남는다
+  const folder = goodsFolderUrl(goods);
+  const components = goods.goodsCategory === "세트" && goods.goodsMemo
+    ? shownGoods().filter((g) => g !== goods && goodsFolderUrl(g) === folder && g.goodsMemo === goods.goodsMemo).length
+    : 0;
+  const ok = await askConfirm({
+    title: "이 굿즈를 삭제할까요?",
+    images: [image],
+    rows: [
+      ["시리즈", goods.goodsSeries],
+      ["파일명", goods.goodsUrl.split("/").pop()],
+    ],
+    note: "picture 폴더에서 사진 파일이 지워집니다. 되돌리려면 올리기 전에 git으로 복구해야 합니다." +
+      (components ? ` 이 세트의 구성품(메모 "${goods.goodsMemo}") ${components}개는 지워지지 않습니다.` : ""),
+    ok: "삭제",
+    danger: true,
+  });
+  if (!ok) return;
+
+  goodsBusy(true);
+  try {
+    await sendGoodsEdit({ action: "delete", path: goodsPath(goods) });
+    goodsEdits.set(goods.jsonUrl || goods.goodsUrl, null);
+    scanStarted = false;
+    addReady = false;
+    goodsBusy(false);
+    const index = replaceShown(goods, null);
+    if (filtered.length) openViewer(Math.min(index, filtered.length - 1));
+    else $("viewer").close();
+  } catch (error) {
+    goodsBusy(false);
+    goodsFailed(error);
+  }
+}
+
+attachSuggest($("vEditChara"), "editCharaList", true);
+attachSuggest($("vEditCategory"), "editCategoryList", false);
+attachSuggest($("vEditPrice"), "editPriceList", false);
+attachSuggest($("vEditMemo"), "editMemoList", false);
+for (const id of ["vEditChara", "vEditCategory", "vEditPrice", "vEditMemo"]) $(id).addEventListener("input", updateGoodsEdit);
+$("vEditFile").onchange = () => {
+  const file = $("vEditFile").files[0];
+  if (editPreviewUrl) URL.revokeObjectURL(editPreviewUrl);
+  editPreviewUrl = file ? URL.createObjectURL(file) : null;
+  // 새 사진을 고르면 큰 화면에 미리 보여 준다
+  if (editPreviewUrl) $("vImg").src = editPreviewUrl;
+  else showGoodsImage($("vImg"), filtered[viewerIndex]);
+  updateGoodsEdit();
+};
+$("vEditStart").onclick = startGoodsEdit;
+$("vEditCancel").onclick = cancelGoodsEdit;
+$("vEditApply").onclick = applyGoodsEdit;
+$("vDelete").onclick = deleteGoods;
+$("viewer").addEventListener("close", () => setGoodsEditing(false));
+$("askOk").onclick = () => answerAsk(true);
+$("askCancel").onclick = () => answerAsk(false);
+$("ask").onclick = (event) => {
+  if (event.target === $("ask")) answerAsk(false);
+};
+$("ask").addEventListener("close", () => answerAsk(false));
 
 // ── 올리기 탭: 커밋하고 GitHub에 푸시 ────────────────────────────────────────
 

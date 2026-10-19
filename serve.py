@@ -1,6 +1,7 @@
 """명조 굿즈 도감 로컬 서버
 
-index.html을 띄우고, JSON 생성 탭의 "프로젝트 폴더에 저장"과 캐릭터 탭의 추가·수정·삭제, 추가 탭의 시리즈·굿즈 저장, 올리기 탭의 커밋·푸시를 받아 준다.
+index.html을 띄우고, JSON 생성 탭의 "프로젝트 폴더에 저장"과 캐릭터 탭의 추가·수정·삭제, 추가 탭의 시리즈·굿즈 저장,
+굿즈 탭의 굿즈 수정·삭제, 올리기 탭의 커밋·푸시를 받아 준다.
 
 사용법:
     python serve.py            # http://127.0.0.1:8765
@@ -39,6 +40,28 @@ def bad_path_part(value):
     return any(ch in BAD_PATH_CHARS or ord(ch) < 32 for ch in value)
 
 
+def goods_content(item, valid_characters):
+    """굿즈 정보로 확장자를 뺀 파일명(캐릭터_카테고리_가격_메모)을 만든다. (파일명, 오류)"""
+    charas = [c.strip() for c in str(item.get("chara", "")).split(",") if c.strip()]
+    category = str(item.get("category", "")).strip()
+    price = str(item.get("price", "")).strip()
+    memo = str(item.get("memo", "")).strip()
+    ext = str(item.get("ext", "")).lower()
+
+    missing = [c for c in charas if c not in valid_characters]
+    if not charas or missing:
+        return None, f"등록되지 않은 캐릭터: {', '.join(missing) or '(없음)'}"
+    if not category or not price or "_" in category or "_" in price:
+        return None, f"카테고리·가격이 비었거나 _ 가 들어 있습니다: {category} / {price}"
+    if ext not in IMAGE_EXTS:
+        return None, f"이미지 형식을 쓸 수 없습니다: {ext}"
+
+    content = "_".join([",".join(charas), category, price] + ([memo] if memo else []))
+    if bad_path_part(content + ext):
+        return None, f"파일명에 쓸 수 없는 글자가 있습니다: {content + ext}"
+    return content, None
+
+
 class Handler(SimpleHTTPRequestHandler):
 
     def end_headers(self):
@@ -66,7 +89,7 @@ class Handler(SimpleHTTPRequestHandler):
         super().do_GET()
 
     def do_POST(self):
-        if self.path not in ("/api/save", "/api/character", "/api/goods", "/api/git/push"):
+        if self.path not in ("/api/save", "/api/character", "/api/goods", "/api/goods/edit", "/api/git/push"):
             self.reply(404, {"error": "없는 주소"})
             return
 
@@ -92,6 +115,8 @@ class Handler(SimpleHTTPRequestHandler):
             self.character(body)
         elif self.path == "/api/goods":
             self.add_goods(raw)
+        elif self.path == "/api/goods/edit":
+            self.edit_goods(body)
         else:
             self.git_push(body)
 
@@ -267,6 +292,80 @@ class Handler(SimpleHTTPRequestHandler):
         self.reply(200, result)
 
 
+    def valid_characters(self):
+        with open(os.path.join(self.directory, "characters.json"), "r", encoding="utf-8") as f:
+            return {item["charaNm"].strip() for item in json.load(f) if item.get("charaNm")}
+
+    def edit_goods(self, body):
+        """굿즈 하나의 파일명(=정보)을 바꾸거나 사진을 바꾸거나 파일을 지운다"""
+        action = body.get("action")
+        parts = str(body.get("path", "")).split("/")
+        if len(parts) != 3 or parts[1] != "goods" or any(bad_path_part(part) for part in parts):
+            self.reply(400, {"error": f"굿즈 경로가 이상합니다: {body.get('path')}"})
+            return
+        folder, _, filename = parts
+        goods_dir = os.path.join(self.directory, "picture", folder, "goods")
+        old_path = os.path.join(goods_dir, filename)
+        if not os.path.isfile(old_path):
+            self.reply(404, {"error": f"없는 굿즈 파일: {folder}/goods/{filename} (JSON을 저장한 뒤 다시 열어 보세요)"})
+            return
+
+        if action == "delete":
+            os.remove(old_path)
+            print(f"굿즈 삭제: {folder}/goods/{filename}")
+            self.reply(200, {"deleted": filename})
+            return
+        if action != "update":
+            self.reply(400, {"error": f"알 수 없는 동작: {action}"})
+            return
+
+        image = None
+        if body.get("image"):
+            try:
+                image = base64.b64decode(body["image"], validate=True)
+            except Exception:
+                image = b""
+            if not image:
+                self.reply(400, {"error": "사진을 읽지 못했습니다"})
+                return
+            ext = str(body.get("ext", "")).lower()
+        else:
+            ext = os.path.splitext(filename)[1].lower()
+
+        content, error = goods_content({**body, "ext": ext}, self.valid_characters())
+        if error:
+            self.reply(400, {"error": error})
+            return
+        new_name = content + ext
+        if new_name == filename and image is None:
+            self.reply(400, {"error": "바뀐 것이 없습니다"})
+            return
+
+        # 확장자만 다른 것도 같은 굿즈로 본다. 자기 자신은 빼고 비교한다
+        for name in os.listdir(goods_dir):
+            if name != filename and os.path.splitext(name)[0].lower() == content.lower():
+                self.reply(400, {"error": f"내용이 완전히 같은 굿즈가 이미 있습니다: {name}"})
+                return
+
+        new_path = os.path.join(goods_dir, new_name)
+        try:
+            if image is None:
+                os.rename(old_path, new_path)
+            else:
+                # 새 사진을 다 쓴 뒤에 옛 파일을 지워서, 중간에 실패해도 원래 사진은 남는다
+                temp_path = new_path + ".tmp"
+                with open(temp_path, "wb") as f:
+                    f.write(image)
+                if new_name.lower() != filename.lower():
+                    os.remove(old_path)
+                os.replace(temp_path, new_path)
+        except Exception as e:
+            self.reply(500, {"error": f"파일 저장 실패: {e}"})
+            return
+
+        print(f"굿즈 수정: {folder}/goods/{filename} → {new_name}")
+        self.reply(200, {"renamed": filename, "name": new_name})
+
     def add_goods(self, raw):
         try:
             (meta_length,) = struct.unpack(">I", raw[:4])
@@ -308,9 +407,7 @@ class Handler(SimpleHTTPRequestHandler):
             self.reply(400, {"error": "굿즈가 없습니다"})
             return
 
-        with open(os.path.join(self.directory, "characters.json"), "r", encoding="utf-8") as f:
-            valid_characters = {item["charaNm"].strip() for item in json.load(f) if item.get("charaNm")}
-
+        valid_characters = self.valid_characters()
         folder_path = os.path.join(picture_dir, folder)
         goods_dir = os.path.join(folder_path, "goods")
         files = []  # (저장 경로, 크기)
@@ -328,28 +425,11 @@ class Handler(SimpleHTTPRequestHandler):
         if os.path.isdir(goods_dir):
             existing = {os.path.splitext(name)[0].lower() for name in os.listdir(goods_dir)}
         for item in goods:
-            charas = [c.strip() for c in str(item.get("chara", "")).split(",") if c.strip()]
-            category = str(item.get("category", "")).strip()
-            price = str(item.get("price", "")).strip()
-            memo = str(item.get("memo", "")).strip()
-            ext = str(item.get("ext", "")).lower()
-
-            missing = [c for c in charas if c not in valid_characters]
-            if not charas or missing:
-                self.reply(400, {"error": f"등록되지 않은 캐릭터: {', '.join(missing) or '(없음)'}"})
+            content, error = goods_content(item, valid_characters)
+            if error:
+                self.reply(400, {"error": error})
                 return
-            if not category or not price or "_" in category or "_" in price:
-                self.reply(400, {"error": f"카테고리·가격이 비었거나 _ 가 들어 있습니다: {category} / {price}"})
-                return
-            if ext not in IMAGE_EXTS:
-                self.reply(400, {"error": f"이미지 형식을 쓸 수 없습니다: {ext}"})
-                return
-
-            content = "_".join([",".join(charas), category, price] + ([memo] if memo else []))
-            filename = content + ext
-            if bad_path_part(filename):
-                self.reply(400, {"error": f"파일명에 쓸 수 없는 글자가 있습니다: {filename}"})
-                return
+            filename = content + str(item.get("ext", "")).lower()
             if content.lower() in seen or content.lower() in existing:
                 self.reply(400, {"error": f"내용이 완전히 같은 굿즈가 이미 있습니다: {content}"})
                 return
