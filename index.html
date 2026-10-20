@@ -806,6 +806,38 @@
     transition: box-shadow .12s, border-color .12s;
   }
   #addTab .goods-row:hover { border-color: var(--line-strong); }
+  #addTab .goods-row.existing { grid-template-columns: 168px minmax(0, 1fr) auto; cursor: default; }
+  #addTab .goods-row.existing.changed { border-color: var(--accent); }
+  #addTab .goods-row.existing .actions button { white-space: nowrap; }
+  #addTab .goods-row.existing { grid-template-columns: auto 168px minmax(0, 1fr) auto; }
+
+  /* 기존 굿즈가 있으면 왼쪽(기존 굿즈) · 오른쪽(추가할 굿즈) 두 칸으로 나눈다 */
+  #addTab .add-work { display: grid; gap: 16px; align-items: start; }
+  #addTab .add-new { display: grid; gap: 16px; min-width: 0; }
+  #addTab .add-work.split { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  #addTab .add-work.split .add-existing {
+    position: sticky;
+    top: 76px;
+    max-height: calc(100vh - 176px);
+    overflow-y: auto;
+  }
+  #addTab .add-work.split .tool-grid { grid-template-columns: 1fr; }
+  #addTab .add-work.split .goods-row { grid-template-columns: auto 120px minmax(0, 1fr) auto; gap: 12px; }
+  #addTab .add-work.split .goods-row img { width: 120px; height: 120px; }
+  #addTab .existing-tools { display: grid; gap: 10px; margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+  #addTab .existing-tools[hidden] { display: none; }
+  #addTab .existing-tools .toolbar { grid-template-columns: auto minmax(0, 1fr); margin: 0; padding: 0; border: 0; }
+  #addTab .existing-tools .form { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); margin: 0; }
+  #addTab .existing-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+  #addTab .existing-actions button.danger { color: #d64545; border-color: color-mix(in srgb, #d64545 50%, var(--line)); }
+  #addTab #exStatus { margin: 0; font-size: 13px; }
+  #addTab #exStatus:empty { display: none; }
+  @media (max-width: 1100px) {
+    #addTab .add-work.split { grid-template-columns: 1fr; }
+    #addTab .add-work.split .add-existing { position: static; max-height: none; overflow: visible; }
+  }
+  #addTab .existing-tags { display: flex; gap: 6px; margin-bottom: 6px; }
+  #addTab .existing-tags span { font-size: 12px; font-weight: 600; color: var(--accent); }
   #addTab .goods-row img { width: 168px; height: 168px; border-radius: 8px; }
   #addTab .goods-row .form { gap: 10px; margin-bottom: 8px; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
   #addTab .goods-row .form input { height: 38px; }
@@ -898,6 +930,14 @@
     #addTab .goods-row .lead { display: flex; align-items: center; }
     #addTab .goods-row .actions { grid-column: 3; display: flex; gap: 6px; }
     #addTab .goods-row.component { margin-left: 24px; }
+    /* 이미 있는 굿즈 줄: 사진 → 입력칸 → 버튼 줄 순서로 쌓는다 */
+    #addTab .goods-row.existing,
+    #addTab .add-work.split .goods-row.existing { grid-template-columns: auto minmax(0, 1fr); }
+    #addTab .goods-row.existing .lead { grid-column: 1; grid-row: 1; }
+    #addTab .goods-row.existing img,
+    #addTab .add-work.split .goods-row.existing img { grid-column: 1 / -1; grid-row: 2; width: 100%; height: 220px; }
+    #addTab .goods-row.existing > div { grid-column: 1 / -1; grid-row: 3; }
+    #addTab .goods-row.existing .actions { grid-column: 2; grid-row: 1; flex-wrap: wrap; justify-content: flex-end; }
     #addTab .goods-row.component::before { left: -16px; width: 10px; }
     #addTab .save-bar { bottom: 8px; }
   }
@@ -1155,6 +1195,46 @@
       <p id="addFolderInfo" class="path"></p>
     </div>
 
+    <div id="addWork" class="add-work">
+    <div id="addExistingPanel" class="panel step add-existing" hidden>
+      <div class="step-head">
+        <span class="step-no">✎</span>
+        <div>
+          <h3>이 시리즈에 이미 있는 굿즈</h3>
+          <p>여기서 고치면 picture 폴더의 파일이 바로 바뀝니다. JSON에는 JSON 생성 탭에서 저장할 때 반영됩니다.</p>
+        </div>
+        <span id="addExistingInfo" class="step-meta"></span>
+      </div>
+      <div id="addExistingTools" class="existing-tools">
+        <div class="toolbar existing-toolbar">
+          <label class="check"><input id="addExistingAll" type="checkbox"><span>보이는 것 전체 선택</span></label>
+          <input id="addExistingQ" type="search" autocomplete="off" placeholder="파일명 검색" aria-label="이미 있는 굿즈 검색">
+        </div>
+        <span id="addExistingCount" class="selection-count"></span>
+        <div class="form">
+          <label>캐릭터
+            <input id="exBulkChara" type="text" autocomplete="off">
+          </label>
+          <label>카테고리
+            <input id="exBulkCategory" type="text" autocomplete="off">
+          </label>
+          <label>가격
+            <input id="exBulkPrice" type="text" autocomplete="off">
+          </label>
+          <label>메모
+            <input id="exBulkMemo" type="text" autocomplete="off">
+          </label>
+        </div>
+        <div class="row existing-actions">
+          <button id="exBulkApply" type="button" disabled>체크한 굿즈 칸에 채우기</button>
+          <button id="exSaveAll" type="button" class="primary" disabled>바뀐 굿즈 저장</button>
+          <button id="exDeleteChecked" type="button" class="danger" disabled>체크한 굿즈 삭제</button>
+        </div>
+        <p id="exStatus" class="muted"></p>
+      </div>
+      <div id="addExistingRows" class="goods-rows"></div>
+    </div>
+    <div class="add-new">
     <div class="panel step">
       <div class="step-head">
         <span class="step-no">2</span>
@@ -1257,6 +1337,8 @@
         <button id="addFilterReset" type="button">초기화</button>
       </div>
       <div id="addRows" class="goods-rows"></div>
+    </div>
+    </div>
     </div>
 
     <div class="save-bar">
@@ -1537,6 +1619,8 @@ async function load() {
     if (saved) goodsEdits.delete(url);
   }
   $("charaTotal").textContent = characters.length.toLocaleString();
+  unsavedGoods = [];
+  unsavedState = "idle";
 
   $("seriesTotal").textContent = allSeries.length.toLocaleString();
   $("goodsTotal").textContent = allGoods.length.toLocaleString();
@@ -1600,6 +1684,7 @@ function apply() {
     return;
   }
 
+  loadUnsaved();
   const isSeries = state.view === "series";
   const source = isSeries ? allSeries : shownGoods();
   const dateOf = isSeries ? (s) => s.seriesDate : (g) => g.goodsReleaseDate;
@@ -1691,6 +1776,7 @@ function goodsCard(goods) {
   tags.append(el("span", "tag accent", goods.goodsCategory), el("span", "tag", goods.goodsPrice));
   if (goods.goodsMemo) tags.append(el("span", "tag", goods.goodsMemo));
   if (goods.edited) tags.append(el("span", "tag accent", "수정됨"));
+  if (goods.unsaved) tags.append(el("span", "tag accent", "JSON 저장 전"));
   body.append(tags);
   card.append(img, body);
   // 수정·삭제로 순서가 밀릴 수 있어서 누를 때 위치를 찾는다
@@ -1742,8 +1828,8 @@ function openViewer(index) {
     if (value) info.append(el("dt", "", label), el("dd", "", value));
   }
   $("vPos").textContent = `${(index + 1).toLocaleString()} / ${filtered.length.toLocaleString()}`;
-  // 고친 굿즈는 아직 GitHub에 없으니 로컬 파일을 연다
-  $("vOpen").href = goods.edited ? imagePaths(goods.goodsUrl).local : imagePaths(goods.goodsUrl).remote;
+  // 고친 굿즈·JSON 저장 전 굿즈는 아직 GitHub에 없으니 로컬 파일을 연다
+  $("vOpen").href = goods.edited || goods.unsaved ? imagePaths(goods.goodsUrl).local : imagePaths(goods.goodsUrl).remote;
   $("vStatus").hidden = true;
   checkServer().then((ok) => {
     if (!viewerEditing) $("vManage").hidden = !ok;
@@ -1992,8 +2078,8 @@ async function readFromServer() {
       const base = `picture/${encodeURIComponent(folder)}/`;
       const listing = await listDirectory(base);
       if (!listing) throw new Error(`폴더 목록을 읽지 못했습니다: ${folder}`);
-      const entry = { files: listing.files, goods: null };
       const goodsDir = listing.dirs.find((name) => name.toLowerCase() === "goods");
+      const entry = { files: listing.files, goods: null, otherDirs: listing.dirs.filter((name) => name !== goodsDir) };
       if (goodsDir) {
         const goods = await listDirectory(`${base}${encodeURIComponent(goodsDir)}/`);
         if (!goods) throw new Error(`폴더 목록을 읽지 못했습니다: ${folder}/goods`);
@@ -2004,7 +2090,7 @@ async function readFromServer() {
     }
   };
   await Promise.all(Array.from({ length: 6 }, worker));
-  return { tree, label: "이 서버의 picture 폴더 (로컬 파일)" };
+  return { tree, rootFiles: top.files, label: "이 서버의 picture 폴더 (로컬 파일)" };
 }
 
 async function readFromGitHub() {
@@ -2015,11 +2101,15 @@ async function readFromGitHub() {
 
   const tree = new Map();
   const shas = new Map();
+  const rootFiles = [];
   for (const item of data.tree) {
     const parts = item.path.split("/");
-    if (parts[0] !== "picture" || parts.length < 3 || item.type !== "blob") continue;
-    if (!tree.has(parts[1])) tree.set(parts[1], { files: [], goods: null });
+    if (parts[0] !== "picture" || item.type !== "blob") continue;
+    if (parts.length === 2) rootFiles.push(parts[1]);
+    if (parts.length < 3) continue;
+    if (!tree.has(parts[1])) tree.set(parts[1], { files: [], goods: null, otherDirs: [] });
     const entry = tree.get(parts[1]);
+    if (parts.length >= 4 && parts[2].toLowerCase() !== "goods" && !entry.otherDirs.includes(parts[2])) entry.otherDirs.push(parts[2]);
     if (parts.length === 3) entry.files.push(parts[2]);
     else if (parts.length === 4 && parts[2].toLowerCase() === "goods") {
       (entry.goods ||= []).push(parts[3]);
@@ -2027,7 +2117,7 @@ async function readFromGitHub() {
     }
   }
   if (!tree.size) throw new Error("저장소에 picture 폴더가 없습니다.");
-  return { tree, shas, label: `GitHub ${REPO} (${BRANCH} 브랜치에 올라간 상태)` };
+  return { tree, shas, rootFiles, label: `GitHub ${REPO} (${BRANCH} 브랜치에 올라간 상태)` };
 }
 
 async function siteJson(name) {
@@ -2120,6 +2210,32 @@ function collectProblems(source, result) {
     result.badFolders.map((folder) => ({ caption: folder })));
   add("warn", "goods 폴더가 없는 시리즈", "", result.noGoods.map((folder) => ({ caption: folder })));
   add("warn", "mainTheme 이미지가 없는 시리즈", "", result.noMainTheme.map((folder) => ({ caption: folder })));
+
+  const usedThemes = new Set(result.series.map((series) => series.seriesUrl));
+  const manyThemes = [];
+  const looseFiles = [];
+  const otherDirs = [];
+  for (const [folder, entry] of source.tree) {
+    const themes = entry.files.filter((name) => name.toLowerCase().startsWith("maintheme"));
+    if (themes.length > 1) {
+      for (const name of themes) {
+        const used = usedThemes.has(`${RAW_PREFIX}picture/${folder}/${name}`);
+        manyThemes.push({ path: `${folder}/${name}`, caption: `${name} (${used ? "JSON이 쓰는 파일" : "JSON이 안 쓰는 파일"})`, keepExtension: true });
+      }
+    }
+    for (const name of entry.files) {
+      if (!themes.includes(name)) looseFiles.push({ path: `${folder}/${name}`, caption: name, keepExtension: true });
+    }
+    for (const dir of entry.otherDirs || []) otherDirs.push({ caption: `${folder}/${dir}/` });
+  }
+  add("warn", "mainTheme 이미지가 2개 이상인 시리즈",
+    "대표 이미지는 하나만 쓰입니다. 안 쓰는 파일은 지우세요.", manyThemes);
+  add("warn", "시리즈 폴더 바로 아래 놓인 파일",
+    "mainTheme 말고는 goods 폴더에 넣어야 굿즈로 잡힙니다.", looseFiles);
+  add("warn", "goods 말고 다른 하위 폴더",
+    "이 폴더 안의 사진은 JSON에 잡히지 않습니다. goods 폴더로 옮기거나 지우세요.", otherDirs);
+  add("warn", "picture 폴더 바로 아래 놓인 파일",
+    "시리즈 폴더 밖에 있어서 아무 데도 쓰이지 않습니다.", (source.rootFiles || []).map((name) => ({ caption: name })));
 
   return problems;
 }
@@ -2889,16 +3005,11 @@ function addGoodsFiles(files) {
     if (!IMAGE_FILE.test(file.name)) continue;
     const row = { file, ext, url: URL.createObjectURL(file), chara: "", category: "", price: "", memo: "" };
 
-    // 파일명이 이미 캐릭터_카테고리_가격_메모 형식이면 그대로 채우고, 아니면 바로 위 굿즈의 값을 이어받는다
+    // 파일명이 이미 캐릭터_카테고리_가격_메모 형식이면 그대로 채운다
     const parts = stripExtension(file.name).split("_");
-    const previous = addRows[addRows.length - 1];
     if (parts.length >= 3) {
       [row.chara, row.category, row.price] = parts;
       row.memo = parts.slice(3).join("_");
-    } else if (previous) {
-      row.category = previous.category;
-      row.price = previous.price;
-      row.memo = previous.memo;
     }
     addRows.push(row);
   }
@@ -3143,6 +3254,11 @@ function renderAddRows() {
         addDragRows = null;
       };
       lead.append(handle);
+      // 사진을 잡고 끌어도 손잡이와 같게 한다. 그냥 두면 브라우저가 사진을 파일로 넘겨서 굿즈가 하나 더 추가된다.
+      img.ondragstart = handle.ondragstart;
+      img.ondragend = handle.ondragend;
+    } else {
+      img.draggable = false;
     }
     // 놓을 세트는 놓는 순간의 값으로 정한다 (그린 뒤에 세트가 된 줄에도 놓을 수 있게)
     line.ondragover = (event) => {
@@ -3488,6 +3604,10 @@ function clearAdd() {
   $("addMainPreview").hidden = true;
   $("addMainName").textContent = "눌러서 고르거나 여기로 끌어 놓기";
   addExisting = new Set();
+  addExistingFiles = [];
+  existingChecked.clear();
+  for (const [, id] of EX_BULK_FIELDS) $(id).value = "";
+  renderAddExisting();
   renderAddRows();
 }
 
@@ -3543,6 +3663,7 @@ async function submitAdd() {
     clearAdd();
     addReady = false;
     scanStarted = false;
+    unsavedState = "idle";
     state.view = "build";
     apply();
     window.scrollTo(0, 0);
@@ -3558,6 +3679,9 @@ attachSuggest($("addBulkChara"), "addCharaList", true);
 attachSuggest($("addBulkCategory"), "addCategoryList", false);
 attachSuggest($("addBulkPrice"), "addPriceList", false);
 attachSuggest($("addSetPrice"), "addPriceList", false);
+attachSuggest($("exBulkChara"), "addCharaList", true);
+attachSuggest($("exBulkCategory"), "addCategoryList", false);
+attachSuggest($("exBulkPrice"), "addPriceList", false);
 $("addSeriesQ").oninput = fillAddSeries;
 $("addSeriesQ").onkeydown = (event) => {
   if (event.key !== "Enter") return;
@@ -3568,15 +3692,444 @@ $("addSeriesQ").onkeydown = (event) => {
   $("addSeries").onchange();
 };
 $("addSeries").onchange = async () => {
-  const folder = $("addSeries").value;
-  addExisting = new Set();
-  if (folder) {
-    const listing = await listDirectory(`picture/${encodeURIComponent(folder)}/goods/`).catch(() => null);
-    if (listing) addExisting = new Set(listing.files.map((name) => stripExtension(name).toLowerCase()));
-  }
+  $("addExistingQ").value = "";
+  existingChecked.clear();
+  await loadAddExisting();
   updateSet();
   updateAdd();
 };
+$("addExistingQ").oninput = () => {
+  filterAddExisting();
+  updateExistingBulk();
+};
+
+// ── 추가 탭: 고른 시리즈에 이미 있는 굿즈를 왼쪽에 따로 보여 주고 그 자리에서 고친다 ──
+// 굿즈 탭의 수정·삭제와 같은 서버 기능(api/goods/edit)을 쓰고, 바뀐 내용도 굿즈 탭과 같은 곳에 기억한다.
+// 추가할 굿즈처럼 체크해서 한꺼번에 칸을 채우거나 지울 수 있다.
+
+let addExistingFiles = []; // 고른 시리즈 goods 폴더의 사진 파일 이름
+const addExistingVersion = new Map(); // 사진을 바꾼 파일 → 시각(브라우저에 남은 옛 사진을 쓰지 않게)
+const existingRows = new Map(); // 파일 이름 → 줄 조작(줄, 상태, 저장, 칸 채우기)
+const existingChecked = new Set(); // 체크한 파일 이름
+let existingRendering = false;
+
+async function loadAddExisting() {
+  const folder = $("addSeries").value;
+  let files = [];
+  if (folder) {
+    const listing = await listDirectory(`picture/${encodeURIComponent(folder)}/goods/`).catch(() => null);
+    if ($("addSeries").value !== folder) return; // 읽는 사이 다른 시리즈를 골랐다
+    files = listing ? listing.files : [];
+  }
+  addExisting = new Set(files.map((name) => stripExtension(name).toLowerCase()));
+  addExistingFiles = files.filter((name) => IMAGE_FILE.test(name)).sort();
+  renderAddExisting();
+}
+
+function renderAddExisting() {
+  const folder = $("addSeries").value;
+  $("addExistingPanel").hidden = !folder;
+  const box = $("addExistingRows");
+  box.replaceChildren();
+  existingRows.clear();
+  for (const file of [...existingChecked]) if (!addExistingFiles.includes(file)) existingChecked.delete(file);
+  if (folder) {
+    if (!addExistingFiles.length) box.append(el("p", "muted", "이 시리즈에는 아직 굿즈가 없습니다."));
+    existingRendering = true;
+    for (const filename of addExistingFiles) box.append(existingGoodsRow(folder, filename));
+    existingRendering = false;
+    filterAddExisting();
+  }
+  updateExistingBulk();
+}
+
+function filterAddExisting() {
+  const terms = $("addExistingQ").value.toLowerCase().split(/\s+/).filter(Boolean);
+  for (const ctl of existingRows.values()) {
+    const name = ctl.file.toLowerCase();
+    ctl.line.hidden = !terms.every((term) => name.includes(term));
+  }
+}
+
+const EX_BULK_FIELDS = [
+  ["chara", "exBulkChara"],
+  ["category", "exBulkCategory"],
+  ["price", "exBulkPrice"],
+  ["memo", "exBulkMemo"],
+];
+
+/** 체크 개수, 전체 선택 상자, 한꺼번에 하는 버튼들의 상태를 맞춘다. 기존 굿즈가 있으면 왼쪽·오른쪽으로 나눈다. */
+function updateExistingBulk() {
+  if (existingRendering) return;
+  const folder = $("addSeries").value;
+  $("addWork").classList.toggle("split", Boolean(folder) && addExistingFiles.length > 0);
+  $("addExistingInfo").textContent = folder ? `${addExistingFiles.length}개` : "";
+  $("addExistingTools").hidden = !addExistingFiles.length;
+
+  const visible = [...existingRows.values()].filter((ctl) => !ctl.line.hidden);
+  const checked = visible.filter((ctl) => existingChecked.has(ctl.file));
+  $("addExistingAll").checked = visible.length > 0 && checked.length === visible.length;
+  $("addExistingAll").indeterminate = checked.length > 0 && checked.length < visible.length;
+  $("addExistingCount").textContent = checked.length ? `체크한 굿즈 ${checked.length}개` : "고칠 굿즈를 왼쪽 체크박스로 고르세요.";
+
+  const filled = EX_BULK_FIELDS.some(([, id]) => $(id).value.trim());
+  $("exBulkApply").disabled = !checked.length || !filled;
+  $("exBulkApply").textContent = checked.length ? `체크한 ${checked.length}개 칸에 채우기` : "체크한 굿즈 칸에 채우기";
+  $("exDeleteChecked").disabled = !checked.length;
+  $("exDeleteChecked").textContent = checked.length ? `체크한 ${checked.length}개 삭제` : "체크한 굿즈 삭제";
+
+  const ready = [...existingRows.values()].filter((ctl) => {
+    const st = ctl.state();
+    return st.changed && !st.fault;
+  });
+  $("exSaveAll").disabled = !ready.length;
+  $("exSaveAll").textContent = ready.length ? `바뀐 굿즈 ${ready.length}개 저장` : "바뀐 굿즈 저장";
+}
+
+function existingStatus(text) {
+  $("exStatus").textContent = text;
+}
+
+$("addExistingAll").onchange = () => {
+  for (const ctl of existingRows.values()) {
+    if (ctl.line.hidden) continue;
+    ctl.setChecked($("addExistingAll").checked);
+  }
+  updateExistingBulk();
+};
+for (const [, id] of EX_BULK_FIELDS) $(id).addEventListener("input", updateExistingBulk);
+
+// 적은 칸만 체크한 줄의 입력칸에 채운다. 파일은 "바뀐 굿즈 저장"을 눌러야 바뀐다.
+$("exBulkApply").onclick = () => {
+  const values = Object.fromEntries(EX_BULK_FIELDS.map(([key, id]) => [key, $(id).value.trim()]).filter(([, v]) => v));
+  const targets = [...existingRows.values()].filter((ctl) => !ctl.line.hidden && existingChecked.has(ctl.file));
+  for (const ctl of targets) ctl.fill(values);
+  for (const [, id] of EX_BULK_FIELDS) $(id).value = "";
+  existingStatus(`${targets.length}개 칸을 채웠습니다. "바뀐 굿즈 저장"을 눌러야 파일이 바뀝니다.`);
+  updateExistingBulk();
+};
+
+// 고칠 곳이 없는 바뀐 줄을 하나씩 저장한다. 같은 이름으로 겹치는 줄은 저장할 때 다시 검사해서 건너뛴다.
+$("exSaveAll").onclick = async () => {
+  const targets = [...existingRows.values()].filter((ctl) => {
+    const st = ctl.state();
+    return st.changed && !st.fault;
+  });
+  $("exSaveAll").disabled = true;
+  let saved = 0;
+  for (const [i, ctl] of targets.entries()) {
+    existingStatus(`저장 중… ${i + 1} / ${targets.length}`);
+    if (await ctl.save()) saved++;
+  }
+  const failed = targets.length - saved;
+  existingStatus(failed ? `${saved}개 저장, ${failed}개는 고칠 곳이 있어 저장하지 못했습니다.` : `${saved}개를 저장했습니다.`);
+  updateAdd();
+  updateExistingBulk();
+};
+
+$("exDeleteChecked").onclick = async () => {
+  const folder = $("addSeries").value;
+  const targets = [...existingRows.values()].filter((ctl) => !ctl.line.hidden && existingChecked.has(ctl.file));
+  if (!targets.length) return;
+  const images = targets.slice(0, 12).map((ctl) => {
+    const img = el("img");
+    img.alt = "";
+    img.src = ctl.img.src;
+    return img;
+  });
+  const ok = await askConfirm({
+    title: `굿즈 ${targets.length}개를 삭제할까요?`,
+    images,
+    rows: [["시리즈", folder], ["삭제할 굿즈", targets.map((ctl) => ctl.file).join("\n")]],
+    note: "picture 폴더에서 사진 파일이 지워집니다. 되돌리려면 올리기 전에 git으로 복구해야 합니다.",
+    ok: "삭제",
+    danger: true,
+  });
+  if (!ok) return;
+  $("exDeleteChecked").disabled = true;
+  let deleted = 0;
+  for (const [i, ctl] of targets.entries()) {
+    existingStatus(`삭제 중… ${i + 1} / ${targets.length}`);
+    if (await ctl.remove()) deleted++;
+  }
+  const failed = targets.length - deleted;
+  existingStatus(failed ? `${deleted}개 삭제, ${failed}개는 실패했습니다(줄에 이유가 있습니다).` : `${deleted}개를 삭제했습니다.`);
+  updateAdd();
+  updateExistingBulk();
+};
+
+/** 이 파일이 JSON과 어떤 사이인지: 그대로면 "", 고쳤으면 "수정됨 · JSON 저장 전", JSON에 없으면 "JSON 저장 전" */
+function existingGoodsState(url) {
+  const edited = [...goodsEdits.values()].some((edit) => edit && edit.goodsUrl === url);
+  if (edited) return "수정됨 · JSON 저장 전";
+  return allGoods.some((g) => g.goodsUrl === url && !goodsEdits.has(url)) ? "" : "JSON 저장 전";
+}
+
+/** 굿즈 탭이 들고 있는 바뀐 내용도 맞춰 둔다. next 가 null 이면 지운 것이다. */
+function rememberExistingChange(oldUrl, next) {
+  const goods = shownGoods().find((g) => g.goodsUrl === oldUrl);
+  if (goods && !goods.unsaved) {
+    const key = goods.jsonUrl || goods.goodsUrl;
+    goodsEdits.set(key, next && {
+      ...goods,
+      goodsChara: next.chara,
+      charas: splitCharas(next.chara),
+      goodsCategory: next.category,
+      goodsPrice: next.price,
+      goodsMemo: next.memo,
+      goodsUrl: next.url,
+      haystack: [next.chara, next.category, next.price, next.memo, goods.goodsSeries].join(" ").toLowerCase(),
+      imageVersion: next.imageChanged ? Date.now() : goods.imageVersion,
+      jsonUrl: key,
+      edited: true,
+    });
+  } else {
+    // JSON에 없는 굿즈는 굿즈 탭을 다시 열 때 picture 폴더를 새로 읽는다
+    unsavedGoods = [];
+    unsavedState = "idle";
+  }
+  scanStarted = false;
+}
+
+function existingGoodsRow(folder, filename) {
+  const path = `${folder}/goods/${filename}`;
+  const url = `${RAW_PREFIX}picture/${path}`;
+  const parts = stripExtension(filename).split("_");
+  const initial = parts.length >= 3
+    ? { chara: parts[0], category: parts[1], price: parts[2], memo: parts.slice(3).join("_") }
+    : { chara: "", category: "", price: "", memo: "" };
+  const version = addExistingVersion.get(filename);
+  const savedSrc = pictureUrl(path) + (version ? `?v=${version}` : "");
+
+  const line = el("div", "goods-row existing");
+  line.dataset.file = filename;
+
+  // 체크박스. 줄의 빈 곳을 눌러도 체크된다(입력칸·사진·버튼은 원래 동작 그대로).
+  const lead = el("span", "lead");
+  const pick = el("input", "pick");
+  pick.type = "checkbox";
+  pick.title = "한꺼번에 고칠 굿즈로 선택";
+  const setChecked = (on) => {
+    pick.checked = on;
+    if (on) existingChecked.add(filename);
+    else existingChecked.delete(filename);
+    line.classList.toggle("checked", on);
+  };
+  setChecked(existingChecked.has(filename));
+  pick.onchange = () => {
+    setChecked(pick.checked);
+    updateExistingBulk();
+  };
+  line.onclick = (event) => {
+    if (event.target.closest("input, button, img, label")) return;
+    setChecked(!pick.checked);
+    updateExistingBulk();
+  };
+  lead.append(pick);
+
+  const img = el("img");
+  img.alt = "";
+  img.draggable = false;
+  img.title = "눌러서 크게 보기";
+  img.src = savedSrc;
+  img.onclick = () => zoomImage(img.src);
+
+  const middle = el("div");
+  const state = existingGoodsState(url);
+  if (state) {
+    const tags = el("div", "existing-tags");
+    tags.append(el("span", "", state));
+    middle.append(tags);
+  }
+  const fields = el("div", "form");
+  const inputs = {};
+  for (const [key, label, list] of [
+    ["chara", "캐릭터 (여러 명은 콤마)", "addCharaList"],
+    ["category", "카테고리", "addCategoryList"],
+    ["price", "가격", "addPriceList"],
+    ["memo", "메모 (없어도 됨)", ""],
+  ]) {
+    const wrap = el("label", "", label);
+    const input = el("input");
+    input.type = "text";
+    input.autocomplete = "off";
+    input.value = initial[key];
+    if (list) attachSuggest(input, list, key === "chara");
+    input.oninput = () => check();
+    wrap.append(input);
+    fields.append(wrap);
+    inputs[key] = input;
+  }
+  const name = el("div", "name");
+  const problem = el("div", "problem");
+  middle.append(fields, name, problem);
+
+  const photo = el("input");
+  photo.type = "file";
+  photo.accept = "image/*";
+  photo.hidden = true;
+  let previewUrl = null;
+  photo.onchange = () => {
+    if (previewUrl) URL.revokeObjectURL(previewUrl);
+    const file = photo.files[0];
+    previewUrl = file ? URL.createObjectURL(file) : null;
+    img.src = previewUrl || savedSrc;
+    check();
+  };
+  const actions = el("span", "actions");
+  const saveBtn = el("button", "primary", "저장");
+  saveBtn.type = "button";
+  const photoBtn = el("button", "", "사진 바꾸기");
+  photoBtn.type = "button";
+  photoBtn.onclick = () => photo.click();
+  const reset = el("button", "", "되돌리기");
+  reset.type = "button";
+  reset.onclick = () => {
+    for (const key of Object.keys(inputs)) inputs[key].value = initial[key];
+    photo.value = "";
+    photo.onchange();
+  };
+  const removeBtn = el("button", "", "삭제");
+  removeBtn.type = "button";
+  actions.append(saveBtn, photoBtn, reset, removeBtn, photo);
+  line.append(lead, img, middle, actions);
+
+  // 굿즈 탭의 수정 창과 같은 규칙으로 검사한다
+  const stateOf = () => {
+    const charas = splitCharas(inputs.chara.value);
+    const values = {
+      chara: charas.join(","),
+      category: inputs.category.value.trim(),
+      price: inputs.price.value.trim(),
+      memo: inputs.memo.value.trim(),
+    };
+    const file = photo.files[0] || null;
+    const ext = file ? fileExtension(file.name) : fileExtension(filename);
+    const newName = [values.chara, values.category, values.price, values.memo].filter(Boolean).join("_") + ext;
+    const known = new Set(allCharacters.map((c) => c.charaNm.trim()));
+    const missing = charas.filter((c) => !known.has(c));
+    let fault = "";
+    if (!charas.length) fault = "캐릭터를 적어 주세요.";
+    else if (missing.length) fault = `등록되지 않은 캐릭터: ${missing.join(", ")} (캐릭터 탭에서 먼저 추가)`;
+    else if (!values.category || !values.price) fault = "카테고리와 가격은 꼭 적어야 합니다.";
+    else if (values.category.includes("_") || values.price.includes("_")) fault = "카테고리·가격에는 _ 를 쓸 수 없습니다.";
+    else if (BAD_PATH_CHARS.test(newName)) fault = '파일명에 쓸 수 없는 글자가 있습니다: / \\ : * ? " < > |';
+    else if (file && !IMAGE_FILE.test(file.name)) fault = "쓸 수 없는 사진 형식입니다 (png, jpg, webp, avif, gif).";
+    else {
+      // 확장자만 다른 것도 같은 굿즈로 본다
+      const stem = stripExtension(newName).toLowerCase();
+      if (addExistingFiles.some((other) => other !== filename && stripExtension(other).toLowerCase() === stem)) {
+        fault = "이 시리즈에 내용이 같은 굿즈가 이미 있습니다. 메모로 구분하세요.";
+      }
+    }
+    return { values, file, ext, newName, fault, changed: newName !== filename || Boolean(file) };
+  };
+  const check = () => {
+    const st = stateOf();
+    problem.textContent = st.changed ? st.fault : "";
+    name.replaceChildren();
+    if (st.changed) name.append("새 파일명: ", el("b", "", st.newName), st.file ? " (사진도 바뀜)" : "");
+    else name.append(filename);
+    line.classList.toggle("changed", st.changed);
+    saveBtn.disabled = Boolean(st.fault) || !st.changed;
+    updateExistingBulk();
+    return st;
+  };
+  const busy = (on) => {
+    for (const button of [saveBtn, photoBtn, reset, removeBtn]) button.disabled = on;
+    if (!on) check();
+  };
+
+  /** 저장하고 성공하면 true. 저장한 줄은 새 파일 이름의 줄로 바꿔 끼우고 체크를 푼다. */
+  const save = async () => {
+    const st = check();
+    if (st.fault || !st.changed) return false;
+    busy(true);
+    problem.textContent = "저장 중…";
+    try {
+      const body = { action: "update", path, ...st.values };
+      if (st.file) Object.assign(body, { image: await fileBase64(st.file), ext: st.ext });
+      const data = await sendGoodsEdit(body);
+      rememberExistingChange(url, { ...st.values, url: `${RAW_PREFIX}picture/${folder}/goods/${data.name}`, imageChanged: Boolean(st.file) });
+      if (st.file) addExistingVersion.set(data.name, Date.now());
+      addExistingFiles = addExistingFiles.map((f) => (f === filename ? data.name : f)).sort();
+      addExisting.delete(stripExtension(filename).toLowerCase());
+      addExisting.add(stripExtension(data.name).toLowerCase());
+      existingChecked.delete(filename);
+      existingRows.delete(filename);
+      if (previewUrl) URL.revokeObjectURL(previewUrl);
+      // 다른 줄에 적던 내용이 지워지지 않게 이 줄만 바꿔 끼운다
+      const next = existingGoodsRow(folder, data.name);
+      next.hidden = line.hidden;
+      line.replaceWith(next);
+      next.querySelector(".name").append(el("b", "", " · 저장했습니다"));
+      return true;
+    } catch (error) {
+      busy(false);
+      problem.textContent = `저장 실패: ${error.message}`;
+      return false;
+    }
+  };
+
+  /** 지우고 성공하면 true. 묻는 창은 부르는 쪽이 띄운다. */
+  const remove = async () => {
+    busy(true);
+    try {
+      await sendGoodsEdit({ action: "delete", path });
+      rememberExistingChange(url, null);
+      addExistingFiles = addExistingFiles.filter((f) => f !== filename);
+      addExisting.delete(stripExtension(filename).toLowerCase());
+      existingChecked.delete(filename);
+      existingRows.delete(filename);
+      line.remove();
+      return true;
+    } catch (error) {
+      busy(false);
+      problem.textContent = `삭제 실패: ${error.message}`;
+      return false;
+    }
+  };
+
+  saveBtn.onclick = async () => {
+    await save();
+    updateAdd();
+    updateExistingBulk();
+  };
+  removeBtn.onclick = async () => {
+    const preview = el("img");
+    preview.alt = "";
+    preview.src = img.src;
+    const ok = await askConfirm({
+      title: "이 굿즈를 삭제할까요?",
+      images: [preview],
+      rows: [["시리즈", folder], ["파일명", filename]],
+      note: "picture 폴더에서 사진 파일이 지워집니다. 되돌리려면 올리기 전에 git으로 복구해야 합니다.",
+      ok: "삭제",
+      danger: true,
+    });
+    if (!ok) return;
+    await remove();
+    updateAdd();
+    updateExistingBulk();
+  };
+
+  existingRows.set(filename, {
+    file: filename,
+    line,
+    img,
+    state: stateOf,
+    save,
+    remove,
+    setChecked,
+    // 적은 칸만 채운다. 비워 둔 칸은 그대로 둔다.
+    fill: (values) => {
+      for (const [key, value] of Object.entries(values)) inputs[key].value = value;
+      check();
+    },
+  });
+  check();
+  return line;
+}
 for (const id of ["addName", "addCountry", "addDate"]) $(id).oninput = updateAdd;
 function setAddMain(file) {
   if (addMain) URL.revokeObjectURL(addMain.url);
@@ -3591,7 +4144,7 @@ $("addMainFile").onchange = (event) => setAddMain(event.target.files[0]);
 // 대표 이미지 칸에 놓은 사진은 굿즈로 넣지 않도록 탭 전체의 끌어 놓기보다 먼저 받는다
 const addMainDrop = $("addMainDrop");
 addMainDrop.ondragover = (event) => {
-  if (addDragRows) return;
+  if (addDragRows || pageDragging) return;
   event.preventDefault();
   event.stopPropagation();
   addPanel.classList.remove("dragover");
@@ -3599,7 +4152,7 @@ addMainDrop.ondragover = (event) => {
 };
 addMainDrop.ondragleave = () => addMainDrop.classList.remove("over");
 addMainDrop.ondrop = (event) => {
-  if (addDragRows) return;
+  if (addDragRows || pageDragging) return;
   event.preventDefault();
   event.stopPropagation();
   addMainDrop.classList.remove("over");
@@ -3710,15 +4263,22 @@ $("addSubmit").onclick = submitAdd;
 $("addNewCatOk").onchange = updateAdd;
 $("addClear").onclick = clearAdd;
 
+// 페이지 안의 사진을 끄는 중이면 파일 넣기가 아니다 (브라우저가 사진을 파일로 넘겨서 굿즈가 복제된다)
+let pageDragging = false;
+// 놓은 곳에서 전파를 막거나 끌던 줄이 다시 그려져 사라져도 풀리도록 캡처 단계에서, 놓기 처리가 끝난 뒤에 푼다
+document.addEventListener("dragstart", () => { pageDragging = true; }, true);
+document.addEventListener("dragend", () => { pageDragging = false; }, true);
+document.addEventListener("drop", () => setTimeout(() => { pageDragging = false; }), true);
+
 const addPanel = $("addTab");
 addPanel.ondragover = (event) => {
-  if (addDragRows) return; // 굿즈 줄을 끄는 중이면 사진 넣기가 아니다
+  if (addDragRows || pageDragging) return; // 굿즈 줄을 끄는 중이면 사진 넣기가 아니다
   event.preventDefault();
   addPanel.classList.add("dragover");
 };
 addPanel.ondragleave = () => addPanel.classList.remove("dragover");
 addPanel.ondrop = (event) => {
-  if (addDragRows) return;
+  if (addDragRows || pageDragging) return;
   event.preventDefault();
   addPanel.classList.remove("dragover");
   addGoodsFiles([...event.dataTransfer.files]);
@@ -3729,17 +4289,56 @@ addPanel.ondrop = (event) => {
 // 그 전까지는 goodsEdits에 적어 두고 굿즈 탭에 바뀐 모습으로 보여 준다.
 
 let goodsEdits = new Map(); // JSON의 goodsUrl → 바뀐 굿즈 (지웠으면 null)
+// 추가 탭으로 넣었지만 JSON 생성 전이라 goods.json에 아직 없는 굿즈.
+// picture 폴더를 읽어 찾아서 굿즈 탭에 같이 보여 주고, JSON 굿즈처럼 고치거나 지울 수 있게 한다.
+let unsavedGoods = [];
+let unsavedState = "idle"; // idle(아직 안 읽음) | loading | done
 let viewerEditing = false;
 let editPreviewUrl = null;
 let askResolve = null;
 
 function shownGoods() {
-  if (!goodsEdits.size) return allGoods;
-  return allGoods.flatMap((g) => {
+  const base = !goodsEdits.size ? allGoods : allGoods.flatMap((g) => {
     if (!goodsEdits.has(g.goodsUrl)) return [g];
     const edit = goodsEdits.get(g.goodsUrl);
     return edit ? [edit] : [];
   });
+  return unsavedGoods.length ? base.concat(unsavedGoods) : base;
+}
+
+// picture 폴더 검사 결과에서 JSON에 없는 굿즈만 골라 둔다
+function setUnsavedFromResult(result) {
+  const inJson = new Set(allGoods.map((g) => g.goodsUrl));
+  // 굿즈 탭에서 이름을 바꾼 JSON 굿즈는 이미 바뀐 모습으로 보이므로 뺀다
+  const renamedTo = new Set([...goodsEdits.values()].filter(Boolean).map((edit) => edit.goodsUrl));
+  unsavedGoods = result.goods
+    .filter((g) => !inJson.has(g.goodsUrl) && !renamedTo.has(g.goodsUrl))
+    .map((g) => {
+      const folder = g.goodsUrl.slice(RAW_PREFIX.length + "picture/".length).split("/")[0];
+      return {
+        ...g,
+        charas: splitCharas(g.goodsChara),
+        country: folder.split("_").slice(-2)[0],
+        haystack: [g.goodsChara, g.goodsCategory, g.goodsPrice, g.goodsMemo, g.goodsSeries].join(" ").toLowerCase(),
+        unsaved: true,
+      };
+    });
+  unsavedState = "done";
+}
+
+// serve.py로 띄웠을 때만 picture 폴더를 읽을 수 있다. 굿즈 탭을 처음 열 때 한 번 읽는다.
+async function loadUnsaved() {
+  if (unsavedState !== "idle" || loadError) return;
+  unsavedState = "loading";
+  try {
+    const source = (await checkServer()) ? await readFromServer() : null;
+    if (source) setUnsavedFromResult(generateData(source.tree, new Set(allCharacters.map((c) => c.charaNm.trim())), []));
+  } catch {
+    unsavedGoods = [];
+  }
+  unsavedState = "done";
+  // 보고 있는 목록에 새 굿즈를 끼워 넣는다(창을 열고 있으면 건드리지 않는다)
+  if (unsavedGoods.length && ["goods", "series"].includes(state.view) && !$("viewer").open) apply();
 }
 
 function showGoodsImage(img, goods) {
@@ -3759,10 +4358,14 @@ function goodsFolderUrl(goods) {
 function renderPending() {
   const box = $("pending");
   const edits = [...goodsEdits.values()];
-  box.hidden = !edits.length || state.view !== "goods";
+  box.hidden = (!edits.length && !unsavedGoods.length) || state.view !== "goods";
   if (box.hidden) return;
   const deleted = edits.filter((edit) => !edit).length;
-  const counts = [edits.length - deleted && `수정 ${edits.length - deleted}개`, deleted && `삭제 ${deleted}개`].filter(Boolean);
+  const counts = [
+    edits.length - deleted && `수정 ${edits.length - deleted}개`,
+    deleted && `삭제 ${deleted}개`,
+    unsavedGoods.length && `새 굿즈 ${unsavedGoods.length}개('JSON 저장 전' 표시, 눌러서 고칠 수 있음)`,
+  ].filter(Boolean);
   const go = el("button", "", "JSON 생성 탭으로");
   go.type = "button";
   go.onclick = () => {
@@ -3995,11 +4598,11 @@ async function applyGoodsEdit() {
       goodsMemo: values.memo,
       goodsUrl: goodsFolderUrl(goods) + data.name,
       haystack: [values.chara, values.category, values.price, values.memo, goods.goodsSeries].join(" ").toLowerCase(),
-      jsonUrl: key,
       imageVersion: file ? Date.now() : goods.imageVersion,
-      edited: true,
     };
-    goodsEdits.set(key, next);
+    // JSON 저장 전 굿즈는 목록에서 바로 바꿔 끼우고, JSON 굿즈는 저장할 때까지 바뀐 내용으로 기억해 둔다
+    if (goods.unsaved) unsavedGoods = unsavedGoods.map((g) => (g === goods ? next : g));
+    else goodsEdits.set(key, Object.assign(next, { jsonUrl: key, edited: true }));
     scanStarted = false; // 다음에 생성·문제 탭을 열 때 다시 검사
     addReady = false;
     goodsBusy(false);
@@ -4037,7 +4640,8 @@ async function deleteGoods() {
   goodsBusy(true);
   try {
     await sendGoodsEdit({ action: "delete", path: goodsPath(goods) });
-    goodsEdits.set(goods.jsonUrl || goods.goodsUrl, null);
+    if (goods.unsaved) unsavedGoods = unsavedGoods.filter((g) => g !== goods);
+    else goodsEdits.set(goods.jsonUrl || goods.goodsUrl, null);
     scanStarted = false;
     addReady = false;
     goodsBusy(false);
@@ -4209,6 +4813,7 @@ async function runScan() {
   for (const id of ["runBuild", "runIssues"]) $(id).disabled = true;
   try {
     scanData = await scanProject();
+    setUnsavedFromResult(scanData.result);
     for (const id of ["buildStatus", "issuesStatus"]) $(id).textContent = scanData.summary;
     $("issuesTotal").textContent = problemCount(scanData.problems).toLocaleString();
     renderBuild(scanData);

@@ -433,6 +433,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2026Gratte",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026Gratte_일본_2026-10-30/mainTheme.png",
+    "seriesCountry": "일본",
+    "seriesCharas": "경연,남랑자,쇄명,수수,아브,양양현령,여랑자,여우의 별자리,청초",
+    "seriesDate": "2026-10-30"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2026SANFU콜라보",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026SANFU콜라보_중국_2026-07-24/mainTheme.jpg",
     "seriesCountry": "중국",
