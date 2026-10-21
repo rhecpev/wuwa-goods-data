@@ -3,6 +3,9 @@
 index.html을 띄우고, JSON 생성 탭의 "프로젝트 폴더에 저장"과 캐릭터 탭의 추가·수정·삭제, 추가 탭의 시리즈·굿즈 저장,
 굿즈 탭의 굿즈 수정·삭제, 올리기 탭의 커밋·푸시를 받아 준다.
 
+goods.json을 저장할 때 굿즈마다 바뀌지 않는 번호(goodsUid)를 붙인다. 번호는 goods_ids.json에 사진 경로별로 적어 두고,
+굿즈 탭에서 이름을 바꾸면 번호도 새 경로로 옮긴다. 탐색기에서 직접 이름을 바꾼 굿즈는 새 굿즈로 보고 새 번호를 받는다. 올리기 탭은 푸시 전에 빠진 번호를 채운다.
+
 사용법:
     python serve.py            # http://127.0.0.1:8765
     python serve.py 9000       # 포트 지정
@@ -16,6 +19,7 @@ import socket
 import struct
 import subprocess
 import sys
+import threading
 import webbrowser
 from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
@@ -31,6 +35,56 @@ MAX_UPLOAD = 1024 * 1024 * 1024
 
 IMAGE_EXTS = (".png", ".jpg", ".jpeg", ".webp", ".avif", ".gif")
 BAD_PATH_CHARS = '/\\:*?"<>|'
+
+# 굿즈 번호 대장. {"next": 다음에 줄 번호, "ids": {"시리즈폴더/goods/파일명": 번호}}
+# 지운 굿즈의 번호는 다시 쓰지 않는다. 앱의 옛 버전이 goodsId를 읽을 수 있어서 번호는 goodsUid 칸에 따로 둔다.
+IDS_FILE = "goods_ids.json"
+PICTURE_PREFIX = RAW_PREFIX + "picture/"
+ids_lock = threading.Lock()
+
+
+def json_text(data):
+    """index.html의 JSON.stringify(data, null, 2)와 바이트 단위로 같은 CRLF 텍스트"""
+    return json.dumps(data, ensure_ascii=False, indent=2).replace("\n", "\r\n")
+
+
+def load_ids(directory):
+    path = os.path.join(directory, IDS_FILE)
+    if not os.path.isfile(path):
+        return {"next": 1, "ids": {}}
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def save_ids(directory, registry):
+    # 다 쓴 뒤에 바꿔 끼워서, 중간에 실패해도 대장이 깨지지 않는다
+    path = os.path.join(directory, IDS_FILE)
+    with open(path + ".tmp", "w", encoding="utf-8", newline="") as f:
+        f.write(json_text(registry))
+    os.replace(path + ".tmp", path)
+
+
+def with_uids(goods, registry):
+    """굿즈마다 goodsUid를 goodsId 바로 뒤에 붙인다. 대장에 없는 굿즈는 새 번호를 받는다."""
+    ids = registry["ids"]
+    result = []
+    for item in goods:
+        url = str(item.get("goodsUrl", ""))
+        path = url[len(PICTURE_PREFIX):] if url.startswith(PICTURE_PREFIX) else url
+        uid = ids.get(path)
+        if not uid:
+            uid = registry["next"]
+            registry["next"] += 1
+            ids[path] = uid
+        ordered = {} if "goodsId" in item else {"goodsUid": uid}
+        for key, value in item.items():
+            if key == "goodsUid":
+                continue
+            ordered[key] = value
+            if key == "goodsId":
+                ordered["goodsUid"] = uid
+        result.append(ordered)
+    return result
 
 
 def bad_path_part(value):
@@ -124,6 +178,7 @@ class Handler(SimpleHTTPRequestHandler):
         files = body.get("files") or {}
 
         # 하나라도 이상하면 아무것도 쓰지 않는다
+        goods = None
         for name, text in files.items():
             if name not in SAVE_FILES:
                 self.reply(400, {"error": f"저장할 수 없는 파일: {name}"})
@@ -133,6 +188,8 @@ class Handler(SimpleHTTPRequestHandler):
             except Exception as e:
                 self.reply(400, {"error": f"{name} 내용 오류: {e}"})
                 return
+            if name == "goods.json":
+                goods = data
 
             # 한 시리즈 안에 캐릭터·카테고리·가격·메모가 전부 같은 굿즈가 있으면 안 된다
             if name == "goods.json":
@@ -143,6 +200,12 @@ class Handler(SimpleHTTPRequestHandler):
                         self.reply(400, {"error": "내용이 완전히 같은 굿즈가 있습니다: " + " / ".join(key)})
                         return
                     seen.add(key)
+
+        if goods is not None:
+            with ids_lock:
+                registry = load_ids(self.directory)
+                files = {**files, "goods.json": json_text(with_uids(goods, registry))}
+                save_ids(self.directory, registry)
 
         for name, text in files.items():
             # newline=""로 줄바꿈(CRLF)을 보낸 그대로 쓴다
@@ -363,6 +426,15 @@ class Handler(SimpleHTTPRequestHandler):
             self.reply(500, {"error": f"파일 저장 실패: {e}"})
             return
 
+        # 이름이 바뀌어도 같은 굿즈이므로 번호를 새 경로로 옮긴다
+        if new_name != filename:
+            with ids_lock:
+                registry = load_ids(self.directory)
+                uid = registry["ids"].pop(f"{folder}/goods/{filename}", None)
+                if uid:
+                    registry["ids"][f"{folder}/goods/{new_name}"] = uid
+                    save_ids(self.directory, registry)
+
         print(f"굿즈 수정: {folder}/goods/{filename} → {new_name}")
         self.reply(200, {"renamed": filename, "name": new_name})
 
@@ -525,6 +597,17 @@ class Handler(SimpleHTTPRequestHandler):
             return code
 
         try:
+            # exe로 만든 goods.json을 복사해 넣었으면 번호가 빠져 있으니, 올리기 전에 대장에서 채운다
+            goods_path = os.path.join(self.directory, "goods.json")
+            with ids_lock:
+                with open(goods_path, "r", encoding="utf-8") as f:
+                    goods = json.load(f)
+                if any(not item.get("goodsUid") for item in goods):
+                    registry = load_ids(self.directory)
+                    with open(goods_path, "w", encoding="utf-8", newline="") as f:
+                        f.write(json_text(with_uids(goods, registry)))
+                    save_ids(self.directory, registry)
+                    log.append("goods.json에 빠진 굿즈 번호를 채웠습니다")
             if run("add", "-A") != 0:
                 raise RuntimeError("git add 실패")
             # 올릴 변경이 있을 때만 커밋한다 (지난번에 커밋만 되고 푸시가 실패했으면 푸시만)
