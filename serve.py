@@ -48,6 +48,14 @@ def json_text(data):
     return json.dumps(data, ensure_ascii=False, indent=2).replace("\n", "\r\n")
 
 
+def write_text(path, text):
+    """다 쓴 뒤에 바꿔 끼운다. 쓰다가 멈춰도 원래 파일이 반쯤 잘린 채로 남지 않는다.
+    newline=""로 줄바꿈(CRLF)을 받은 그대로 쓴다."""
+    with open(path + ".tmp", "w", encoding="utf-8", newline="") as f:
+        f.write(text)
+    os.replace(path + ".tmp", path)
+
+
 def load_ids(directory):
     path = os.path.join(directory, IDS_FILE)
     if not os.path.isfile(path):
@@ -57,21 +65,29 @@ def load_ids(directory):
 
 
 def save_ids(directory, registry):
-    # 다 쓴 뒤에 바꿔 끼워서, 중간에 실패해도 대장이 깨지지 않는다
-    path = os.path.join(directory, IDS_FILE)
-    with open(path + ".tmp", "w", encoding="utf-8", newline="") as f:
-        f.write(json_text(registry))
-    os.replace(path + ".tmp", path)
+    write_text(os.path.join(directory, IDS_FILE), json_text(registry))
 
 
 def with_uids(goods, registry):
     """굿즈마다 goodsUid를 goodsId 바로 뒤에 붙인다. 대장에 없는 굿즈는 새 번호를 받는다."""
     ids = registry["ids"]
+    # 대장을 잃었거나 덜 적혔어도, goods.json에 이미 적힌 번호는 그대로 쓰고 새 번호와 겹치지 않게 한다
+    used = set(ids.values())
+    for item in goods:
+        existing = item.get("goodsUid")
+        if isinstance(existing, int) and existing > 0:
+            registry["next"] = max(registry["next"], existing + 1)
+    registry["next"] = max([registry["next"]] + [uid + 1 for uid in used])
     result = []
     for item in goods:
         url = str(item.get("goodsUrl", ""))
         path = url[len(PICTURE_PREFIX):] if url.startswith(PICTURE_PREFIX) else url
         uid = ids.get(path)
+        existing = item.get("goodsUid")
+        if not uid and isinstance(existing, int) and existing > 0 and existing not in used:
+            uid = existing
+            ids[path] = uid
+            used.add(uid)
         if not uid:
             uid = registry["next"]
             registry["next"] += 1
@@ -190,6 +206,10 @@ class Handler(SimpleHTTPRequestHandler):
                 return
             if name == "goods.json":
                 goods = data
+                # 빈 목록이 올라가면 앱이 모든 사용자의 굿즈(보유 기록 포함)를 지우려 한다
+                if not isinstance(data, list) or not data:
+                    self.reply(400, {"error": "goods.json이 비어 있어 저장하지 않았습니다. picture 폴더를 읽었는지 확인하세요."})
+                    return
 
             # 한 시리즈 안에 캐릭터·카테고리·가격·메모가 전부 같은 굿즈가 있으면 안 된다
             if name == "goods.json":
@@ -201,17 +221,20 @@ class Handler(SimpleHTTPRequestHandler):
                         return
                     seen.add(key)
 
-        if goods is not None:
-            with ids_lock:
-                registry = load_ids(self.directory)
-                files = {**files, "goods.json": json_text(with_uids(goods, registry))}
-                save_ids(self.directory, registry)
+        try:
+            if goods is not None:
+                with ids_lock:
+                    registry = load_ids(self.directory)
+                    files = {**files, "goods.json": json_text(with_uids(goods, registry))}
+                    save_ids(self.directory, registry)
 
-        for name, text in files.items():
-            # newline=""로 줄바꿈(CRLF)을 보낸 그대로 쓴다
-            with open(os.path.join(self.directory, name), "w", encoding="utf-8", newline="") as f:
-                f.write(text)
-            print(f"저장: {name}")
+            for name, text in files.items():
+                write_text(os.path.join(self.directory, name), text)
+                print(f"저장: {name}")
+        except Exception as e:
+            # 대장(goods_ids.json)이 깨졌거나 파일을 쓰지 못한 경우. 응답 없이 끊기지 않게 알려 준다
+            self.reply(500, {"error": f"저장 실패: {e}"})
+            return
 
         self.reply(200, {"saved": list(files)})
 
@@ -345,8 +368,7 @@ class Handler(SimpleHTTPRequestHandler):
             with open(write_image, "wb") as f:
                 f.write(image)
             result["image"] = "character/" + os.path.basename(write_image)
-        with open(characters_file, "w", encoding="utf-8", newline="") as f:
-            f.write(text)
+        write_text(characters_file, text)
         if remove_image:
             os.remove(remove_image)
             result["removedImage"] = "character/" + os.path.basename(remove_image)
@@ -428,12 +450,17 @@ class Handler(SimpleHTTPRequestHandler):
 
         # 이름이 바뀌어도 같은 굿즈이므로 번호를 새 경로로 옮긴다
         if new_name != filename:
-            with ids_lock:
-                registry = load_ids(self.directory)
-                uid = registry["ids"].pop(f"{folder}/goods/{filename}", None)
-                if uid:
-                    registry["ids"][f"{folder}/goods/{new_name}"] = uid
-                    save_ids(self.directory, registry)
+            try:
+                with ids_lock:
+                    registry = load_ids(self.directory)
+                    uid = registry["ids"].pop(f"{folder}/goods/{filename}", None)
+                    if uid:
+                        registry["ids"][f"{folder}/goods/{new_name}"] = uid
+                        save_ids(self.directory, registry)
+            except Exception as e:
+                # 파일 이름은 이미 바뀌었다. 번호를 못 옮기면 앱에서 새 굿즈로 보이므로 알려 준다
+                self.reply(500, {"error": f"파일 이름은 {new_name}(으)로 바꿨지만 굿즈 번호를 옮기지 못했습니다: {e}"})
+                return
 
         print(f"굿즈 수정: {folder}/goods/{filename} → {new_name}")
         self.reply(200, {"renamed": filename, "name": new_name})
@@ -602,11 +629,13 @@ class Handler(SimpleHTTPRequestHandler):
             with ids_lock:
                 with open(goods_path, "r", encoding="utf-8") as f:
                     goods = json.load(f)
+                if not goods:
+                    raise RuntimeError("goods.json이 비어 있어 올리지 않았습니다")
                 if any(not item.get("goodsUid") for item in goods):
                     registry = load_ids(self.directory)
-                    with open(goods_path, "w", encoding="utf-8", newline="") as f:
-                        f.write(json_text(with_uids(goods, registry)))
+                    text = json_text(with_uids(goods, registry))
                     save_ids(self.directory, registry)
+                    write_text(goods_path, text)
                     log.append("goods.json에 빠진 굿즈 번호를 채웠습니다")
             if run("add", "-A") != 0:
                 raise RuntimeError("git add 실패")
