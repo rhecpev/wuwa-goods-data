@@ -969,6 +969,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "금빛 파도의 무늬 교통카드",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/금빛 파도의 무늬 교통카드_중국_2026-10-22/mainTheme.jpg",
+    "seriesCountry": "중국",
+    "seriesCharas": "남랑자,여랑자",
+    "seriesDate": "2026-10-22"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "금희&장리넨도로이드",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/금희&장리넨도로이드_기타_2026-02-09/mainTheme.png",
     "seriesCountry": "기타",

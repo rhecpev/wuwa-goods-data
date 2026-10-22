@@ -56509,6 +56509,18 @@
   },
   {
     "goodsId": 0,
+    "goodsUid": 7616,
+    "goodsReleaseDate": "2026-10-22",
+    "goodsSeries": "금빛 파도의 무늬 교통카드",
+    "goodsPrice": "79위안",
+    "goodsChara": "남랑자,여랑자",
+    "goodsCategory": "교통카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/금빛 파도의 무늬 교통카드_중국_2026-10-22/goods/남랑자,여랑자_교통카드_79위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
     "goodsUid": 4710,
     "goodsReleaseDate": "2026-02-09",
     "goodsSeries": "금희&장리넨도로이드",
