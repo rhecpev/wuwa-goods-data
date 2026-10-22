@@ -841,6 +841,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "TCG 카멜리아 대회",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/TCG 카멜리아 대회_중국_2026-11-14/mainTheme.png",
+    "seriesCountry": "중국",
+    "seriesCharas": "남랑자,루파,앙코,여랑자,카멜리아,파수인",
+    "seriesDate": "2026-11-14"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "Village Vanguard",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/Village Vanguard_일본_2025-05-01/mainTheme.png",
     "seriesCountry": "일본",
