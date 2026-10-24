@@ -1368,10 +1368,10 @@
       </label>
       <div class="options">
         <label>가로 칸
-          <input id="stitchCols" type="number" min="1" max="20" value="1">
+          <input id="stitchCols" type="number" min="1" max="20" value="3">
         </label>
         <label>세로 칸
-          <input id="stitchRows" type="number" min="1" max="50" value="1">
+          <input id="stitchRows" type="number" min="1" max="50" value="2">
         </label>
         <label>크기
           <select id="stitchFit">
@@ -4852,8 +4852,8 @@ $("runDuplicates").onclick = async () => {
 const STITCH_MAX_SIDE = 16384; // 브라우저 캔버스 한 변 한계
 const STITCH_MAX_AREA = 16384 * 8192; // 브라우저마다 다른 넓이 한계보다 넉넉히 작게
 const STITCH_PREVIEW_AREA = 4e6;
-let stitchCells = [null]; // 왼쪽 위부터 가로 줄 순서로, 칸마다 { url, img, name } 또는 null
-let stitchShape = { cols: 1, rows: 1 };
+let stitchCells = Array(6).fill(null); // 왼쪽 위부터 가로 줄 순서로, 칸마다 { url, img, name } 또는 null
+let stitchShape = { cols: 3, rows: 2 };
 let stitchDragFrom = null;
 let stitchFrame = 0;
 const nameOrder = new Intl.Collator("ko", { numeric: true });

@@ -1609,6 +1609,22 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "카르티시아 SSR LD 피규어",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/카르티시아 SSR LD 피규어_기타_2026-10-25/mainTheme.png",
+    "seriesCountry": "기타",
+    "seriesCharas": "카르티시아",
+    "seriesDate": "2026-10-25"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "카르티시아 대형 피규어",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/카르티시아 대형 피규어_기타_2026-10-25/mainTheme.png",
+    "seriesCountry": "기타",
+    "seriesCharas": "카르티시아",
+    "seriesDate": "2026-10-25"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "카르티시아,파수인 SD피규어",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/카르티시아,파수인 SD피규어_기타_2026-09-28/mainTheme.jpg",
     "seriesCountry": "기타",
