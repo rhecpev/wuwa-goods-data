@@ -1033,6 +1033,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "대만 조월등화",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만 조월등화_대만_2026-10-31/mainTheme.png",
+    "seriesCountry": "대만",
+    "seriesCharas": "경연,남랑자,쇄명,수수,양양현령,여랑자,여우의 별자리,청초",
+    "seriesDate": "2026-10-31"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "대만2주년",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/mainTheme.jpg",
     "seriesCountry": "대만",
