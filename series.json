@@ -777,6 +777,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "M.RAGE 콜라보",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/M.RAGE 콜라보_기타_2026-10-31/mainTheme.png",
+    "seriesCountry": "기타",
+    "seriesCharas": "린네,모니에,에이메스",
+    "seriesDate": "2026-10-31"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "NICEFUN 인형",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/NICEFUN 인형_중국_2026-10-20/mainTheme.jpg",
     "seriesCountry": "중국",
@@ -1462,6 +1470,14 @@
     "seriesCountry": "중국",
     "seriesCharas": "남랑자,브렌트,여랑자,카를로타,페비",
     "seriesDate": "2025-07-21"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "유노 피규어",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/유노 피규어_기타_2026-10-30/mainTheme.png",
+    "seriesCountry": "기타",
+    "seriesCharas": "유노",
+    "seriesDate": "2026-10-30"
   },
   {
     "seriesId": 0,
