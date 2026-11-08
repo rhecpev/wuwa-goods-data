@@ -497,6 +497,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2026대만교통카드2",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026대만교통카드2_대만_2026-11-13/mainTheme.jpg",
+    "seriesCountry": "대만",
+    "seriesCharas": "릴리,쇄명,여우의 별자리",
+    "seriesDate": "2026-11-13"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2026대만교통카드",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026대만교통카드_대만_2026-05-27/mainTheme.jpg",
     "seriesCountry": "대만",

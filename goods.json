@@ -30829,6 +30829,42 @@
   },
   {
     "goodsId": 0,
+    "goodsUid": 7660,
+    "goodsReleaseDate": "2026-11-13",
+    "goodsSeries": "2026대만교통카드2",
+    "goodsPrice": "150위안",
+    "goodsChara": "릴리",
+    "goodsCategory": "교통카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026대만교통카드2_대만_2026-11-13/goods/릴리_교통카드_150위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7661,
+    "goodsReleaseDate": "2026-11-13",
+    "goodsSeries": "2026대만교통카드2",
+    "goodsPrice": "150위안",
+    "goodsChara": "쇄명",
+    "goodsCategory": "교통카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026대만교통카드2_대만_2026-11-13/goods/쇄명_교통카드_150위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7662,
+    "goodsReleaseDate": "2026-11-13",
+    "goodsSeries": "2026대만교통카드2",
+    "goodsPrice": "150위안",
+    "goodsChara": "여우의 별자리",
+    "goodsCategory": "교통카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026대만교통카드2_대만_2026-11-13/goods/여우의 별자리_교통카드_150위안_단품.png",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
     "goodsUid": 2570,
     "goodsReleaseDate": "2026-05-27",
     "goodsSeries": "2026대만교통카드",
