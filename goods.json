@@ -34561,6 +34561,18 @@
   },
   {
     "goodsId": 0,
+    "goodsUid": 7665,
+    "goodsReleaseDate": "2026-03-17",
+    "goodsSeries": "3.1버전",
+    "goodsPrice": "구성품",
+    "goodsChara": "남랑자,여랑자",
+    "goodsCategory": "인형",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/goods/남랑자,여랑자_인형_구성품_고양이인형세트.png",
+    "goodsMemo": "고양이인형세트"
+  },
+  {
+    "goodsId": 0,
     "goodsUid": 2878,
     "goodsReleaseDate": "2026-03-17",
     "goodsSeries": "3.1버전",
@@ -35389,6 +35401,18 @@
   },
   {
     "goodsId": 0,
+    "goodsUid": 2958,
+    "goodsReleaseDate": "2026-03-17",
+    "goodsSeries": "3.1버전",
+    "goodsPrice": "269위안",
+    "goodsChara": "에이메스",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/goods/에이메스_세트_269위안_고양이인형세트.png",
+    "goodsMemo": "고양이인형세트"
+  },
+  {
+    "goodsId": 0,
     "goodsUid": 2947,
     "goodsReleaseDate": "2026-03-17",
     "goodsSeries": "3.1버전",
@@ -35521,15 +35545,15 @@
   },
   {
     "goodsId": 0,
-    "goodsUid": 2958,
+    "goodsUid": 7666,
     "goodsReleaseDate": "2026-03-17",
     "goodsSeries": "3.1버전",
-    "goodsPrice": "269위안",
+    "goodsPrice": "구성품",
     "goodsChara": "에이메스",
-    "goodsCategory": "인형",
+    "goodsCategory": "엽서",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/goods/에이메스_인형_269위안_방랑자인형,에이메스인형,색지.png",
-    "goodsMemo": "방랑자인형,에이메스인형,색지"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/goods/에이메스_엽서_구성품_고양이인형세트.png",
+    "goodsMemo": "고양이인형세트"
   },
   {
     "goodsId": 0,
@@ -35554,6 +35578,18 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/goods/에이메스_인형_구성품1_에이메스인형세트.png",
     "goodsMemo": "에이메스인형세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7667,
+    "goodsReleaseDate": "2026-03-17",
+    "goodsSeries": "3.1버전",
+    "goodsPrice": "구성품",
+    "goodsChara": "에이메스",
+    "goodsCategory": "인형",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.1버전_버전_2026-03-17/goods/에이메스_인형_구성품_고양이인형세트.png",
+    "goodsMemo": "고양이인형세트"
   },
   {
     "goodsId": 0,
@@ -37405,15 +37441,15 @@
   },
   {
     "goodsId": 0,
-    "goodsUid": 3115,
+    "goodsUid": 7663,
     "goodsReleaseDate": "2026-06-03",
     "goodsSeries": "3.3버전",
-    "goodsPrice": "229위안",
+    "goodsPrice": "구성품",
     "goodsChara": "데니아",
     "goodsCategory": "가방",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/데니아_가방_229위안_특전SD키링.jpg",
-    "goodsMemo": "특전SD키링"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/데니아_가방_구성품_데니아가방세트.png",
+    "goodsMemo": "데니아가방세트"
   },
   {
     "goodsId": 0,
@@ -37426,6 +37462,18 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/데니아_레이저티켓_사은품_사은품.png",
     "goodsMemo": "사은품"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 3115,
+    "goodsReleaseDate": "2026-06-03",
+    "goodsSeries": "3.3버전",
+    "goodsPrice": "229위안",
+    "goodsChara": "데니아",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/데니아_세트_229위안_데니아가방세트.png",
+    "goodsMemo": "데니아가방세트"
   },
   {
     "goodsId": 0,
@@ -37654,6 +37702,18 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/데니아_키링_42위안_단품.jpg",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7664,
+    "goodsReleaseDate": "2026-06-03",
+    "goodsSeries": "3.3버전",
+    "goodsPrice": "구성품",
+    "goodsChara": "데니아",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.3버전_버전_2026-06-03/goods/데니아_키링_구성품_데니아가방세트.png",
+    "goodsMemo": "데니아가방세트"
   },
   {
     "goodsId": 0,
