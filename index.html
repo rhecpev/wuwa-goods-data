@@ -739,6 +739,27 @@
     background: color-mix(in srgb, var(--accent) 8%, var(--bg));
   }
   #addTab .dropzone input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+  #addTab .draft-note {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    padding: 10px 14px;
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+    color: var(--label);
+    font-size: 13.5px;
+  }
+  #addTab .draft-note[hidden] { display: none; }
+  #addTab .draft-note button { flex: none; height: 30px; padding: 0 12px; font-size: 12.5px; }
+  #addTab .main-field { display: grid; gap: 4px; align-content: start; min-width: 0; font-size: 13px; color: var(--muted); }
+  #addTab .main-head { display: flex; gap: 8px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+  #addTab .main-mode { display: inline-flex; gap: 4px; }
+  #addTab .main-mode button { height: 24px; padding: 0 10px; border-radius: 999px; font-size: 12px; }
+  #addTab .main-mode button.on { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); font-weight: 700; }
+  #addTab .main-stitch { min-height: 40px; height: auto; border-style: dashed; border-width: 2px; color: var(--accent); font-weight: 600; white-space: normal; }
   #addTab .main-drop { cursor: pointer; }
   #addTab .main-drop-box {
     position: relative;
@@ -1025,6 +1046,19 @@
   /* ── 합치기 탭: 칸에 사진을 놓아 모양을 잡고 한 장으로 잇기 ── */
   #stitchTab .page-head h2 { margin: 4px 0 4px; font-size: 22px; letter-spacing: -.02em; }
   #stitchTab .page-head p { margin: 0 0 16px; color: var(--muted); }
+  #stitchTab .stitch-for-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    border-color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+  }
+  #stitchTab .stitch-for-main[hidden] { display: none; }
+  #stitchTab .stitch-for-main > div:first-child { display: grid; gap: 2px; }
+  #stitchTab .stitch-for-main .row { margin: 0; }
   #stitchTab button {
     height: 38px;
     padding: 0 14px;
@@ -1231,7 +1265,11 @@
   <section id="addTab" hidden>
     <div class="page-head">
       <h2>시리즈·굿즈 추가</h2>
-      <p>사진을 <code>picture</code> 폴더에 저장합니다. 저장하면 JSON 생성 탭으로 넘어가서 바뀌는 내용을 확인한 뒤 JSON에 반영합니다.</p>
+      <p>사진을 <code>picture</code> 폴더에 저장합니다. 저장하면 JSON 생성 탭으로 넘어가서 바뀌는 내용을 확인한 뒤 JSON에 반영합니다. 쓰던 내용은 이 브라우저에 자동으로 남아서 새로고침하거나 창을 닫아도 이어서 쓸 수 있습니다.</p>
+    </div>
+    <div id="addDraftNote" class="draft-note" hidden>
+      <span id="addDraftText"></span>
+      <button id="addDraftClose" type="button" title="안내 닫기">닫기</button>
     </div>
 
     <div class="panel step">
@@ -1261,12 +1299,22 @@
           <label>날짜
             <input id="addDate" type="date">
           </label>
-          <label id="addMainDrop" class="main-drop">대표 이미지 (mainTheme)
-            <span class="main-drop-box">
-              <input id="addMainFile" type="file" accept="image/*">
-              <span id="addMainName">눌러서 고르거나 여기로 끌어 놓기</span>
-            </span>
-          </label>
+          <div class="main-field">
+            <div class="main-head">
+              <span>대표 이미지 (mainTheme)</span>
+              <span id="addMainMode" class="main-mode" role="group" aria-label="대표 이미지 만들기">
+                <button type="button" data-mode="single" class="on">한 장</button>
+                <button type="button" data-mode="grid">6분할 (3×2)</button>
+              </span>
+            </div>
+            <label id="addMainDrop" class="main-drop">
+              <span class="main-drop-box">
+                <input id="addMainFile" type="file" accept="image/*">
+                <span id="addMainName">눌러서 고르거나 여기로 끌어 놓기</span>
+              </span>
+            </label>
+            <button id="addMainStitch" type="button" class="main-stitch" hidden>사진 합치기에서 6장 합치기 (가로 3 × 세로 2)</button>
+          </div>
         </div>
         <div id="addMainPreview" class="preview" hidden>
           <img id="addMainImg" alt="" class="wide">
@@ -1429,6 +1477,7 @@
     </div>
 
     <div class="save-bar">
+      <label class="check" title="png·jpg·avif 사진을 화질 90% WebP로 바꿔서 저장합니다. webp·gif는 그대로 둡니다. 원본 파일은 바뀌지 않습니다."><input id="addWebp" type="checkbox" checked><span>WebP로 바꿔 저장</span></label>
       <label id="addNewCatCheck" class="check" hidden><input id="addNewCatOk" type="checkbox"><span id="addNewCatText"></span></label>
       <span id="addStatus" class="save-status"></span>
       <div class="save-actions">
@@ -1446,6 +1495,17 @@
     <div class="page-head">
       <h2>사진 합치기</h2>
       <p>가로·세로 칸 수를 정하고 사진을 칸에 끌어 놓아 모양을 잡으면, 그 모양 그대로 한 장으로 이어 붙입니다. 사진은 이 브라우저 안에서만 다룹니다.</p>
+    </div>
+    <!-- 추가 탭 "6분할" 대표 이미지를 만드는 중일 때만 보인다 -->
+    <div id="stitchForMain" class="panel stitch-for-main" hidden>
+      <div>
+        <strong>새 시리즈 대표 이미지 만드는 중</strong>
+        <span id="stitchForMainInfo" class="muted">가로 3 × 세로 2 칸을 모두 채우면 대표 이미지로 쓸 수 있습니다.</span>
+      </div>
+      <div class="row">
+        <button id="stitchUseMain" type="button" class="primary" disabled>대표 이미지로 쓰기</button>
+        <button id="stitchCancelMain" type="button">추가 탭으로 돌아가기</button>
+      </div>
     </div>
     <div class="panel">
       <label class="dropzone">
@@ -3070,6 +3130,141 @@ window.addEventListener("scroll", (event) => {
 }, true);
 window.addEventListener("resize", closeSuggest);
 
+// ── 추가 탭 임시 저장: 새로고침하거나 창을 닫아도 쓰던 내용이 남게 이 브라우저(IndexedDB)에 계속 적어 둔다 ──
+// 사진은 files 저장소에 한 번만 넣고(줄마다 draftId), 칸 내용은 draft 저장소의 한 기록에 통째로 덮어쓴다.
+// 저장 버튼으로 올리거나 "비우기"를 누르면 지워진다. "이미 있는 굿즈" 쪽 수정은 바로 서버에 저장되므로 여기 들지 않는다.
+const DRAFT_DB = "goods-add-draft";
+let draftDbPromise = null;
+let draftTimer = 0;
+let draftRestoring = false;
+let draftLoaded = false; // 복원을 마치기 전에는 저장하지 않는다 (빈 화면이 남은 임시 저장을 지우지 않게)
+let draftFileIds = new Set(); // files 저장소에 이미 들어 있는 사진 id
+
+function draftDb() {
+  draftDbPromise ||= new Promise((resolve, reject) => {
+    const req = indexedDB.open(DRAFT_DB, 1);
+    req.onupgradeneeded = () => {
+      req.result.createObjectStore("files");
+      req.result.createObjectStore("draft");
+    };
+    req.onsuccess = () => resolve(req.result);
+    req.onerror = () => reject(req.error);
+  });
+  return draftDbPromise;
+}
+
+function draftRequest(req) {
+  return new Promise((resolve, reject) => {
+    req.onsuccess = () => resolve(req.result);
+    req.onerror = () => reject(req.error);
+  });
+}
+
+function scheduleAddDraft() {
+  if (draftRestoring || !draftLoaded) return;
+  clearTimeout(draftTimer);
+  draftTimer = setTimeout(saveAddDraft, 400);
+}
+
+async function saveAddDraft() {
+  clearTimeout(draftTimer);
+  draftTimer = 0;
+  if (draftRestoring || !draftLoaded) return;
+  try {
+    const main = addMain && (addMain.draftId ||= crypto.randomUUID());
+    for (const row of addRows) row.draftId ||= crypto.randomUUID();
+    const record = {
+      savedAt: Date.now(),
+      series: $("addSeries").value,
+      name: $("addName").value,
+      country: $("addCountry").value,
+      date: $("addDate").value,
+      mainMode: addMainMode,
+      main: main || null,
+      rows: addRows.map((row) => ({
+        id: row.draftId, chara: row.chara, category: row.category, price: row.price, memo: row.memo, checked: Boolean(row.checked),
+      })),
+    };
+    const empty = !record.rows.length && !record.main && !record.series && !record.name.trim() && !record.country.trim() && !record.date;
+    const files = new Map(addRows.map((row) => [row.draftId, row.file]));
+    if (main) files.set(main, addMain.file);
+    const db = await draftDb();
+    const tx = db.transaction(["files", "draft"], "readwrite");
+    const fileStore = tx.objectStore("files");
+    for (const [id, file] of files) if (!draftFileIds.has(id)) fileStore.put(file, id);
+    for (const id of draftFileIds) if (!files.has(id)) fileStore.delete(id);
+    if (empty) tx.objectStore("draft").delete("current");
+    else tx.objectStore("draft").put(record, "current");
+    await new Promise((resolve, reject) => {
+      tx.oncomplete = resolve;
+      tx.onerror = () => reject(tx.error);
+      tx.onabort = () => reject(tx.error);
+    });
+    draftFileIds = new Set(files.keys());
+  } catch (error) {
+    console.warn("추가 탭 임시 저장 실패", error);
+  }
+}
+
+async function restoreAddDraft() {
+  draftRestoring = true;
+  try {
+    const db = await draftDb();
+    const record = await draftRequest(db.transaction("draft").objectStore("draft").get("current"));
+    if (!record) return;
+    const store = db.transaction("files").objectStore("files");
+    const ids = [...(record.main ? [record.main] : []), ...record.rows.map((row) => row.id)];
+    const files = new Map(await Promise.all(ids.map(async (id) => [id, await draftRequest(store.get(id))])));
+    draftFileIds = new Set([...files].filter(([, file]) => file).map(([id]) => id));
+
+    if (record.series && addFolders.includes(record.series)) {
+      $("addSeries").value = record.series;
+      await $("addSeries").onchange();
+    } else {
+      $("addName").value = record.name || "";
+      $("addCountry").value = record.country || "";
+      $("addDate").value = record.date || "";
+    }
+    const mainFile = record.main && files.get(record.main);
+    if (mainFile) {
+      setAddMain(mainFile);
+      addMain.draftId = record.main;
+    }
+    setAddMainMode(record.mainMode === "grid" ? "grid" : "single");
+    let lost = 0;
+    for (const saved of record.rows) {
+      const file = files.get(saved.id);
+      if (!file) {
+        lost++;
+        continue;
+      }
+      addRows.push({
+        file, ext: fileExtension(file.name), url: URL.createObjectURL(file), draftId: saved.id,
+        chara: saved.chara || "", category: saved.category || "", price: saved.price || "", memo: saved.memo || "", checked: Boolean(saved.checked),
+      });
+    }
+    renderAddRows();
+    const when = new Date(record.savedAt);
+    const pad = (n) => String(n).padStart(2, "0");
+    $("addDraftText").textContent = `이전에 쓰던 내용을 불러왔습니다 (${when.getMonth() + 1}/${when.getDate()} ${pad(when.getHours())}:${pad(when.getMinutes())}에 마지막으로 저장 · 굿즈 ${addRows.length}개${lost ? ` · 사진을 못 찾은 ${lost}개는 빠짐` : ""}). 필요 없으면 아래 "비우기"를 누르세요.`;
+    $("addDraftNote").hidden = false;
+  } catch (error) {
+    console.warn("추가 탭 임시 저장 불러오기 실패", error);
+  } finally {
+    draftRestoring = false;
+    draftLoaded = true;
+    updateAdd();
+  }
+}
+
+// 창을 닫거나 다른 창으로 넘어갈 때 남은 저장을 바로 한다
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "hidden" && draftTimer) saveAddDraft();
+});
+window.addEventListener("pagehide", () => {
+  if (draftTimer) saveAddDraft();
+});
+
 async function renderAdd() {
   if (!addReady) {
     addReady = true;
@@ -3089,6 +3284,8 @@ async function renderAdd() {
     fillDatalist("addCharaList", allCharacters.map((c) => c.charaNm.trim()));
     fillDatalist("addCategoryList", [...addCategories]);
     fillDatalist("addPriceList", byCount(countBy(allGoods, (g) => [g.goodsPrice])).slice(0, 60));
+    await restoreAddDraft();
+    return;
   }
   updateAdd();
 }
@@ -3492,6 +3689,7 @@ function updateBulk() {
   }
   delete $("addBulkStatus").dataset.keep;
   updateSet();
+  scheduleAddDraft(); // 체크 상태도 남긴다
 }
 
 // 체크한 굿즈의 캐릭터를 처음 나온 순서대로 겹치지 않게 모은다
@@ -3683,6 +3881,7 @@ async function updateAdd() {
   if (!$("addStatus").dataset.keep) $("addStatus").textContent = status;
   delete $("addStatus").dataset.keep;
   applyAddFilter();
+  scheduleAddDraft();
 }
 
 // 아래 굿즈 목록을 검색어·카테고리·캐릭터·종류로 걸러서 맞지 않는 줄은 숨긴다 (데이터는 그대로)
@@ -3760,6 +3959,8 @@ function clearAdd() {
   $("addSeries").value = "";
   $("addSeriesQ").value = "";
   addDoneFilter = "";
+  setAddMainMode("single");
+  closeStitchForMain();
   fillAddSeries();
   $("addMainPreview").hidden = true;
   $("addMainName").textContent = "눌러서 고르거나 여기로 끌어 놓기";
@@ -3769,6 +3970,27 @@ function clearAdd() {
   for (const [, id] of EX_BULK_FIELDS) $(id).value = "";
   renderAddExisting();
   renderAddRows();
+  saveAddDraft(); // 비웠거나 저장을 마쳤으니 임시 저장도 바로 지운다
+  $("addDraftNote").hidden = true;
+}
+
+// 사진 바이트를 WebP(화질 90%)로 바꾼다. 브라우저가 WebP로 못 만들면 실패로 본다.
+const WEBP_QUALITY = 0.9;
+async function toWebp(buffer) {
+  const bitmap = await createImageBitmap(new Blob([buffer]));
+  try {
+    const canvas = new OffscreenCanvas(bitmap.width, bitmap.height);
+    canvas.getContext("2d").drawImage(bitmap, 0, 0);
+    const blob = await canvas.convertToBlob({ type: "image/webp", quality: WEBP_QUALITY });
+    if (blob.type !== "image/webp" || !blob.size) throw new Error("WebP로 만들 수 없음");
+    return await blob.arrayBuffer();
+  } finally {
+    bitmap.close();
+  }
+}
+
+function formatBytes(bytes) {
+  return bytes >= 1024 * 1024 ? `${(bytes / 1024 / 1024).toFixed(1)}MB` : `${Math.round(bytes / 1024)}KB`;
 }
 
 async function submitAdd() {
@@ -3806,6 +4028,34 @@ async function submitAdd() {
       console.error("저장 전 사진 확인 실패", bad);
       throw new Error(`사진 ${bad.length}개를 읽지 못했습니다: ${bad.join(" / ")}`);
     }
+    // WebP로 바꿔 저장: webp·gif(움짤일 수 있음)가 아닌 사진을 webp로 바꾼다. 바꾸지 못한 사진은 원래 형식 그대로 올린다.
+    const exts = sources.map(([, file]) => fileExtension(file.name));
+    if ($("addWebp").checked) {
+      const targets = exts.map((ext, index) => (ext === ".webp" || ext === ".gif" ? -1 : index)).filter((index) => index >= 0);
+      let done = 0;
+      let before = 0;
+      let after = 0;
+      const failed = [];
+      let next = 0;
+      await Promise.all(Array.from({ length: 4 }, async () => {
+        while (next < targets.length) {
+          const index = targets[next++];
+          const converted = await toWebp(buffers[index]).catch((error) => {
+            console.warn("WebP 변환 실패", sources[index][1].name, error);
+            return null;
+          });
+          if (converted) {
+            before += buffers[index].byteLength;
+            after += converted.byteLength;
+            buffers[index] = converted;
+            exts[index] = ".webp";
+          } else failed.push(sources[index][1].name);
+          $("addStatus").textContent = `WebP로 바꾸는 중… ${++done}/${targets.length}`;
+        }
+      }));
+      if (targets.length) console.info(`WebP 변환: ${targets.length - failed.length}개, ${formatBytes(before)} → ${formatBytes(after)}`, failed.length ? { 실패: failed } : "");
+      $("addStatus").textContent = "저장 중…";
+    }
     const files = [];
     const meta = {
       series: series.folder ? { folder: series.folder } : { name: series.name, country: series.country, date: series.date },
@@ -3815,17 +4065,18 @@ async function submitAdd() {
     let next = 0;
     if (!series.folder) {
       const buffer = buffers[next++];
-      meta.mainTheme = { ext: addMain.ext, size: buffer.byteLength, source: addMain.file.name };
+      meta.mainTheme = { ext: exts[next - 1], size: buffer.byteLength, source: addMain.file.name };
       files.push(buffer);
     }
     for (const row of addRows) {
+      const ext = exts[next];
       const buffer = buffers[next++];
       meta.goods.push({
         chara: splitCharas(row.chara).join(","),
         category: row.category.trim(),
         price: row.price.trim(),
         memo: row.memo.trim(),
-        ext: row.ext,
+        ext,
         size: buffer.byteLength,
         source: row.file.name,
       });
@@ -4323,9 +4574,25 @@ function setAddMain(file) {
   $("addMainName").textContent = addMain ? addMain.file.name : "눌러서 고르거나 여기로 끌어 놓기";
   if (addMain) $("addMainImg").src = addMain.url;
   $("addMainImg").onclick = () => addMain && zoomImage(addMain.url);
+  setAddMainMode(addMainMode);
   updateAdd();
 }
 $("addMainFile").onchange = (event) => setAddMain(event.target.files[0]);
+
+// 대표 이미지: 한 장을 그대로 쓰거나, 6장을 가로 3 × 세로 2로 합쳐서 쓴다
+let addMainMode = "single";
+function setAddMainMode(mode) {
+  addMainMode = mode;
+  for (const button of $("addMainMode").querySelectorAll("button")) button.classList.toggle("on", button.dataset.mode === mode);
+  $("addMainDrop").hidden = mode === "grid";
+  $("addMainStitch").hidden = mode !== "grid";
+  $("addMainStitch").textContent = addMain && mode === "grid"
+    ? "사진 합치기에서 다시 합치기 (가로 3 × 세로 2)"
+    : "사진 합치기에서 6장 합치기 (가로 3 × 세로 2)";
+  scheduleAddDraft();
+}
+for (const button of $("addMainMode").querySelectorAll("button")) button.onclick = () => setAddMainMode(button.dataset.mode);
+$("addMainStitch").onclick = openStitchForMain;
 // 대표 이미지 칸에 놓은 사진은 굿즈로 넣지 않도록 탭 전체의 끌어 놓기보다 먼저 받는다
 const addMainDrop = $("addMainDrop");
 addMainDrop.ondragover = (event) => {
@@ -4466,8 +4733,18 @@ $("addCheckAll").onchange = () => {
 };
 for (const [, id] of BULK_FIELDS) $(id).oninput = updateBulk;
 $("addSubmit").onclick = submitAdd;
+// WebP 변환 켬/끔은 이 브라우저에 기억한다 (기본은 켬)
+try {
+  if (localStorage.getItem("addWebp") === "0") $("addWebp").checked = false;
+} catch {}
+$("addWebp").onchange = () => {
+  try {
+    localStorage.setItem("addWebp", $("addWebp").checked ? "1" : "0");
+  } catch {}
+};
 $("addNewCatOk").onchange = updateAdd;
 $("addClear").onclick = clearAdd;
+$("addDraftClose").onclick = () => { $("addDraftNote").hidden = true; };
 
 // 페이지 안의 사진을 끄는 중이면 파일 넣기가 아니다 (브라우저가 사진을 파일로 넘겨서 굿즈가 복제된다)
 let pageDragging = false;
@@ -5173,8 +5450,68 @@ function renderStitch() {
   $("stitchPack").disabled = !count;
   $("stitchClear").disabled = !count;
   $("stitchSave").disabled = !count;
+  updateStitchForMain();
   drawStitchSoon();
 }
+
+// ── 추가 탭 "6분할" 대표 이미지: 합치기 탭을 가로 3 × 세로 2로 열고, 다 채우면 대표 이미지로 넘긴다 ──
+let stitchForMain = false;
+
+function openStitchForMain() {
+  stitchForMain = true;
+  reshapeStitch(3, 2);
+  state.view = "stitch";
+  apply();
+  window.scrollTo(0, 0);
+}
+
+function closeStitchForMain() {
+  stitchForMain = false;
+  updateStitchForMain();
+}
+
+function updateStitchForMain() {
+  $("stitchForMain").hidden = !stitchForMain;
+  // 만드는 동안은 칸 모양을 3×2로 고정한다
+  $("stitchCols").disabled = stitchForMain;
+  $("stitchRows").disabled = stitchForMain;
+  if (!stitchForMain) return;
+  const filled = stitchCells.filter(Boolean).length;
+  const shapeOk = stitchShape.cols === 3 && stitchShape.rows === 2;
+  $("stitchUseMain").disabled = !shapeOk || filled !== 6;
+  $("stitchForMainInfo").textContent = !shapeOk
+    ? `사진이 6장보다 많아 칸이 늘었습니다. 남는 사진을 × 로 빼고 "빈칸 당기기"를 누르세요. (지금 ${filled}장)`
+    : filled === 6 ? "6칸을 다 채웠습니다. 순서를 확인하고 \"대표 이미지로 쓰기\"를 누르세요."
+    : `가로 3 × 세로 2 칸을 모두 채우면 대표 이미지로 쓸 수 있습니다. (${filled}/6)`;
+}
+
+async function useStitchAsMain() {
+  $("stitchUseMain").disabled = true;
+  try {
+    const layout = stitchLayout();
+    const canvas = document.createElement("canvas");
+    drawStitch(canvas, layout, stitchSaveScale(layout));
+    const blob = await new Promise((resolve) => canvas.toBlob(resolve, "image/png"));
+    if (!blob) throw new Error("사진이 너무 커서 만들지 못했습니다. 크기를 \"원본 크기 그대로\"로 바꿔 보세요.");
+    // 저장할 때 "WebP로 바꿔 저장"이 켜져 있으면 webp로 바뀐다
+    setAddMain(new File([blob], "대표이미지_6분할.png", { type: "image/png" }));
+    stitchForMain = false;
+    updateStitchForMain();
+    state.view = "add";
+    apply();
+    $("addMainPreview").scrollIntoView({ block: "center" });
+  } catch (error) {
+    $("stitchForMainInfo").textContent = `만들지 못했습니다: ${error.message}`;
+    $("stitchUseMain").disabled = false;
+  }
+}
+
+$("stitchUseMain").onclick = useStitchAsMain;
+$("stitchCancelMain").onclick = () => {
+  closeStitchForMain();
+  state.view = "add";
+  apply();
+};
 
 // 칸마다 가장 넓은 사진이 그 열의 폭, 가장 높은 사진이 그 줄의 높이가 되고, 작은 사진은 칸 가운데에 놓는다.
 // 사진이 하나도 없는 줄·열은 간격까지 통째로 빠진다.
