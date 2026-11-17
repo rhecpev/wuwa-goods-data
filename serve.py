@@ -20,6 +20,7 @@ import struct
 import subprocess
 import sys
 import threading
+import time
 import webbrowser
 from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
@@ -41,6 +42,10 @@ BAD_PATH_CHARS = '/\\:*?"<>|'
 IDS_FILE = "goods_ids.json"
 PICTURE_PREFIX = RAW_PREFIX + "picture/"
 ids_lock = threading.Lock()
+
+# 굿즈 추가가 실패하면 원인을 나중에 볼 수 있게 여기에 적는다 (커밋되지 않음)
+ERROR_LOG = "upload_errors.log"
+log_lock = threading.Lock()
 
 
 def json_text(data):
@@ -142,12 +147,30 @@ class Handler(SimpleHTTPRequestHandler):
         super().end_headers()
 
     def reply(self, status, data):
+        if status >= 400 and self.path == "/api/goods":
+            self.log_upload_error(data.get("error", ""))
         body = json.dumps(data, ensure_ascii=False).encode("utf-8")
         self.send_response(status)
         self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Content-Length", str(len(body)))
         self.end_headers()
         self.wfile.write(body)
+
+    def log_upload_error(self, error):
+        # 굿즈 추가 실패: 언제, 왜, 어떤 파일들을 받았는지 적는다
+        info = getattr(self, "upload_info", None) or {}
+        lines = [f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] {error}"]
+        for key in ("content_length", "received", "meta_length", "image_bytes", "declared_bytes", "folder"):
+            if key in info:
+                lines.append(f"  {key}: {info[key]}")
+        for item in info.get("files", []):
+            lines.append(f"  - {item}")
+        try:
+            with log_lock, open(os.path.join(self.directory, ERROR_LOG), "a", encoding="utf-8") as f:
+                f.write("\n".join(lines) + "\n\n")
+        except OSError as e:
+            print("오류 기록 실패:", e)
+        print("굿즈 추가 실패:", error)
 
     def do_GET(self):
         if self.path == "/api/ping":
@@ -173,6 +196,8 @@ class Handler(SimpleHTTPRequestHandler):
             if length > (MAX_UPLOAD if self.path == "/api/goods" else MAX_BODY):
                 raise ValueError("요청이 너무 큽니다")
             raw = self.rfile.read(length)
+            if self.path == "/api/goods":
+                self.upload_info = {"content_length": length, "received": len(raw)}
             # 굿즈 추가는 [정보 길이 4바이트][정보 JSON][이미지들] 순서의 바이너리로 온다
             body = None if self.path == "/api/goods" else json.loads(raw.decode("utf-8"))
         except Exception as e:
@@ -473,6 +498,15 @@ class Handler(SimpleHTTPRequestHandler):
             series = meta["series"]
             goods = meta.get("goods") or []
             main = meta.get("mainTheme")
+            info = self.upload_info
+            info["meta_length"] = meta_length
+            info["image_bytes"] = len(data)
+            info["folder"] = series.get("folder") or "_".join(str(series.get(k, "")) for k in ("name", "country", "date"))
+            info["files"] = [
+                f"{label}: {item.get('source', '?')} → {item.get('size')} bytes"
+                for label, item in ([("대표", main)] if main else []) + [("굿즈", g) for g in goods]
+            ]
+            info["declared_bytes"] = sum(int(item.get("size") or 0) for item in ([main] if main else []) + goods)
         except Exception as e:
             self.reply(400, {"error": f"요청 오류: {e}"})
             return
@@ -536,7 +570,11 @@ class Handler(SimpleHTTPRequestHandler):
             files.append((os.path.join(goods_dir, filename), int(item["size"])))
 
         if sum(size for _, size in files) != len(data) or any(size <= 0 for _, size in files):
-            self.reply(400, {"error": "이미지 크기가 맞지 않습니다"})
+            zero = [name for name, size in files if size <= 0]
+            detail = f"적힌 크기 합 {sum(size for _, size in files)} / 받은 크기 {len(data)}"
+            if zero:
+                detail += f", 0바이트: {', '.join(os.path.basename(name) for name in zero)}"
+            self.reply(400, {"error": f"이미지 크기가 맞지 않습니다 ({detail}). 자세한 내용은 {ERROR_LOG}"})
             return
 
         # 전부 확인한 뒤에 쓴다. 쓰다가 실패하면 이번에 만든 것은 지운다

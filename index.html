@@ -919,6 +919,86 @@
   #addTab .save-actions button { height: 42px; padding: 0 20px; }
 
   #addPick .pick-item { background: var(--surface); }
+  #addPick .pick-item.extra { border-style: dashed; }
+  #addPick .pick-item .pick-note { color: var(--muted); }
+  #addPick .pick-tools { display: grid; gap: 8px; grid-template-columns: minmax(160px, 2fr) repeat(2, minmax(120px, 1fr)) auto; align-items: center; }
+  #addPick .pick-tools input[type="search"], #addPick .pick-tools select {
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--text);
+    font: inherit;
+    font-size: 13.5px;
+    min-width: 0;
+  }
+  #addPick .pick-tools label.check { display: inline-flex; gap: 6px; align-items: center; font-size: 13px; cursor: pointer; white-space: nowrap; }
+  #addPick #addPickInfo:empty { display: none; }
+
+  /* 입력 완료 / 덜 됨 필터 */
+  #addTab .done-filter { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 10px; }
+  #addTab .done-filter button { height: 32px; padding: 0 14px; border-radius: 999px; font-size: 13px; }
+  #addTab .done-filter button.on { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); font-weight: 700; }
+  #addTab #addBulkPanel .done-filter { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  #addTab #addBulkPanel .done-filter button { flex: 1 1 auto; padding: 0 10px; }
+
+  /* 체크한 굿즈 사진: 누르면 체크 해제 */
+  #addTab .bulk-thumbs button {
+    position: relative;
+    height: auto;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+  }
+  #addTab .bulk-thumbs button img { display: block; cursor: pointer; }
+  #addTab .bulk-thumbs button::after {
+    content: "×";
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--danger);
+    color: #fff;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .12s;
+  }
+  #addTab .bulk-thumbs button:hover::after, #addTab .bulk-thumbs button:focus-visible::after { opacity: 1; }
+  #addTab .bulk-thumbs button:hover img { opacity: .6; }
+  #addTab .bulk-fold { flex: none; height: 30px; padding: 0 10px; font-size: 12.5px; }
+  #addTab #addBulkPanel.folded .form,
+  #addTab #addBulkPanel.folded .row,
+  #addTab #addBulkPanel.folded .bulk-thumbs,
+  #addTab #addBulkPanel.folded .step-head p { display: none; }
+  #addTab #addBulkPanel.folded .selection { margin: 0; }
+  #addTab #addBulkPanel.folded .step-head { margin-bottom: 10px; }
+
+  /* 넓은 화면에서는 "한꺼번에 고치기"를 왼쪽 가운데에 띄워 두고, 그만큼 본문을 오른쪽으로 민다 */
+  @media (min-width: 1101px) {
+    #addTab #addBulkPanel {
+      position: fixed;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 8;
+      width: 320px;
+      max-height: calc(100vh - 120px);
+      overflow-y: auto;
+      box-shadow: 0 10px 32px rgba(0, 0, 0, .16);
+    }
+    #addTab #addBulkPanel .form { grid-template-columns: 1fr; }
+    #addTab #addBulkPanel .bulk-thumbs img { width: 52px; height: 52px; }
+    main:has(#addTab:not([hidden]) #addBulk:not([hidden])) {
+      padding-left: 352px;
+      max-width: 1836px;
+    }
+  }
 
   @media (max-width: 720px) {
     #addTab .panel { padding: 16px; }
@@ -1251,13 +1331,20 @@
     </div>
 
     <div id="addBulk" class="tool-grid" hidden>
-      <div class="panel step">
+      <div id="addBulkPanel" class="panel step">
         <div class="step-head">
           <span class="step-no">3</span>
           <div>
             <h3>체크한 굿즈 한꺼번에 고치기</h3>
-            <p>적은 칸만 바뀌고, 비워 둔 칸은 그대로입니다.</p>
+            <p>적은 칸만 바뀌고, 비워 둔 칸은 그대로입니다. 사진을 누르면 체크가 풀립니다.</p>
           </div>
+          <button id="addBulkFold" type="button" class="bulk-fold" title="접기">접기</button>
+        </div>
+        <!-- 목록 보기 필터지만, 넓은 화면에서 왼쪽에 떠 있는 이 패널에 두어 언제든 누를 수 있게 한다 -->
+        <div id="addDoneFilter" class="done-filter" role="group" aria-label="목록 보기: 입력 상태" title="캐릭터·카테고리·가격을 다 적었으면 입력 완료입니다 (메모는 상관없음)">
+          <button type="button" data-done="" class="on">전체</button>
+          <button type="button" data-done="done">입력 완료</button>
+          <button type="button" data-done="todo">입력 덜 됨</button>
         </div>
         <div class="selection">
           <span id="addBulkCount" class="selection-count"></span>
@@ -1435,7 +1522,14 @@
   <div class="pick-dialog">
     <h3 id="addPickTitle"></h3>
     <p class="muted">넣을 굿즈를 고르세요. 다른 세트에 들어 있던 굿즈는 그 세트에서 빠지고 이 세트로 옮겨집니다.</p>
+    <div class="pick-tools">
+      <input id="addPickQ" type="search" autocomplete="off" placeholder="파일명 검색" aria-label="구성품 검색">
+      <select id="addPickCategory" aria-label="카테고리"></select>
+      <select id="addPickChara" aria-label="캐릭터"></select>
+      <label class="check"><input id="addPickMore" type="checkbox"><span id="addPickMoreText">세트에 든 것·메모 있는 것도 보기</span></label>
+    </div>
     <div id="addPickList" class="pick-list"></div>
+    <p id="addPickInfo" class="muted"></p>
     <div class="row">
       <button id="addPickOk" type="button" class="primary" disabled>넣기</button>
       <button id="addPickCancel" type="button">취소</button>
@@ -3125,9 +3219,21 @@ function openAddPick(setRow) {
   $("addPickTitle").textContent = `"${setRow.memo.trim()}"에 구성품 추가`;
   const list = $("addPickList");
   list.replaceChildren();
+  // 다른 세트에 들었거나 메모가 적힌 굿즈는 "…도 보기"를 켰을 때만 보인다
+  const extras = candidates.filter((row) => parentOf(row) || row.memo.trim()).length;
+  $("addPickMore").checked = false;
+  $("addPickMore").disabled = !extras;
+  $("addPickMoreText").textContent = `세트에 든 것·메모 있는 것도 보기 (${extras})`;
+  $("addPickQ").value = "";
+  fillAddFilterSelect("addPickCategory", "카테고리 전체", candidates.map((row) => row.category.trim()).filter(Boolean));
+  fillAddFilterSelect("addPickChara", "캐릭터 전체", candidates.flatMap((row) => splitCharas(row.chara)));
+  $("addPickCategory").value = "";
+  $("addPickChara").value = "";
   if (!candidates.length) list.append(el("p", "muted", "넣을 수 있는 굿즈가 없습니다. 세트 줄과 이미 이 세트에 든 굿즈는 빠집니다."));
   for (const row of candidates) {
     const item = el("label", "pick-item");
+    item.extra = Boolean(parentOf(row) || row.memo.trim());
+    item.classList.toggle("extra", item.extra);
     const box = el("input");
     box.type = "checkbox";
     box.onchange = () => {
@@ -3139,7 +3245,8 @@ function openAddPick(setRow) {
     img.src = row.url;
     item.append(img, el("span", "", stripExtension(addRowName(row))));
     const other = parentOf(row);
-    if (other) item.append(el("span", "muted", `지금: ${other.memo.trim()}`));
+    if (other) item.append(el("span", "pick-note", `지금 세트: ${other.memo.trim()}`));
+    else if (row.memo.trim()) item.append(el("span", "pick-note", `메모: ${row.memo.trim()}`));
     const top = el("span", "pick-top");
     top.append(box);
     item.prepend(top);
@@ -3147,8 +3254,34 @@ function openAddPick(setRow) {
     item.box = box;
     list.append(item);
   }
-  updateAddPick();
+  applyAddPickFilter();
   $("addPick").showModal();
+  $("addPickQ").focus();
+}
+
+// 구성품 고르기 창의 검색·카테고리·캐릭터·숨김 필터. 숨겨진 것도 체크는 그대로 남는다.
+function applyAddPickFilter() {
+  const terms = $("addPickQ").value.toLowerCase().split(/\s+/).filter(Boolean);
+  const category = $("addPickCategory").value;
+  const chara = $("addPickChara").value;
+  const more = $("addPickMore").checked;
+  const items = [...$("addPickList").querySelectorAll(".pick-item")];
+  let shown = 0;
+  for (const item of items) {
+    const row = item.row;
+    const name = addRowName(row).toLowerCase();
+    const visible = (more || !item.extra)
+      && terms.every((term) => name.includes(term))
+      && (!category || row.category.trim() === category)
+      && (!chara || splitCharas(row.chara).includes(chara));
+    item.hidden = !visible;
+    if (visible) shown++;
+  }
+  const hiddenChecked = items.filter((item) => item.hidden && item.box.checked).length;
+  $("addPickInfo").textContent = items.length && shown !== items.length
+    ? `${items.length}개 중 ${shown}개 표시` + (hiddenChecked ? ` · 숨겨진 것 중 체크한 ${hiddenChecked}개도 같이 넣습니다` : "")
+    : "";
+  updateAddPick();
 }
 
 function addPickChosen() {
@@ -3330,13 +3463,21 @@ function updateBulk() {
   // 체크한 굿즈 사진을 적용 버튼 위에 띄운다
   $("addBulkThumbs").hidden = !checked.length;
   $("addBulkCount").textContent = checked.length ? `체크한 굿즈 ${checked.length}개` : "아래 목록에서 고칠 굿즈를 체크하세요.";
+  // 사진을 누르면 그 굿즈의 체크를 푼다 (크게 보기는 목록의 사진에서)
   $("addBulkThumbs").replaceChildren(...checked.map((row) => {
+    const button = el("button");
+    button.type = "button";
+    button.title = `${stripExtension(addRowName(row))} · 눌러서 체크 해제`;
     const img = el("img");
     img.alt = "";
     img.src = row.url;
-    img.title = stripExtension(addRowName(row));
-    img.onclick = () => zoomImage(row.url);
-    return img;
+    button.append(img);
+    button.onclick = () => {
+      row.checked = false;
+      row.dom.pick.checked = false;
+      updateBulk();
+    };
+    return button;
   }));
   for (const row of addRows) row.dom.line.classList.toggle("checked", Boolean(row.checked));
   updateCheckAll();
@@ -3564,24 +3705,42 @@ function applyAddFilter() {
   const category = $("addFilterCategory").value;
   const chara = $("addFilterChara").value;
   const kind = $("addFilterKind").value;
+  const done = addDoneFilter;
   let shown = 0;
   let hiddenChecked = 0;
+  let doneCount = 0;
   for (const row of addRows) {
     const name = addRowName(row).toLowerCase();
     const inSet = Boolean(addSetOf(row));
+    const isDone = addRowDone(row);
+    if (isDone) doneCount++;
     const visible = terms.every((term) => name.includes(term))
       && (!category || row.category.trim() === category)
       && (!chara || splitCharas(row.chara).includes(chara))
-      && (!kind || (kind === "set" ? inSet : kind === "loose" ? !inSet : Boolean(row.dom.problem.textContent)));
-    row.dom.line.hidden = !visible;
+      && (!kind || (kind === "set" ? inSet : kind === "loose" ? !inSet : Boolean(row.dom.problem.textContent)))
+      && (!done || (done === "done") === isDone);
+    // 적고 있는 줄은 조건에서 벗어나도 칸에서 나갈 때까지 남겨 둔다 (입력 덜 됨 필터에서 가격을 적자마자 사라지지 않게)
+    row.dom.line.hidden = !visible && !row.dom.line.contains(document.activeElement);
     if (visible) shown++;
     else if (row.checked) hiddenChecked++;
   }
-  const filtering = terms.length || category || chara || kind;
+  for (const button of $("addDoneFilter").querySelectorAll("button")) {
+    const value = button.dataset.done;
+    const count = value === "done" ? doneCount : value === "todo" ? addRows.length - doneCount : addRows.length;
+    button.textContent = `${value === "done" ? "입력 완료" : value === "todo" ? "입력 덜 됨" : "전체"} ${count}`;
+    button.classList.toggle("on", value === done);
+  }
+  const filtering = terms.length || category || chara || kind || done;
   $("addFilterReset").disabled = !filtering;
   $("addFilterInfo").textContent = !filtering ? `굿즈 ${addRows.length}개`
     : `${addRows.length}개 중 ${shown}개 표시` + (hiddenChecked ? ` · 숨겨진 굿즈 중 체크된 것 ${hiddenChecked}개도 일괄 적용·세트에 같이 들어갑니다` : "");
   updateCheckAll();
+}
+
+// 입력 완료: 캐릭터·카테고리·가격을 다 적은 굿즈 (메모는 없어도 됨)
+let addDoneFilter = "";
+function addRowDone(row) {
+  return Boolean(splitCharas(row.chara).length && row.category.trim() && row.price.trim());
 }
 
 // 전체 선택은 지금 보이는 줄 기준
@@ -3600,6 +3759,7 @@ function clearAdd() {
   for (const id of ["addName", "addCountry", "addDate", "addMainFile", "addFiles", "addSetFile", "addSetPrice", "addSetMemo", "addFilterQ", "addFilterCategory", "addFilterChara", "addFilterKind", ...BULK_FIELDS.map(([, id]) => id)]) $(id).value = "";
   $("addSeries").value = "";
   $("addSeriesQ").value = "";
+  addDoneFilter = "";
   fillAddSeries();
   $("addMainPreview").hidden = true;
   $("addMainName").textContent = "눌러서 고르거나 여기로 끌어 놓기";
@@ -3625,26 +3785,51 @@ async function submitAdd() {
   $("addSubmit").disabled = true;
   $("addStatus").textContent = "저장 중…";
   try {
+    // 사진을 먼저 전부 읽어서 실제 바이트로 보낸다. 고른 뒤에 원본이 바뀌거나(OneDrive 동기화 등) 비어 있으면
+    // 크기가 어긋나서 서버가 거절하므로, 여기서 어느 파일인지 알려 주고 멈춘다.
+    const sources = [];
+    if (!series.folder) sources.push(["대표 이미지", addMain.file]);
+    for (const row of addRows) sources.push([addRowName(row), row.file]);
+    const bad = [];
+    const buffers = await Promise.all(sources.map(async ([label, file]) => {
+      try {
+        const buffer = await file.arrayBuffer();
+        if (!buffer.byteLength) bad.push(`${file.name} (${label}): 빈 파일`);
+        else if (buffer.byteLength !== file.size) console.warn("고른 뒤 크기가 바뀐 사진", file.name, file.size, buffer.byteLength);
+        return buffer;
+      } catch (error) {
+        bad.push(`${file.name} (${label}): 읽을 수 없음 — 고른 뒤에 옮기거나 고쳤으면 다시 넣으세요`);
+        return null;
+      }
+    }));
+    if (bad.length) {
+      console.error("저장 전 사진 확인 실패", bad);
+      throw new Error(`사진 ${bad.length}개를 읽지 못했습니다: ${bad.join(" / ")}`);
+    }
     const files = [];
     const meta = {
       series: series.folder ? { folder: series.folder } : { name: series.name, country: series.country, date: series.date },
       mainTheme: null,
       goods: [],
     };
+    let next = 0;
     if (!series.folder) {
-      meta.mainTheme = { ext: addMain.ext, size: addMain.file.size };
-      files.push(addMain.file);
+      const buffer = buffers[next++];
+      meta.mainTheme = { ext: addMain.ext, size: buffer.byteLength, source: addMain.file.name };
+      files.push(buffer);
     }
     for (const row of addRows) {
+      const buffer = buffers[next++];
       meta.goods.push({
         chara: splitCharas(row.chara).join(","),
         category: row.category.trim(),
         price: row.price.trim(),
         memo: row.memo.trim(),
         ext: row.ext,
-        size: row.file.size,
+        size: buffer.byteLength,
+        source: row.file.name,
       });
-      files.push(row.file);
+      files.push(buffer);
     }
 
     // [정보 길이 4바이트][정보 JSON][이미지들] 순서로 붙여 한 번에 보낸다
@@ -4241,6 +4426,8 @@ $("addPickOk").onclick = () => {
   renderAddRows();
 };
 $("addPickCancel").onclick = () => $("addPick").close();
+$("addPickQ").oninput = applyAddPickFilter;
+for (const id of ["addPickCategory", "addPickChara", "addPickMore"]) $(id).onchange = applyAddPickFilter;
 $("addPick").onclick = (event) => {
   if (event.target === $("addPick")) $("addPick").close();
 };
@@ -4248,7 +4435,26 @@ $("addFilterQ").oninput = applyAddFilter;
 for (const id of ["addFilterCategory", "addFilterChara", "addFilterKind"]) $(id).onchange = applyAddFilter;
 $("addFilterReset").onclick = () => {
   for (const id of ["addFilterQ", "addFilterCategory", "addFilterChara", "addFilterKind"]) $(id).value = "";
+  addDoneFilter = "";
   applyAddFilter();
+};
+for (const button of $("addDoneFilter").querySelectorAll("button")) {
+  button.onclick = () => {
+    addDoneFilter = button.dataset.done;
+    applyAddFilter();
+  };
+}
+// 칸에서 나가면 그동안 남겨 둔 줄도 필터대로 다시 거른다
+// 같은 줄 안에서 옮겨 가는 것(다음 칸, 빼기 버튼 등)이면 그대로 둔다
+$("addRows").addEventListener("focusout", (event) => {
+  const line = event.target.closest(".goods-row");
+  if (line && event.relatedTarget && line.contains(event.relatedTarget)) return;
+  setTimeout(applyAddFilter);
+});
+$("addBulkFold").onclick = () => {
+  const folded = $("addBulkPanel").classList.toggle("folded");
+  $("addBulkFold").textContent = folded ? "펼치기" : "접기";
+  $("addBulkFold").title = folded ? "펼치기" : "접기";
 };
 $("addCheckAll").onchange = () => {
   for (const row of addRows) {
