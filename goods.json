@@ -2869,195 +2869,579 @@
   },
   {
     "goodsId": 0,
-    "goodsUid": 240,
+    "goodsUid": 7839,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "금희",
+    "goodsCategory": "새알심",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/금희_새알심_구성품_금희세트.webp",
+    "goodsMemo": "금희세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7840,
     "goodsReleaseDate": "2025-10-17",
     "goodsSeries": "1차새알심",
     "goodsPrice": "29.9위안",
     "goodsChara": "금희",
-    "goodsCategory": "인형",
+    "goodsCategory": "세트",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/금희_인형_29.9위안_단품.webp",
-    "goodsMemo": "단품"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/금희_세트_29.9위안_금희세트.webp",
+    "goodsMemo": "금희세트"
   },
   {
     "goodsId": 0,
-    "goodsUid": 241,
+    "goodsUid": 7841,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "금희",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/금희_포토카드_구성품_금희세트.webp",
+    "goodsMemo": "금희세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7842,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "남랑자",
+    "goodsCategory": "새알심",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/남랑자_새알심_구성품_남랑자세트.webp",
+    "goodsMemo": "남랑자세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7843,
     "goodsReleaseDate": "2025-10-17",
     "goodsSeries": "1차새알심",
     "goodsPrice": "29.9위안",
     "goodsChara": "남랑자",
-    "goodsCategory": "인형",
+    "goodsCategory": "세트",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/남랑자_인형_29.9위안_단품.webp",
-    "goodsMemo": "단품"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/남랑자_세트_29.9위안_남랑자세트.webp",
+    "goodsMemo": "남랑자세트"
   },
   {
     "goodsId": 0,
-    "goodsUid": 242,
+    "goodsUid": 7844,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "남랑자",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/남랑자_포토카드_구성품_남랑자세트.webp",
+    "goodsMemo": "남랑자세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7845,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "로코코",
+    "goodsCategory": "새알심",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/로코코_새알심_구성품_로코코세트.webp",
+    "goodsMemo": "로코코세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7846,
     "goodsReleaseDate": "2025-10-17",
     "goodsSeries": "1차새알심",
     "goodsPrice": "29.9위안",
     "goodsChara": "로코코",
-    "goodsCategory": "인형",
+    "goodsCategory": "세트",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/로코코_인형_29.9위안_단품.webp",
-    "goodsMemo": "단품"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/로코코_세트_29.9위안_로코코세트.webp",
+    "goodsMemo": "로코코세트"
   },
   {
     "goodsId": 0,
-    "goodsUid": 243,
+    "goodsUid": 7847,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "로코코",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/로코코_포토카드_구성품_로코코세트.webp",
+    "goodsMemo": "로코코세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7848,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "브렌트",
+    "goodsCategory": "새알심",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/브렌트_새알심_구성품_브렌트세트.webp",
+    "goodsMemo": "브렌트세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7849,
     "goodsReleaseDate": "2025-10-17",
     "goodsSeries": "1차새알심",
     "goodsPrice": "29.9위안",
     "goodsChara": "브렌트",
-    "goodsCategory": "인형",
+    "goodsCategory": "세트",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/브렌트_인형_29.9위안_단품.webp",
-    "goodsMemo": "단품"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/브렌트_세트_29.9위안_브렌트세트.webp",
+    "goodsMemo": "브렌트세트"
   },
   {
     "goodsId": 0,
-    "goodsUid": 244,
+    "goodsUid": 7850,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "브렌트",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/브렌트_포토카드_구성품_브렌트세트.webp",
+    "goodsMemo": "브렌트세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7851,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "아브",
+    "goodsCategory": "새알심",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/아브_새알심_구성품_아브세트.webp",
+    "goodsMemo": "아브세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7852,
     "goodsReleaseDate": "2025-10-17",
     "goodsSeries": "1차새알심",
     "goodsPrice": "29.9위안",
     "goodsChara": "아브",
-    "goodsCategory": "인형",
+    "goodsCategory": "세트",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/아브_인형_29.9위안_단품.webp",
-    "goodsMemo": "단품"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/아브_세트_29.9위안_아브세트.webp",
+    "goodsMemo": "아브세트"
   },
   {
     "goodsId": 0,
-    "goodsUid": 245,
+    "goodsUid": 7853,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "아브",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/아브_포토카드_구성품_아브세트.webp",
+    "goodsMemo": "아브세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7854,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "아브대마왕",
+    "goodsCategory": "새알심",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/아브대마왕_새알심_구성품_아브대마왕세트.webp",
+    "goodsMemo": "아브대마왕세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7855,
     "goodsReleaseDate": "2025-10-17",
     "goodsSeries": "1차새알심",
     "goodsPrice": "29.9위안",
     "goodsChara": "아브대마왕",
-    "goodsCategory": "인형",
+    "goodsCategory": "세트",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/아브대마왕_인형_29.9위안_단품.webp",
-    "goodsMemo": "단품"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/아브대마왕_세트_29.9위안_아브대마왕세트.webp",
+    "goodsMemo": "아브대마왕세트"
   },
   {
     "goodsId": 0,
-    "goodsUid": 246,
+    "goodsUid": 7856,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "아브대마왕",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/아브대마왕_포토카드_구성품_아브대마왕세트.webp",
+    "goodsMemo": "아브대마왕세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7857,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "여랑자",
+    "goodsCategory": "새알심",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/여랑자_새알심_구성품_여랑자세트.webp",
+    "goodsMemo": "여랑자세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7858,
     "goodsReleaseDate": "2025-10-17",
     "goodsSeries": "1차새알심",
     "goodsPrice": "29.9위안",
     "goodsChara": "여랑자",
-    "goodsCategory": "인형",
+    "goodsCategory": "세트",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/여랑자_인형_29.9위안_단품.webp",
-    "goodsMemo": "단품"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/여랑자_세트_29.9위안_여랑자세트.webp",
+    "goodsMemo": "여랑자세트"
   },
   {
     "goodsId": 0,
-    "goodsUid": 247,
+    "goodsUid": 7859,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "여랑자",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/여랑자_포토카드_구성품_여랑자세트.webp",
+    "goodsMemo": "여랑자세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7860,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "장리",
+    "goodsCategory": "새알심",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/장리_새알심_구성품_장리세트.webp",
+    "goodsMemo": "장리세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7861,
     "goodsReleaseDate": "2025-10-17",
     "goodsSeries": "1차새알심",
     "goodsPrice": "29.9위안",
     "goodsChara": "장리",
-    "goodsCategory": "인형",
+    "goodsCategory": "세트",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/장리_인형_29.9위안_단품.webp",
-    "goodsMemo": "단품"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/장리_세트_29.9위안_장리세트.webp",
+    "goodsMemo": "장리세트"
   },
   {
     "goodsId": 0,
-    "goodsUid": 248,
+    "goodsUid": 7862,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "장리",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/장리_포토카드_구성품_장리세트.webp",
+    "goodsMemo": "장리세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7863,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "젠니",
+    "goodsCategory": "새알심",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/젠니_새알심_구성품_젠니세트.webp",
+    "goodsMemo": "젠니세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7864,
     "goodsReleaseDate": "2025-10-17",
     "goodsSeries": "1차새알심",
     "goodsPrice": "29.9위안",
     "goodsChara": "젠니",
-    "goodsCategory": "인형",
+    "goodsCategory": "세트",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/젠니_인형_29.9위안_단품.webp",
-    "goodsMemo": "단품"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/젠니_세트_29.9위안_젠니세트.webp",
+    "goodsMemo": "젠니세트"
   },
   {
     "goodsId": 0,
-    "goodsUid": 249,
+    "goodsUid": 7865,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "젠니",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/젠니_포토카드_구성품_젠니세트.webp",
+    "goodsMemo": "젠니세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7866,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "새알심",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/카르티시아_새알심_구성품_카르티시아세트.webp",
+    "goodsMemo": "카르티시아세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7867,
     "goodsReleaseDate": "2025-10-17",
     "goodsSeries": "1차새알심",
     "goodsPrice": "29.9위안",
     "goodsChara": "카르티시아",
-    "goodsCategory": "인형",
+    "goodsCategory": "세트",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/카르티시아_인형_29.9위안_단품.webp",
-    "goodsMemo": "단품"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/카르티시아_세트_29.9위안_카르티시아세트.webp",
+    "goodsMemo": "카르티시아세트"
   },
   {
     "goodsId": 0,
-    "goodsUid": 250,
+    "goodsUid": 7868,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/카르티시아_포토카드_구성품_카르티시아세트.webp",
+    "goodsMemo": "카르티시아세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7869,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "카를로타",
+    "goodsCategory": "새알심",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/카를로타_새알심_구성품_카를로타세트.webp",
+    "goodsMemo": "카를로타세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7870,
     "goodsReleaseDate": "2025-10-17",
     "goodsSeries": "1차새알심",
     "goodsPrice": "29.9위안",
     "goodsChara": "카를로타",
-    "goodsCategory": "인형",
+    "goodsCategory": "세트",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/카를로타_인형_29.9위안_단품.webp",
-    "goodsMemo": "단품"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/카를로타_세트_29.9위안_카를로타세트.webp",
+    "goodsMemo": "카를로타세트"
   },
   {
     "goodsId": 0,
-    "goodsUid": 251,
+    "goodsUid": 7871,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "카를로타",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/카를로타_포토카드_구성품_카를로타세트.webp",
+    "goodsMemo": "카를로타세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7872,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "카멜리아",
+    "goodsCategory": "새알심",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/카멜리아_새알심_구성품_카멜리아세트.webp",
+    "goodsMemo": "카멜리아세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7873,
     "goodsReleaseDate": "2025-10-17",
     "goodsSeries": "1차새알심",
     "goodsPrice": "29.9위안",
     "goodsChara": "카멜리아",
-    "goodsCategory": "인형",
+    "goodsCategory": "세트",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/카멜리아_인형_29.9위안_단품.webp",
-    "goodsMemo": "단품"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/카멜리아_세트_29.9위안_카멜리아세트.webp",
+    "goodsMemo": "카멜리아세트"
   },
   {
     "goodsId": 0,
-    "goodsUid": 252,
+    "goodsUid": 7874,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "카멜리아",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/카멜리아_포토카드_구성품_카멜리아세트.webp",
+    "goodsMemo": "카멜리아세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7875,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "카카루",
+    "goodsCategory": "새알심",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/카카루_새알심_구성품_카카루세트.webp",
+    "goodsMemo": "카카루세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7876,
     "goodsReleaseDate": "2025-10-17",
     "goodsSeries": "1차새알심",
     "goodsPrice": "29.9위안",
     "goodsChara": "카카루",
-    "goodsCategory": "인형",
+    "goodsCategory": "세트",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/카카루_인형_29.9위안_단품.webp",
-    "goodsMemo": "단품"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/카카루_세트_29.9위안_카카루세트.webp",
+    "goodsMemo": "카카루세트"
   },
   {
     "goodsId": 0,
-    "goodsUid": 253,
+    "goodsUid": 7877,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "카카루",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/카카루_포토카드_구성품_카카루세트.webp",
+    "goodsMemo": "카카루세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7878,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "칸타렐라",
+    "goodsCategory": "새알심",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/칸타렐라_새알심_구성품_칸타렐라세트.webp",
+    "goodsMemo": "칸타렐라세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7879,
     "goodsReleaseDate": "2025-10-17",
     "goodsSeries": "1차새알심",
     "goodsPrice": "29.9위안",
     "goodsChara": "칸타렐라",
-    "goodsCategory": "인형",
+    "goodsCategory": "세트",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/칸타렐라_인형_29.9위안_단품.webp",
-    "goodsMemo": "단품"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/칸타렐라_세트_29.9위안_칸타렐라세트.webp",
+    "goodsMemo": "칸타렐라세트"
   },
   {
     "goodsId": 0,
-    "goodsUid": 254,
+    "goodsUid": 7880,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "칸타렐라",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/칸타렐라_포토카드_구성품_칸타렐라세트.webp",
+    "goodsMemo": "칸타렐라세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7881,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "파수인",
+    "goodsCategory": "새알심",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/파수인_새알심_구성품_파수인세트.webp",
+    "goodsMemo": "파수인세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7882,
     "goodsReleaseDate": "2025-10-17",
     "goodsSeries": "1차새알심",
     "goodsPrice": "29.9위안",
     "goodsChara": "파수인",
-    "goodsCategory": "인형",
+    "goodsCategory": "세트",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/파수인_인형_29.9위안_단품.webp",
-    "goodsMemo": "단품"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/파수인_세트_29.9위안_파수인세트.webp",
+    "goodsMemo": "파수인세트"
   },
   {
     "goodsId": 0,
-    "goodsUid": 255,
+    "goodsUid": 7883,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "파수인",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/파수인_포토카드_구성품_파수인세트.webp",
+    "goodsMemo": "파수인세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7884,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "페비",
+    "goodsCategory": "새알심",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/페비_새알심_구성품_페비세트.webp",
+    "goodsMemo": "페비세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7885,
     "goodsReleaseDate": "2025-10-17",
     "goodsSeries": "1차새알심",
     "goodsPrice": "29.9위안",
     "goodsChara": "페비",
-    "goodsCategory": "인형",
+    "goodsCategory": "세트",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/페비_인형_29.9위안_단품.webp",
-    "goodsMemo": "단품"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/페비_세트_29.9위안_페비세트.webp",
+    "goodsMemo": "페비세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7886,
+    "goodsReleaseDate": "2025-10-17",
+    "goodsSeries": "1차새알심",
+    "goodsPrice": "구성품",
+    "goodsChara": "페비",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/1차새알심_중국_2025-10-17/goods/페비_포토카드_구성품_페비세트.webp",
+    "goodsMemo": "페비세트"
   },
   {
     "goodsId": 0,
@@ -22897,6 +23281,30 @@
   },
   {
     "goodsId": 0,
+    "goodsUid": 7887,
+    "goodsReleaseDate": "2026-10-25",
+    "goodsSeries": "2026 G-퓨전",
+    "goodsPrice": "증정품",
+    "goodsChara": "에이메스",
+    "goodsCategory": "레이저티켓",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 G-퓨전_중국_2026-10-25/goods/에이메스_레이저티켓_증정품_증정품.webp",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7888,
+    "goodsReleaseDate": "2026-10-25",
+    "goodsSeries": "2026 G-퓨전",
+    "goodsPrice": "증정품",
+    "goodsChara": "여우의 별자리",
+    "goodsCategory": "레이저티켓",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 G-퓨전_중국_2026-10-25/goods/여우의 별자리_레이저티켓_증정품_증정품.webp",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
     "goodsUid": 1909,
     "goodsReleaseDate": "2026-10-02",
     "goodsSeries": "2026 red Land",
@@ -36164,8 +36572,8 @@
     "goodsChara": "루실라,여랑자",
     "goodsCategory": "엽서",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.2버전_버전_2026-04-29/goods/루실라,여랑자_엽서_타입10_엽서C세트.webp",
-    "goodsMemo": "엽서C세트"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.2버전_버전_2026-04-29/goods/루실라,여랑자_엽서_타입10_엽서D세트.webp",
+    "goodsMemo": "엽서D세트"
   },
   {
     "goodsId": 0,
@@ -36512,8 +36920,8 @@
     "goodsChara": "시그리카,여랑자",
     "goodsCategory": "엽서",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.2버전_버전_2026-04-29/goods/시그리카,여랑자_엽서_타입8_엽서C세트.webp",
-    "goodsMemo": "엽서C세트"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.2버전_버전_2026-04-29/goods/시그리카,여랑자_엽서_타입8_엽서D세트.webp",
+    "goodsMemo": "엽서D세트"
   },
   {
     "goodsId": 0,
@@ -36884,8 +37292,8 @@
     "goodsChara": "여랑자,루크",
     "goodsCategory": "엽서",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.2버전_버전_2026-04-29/goods/여랑자,루크_엽서_타입2_엽서C세트.webp",
-    "goodsMemo": "엽서C세트"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.2버전_버전_2026-04-29/goods/여랑자,루크_엽서_타입2_엽서D세트.webp",
+    "goodsMemo": "엽서D세트"
   },
   {
     "goodsId": 0,
@@ -36896,8 +37304,8 @@
     "goodsChara": "여랑자,루크",
     "goodsCategory": "엽서",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.2버전_버전_2026-04-29/goods/여랑자,루크_엽서_타입9_엽서C세트.webp",
-    "goodsMemo": "엽서C세트"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.2버전_버전_2026-04-29/goods/여랑자,루크_엽서_타입9_엽서D세트.webp",
+    "goodsMemo": "엽서D세트"
   },
   {
     "goodsId": 0,
@@ -36920,8 +37328,8 @@
     "goodsChara": "여랑자,린네",
     "goodsCategory": "엽서",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.2버전_버전_2026-04-29/goods/여랑자,린네_엽서_타입1_엽서C세트.webp",
-    "goodsMemo": "엽서C세트"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.2버전_버전_2026-04-29/goods/여랑자,린네_엽서_타입1_엽서D세트.webp",
+    "goodsMemo": "엽서D세트"
   },
   {
     "goodsId": 0,
@@ -36932,8 +37340,8 @@
     "goodsChara": "여랑자,모니에",
     "goodsCategory": "엽서",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.2버전_버전_2026-04-29/goods/여랑자,모니에_엽서_타입6_엽서C세트.webp",
-    "goodsMemo": "엽서C세트"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.2버전_버전_2026-04-29/goods/여랑자,모니에_엽서_타입6_엽서D세트.webp",
+    "goodsMemo": "엽서D세트"
   },
   {
     "goodsId": 0,
@@ -36944,8 +37352,8 @@
     "goodsChara": "여랑자,시그리카,치사,린네",
     "goodsCategory": "엽서",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.2버전_버전_2026-04-29/goods/여랑자,시그리카,치사,린네_엽서_타입7_엽서C세트.webp",
-    "goodsMemo": "엽서C세트"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.2버전_버전_2026-04-29/goods/여랑자,시그리카,치사,린네_엽서_타입7_엽서D세트.webp",
+    "goodsMemo": "엽서D세트"
   },
   {
     "goodsId": 0,
@@ -36956,8 +37364,8 @@
     "goodsChara": "여랑자,에이메스",
     "goodsCategory": "엽서",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.2버전_버전_2026-04-29/goods/여랑자,에이메스_엽서_타입3_엽서C세트.webp",
-    "goodsMemo": "엽서C세트"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.2버전_버전_2026-04-29/goods/여랑자,에이메스_엽서_타입3_엽서D세트.webp",
+    "goodsMemo": "엽서D세트"
   },
   {
     "goodsId": 0,
@@ -36968,8 +37376,8 @@
     "goodsChara": "여랑자,에이메스",
     "goodsCategory": "엽서",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.2버전_버전_2026-04-29/goods/여랑자,에이메스_엽서_타입4_엽서C세트.webp",
-    "goodsMemo": "엽서C세트"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.2버전_버전_2026-04-29/goods/여랑자,에이메스_엽서_타입4_엽서D세트.webp",
+    "goodsMemo": "엽서D세트"
   },
   {
     "goodsId": 0,
@@ -36980,8 +37388,8 @@
     "goodsChara": "여랑자,에이메스",
     "goodsCategory": "엽서",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.2버전_버전_2026-04-29/goods/여랑자,에이메스_엽서_타입5_엽서C세트.webp",
-    "goodsMemo": "엽서C세트"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/3.2버전_버전_2026-04-29/goods/여랑자,에이메스_엽서_타입5_엽서D세트.webp",
+    "goodsMemo": "엽서D세트"
   },
   {
     "goodsId": 0,

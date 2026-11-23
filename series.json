@@ -353,6 +353,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2026 G-퓨전",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 G-퓨전_중국_2026-10-25/mainTheme.webp",
+    "seriesCountry": "중국",
+    "seriesCharas": "에이메스,여우의 별자리",
+    "seriesDate": "2026-10-25"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2026 red Land",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 red Land_중국_2026-10-02/mainTheme.webp",
     "seriesCountry": "중국",
