@@ -6133,18 +6133,6 @@
   },
   {
     "goodsId": 0,
-    "goodsUid": 480,
-    "goodsReleaseDate": "2025-06-10",
-    "goodsSeries": "2.3버전",
-    "goodsPrice": "29.9위안",
-    "goodsChara": "금희",
-    "goodsCategory": "새알심",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/금희_새알심_29.9위안_새알심세트.webp",
-    "goodsMemo": "새알심세트"
-  },
-  {
-    "goodsId": 0,
     "goodsUid": 481,
     "goodsReleaseDate": "2025-06-10",
     "goodsSeries": "2.3버전",
@@ -6190,18 +6178,6 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/남랑자,여랑자,양양,기염,음림,금희,장리,절지,상리요,파수인,카멜리아,카를로타,로코코,페비,브렌트,칸타렐라,젠니,샤콘_세트_209위안_조수와뭇별세트.webp",
     "goodsMemo": "조수와뭇별세트"
-  },
-  {
-    "goodsId": 0,
-    "goodsUid": 485,
-    "goodsReleaseDate": "2025-06-10",
-    "goodsSeries": "2.3버전",
-    "goodsPrice": "478.4위안",
-    "goodsChara": "남랑자,여랑자,카르티시아,젠니,칸타렐라,브렌트,페비,로코코,카를로타,카멜리아,파수인,장리,금희,카카루,아브,아브대마왕",
-    "goodsCategory": "세트",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/남랑자,여랑자,카르티시아,젠니,칸타렐라,브렌트,페비,로코코,카를로타,카멜리아,파수인,장리,금희,카카루,아브,아브대마왕_세트_478.4위안_새알심세트.webp",
-    "goodsMemo": "새알심세트"
   },
   {
     "goodsId": 0,
@@ -6301,18 +6277,6 @@
   },
   {
     "goodsId": 0,
-    "goodsUid": 494,
-    "goodsReleaseDate": "2025-06-10",
-    "goodsSeries": "2.3버전",
-    "goodsPrice": "29.9위안",
-    "goodsChara": "남랑자",
-    "goodsCategory": "새알심",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/남랑자_새알심_29.9위안_새알심세트.webp",
-    "goodsMemo": "새알심세트"
-  },
-  {
-    "goodsId": 0,
     "goodsUid": 495,
     "goodsReleaseDate": "2025-06-10",
     "goodsSeries": "2.3버전",
@@ -6346,18 +6310,6 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/단근,음림_포토카드_15위안_단품.webp",
     "goodsMemo": "단품"
-  },
-  {
-    "goodsId": 0,
-    "goodsUid": 498,
-    "goodsReleaseDate": "2025-06-10",
-    "goodsSeries": "2.3버전",
-    "goodsPrice": "29.9위안",
-    "goodsChara": "로코코",
-    "goodsCategory": "새알심",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/로코코_새알심_29.9위안_새알심세트.webp",
-    "goodsMemo": "새알심세트"
   },
   {
     "goodsId": 0,
@@ -6406,18 +6358,6 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/브렌트,로코코_포토카드_15위안_단품.webp",
     "goodsMemo": "단품"
-  },
-  {
-    "goodsId": 0,
-    "goodsUid": 503,
-    "goodsReleaseDate": "2025-06-10",
-    "goodsSeries": "2.3버전",
-    "goodsPrice": "29.9위안",
-    "goodsChara": "브렌트",
-    "goodsCategory": "새알심",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/브렌트_새알심_29.9위안_새알심세트.webp",
-    "goodsMemo": "새알심세트"
   },
   {
     "goodsId": 0,
@@ -6613,30 +6553,6 @@
   },
   {
     "goodsId": 0,
-    "goodsUid": 520,
-    "goodsReleaseDate": "2025-06-10",
-    "goodsSeries": "2.3버전",
-    "goodsPrice": "29.9위안",
-    "goodsChara": "아브",
-    "goodsCategory": "새알심",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/아브_새알심_29.9위안_새알심세트.webp",
-    "goodsMemo": "새알심세트"
-  },
-  {
-    "goodsId": 0,
-    "goodsUid": 521,
-    "goodsReleaseDate": "2025-06-10",
-    "goodsSeries": "2.3버전",
-    "goodsPrice": "29.9위안",
-    "goodsChara": "아브대마왕",
-    "goodsCategory": "새알심",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/아브대마왕_새알심_29.9위안_새알세트.webp",
-    "goodsMemo": "새알세트"
-  },
-  {
-    "goodsId": 0,
     "goodsUid": 522,
     "goodsReleaseDate": "2025-06-10",
     "goodsSeries": "2.3버전",
@@ -6709,18 +6625,6 @@
   },
   {
     "goodsId": 0,
-    "goodsUid": 528,
-    "goodsReleaseDate": "2025-06-10",
-    "goodsSeries": "2.3버전",
-    "goodsPrice": "29.9위안",
-    "goodsChara": "여랑자",
-    "goodsCategory": "새알심",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/여랑자_새알심_29.9위안_새알심세트.webp",
-    "goodsMemo": "새알심세트"
-  },
-  {
-    "goodsId": 0,
     "goodsUid": 529,
     "goodsReleaseDate": "2025-06-10",
     "goodsSeries": "2.3버전",
@@ -6754,18 +6658,6 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/음림_포토카드_구성품_조수와뭇별세트.webp",
     "goodsMemo": "조수와뭇별세트"
-  },
-  {
-    "goodsId": 0,
-    "goodsUid": 532,
-    "goodsReleaseDate": "2025-06-10",
-    "goodsSeries": "2.3버전",
-    "goodsPrice": "29.9위안",
-    "goodsChara": "장리",
-    "goodsCategory": "새알심",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/장리_새알심_29.9위안_새알심세트.webp",
-    "goodsMemo": "새알심세트"
   },
   {
     "goodsId": 0,
@@ -6850,18 +6742,6 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/젠니_레이저티켓_사은품_사은품.webp",
     "goodsMemo": "사은품"
-  },
-  {
-    "goodsId": 0,
-    "goodsUid": 540,
-    "goodsReleaseDate": "2025-06-10",
-    "goodsSeries": "2.3버전",
-    "goodsPrice": "29.9위안",
-    "goodsChara": "젠니",
-    "goodsCategory": "새알심",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/젠니_새알심_29.9위안_새알심세트.webp",
-    "goodsMemo": "새알심세트"
   },
   {
     "goodsId": 0,
@@ -7069,30 +6949,6 @@
   },
   {
     "goodsId": 0,
-    "goodsUid": 558,
-    "goodsReleaseDate": "2025-06-10",
-    "goodsSeries": "2.3버전",
-    "goodsPrice": "29.9위안",
-    "goodsChara": "카르티시아",
-    "goodsCategory": "새알심",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/카르티시아_새알심_29.9위안_새알심세트.webp",
-    "goodsMemo": "새알심세트"
-  },
-  {
-    "goodsId": 0,
-    "goodsUid": 559,
-    "goodsReleaseDate": "2025-06-10",
-    "goodsSeries": "2.3버전",
-    "goodsPrice": "29.9위안",
-    "goodsChara": "카를로타",
-    "goodsCategory": "새알심",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/카를로타_새알심_29.9위안_새알심세트.webp",
-    "goodsMemo": "새알심세트"
-  },
-  {
-    "goodsId": 0,
     "goodsUid": 560,
     "goodsReleaseDate": "2025-06-10",
     "goodsSeries": "2.3버전",
@@ -7126,18 +6982,6 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/카를로타_포토카드_구성품_조수와뭇별세트.webp",
     "goodsMemo": "조수와뭇별세트"
-  },
-  {
-    "goodsId": 0,
-    "goodsUid": 563,
-    "goodsReleaseDate": "2025-06-10",
-    "goodsSeries": "2.3버전",
-    "goodsPrice": "29.9위안",
-    "goodsChara": "카멜리아",
-    "goodsCategory": "새알심",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/카멜리아_새알심_29.9위안_새알심세트.webp",
-    "goodsMemo": "새알심세트"
   },
   {
     "goodsId": 0,
@@ -7189,18 +7033,6 @@
   },
   {
     "goodsId": 0,
-    "goodsUid": 568,
-    "goodsReleaseDate": "2025-06-10",
-    "goodsSeries": "2.3버전",
-    "goodsPrice": "29.9위안",
-    "goodsChara": "카카루",
-    "goodsCategory": "새알심",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/카카루_새알심_29.9위안_새알심세트.webp",
-    "goodsMemo": "새알심세트"
-  },
-  {
-    "goodsId": 0,
     "goodsUid": 569,
     "goodsReleaseDate": "2025-06-10",
     "goodsSeries": "2.3버전",
@@ -7222,18 +7054,6 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/칸타렐라_레이저티켓_20위안_단품.webp",
     "goodsMemo": "단품"
-  },
-  {
-    "goodsId": 0,
-    "goodsUid": 571,
-    "goodsReleaseDate": "2025-06-10",
-    "goodsSeries": "2.3버전",
-    "goodsPrice": "29.9위안",
-    "goodsChara": "칸타렐라",
-    "goodsCategory": "새알심",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/칸타렐라_새알심_29.9위안_새알심세트.webp",
-    "goodsMemo": "새알심세트"
   },
   {
     "goodsId": 0,
@@ -7285,18 +7105,6 @@
   },
   {
     "goodsId": 0,
-    "goodsUid": 576,
-    "goodsReleaseDate": "2025-06-10",
-    "goodsSeries": "2.3버전",
-    "goodsPrice": "29.9위안",
-    "goodsChara": "파수인",
-    "goodsCategory": "새알심",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/파수인_새알심_29.9위안_새알심세트.webp",
-    "goodsMemo": "새알심세트"
-  },
-  {
-    "goodsId": 0,
     "goodsUid": 577,
     "goodsReleaseDate": "2025-06-10",
     "goodsSeries": "2.3버전",
@@ -7306,18 +7114,6 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/파수인_포토카드_구성품_조수와뭇별세트.webp",
     "goodsMemo": "조수와뭇별세트"
-  },
-  {
-    "goodsId": 0,
-    "goodsUid": 578,
-    "goodsReleaseDate": "2025-06-10",
-    "goodsSeries": "2.3버전",
-    "goodsPrice": "29.9위안",
-    "goodsChara": "페비",
-    "goodsCategory": "새알심",
-    "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2.3버전_버전_2025-06-10/goods/페비_새알심_29.9위안_새알심세트.webp",
-    "goodsMemo": "새알심세트"
   },
   {
     "goodsId": 0,
