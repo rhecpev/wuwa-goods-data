@@ -1561,6 +1561,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "일본 굿즈샵 오픈 기념 캠페인",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/일본 굿즈샵 오픈 기념 캠페인_일본_2026-11-13/mainTheme.webp",
+    "seriesCountry": "일본",
+    "seriesCharas": "데니아,루크,쇄명,에이메스,여우의 별자리,치사",
+    "seriesDate": "2026-11-13"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "일본1주년",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/일본1주년_일본_2025-05-30/mainTheme.webp",
     "seriesCountry": "일본",
