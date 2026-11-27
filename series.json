@@ -393,6 +393,14 @@
   },
   {
     "seriesId": 0,
+    "seriesNm": "2026 피자헛",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/mainTheme.webp",
+    "seriesCountry": "일본",
+    "seriesCharas": "린네,쇄명,여우의 별자리,치사",
+    "seriesDate": "2026-12-01"
+  },
+  {
+    "seriesId": 0,
     "seriesNm": "2026BOOKOFF",
     "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026BOOKOFF_일본_2026-07-03/mainTheme.webp",
     "seriesCountry": "일본",
@@ -1374,6 +1382,14 @@
     "seriesCountry": "중국",
     "seriesCharas": "남랑자,아브,여랑자",
     "seriesDate": "2026-08-14"
+  },
+  {
+    "seriesId": 0,
+    "seriesNm": "명조카페(릴리)",
+    "seriesUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조카페(릴리)_중국_2026-11-12/mainTheme.webp",
+    "seriesCountry": "중국",
+    "seriesCharas": "릴리",
+    "seriesDate": "2026-11-12"
   },
   {
     "seriesId": 0,

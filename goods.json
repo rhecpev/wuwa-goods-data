@@ -18529,6 +18529,18 @@
   },
   {
     "goodsId": 0,
+    "goodsUid": 7938,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025KUROFEST",
+    "goodsPrice": "구성품",
+    "goodsChara": "남랑자",
+    "goodsCategory": "박스",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/남랑자_박스_구성품_남랑자세트.webp",
+    "goodsMemo": "남랑자세트"
+  },
+  {
+    "goodsId": 0,
     "goodsUid": 1530,
     "goodsReleaseDate": "2025-08-09",
     "goodsSeries": "2025KUROFEST",
@@ -18538,6 +18550,30 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/남랑자_부채_사은품_사은품.webp",
     "goodsMemo": "사은품"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 1541,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025KUROFEST",
+    "goodsPrice": "22위안",
+    "goodsChara": "남랑자",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/남랑자_세트_22위안_남랑자세트.webp",
+    "goodsMemo": "남랑자세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7937,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025KUROFEST",
+    "goodsPrice": "구성품",
+    "goodsChara": "남랑자",
+    "goodsCategory": "스티커",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/남랑자_스티커_구성품_남랑자세트.webp",
+    "goodsMemo": "남랑자세트"
   },
   {
     "goodsId": 0,
@@ -18661,15 +18697,27 @@
   },
   {
     "goodsId": 0,
-    "goodsUid": 1541,
+    "goodsUid": 7939,
     "goodsReleaseDate": "2025-08-09",
     "goodsSeries": "2025KUROFEST",
-    "goodsPrice": "22위안",
+    "goodsPrice": "구성품1",
     "goodsChara": "남랑자",
     "goodsCategory": "포토카드",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/남랑자_포토카드_22위안_스티커포함.webp",
-    "goodsMemo": "스티커포함"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/남랑자_포토카드_구성품1_남랑자세트.webp",
+    "goodsMemo": "남랑자세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7940,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025KUROFEST",
+    "goodsPrice": "구성품2",
+    "goodsChara": "남랑자",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/남랑자_포토카드_구성품2_남랑자세트.webp",
+    "goodsMemo": "남랑자세트"
   },
   {
     "goodsId": 0,
@@ -18709,6 +18757,18 @@
   },
   {
     "goodsId": 0,
+    "goodsUid": 7942,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025KUROFEST",
+    "goodsPrice": "구성품",
+    "goodsChara": "루파",
+    "goodsCategory": "박스",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/루파_박스_구성품_루파세트.webp",
+    "goodsMemo": "루파세트"
+  },
+  {
+    "goodsId": 0,
     "goodsUid": 1545,
     "goodsReleaseDate": "2025-08-09",
     "goodsSeries": "2025KUROFEST",
@@ -18718,6 +18778,30 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/루파_부채_사은품_사은품.webp",
     "goodsMemo": "사은품"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 1550,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025KUROFEST",
+    "goodsPrice": "22위안",
+    "goodsChara": "루파",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/루파_세트_22위안_루파세트.webp",
+    "goodsMemo": "루파세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7941,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025KUROFEST",
+    "goodsPrice": "구성품",
+    "goodsChara": "루파",
+    "goodsCategory": "스티커",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/루파_스티커_구성품_루파세트.webp",
+    "goodsMemo": "루파세트"
   },
   {
     "goodsId": 0,
@@ -18769,15 +18853,27 @@
   },
   {
     "goodsId": 0,
-    "goodsUid": 1550,
+    "goodsUid": 7943,
     "goodsReleaseDate": "2025-08-09",
     "goodsSeries": "2025KUROFEST",
-    "goodsPrice": "22위안",
+    "goodsPrice": "구성품1",
     "goodsChara": "루파",
     "goodsCategory": "포토카드",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/루파_포토카드_22위안_스티커포함.webp",
-    "goodsMemo": "스티커포함"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/루파_포토카드_구성품1_루파세트.webp",
+    "goodsMemo": "루파세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7944,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025KUROFEST",
+    "goodsPrice": "구성품2",
+    "goodsChara": "루파",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/루파_포토카드_구성품2_루파세트.webp",
+    "goodsMemo": "루파세트"
   },
   {
     "goodsId": 0,
@@ -18829,6 +18925,18 @@
   },
   {
     "goodsId": 0,
+    "goodsUid": 7946,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025KUROFEST",
+    "goodsPrice": "구성품",
+    "goodsChara": "여랑자",
+    "goodsCategory": "박스",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/여랑자_박스_구성품_여랑자세트.webp",
+    "goodsMemo": "여랑자세트"
+  },
+  {
+    "goodsId": 0,
     "goodsUid": 1555,
     "goodsReleaseDate": "2025-08-09",
     "goodsSeries": "2025KUROFEST",
@@ -18838,6 +18946,30 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/여랑자_부채_사은품_사은품.webp",
     "goodsMemo": "사은품"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 1566,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025KUROFEST",
+    "goodsPrice": "22위안",
+    "goodsChara": "여랑자",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/여랑자_세트_22위안_여랑자세트.webp",
+    "goodsMemo": "여랑자세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7945,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025KUROFEST",
+    "goodsPrice": "구성품",
+    "goodsChara": "여랑자",
+    "goodsCategory": "스티커",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/여랑자_스티커_구성품_여랑자세트.webp",
+    "goodsMemo": "여랑자세트"
   },
   {
     "goodsId": 0,
@@ -18961,15 +19093,27 @@
   },
   {
     "goodsId": 0,
-    "goodsUid": 1566,
+    "goodsUid": 7947,
     "goodsReleaseDate": "2025-08-09",
     "goodsSeries": "2025KUROFEST",
-    "goodsPrice": "22위안",
+    "goodsPrice": "구성품1",
     "goodsChara": "여랑자",
     "goodsCategory": "포토카드",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/여랑자_포토카드_22위안_스티커포함.webp",
-    "goodsMemo": "스티커포함"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/여랑자_포토카드_구성품1_여랑자세트.webp",
+    "goodsMemo": "여랑자세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7948,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025KUROFEST",
+    "goodsPrice": "구성품2",
+    "goodsChara": "여랑자",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/여랑자_포토카드_구성품2_여랑자세트.webp",
+    "goodsMemo": "여랑자세트"
   },
   {
     "goodsId": 0,
@@ -19009,6 +19153,18 @@
   },
   {
     "goodsId": 0,
+    "goodsUid": 7950,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025KUROFEST",
+    "goodsPrice": "구성품",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "박스",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/카르티시아_박스_구성품_카르티시아세트.webp",
+    "goodsMemo": "카르티시아세트"
+  },
+  {
+    "goodsId": 0,
     "goodsUid": 1570,
     "goodsReleaseDate": "2025-08-09",
     "goodsSeries": "2025KUROFEST",
@@ -19030,6 +19186,30 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/카르티시아_색지_VIP입장특전_VIP입장특전.webp",
     "goodsMemo": "VIP입장특전"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 1584,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025KUROFEST",
+    "goodsPrice": "22위안",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/카르티시아_세트_22위안_카르티시아세트.webp",
+    "goodsMemo": "카르티시아세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7949,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025KUROFEST",
+    "goodsPrice": "구성품",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "스티커",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/카르티시아_스티커_구성품_카르티시아세트.webp",
+    "goodsMemo": "카르티시아세트"
   },
   {
     "goodsId": 0,
@@ -19177,15 +19357,27 @@
   },
   {
     "goodsId": 0,
-    "goodsUid": 1584,
+    "goodsUid": 7951,
     "goodsReleaseDate": "2025-08-09",
     "goodsSeries": "2025KUROFEST",
-    "goodsPrice": "22위안",
+    "goodsPrice": "구성품1",
     "goodsChara": "카르티시아",
     "goodsCategory": "포토카드",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/카르티시아_포토카드_22위안_스티커포함.webp",
-    "goodsMemo": "스티커포함"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/카르티시아_포토카드_구성품1_카르티시아세트.webp",
+    "goodsMemo": "카르티시아세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7952,
+    "goodsReleaseDate": "2025-08-09",
+    "goodsSeries": "2025KUROFEST",
+    "goodsPrice": "구성품2",
+    "goodsChara": "카르티시아",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2025KUROFEST_중국_2025-08-09/goods/카르티시아_포토카드_구성품2_카르티시아세트.webp",
+    "goodsMemo": "카르티시아세트"
   },
   {
     "goodsId": 0,
@@ -23434,6 +23626,510 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 중과금 선물 박스_중국_2026-09-28/goods/카르티시아_피규어_구성품2_세트.webp",
     "goodsMemo": "세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7895,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "증정품",
+    "goodsChara": "린네,치사,쇄명,여우의 별자리",
+    "goodsCategory": "박스",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/린네,치사,쇄명,여우의 별자리_박스_증정품_피자구매.webp",
+    "goodsMemo": "피자구매"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7896,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "증정품",
+    "goodsChara": "린네,치사,쇄명,여우의 별자리",
+    "goodsCategory": "색지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/린네,치사,쇄명,여우의 별자리_색지_증정품_7000엔이상구매증정.webp",
+    "goodsMemo": "7000엔이상구매증정"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7897,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "증정품",
+    "goodsChara": "린네,치사,쇄명,여우의 별자리",
+    "goodsCategory": "식탁보",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/린네,치사,쇄명,여우의 별자리_식탁보_증정품_단품.webp",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7898,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "2420엔",
+    "goodsChara": "린네,치사,쇄명,여우의 별자리",
+    "goodsCategory": "아크릴보드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/린네,치사,쇄명,여우의 별자리_아크릴보드_2420엔_단품.webp",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7899,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "증정품",
+    "goodsChara": "린네,치사,쇄명,여우의 별자리",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/린네,치사,쇄명,여우의 별자리_엽서_증정품_증정품.webp",
+    "goodsMemo": "증정품"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7900,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "증정품",
+    "goodsChara": "린네,치사,쇄명,여우의 별자리",
+    "goodsCategory": "엽서",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/린네,치사,쇄명,여우의 별자리_엽서_증정품_피자구매.webp",
+    "goodsMemo": "피자구매"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7901,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "3850엔",
+    "goodsChara": "린네,치사,쇄명,여우의 별자리",
+    "goodsCategory": "족자봉",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/린네,치사,쇄명,여우의 별자리_족자봉_3850엔_B2사이즈.webp",
+    "goodsMemo": "B2사이즈"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7902,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "증정품",
+    "goodsChara": "린네,치사,쇄명,여우의 별자리",
+    "goodsCategory": "카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/린네,치사,쇄명,여우의 별자리_카드_증정품_SNS행사.webp",
+    "goodsMemo": "SNS행사"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7903,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "2420엔",
+    "goodsChara": "린네,치사,쇄명,여우의 별자리",
+    "goodsCategory": "컵",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/린네,치사,쇄명,여우의 별자리_컵_2420엔_단품.webp",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7904,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "3300엔",
+    "goodsChara": "린네,치사,쇄명,여우의 별자리",
+    "goodsCategory": "토트백",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/린네,치사,쇄명,여우의 별자리_토트백_3300엔_단품.webp",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7905,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "1320엔",
+    "goodsChara": "린네",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/린네_세트_1320엔_린네세트.webp",
+    "goodsMemo": "린네세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7906,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "2420엔",
+    "goodsChara": "린네",
+    "goodsCategory": "아크릴스탠드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/린네_아크릴스탠드_2420엔_단품.webp",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7907,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "990엔",
+    "goodsChara": "린네",
+    "goodsCategory": "자석",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/린네_자석_990엔_단품.webp",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7908,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "11000엔",
+    "goodsChara": "린네",
+    "goodsCategory": "족자봉",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/린네_족자봉_11000엔_등신대사이즈.webp",
+    "goodsMemo": "등신대사이즈"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7909,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "구성품1",
+    "goodsChara": "린네",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/린네_캔뱃지_구성품1_린네세트.webp",
+    "goodsMemo": "린네세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7910,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "구성품2",
+    "goodsChara": "린네",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/린네_캔뱃지_구성품2_린네세트.webp",
+    "goodsMemo": "린네세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7911,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "증정품",
+    "goodsChara": "린네",
+    "goodsCategory": "클리어파일",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/린네_클리어파일_증정품_A5사이즈.webp",
+    "goodsMemo": "A5사이즈"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7912,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "990엔",
+    "goodsChara": "린네",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/린네_키링_990엔_단품.webp",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7913,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "1320엔",
+    "goodsChara": "쇄명",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/쇄명_세트_1320엔_쇄명세트.webp",
+    "goodsMemo": "쇄명세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7914,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "2420엔",
+    "goodsChara": "쇄명",
+    "goodsCategory": "아크릴스탠드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/쇄명_아크릴스탠드_2420엔_단품.webp",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7915,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "990엔",
+    "goodsChara": "쇄명",
+    "goodsCategory": "자석",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/쇄명_자석_990엔_단품.webp",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7916,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "11000엔",
+    "goodsChara": "쇄명",
+    "goodsCategory": "족자봉",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/쇄명_족자봉_11000엔_등신대사이즈.webp",
+    "goodsMemo": "등신대사이즈"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7917,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "구성품1",
+    "goodsChara": "쇄명",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/쇄명_캔뱃지_구성품1_쇄명세트.webp",
+    "goodsMemo": "쇄명세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7918,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "구성품2",
+    "goodsChara": "쇄명",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/쇄명_캔뱃지_구성품2_쇄명세트.webp",
+    "goodsMemo": "쇄명세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7919,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "증정품",
+    "goodsChara": "쇄명",
+    "goodsCategory": "클리어파일",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/쇄명_클리어파일_증정품_A5사이즈.webp",
+    "goodsMemo": "A5사이즈"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7920,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "990엔",
+    "goodsChara": "쇄명",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/쇄명_키링_990엔_단품.webp",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7921,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "1320엔",
+    "goodsChara": "여우의 별자리",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/여우의 별자리_세트_1320엔_여별세트.webp",
+    "goodsMemo": "여별세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7922,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "2420엔",
+    "goodsChara": "여우의 별자리",
+    "goodsCategory": "아크릴스탠드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/여우의 별자리_아크릴스탠드_2420엔_단품.webp",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7923,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "990엔",
+    "goodsChara": "여우의 별자리",
+    "goodsCategory": "자석",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/여우의 별자리_자석_990엔_단품.webp",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7924,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "11000엔",
+    "goodsChara": "여우의 별자리",
+    "goodsCategory": "족자봉",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/여우의 별자리_족자봉_11000엔_등신대사이즈.webp",
+    "goodsMemo": "등신대사이즈"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7925,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "구성품1",
+    "goodsChara": "여우의 별자리",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/여우의 별자리_캔뱃지_구성품1_여별세트.webp",
+    "goodsMemo": "여별세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7926,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "구성품2",
+    "goodsChara": "여우의 별자리",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/여우의 별자리_캔뱃지_구성품2_여별세트.webp",
+    "goodsMemo": "여별세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7927,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "증정품",
+    "goodsChara": "여우의 별자리",
+    "goodsCategory": "클리어파일",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/여우의 별자리_클리어파일_증정품_A5사이즈.webp",
+    "goodsMemo": "A5사이즈"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7928,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "990엔",
+    "goodsChara": "여우의 별자리",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/여우의 별자리_키링_990엔_단품.webp",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7929,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "1320엔",
+    "goodsChara": "치사",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/치사_세트_1320엔_치사세트.webp",
+    "goodsMemo": "치사세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7930,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "2420엔",
+    "goodsChara": "치사",
+    "goodsCategory": "아크릴스탠드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/치사_아크릴스탠드_2420엔_단품.webp",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7931,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "990엔",
+    "goodsChara": "치사",
+    "goodsCategory": "자석",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/치사_자석_990엔_단품.webp",
+    "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7932,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "11000엔",
+    "goodsChara": "치사",
+    "goodsCategory": "족자봉",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/치사_족자봉_11000엔_등신대사이즈.webp",
+    "goodsMemo": "등신대사이즈"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7933,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "구성품1",
+    "goodsChara": "치사",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/치사_캔뱃지_구성품1_치사세트.webp",
+    "goodsMemo": "치사세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7934,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "구성품2",
+    "goodsChara": "치사",
+    "goodsCategory": "캔뱃지",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/치사_캔뱃지_구성품2_치사세트.webp",
+    "goodsMemo": "치사세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7935,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "증정품",
+    "goodsChara": "치사",
+    "goodsCategory": "클리어파일",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/치사_클리어파일_증정품_A5사이즈.webp",
+    "goodsMemo": "A5사이즈"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7936,
+    "goodsReleaseDate": "2026-12-01",
+    "goodsSeries": "2026 피자헛",
+    "goodsPrice": "990엔",
+    "goodsChara": "치사",
+    "goodsCategory": "키링",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/2026 피자헛_일본_2026-12-01/goods/치사_키링_990엔_단품.webp",
+    "goodsMemo": "단품"
   },
   {
     "goodsId": 0,
@@ -60289,6 +60985,18 @@
   },
   {
     "goodsId": 0,
+    "goodsUid": 7953,
+    "goodsReleaseDate": "2026-05-22",
+    "goodsSeries": "대만2주년",
+    "goodsPrice": "구성품",
+    "goodsChara": "데니아",
+    "goodsCategory": "박스",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/데니아_박스_구성품_데니아포카세트.webp",
+    "goodsMemo": "데니아포카세트"
+  },
+  {
+    "goodsId": 0,
     "goodsUid": 4804,
     "goodsReleaseDate": "2026-05-22",
     "goodsSeries": "대만2주년",
@@ -60301,6 +61009,18 @@
   },
   {
     "goodsId": 0,
+    "goodsUid": 4818,
+    "goodsReleaseDate": "2026-05-22",
+    "goodsSeries": "대만2주년",
+    "goodsPrice": "190NT",
+    "goodsChara": "데니아",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/데니아_세트_190NT_데니아포카세트.webp",
+    "goodsMemo": "데니아포카세트"
+  },
+  {
+    "goodsId": 0,
     "goodsUid": 4805,
     "goodsReleaseDate": "2026-05-22",
     "goodsSeries": "대만2주년",
@@ -60310,6 +61030,18 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/데니아_세트_240NT_데니아캔뱃지세트.webp",
     "goodsMemo": "데니아캔뱃지세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7954,
+    "goodsReleaseDate": "2026-05-22",
+    "goodsSeries": "대만2주년",
+    "goodsPrice": "구성품",
+    "goodsChara": "데니아",
+    "goodsCategory": "스티커",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/데니아_스티커_구성품_데니아포카세트.webp",
+    "goodsMemo": "데니아포카세트"
   },
   {
     "goodsId": 0,
@@ -60457,15 +61189,27 @@
   },
   {
     "goodsId": 0,
-    "goodsUid": 4818,
+    "goodsUid": 7955,
     "goodsReleaseDate": "2026-05-22",
     "goodsSeries": "대만2주년",
-    "goodsPrice": "190NT",
+    "goodsPrice": "구성품1",
     "goodsChara": "데니아",
     "goodsCategory": "포토카드",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/데니아_포토카드_190NT_포카세트.webp",
-    "goodsMemo": "포카세트"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/데니아_포토카드_구성품1_데니아포카세트.webp",
+    "goodsMemo": "데니아포카세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7956,
+    "goodsReleaseDate": "2026-05-22",
+    "goodsSeries": "대만2주년",
+    "goodsPrice": "구성품2",
+    "goodsChara": "데니아",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/데니아_포토카드_구성품2_데니아포카세트.webp",
+    "goodsMemo": "데니아포카세트"
   },
   {
     "goodsId": 0,
@@ -60613,6 +61357,18 @@
   },
   {
     "goodsId": 0,
+    "goodsUid": 7957,
+    "goodsReleaseDate": "2026-05-22",
+    "goodsSeries": "대만2주년",
+    "goodsPrice": "구성품",
+    "goodsChara": "루크",
+    "goodsCategory": "박스",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/루크_박스_구성품_루크포카세트.webp",
+    "goodsMemo": "루크포카세트"
+  },
+  {
+    "goodsId": 0,
     "goodsUid": 4831,
     "goodsReleaseDate": "2026-05-22",
     "goodsSeries": "대만2주년",
@@ -60625,6 +61381,18 @@
   },
   {
     "goodsId": 0,
+    "goodsUid": 4845,
+    "goodsReleaseDate": "2026-05-22",
+    "goodsSeries": "대만2주년",
+    "goodsPrice": "190NT",
+    "goodsChara": "루크",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/루크_세트_190NT_루크포카세트.webp",
+    "goodsMemo": "루크포카세트"
+  },
+  {
+    "goodsId": 0,
     "goodsUid": 4832,
     "goodsReleaseDate": "2026-05-22",
     "goodsSeries": "대만2주년",
@@ -60634,6 +61402,18 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/루크_세트_240NT_루크캔뱃지세트.webp",
     "goodsMemo": "루크캔뱃지세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7958,
+    "goodsReleaseDate": "2026-05-22",
+    "goodsSeries": "대만2주년",
+    "goodsPrice": "구성품",
+    "goodsChara": "루크",
+    "goodsCategory": "스티커",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/루크_스티커_구성품_루크포카세트.webp",
+    "goodsMemo": "루크포카세트"
   },
   {
     "goodsId": 0,
@@ -60781,15 +61561,27 @@
   },
   {
     "goodsId": 0,
-    "goodsUid": 4845,
+    "goodsUid": 7959,
     "goodsReleaseDate": "2026-05-22",
     "goodsSeries": "대만2주년",
-    "goodsPrice": "190NT",
+    "goodsPrice": "구성품1",
     "goodsChara": "루크",
     "goodsCategory": "포토카드",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/루크_포토카드_190NT_포카세트.webp",
-    "goodsMemo": "포카세트"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/루크_포토카드_구성품1_루크포카세트.webp",
+    "goodsMemo": "루크포카세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7960,
+    "goodsReleaseDate": "2026-05-22",
+    "goodsSeries": "대만2주년",
+    "goodsPrice": "구성품2",
+    "goodsChara": "루크",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/루크_포토카드_구성품2_루크포카세트.webp",
+    "goodsMemo": "루크포카세트"
   },
   {
     "goodsId": 0,
@@ -60817,6 +61609,18 @@
   },
   {
     "goodsId": 0,
+    "goodsUid": 7961,
+    "goodsReleaseDate": "2026-05-22",
+    "goodsSeries": "대만2주년",
+    "goodsPrice": "구성품",
+    "goodsChara": "에이메스",
+    "goodsCategory": "박스",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/에이메스_박스_구성품_에이메스포카세트.webp",
+    "goodsMemo": "에이메스포카세트"
+  },
+  {
+    "goodsId": 0,
     "goodsUid": 4848,
     "goodsReleaseDate": "2026-05-22",
     "goodsSeries": "대만2주년",
@@ -60829,6 +61633,18 @@
   },
   {
     "goodsId": 0,
+    "goodsUid": 4862,
+    "goodsReleaseDate": "2026-05-22",
+    "goodsSeries": "대만2주년",
+    "goodsPrice": "190NT",
+    "goodsChara": "에이메스",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/에이메스_세트_190NT_에이메스포카세트.webp",
+    "goodsMemo": "에이메스포카세트"
+  },
+  {
+    "goodsId": 0,
     "goodsUid": 4849,
     "goodsReleaseDate": "2026-05-22",
     "goodsSeries": "대만2주년",
@@ -60838,6 +61654,18 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/에이메스_세트_240NT_에이메스캔뱃지세트.webp",
     "goodsMemo": "에이메스캔뱃지세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7962,
+    "goodsReleaseDate": "2026-05-22",
+    "goodsSeries": "대만2주년",
+    "goodsPrice": "구성품",
+    "goodsChara": "에이메스",
+    "goodsCategory": "스티커",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/에이메스_스티커_구성품_에이메스포카세트.webp",
+    "goodsMemo": "에이메스포카세트"
   },
   {
     "goodsId": 0,
@@ -60985,15 +61813,27 @@
   },
   {
     "goodsId": 0,
-    "goodsUid": 4862,
+    "goodsUid": 7963,
     "goodsReleaseDate": "2026-05-22",
     "goodsSeries": "대만2주년",
-    "goodsPrice": "190NT",
+    "goodsPrice": "구성품1",
     "goodsChara": "에이메스",
     "goodsCategory": "포토카드",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/에이메스_포토카드_190NT_포카세트.webp",
-    "goodsMemo": "포카세트"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/에이메스_포토카드_구성품1_에이메스포카세트.webp",
+    "goodsMemo": "에이메스포카세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7964,
+    "goodsReleaseDate": "2026-05-22",
+    "goodsSeries": "대만2주년",
+    "goodsPrice": "구성품2",
+    "goodsChara": "에이메스",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/에이메스_포토카드_구성품2_에이메스포카세트.webp",
+    "goodsMemo": "에이메스포카세트"
   },
   {
     "goodsId": 0,
@@ -61021,6 +61861,18 @@
   },
   {
     "goodsId": 0,
+    "goodsUid": 7965,
+    "goodsReleaseDate": "2026-05-22",
+    "goodsSeries": "대만2주년",
+    "goodsPrice": "구성품",
+    "goodsChara": "히유키",
+    "goodsCategory": "박스",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/히유키_박스_구성품_히유키포카세트.webp",
+    "goodsMemo": "히유키포카세트"
+  },
+  {
+    "goodsId": 0,
     "goodsUid": 4865,
     "goodsReleaseDate": "2026-05-22",
     "goodsSeries": "대만2주년",
@@ -61033,6 +61885,18 @@
   },
   {
     "goodsId": 0,
+    "goodsUid": 4879,
+    "goodsReleaseDate": "2026-05-22",
+    "goodsSeries": "대만2주년",
+    "goodsPrice": "190NT",
+    "goodsChara": "히유키",
+    "goodsCategory": "세트",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/히유키_세트_190NT_히유키포카세트.webp",
+    "goodsMemo": "히유키포카세트"
+  },
+  {
+    "goodsId": 0,
     "goodsUid": 4866,
     "goodsReleaseDate": "2026-05-22",
     "goodsSeries": "대만2주년",
@@ -61042,6 +61906,18 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/히유키_세트_240NT_히유키캔뱃지세트.webp",
     "goodsMemo": "히유키캔뱃지세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7966,
+    "goodsReleaseDate": "2026-05-22",
+    "goodsSeries": "대만2주년",
+    "goodsPrice": "구성품",
+    "goodsChara": "히유키",
+    "goodsCategory": "스티커",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/히유키_스티커_구성품_히유키포카세트.webp",
+    "goodsMemo": "히유키포카세트"
   },
   {
     "goodsId": 0,
@@ -61189,15 +62065,27 @@
   },
   {
     "goodsId": 0,
-    "goodsUid": 4879,
+    "goodsUid": 7967,
     "goodsReleaseDate": "2026-05-22",
     "goodsSeries": "대만2주년",
-    "goodsPrice": "190NT",
+    "goodsPrice": "구성품1",
     "goodsChara": "히유키",
     "goodsCategory": "포토카드",
     "goodsIsGotten": false,
-    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/히유키_포토카드_190NT_포카세트.webp",
-    "goodsMemo": "포카세트"
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/히유키_포토카드_구성품1_히유키포카세트.webp",
+    "goodsMemo": "히유키포카세트"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7968,
+    "goodsReleaseDate": "2026-05-22",
+    "goodsSeries": "대만2주년",
+    "goodsPrice": "구성품2",
+    "goodsChara": "히유키",
+    "goodsCategory": "포토카드",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/대만2주년_대만_2026-05-22/goods/히유키_포토카드_구성품2_히유키포카세트.webp",
+    "goodsMemo": "히유키포카세트"
   },
   {
     "goodsId": 0,
@@ -81910,6 +82798,30 @@
     "goodsIsGotten": false,
     "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조설정집_중국_2026-08-14/goods/여랑자_캔뱃지_18위안_단품.webp",
     "goodsMemo": "단품"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7969,
+    "goodsReleaseDate": "2026-11-12",
+    "goodsSeries": "명조카페(릴리)",
+    "goodsPrice": "구성품",
+    "goodsChara": "릴리",
+    "goodsCategory": "스푼",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조카페(릴리)_중국_2026-11-12/goods/릴리_스푼_구성품_구성품.webp",
+    "goodsMemo": "구성품"
+  },
+  {
+    "goodsId": 0,
+    "goodsUid": 7970,
+    "goodsReleaseDate": "2026-11-12",
+    "goodsSeries": "명조카페(릴리)",
+    "goodsPrice": "구성품",
+    "goodsChara": "릴리",
+    "goodsCategory": "컵홀더",
+    "goodsIsGotten": false,
+    "goodsUrl": "https://raw.githubusercontent.com/rhecpev/wuwa-goods-data/refs/heads/main/picture/명조카페(릴리)_중국_2026-11-12/goods/릴리_컵홀더_구성품_구성품.webp",
+    "goodsMemo": "구성품"
   },
   {
     "goodsId": 0,
